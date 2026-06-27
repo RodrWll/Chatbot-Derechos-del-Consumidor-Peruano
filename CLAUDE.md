@@ -4,13 +4,13 @@
 
 Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales sobre derechos del consumidor en Perú para que ciudadanos comunes los entiendan. Usa arquitectura RAG: recupera fragmentos del corpus legal y los procesa con un LLM local para generar respuestas en lenguaje simple.
 
-## Estado actual
+## Estado actual (actualizado 2026-06-27)
 
-- Corpus listo: 28 archivos JSON en `final_json/` (leyes, normas reglamentarias, informes de INDECOPI/SPIJ)
-- Código base creado: `src/ingest.py`, `src/rag_chain.py`, `src/app.py`
-- Notebooks listos: `notebooks/01`, `02`, `03`
-- El vector store ChromaDB (`chroma_db/`) NO está en el repositorio — se genera localmente ejecutando `python src/ingest.py`
-- **El LLM aún no ha sido definido definitivamente** — se comparan `mistral:7b-instruct` y `llama3.1:8b` vía Ollama
+- ✅ Fase 1 completa: corpus indexado, RAG funcionando, Streamlit operativo
+- ✅ Fase 2 parcial: comparativa mistral vs llama3.1 iniciada — **mistral:7b-instruct ganó**
+- ⏳ **Tarea inmediata:** crear `src/evaluacion.py` — script de evaluación automática
+- ⏳ Notebooks ejecutados parcialmente — continuar con 01, 02 y 03
+- ⏳ Fase 4 (deploy) pendiente
 
 ## Hardware de desarrollo
 
@@ -22,17 +22,27 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 | Componente | Herramienta |
 |------------|-------------|
 | Lenguaje | Python 3.11.9 |
-| Entorno | conda (`environment.yml`) |
-| Embeddings | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
-| Vector store | ChromaDB (local, persistente en `chroma_db/`) |
-| LLM | Ollama (`mistral:7b-instruct` o `llama3.1:8b`) |
-| UI | Streamlit (`src/app.py`) |
-| Orquestación | LangChain (`RetrievalQA`) |
+| Entorno | conda (`environment.yml`) — kernel Jupyter: "Python (chatbot-consumidor)" |
+| Embeddings | `langchain_huggingface.HuggingFaceEmbeddings` — `paraphrase-multilingual-MiniLM-L12-v2` |
+| Vector store | `langchain_chroma.Chroma` (local, persistente en `chroma_db/`) |
+| LLM | `langchain_ollama.OllamaLLM` — modelo: `mistral:7b-instruct` (ganador de la evaluación) |
+| UI | Streamlit (`src/app.py`) con `@st.cache_resource` |
+| Orquestación | LangChain (cadena manual con closure en `rag_chain.py`) |
+
+**IMPORTANTE — imports correctos** (versiones instaladas usan los paquetes nuevos):
+```python
+from langchain_huggingface import HuggingFaceEmbeddings   # NO langchain_community
+from langchain_chroma import Chroma                        # NO langchain_community
+from langchain_ollama import OllamaLLM                    # NO langchain_community
+from langchain_core.documents import Document             # NO langchain.schema
+from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
+```
 
 ## Estructura del proyecto
 
 ```
 ├── CLAUDE.md                ← este archivo
+├── EVALUACION.md            ← registro de experimentos y resultados
 ├── environment.yml          ← entorno conda
 ├── setup.bat                ← instalación automática (Windows)
 ├── requirements.txt
@@ -44,76 +54,110 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 ├── src/
 │   ├── ingest.py            ← pipeline JSON → ChromaDB (ejecutar 1 vez)
 │   ├── rag_chain.py         ← cadena RAG con prompt de simplificación
-│   └── app.py               ← interfaz Streamlit
+│   ├── app.py               ← interfaz Streamlit
+│   └── evaluacion.py        ← PENDIENTE DE CREAR (ver spec abajo)
 ├── notebooks/
 │   ├── 01_exploracion_datos.ipynb
 │   ├── 02_indexacion_vectorstore.ipynb
-│   └── 03_chatbot_rag.ipynb ← MVP interactivo + evaluación ROUGE-L
+│   └── 03_chatbot_rag.ipynb
+├── diagramas/               ← 4 diagramas draw.io + PNG
 └── chroma_db/               ← generado localmente, NO en git
 ```
 
-## Esquema JSON del corpus
-
-Todos los archivos en `final_json/` tienen el mismo esquema:
-```json
-{
-  "id": 1,
-  "nombre_doc": "Nombre del documento",
-  "tipo_doc": "ley | informe | norma reglamentaria",
-  "capitulo_seccion": "Título de la sección",
-  "categoria_consumo": ["categoría1", "categoría2"],
-  "texto": "Contenido legal a simplificar",
-  "source": "archivo_original.pdf"
-}
-```
-
-El campo `texto` se mapea a `page_content` de LangChain. El resto va a `metadata`. No modificar los JSONs en disco — la transformación ocurre en `src/ingest.py`.
-
-## Cómo arrancar desde cero (PC nueva)
+## Cómo arrancar (PC con entorno ya instalado)
 
 ```bash
-# 1. Instalar Miniconda si no está instalado
-# 2. Doble clic en setup.bat (crea el entorno conda)
-# 3. Instalar Ollama desde https://ollama.com
-ollama pull mistral:7b-instruct
-
-# 4. Activar entorno y generar el vector store
+# Abrir Anaconda Prompt
 conda activate chatbot-consumidor
-python src/ingest.py
 
-# 5. Probar el chatbot
+# Iniciar la app
 streamlit run src/app.py
-# o abrir notebooks/03_chatbot_rag.ipynb en Jupyter
+
+# Iniciar Jupyter para notebooks
+jupyter notebook
+# Kernel a usar: "Python (chatbot-consumidor)"
+
+# Si chroma_db/ no existe (PC nueva), regenerar:
+python src/ingest.py
 ```
 
-## Ruta de implementación pendiente
+## Tarea inmediata: crear src/evaluacion.py
 
-### Fase 2 — Evaluación de LLMs (próxima)
-- Comparar `mistral:7b-instruct` vs `llama3.1:8b` con las 4 preguntas de prueba
-- Medir ROUGE-L vs. respuestas de referencia escritas manualmente
-- Medir legibilidad Flesch-Szigriszt de la respuesta generada vs. el texto fuente
-- Elegir el modelo final basándose en calidad + velocidad
+**Qué debe hacer este script:**
 
-### Fase 3 — LangGraph (opcional)
-- Solo implementar si hay tiempo y se quiere manejar consultas multi-paso
-- El RAG lineal ya es suficiente para el curso
+Enviar automáticamente las 4 preguntas estándar a cada modelo disponible en Ollama y guardar las respuestas en `evaluacion_resultados.json` y `evaluacion_resultados.csv`.
 
-### Fase 4 — Web (post-MVP)
-- Backend FastAPI + frontend Streamlit ya scaffoldeado en `src/app.py`
-- Deploy en HuggingFace Spaces o Render.com
+**Especificación:**
+
+```python
+# Modelos a evaluar
+MODELOS = ["mistral:7b-instruct", "llama3.1:8b", "gemma2:9b"]
+
+# Preguntas estándar
+PREGUNTAS = [
+    "¿Cuáles son mis derechos si un producto que compré está defectuoso?",
+    "¿Cómo presento una queja ante INDECOPI?",
+    "¿Qué cubre el SOAT en caso de accidente de tránsito?",
+    "¿Tengo derecho a atención preferente si soy adulto mayor?",
+]
+
+# Para cada modelo × pregunta, guardar:
+# - modelo: str
+# - pregunta: str
+# - respuesta: str
+# - fuentes: list[str] (nombre_doc de source_documents)
+# - tiempo_segundos: float
+# - num_docs_recuperados: int
+```
+
+**Salida esperada:**
+- `evaluacion_resultados.json` — array de objetos con los campos anteriores
+- `evaluacion_resultados.csv` — misma data en formato tabular para comparar fácilmente
+
+**Comportamiento:**
+- Usar `construir_cadena(model=modelo, k=3)` de `src/rag_chain.py`
+- Medir tiempo de respuesta con `time.time()`
+- Mostrar progreso por consola (qué modelo y pregunta está procesando)
+- Si un modelo no está descargado en Ollama, saltar con un warning y continuar
+- Al terminar, imprimir tabla resumen en consola
+
+**Ejecutar con:**
+```bash
+python src/evaluacion.py
+```
+
+## Resultados de evaluación hasta ahora
+
+### Configuración óptima encontrada
+- **k=3** (mejor balance ruido vs. contexto)
+- **mistral:7b-instruct** (ganador vs. llama3.1:8b)
+
+### Problema conocido: contaminación de contexto cruzado
+El retriever siempre incluye "Guía sobre productos y servicios inmobiliarios" en preguntas sobre productos defectuosos porque tiene similitud semántica superficial. El LLM incluye entonces la Defensoría del Cliente Inmobiliario (DCI) como opción general — es incorrecto. Documentado en `EVALUACION.md`.
+
+### Comparativa mistral vs llama3.1 (pregunta: producto defectuoso)
+| Aspecto | mistral:7b-instruct | llama3.1:8b |
+|---------|--------------------|-|
+| Libro de Reclamaciones | ✅ | ❌ Omitido |
+| Reclama Virtual INDECOPI | ✅ | ❌ Omitido |
+| Plazo 15 días hábiles | ✅ | ❌ Inventa "un mes hábil" |
+| Nombre INDECOPI correcto | ✅ | ⚠️ "Autoridad Nacional de Consumo" |
 
 ## Decisiones de diseño ya tomadas (no revertir sin razón)
 
-- **No modificar los JSONs en disco** — la transformación al esquema LangChain ocurre en memoria en `ingest.py`
-- **No hacer fine-tuning** — RAG con prompt bien diseñado es suficiente para este corpus
-- **No usar API de OpenAI/Groq** — el hardware permite modelos locales de calidad equivalente
-- **Chunking adicional no necesario** — los `texto` ya tienen granularidad adecuada (50-800 palabras); solo aplicar `RecursiveCharacterTextSplitter` si un texto supera ~512 tokens
-- **LangGraph no prioritario** — agregar solo si se completan las fases 1 y 2
+- **No modificar los JSONs en disco** — transformación ocurre en memoria en `ingest.py`
+- **No hacer fine-tuning** — RAG con buen prompt es suficiente
+- **No usar API de OpenAI/Groq** — RTX 4080 permite modelos locales equivalentes
+- **Chunking adicional no necesario** — `texto` ya tiene granularidad adecuada
+- **LangGraph no prioritario** — solo si sobra tiempo tras la evaluación
 
 ## Preguntas de prueba estándar
 
-Usar siempre estas 4 para evaluar y comparar:
-1. "¿Cuáles son mis derechos si un producto que compré está defectuoso?"
-2. "¿Cómo presento una queja ante INDECOPI?"
-3. "¿Qué cubre el SOAT en caso de accidente de tránsito?"
-4. "¿Tengo derecho a atención preferente si soy adulto mayor?"
+```python
+PREGUNTAS = [
+    "¿Cuáles son mis derechos si un producto que compré está defectuoso?",
+    "¿Cómo presento una queja ante INDECOPI?",
+    "¿Qué cubre el SOAT en caso de accidente de tránsito?",
+    "¿Tengo derecho a atención preferente si soy adulto mayor?",
+]
+```
