@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Arquitectura del Sistema">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="2" value="Arquitectura del Sistema — Chatbot RAG Derechos del Consumidor Peruano" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- CAPA PRESENTACIÓN -->
+        <mxCell id="3" value="CAPA DE PRESENTACIÓN" style="swimlane;startSize=28;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="1000" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Streamlit UI&#xa;app.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="3">
+          <mxGeometry x="380" y="22" width="240" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- CAPA ORQUESTACIÓN -->
+        <mxCell id="5" value="CAPA DE ORQUESTACIÓN" style="swimlane;startSize=28;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="1000" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="LangChain&#xa;rag_chain.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;" vertex="1" parent="5">
+          <mxGeometry x="380" y="22" width="240" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- CAPA RECUPERACIÓN -->
+        <mxCell id="7" value="CAPA DE RECUPERACIÓN" style="swimlane;startSize=28;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="1000" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Embeddings&#xa;MiniLM-L12-v2&#xa;384 dimensiones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="7">
+          <mxGeometry x="150" y="18" width="200" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="ChromaDB&#xa;Vector Store&#xa;1349 documentos" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="7">
+          <mxGeometry x="640" y="10" width="200" height="82" as="geometry" />
+        </mxCell>
+
+        <!-- CAPA GENERACIÓN -->
+        <mxCell id="10" value="CAPA DE GENERACIÓN" style="swimlane;startSize=28;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="1000" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Ollama&#xa;Servidor LLM local" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="10">
+          <mxGeometry x="150" y="22" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Mistral 7B Instruct&#xa;RTX 4080 · CUDA&#xa;~5 GB VRAM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="10">
+          <mxGeometry x="640" y="22" width="200" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- CAPA DATOS -->
+        <mxCell id="13" value="CAPA DE DATOS (indexación offline)" style="swimlane;startSize=28;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="1000" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="final_json/&#xa;28 archivos JSON&#xa;leyes · normas · informes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="13">
+          <mxGeometry x="50" y="22" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="ingest.py&#xa;Pipeline de indexación&#xa;(ejecutar 1 vez)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="13">
+          <mxGeometry x="390" y="22" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="chroma_db/&#xa;Vector Store&#xa;persistente" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="13">
+          <mxGeometry x="740" y="12" width="180" height="88" as="geometry" />
+        </mxCell>
+
+        <!-- EDGES between layers -->
+        <mxCell id="17" value="pregunta / respuesta" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="embedding de consulta" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="búsqueda coseno" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="top-3 docs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="prompt + contexto" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="inferencia GPU" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="indexar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
