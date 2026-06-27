@@ -12,7 +12,7 @@ Uso básico:
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
@@ -53,7 +53,7 @@ def construir_cadena(
         persist_directory=chroma_dir,
         embedding_function=embeddings,
     )
-    llm = Ollama(model=model)
+    llm = OllamaLLM(model=model)
     prompt = PromptTemplate(
         input_variables=["context", "question"],
         template=PROMPT_TEMPLATE,
