@@ -59,10 +59,7 @@ def construir_cadena(
         persist_directory=chroma_dir,
         embedding_function=embeddings,
     )
-    retriever = vectorstore.as_retriever(
-        search_type="similarity_score_threshold",
-        search_kwargs={"k": k, "score_threshold": 0.45},
-    )
+    retriever = vectorstore.as_retriever(search_kwargs={"k": k})
     llm = OllamaLLM(model=model)
     prompt = PromptTemplate(
         input_variables=["context", "question"],
