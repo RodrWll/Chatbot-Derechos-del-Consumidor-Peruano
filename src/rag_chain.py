@@ -4,17 +4,19 @@ Cadena RAG reutilizable. Importar desde notebooks o app.py:
 
 Uso básico:
     chain = construir_cadena()
-    resultado = chain.invoke({"query": "¿qué cubre el SOAT?"})
+    resultado = chain.invoke("¿qué cubre el SOAT?")
     print(resultado["result"])
     for doc in resultado["source_documents"]:
         print(doc.metadata["nombre_doc"])
 """
 
+import torch
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaLLM
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
 CHROMA_DIR = "./chroma_db"
 EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
@@ -38,12 +40,15 @@ Pregunta del ciudadano: {question}
 Respuesta en lenguaje claro y accesible:"""
 
 
+def _formatear_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
+
 def construir_cadena(
     model: str = "mistral:7b-instruct",
     k: int = 4,
     chroma_dir: str = CHROMA_DIR,
-) -> RetrievalQA:
-    import torch
+):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
@@ -53,17 +58,20 @@ def construir_cadena(
         persist_directory=chroma_dir,
         embedding_function=embeddings,
     )
+    retriever = vectorstore.as_retriever(search_kwargs={"k": k})
     llm = OllamaLLM(model=model)
     prompt = PromptTemplate(
         input_variables=["context", "question"],
         template=PROMPT_TEMPLATE,
     )
-    return RetrievalQA.from_chain_type(
-        llm=llm,
-        retriever=vectorstore.as_retriever(search_kwargs={"k": k}),
-        chain_type_kwargs={"prompt": prompt},
-        return_source_documents=True,
-    )
+
+    def invoke(query: str) -> dict:
+        docs = retriever.invoke(query)
+        context = _formatear_docs(docs)
+        respuesta = llm.invoke(prompt.format(context=context, question=query))
+        return {"result": respuesta, "source_documents": docs}
+
+    return invoke
 
 
 def formatear_respuesta(resultado: dict) -> str:
@@ -89,5 +97,5 @@ if __name__ == "__main__":
         print("\n" + "=" * 60)
         print(f"Pregunta: {pregunta}")
         print("-" * 60)
-        resultado = chain.invoke({"query": pregunta})
+        resultado = chain(pregunta)
         print(formatear_respuesta(resultado))

@@ -65,7 +65,7 @@ if prompt:
 
     with st.chat_message("assistant"):
         with st.spinner("Consultando normativa peruana..."):
-            resultado = st.session_state.chain.invoke({"query": prompt})
+            resultado = st.session_state.chain(prompt)
             respuesta = resultado["result"]
 
             if mostrar_fuentes:
