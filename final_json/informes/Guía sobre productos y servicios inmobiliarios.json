@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "INTRODUCCIÓN",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "El Código de Protección y Defensa del Consumidor, aprobado por Ley n° 29571, tiene por finalidad garantizar que el consumidor tome decisiones libres e informadas, que acceda a productos y servicios idóneos y que goce de los derechos y los mecanismos efectivos para su protección.\n\nBajo este enfoque, el Indecopi, en su calidad de Autoridad Nacional de Protección del Consumidor, asume las funciones de proteger los derechos del consumidor, vigilar que la información en el mercado sea correcta, asegurar la idoneidad de los bienes y servicios, en función a la información brindada por el proveedor y evitar la discriminación en las relaciones de consumo.\n\nAsí, con el fin de facilitar instrumentos de información que permitan hacer más transparente el mercado, el Indecopi ha elaborado la guía informativa denominada “Guía sobre productos y servicios inmobiliarios: Todo lo que debe saber un consumidor antes, durante y después de comprar un inmueble”, documento que brinda al consumidor información sobre sus derechos en la compra de un inmueble, las obligaciones a cargo del proveedor; así como los mecanismos que existen para la solución de conflictos que se presentan en el desarrollo de estas relaciones de consumo. En este contexto, la guía informativa constituye un instrumento idóneo para promover una cultura de protección al consumidor y comportamiento acorde con la buena fe del proveedor y consumidor, así como asegurar el respeto y pleno ejercicio de sus derechos.",
+    "source": "0001_el_código_de_protección_y_defensa_del_consumidor_aprobado_po.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "INTRODUCCIÓN",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Contenido\n\nINTRODUCCIÓN\nI. ¿QUIÉN ES CONSIDERADO PROVEEDOR INMOBILIARIO?\nII. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE\n1. Antes del proceso de compra: Publicidad y solicitud de información\n2. Durante el proceso de compra: Contratación y pagos\n3. Entrega del bien\nII.1. Información mínima durante el primer momento: Publicidad y solicitud de información\nII.1.1. Información sobre el proveedor\nII.1.2. Información sobre el inmueble\nII.1.3. Información relacionada a la operación de compraventa\nII.1.4. Otra información relevante\nII.2. Información mínima durante el segundo momento: Suscripción del contrato y pago del precio\nII.3. Entrega del bien\n• Saneamiento físico\n• Saneamiento legal\nII.3.1. Sobre la ejecución de garantías\nII.3.2. Servicio postventa\nIII. ¿Qué hacer si el inmueble o el servicio del proveedor no coincide con lo acordado u ofrecido?\nIV. BASE LEGAL",
+    "source": "0002_contenido.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. ¿QUIÉN ES CONSIDERADO PROVEEDOR INMOBILIARIO?",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "Será considerado un proveedor inmobiliario, quien se dedique a la venta de inmuebles de manera habitual y con la finalidad de permanecer en el mercado inmobiliario, sin importar si se trata de una persona natural o jurídica.\n\nEs importante tener en cuenta que no es lo mismo comprar un inmueble de cualquier persona, que adquirirlo de alguien que sea considerado proveedor inmobiliario:\n\n• En el primer caso, la norma que regula la compra es el Código Civil, en lo referido a las cláusulas del contrato en general y la compraventa sobre un bien inmueble futuro o terminado.\n\n• Mientras que, en el segundo caso, cuando se adquiere un inmueble de un proveedor inmobiliario, además de la Constitución Política del Perú y el Código Civil, existe una protección adicional que brinda el Código de Protección y Defensa del Consumidor (en adelante, el Código).",
+    "source": "0003_será_considerado_un_proveedor_inmobiliario_quien_se_dedique_.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. ¿QUIÉN ES CONSIDERADO PROVEEDOR INMOBILIARIO?",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "RECUERDA\nEl Código tiene por finalidad que el consumidor acceda a productos y servicios idóneos y que goce de los derechos y los mecanismos efectivos para su protección, reduciendo la asimetría informativa, corrigiendo, previniendo o eliminando las conductas y prácticas que afecten sus legítimos intereses.",
+    "source": "0004_recuerda.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "El proceso de compra de inmuebles comprende las etapas en las que el consumidor y proveedor se relacionan, y abarca desde el momento en el que el consumidor toma conocimiento de los productos y servicios ofrecidos por el proveedor, hasta el momento en el que se han cumplido todos los ofrecimientos y acuerdos relacionados con la compra.\n\nEs así como, en el proceso de compra podemos identificar tres momentos importantes:",
+    "source": "0005_el_proceso_de_compra_de_inmuebles_comprende_las_etapas_en_la.txt"
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "1. Antes del proceso de compra: Publicidad y solicitud de información\n\nEl consumidor recibe información a través de la publicidad que realiza el proveedor inmobiliario. Por ejemplo, mediante un anuncio televisivo o vía redes sociales sobre la venta de departamentos, entre otros.\n\nEn base a esta, el consumidor puede realizar distintas acciones con la finalidad de obtener mayores referencias sobre los inmuebles publicitados. Por ejemplo, visitar la caseta de ventas de un proyecto inmobiliario para averiguar sobre la distribución y precios de un departamento o pedir referencias a terceras personas.\n\nDurante esta etapa, el consumidor puede separar el inmueble, suscribiendo el contrato respectivo con el proveedor.",
+    "source": "0006_1_antes_del_proceso_de_compra_publicidad_y_solicitud_de_info.txt"
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "2. Durante el proceso de compra: Contratación y pagos\n\nEl consumidor suscribe el contrato de compraventa y realiza el pago, parcial o total, del precio establecido para el inmueble.",
+    "source": "0007_2_durante_el_proceso_de_compra_contratación_y_pagos.txt"
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "3. Entrega del bien\n\nEl proveedor entrega el bien al consumidor, quien tiene el derecho de expresar su aprobación o desaprobación sobre las características, condiciones y estado en general del bien que se entrega.\n\nAsimismo, el proveedor debe brindar al consumidor un servicio adicional después de la venta del bien inmueble, que comprende: la ejecución de periodos de garantía, la recepción y atención de sugerencias, reclamos o solicitudes de servicios, entre otros.",
+    "source": "0008_3_entrega_del_bien.txt"
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. EL DEBER DE INFORMACIÓN E IDONEIDAD EN EL PROCESO DE COMPRA DE UN BIEN INMUEBLE",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "Publicidad y solicitud de información\nContratación y pagos\nEntrega del bien\n\nIMPORTANTE\n• El proveedor inmobiliario tiene la obligación de ofrecer información clara, veraz y accesible, durante todas las etapas del proceso de compra de un inmueble.\n• En esta línea, el proveedor tiene la obligación de cumplir con las expectativas generadas sobre el consumidor, en función de dos tipos de información:\n(i) La ofrecida en la publicidad y absolución de consultas (primer momento); y,\n(ii) La que se pactó en el contrato (segundo momento).\n• El proveedor debe cumplir con los acuerdos u ofrecimientos realizados en las primeras dos etapas, desde que se suscribe el contrato de compraventa, hasta el momento posterior a la entrega del inmueble.\n• El proveedor no puede modificar unilateralmente las condiciones pactadas sin consentimiento del consumidor.",
+    "source": "0009_publicidad_y_solicitud_de_información.txt"
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "El proveedor inmobiliario debe establecer e implementar medidas para que el consumidor acceda fácilmente y de manera gratuita, como mínimo, a la siguiente información:\n\nII.1.1. Información sobre el proveedor\n\n*   La identificación del proveedor inmobiliario:\n\n    En caso se trate de una persona natural:\n    *   Documento Nacional de Identidad (DNI) del proveedor o Registro Único de Contribuyentes (RUC).\n    En caso se trate de una persona jurídica:\n    *   Partida Registral de la persona jurídica.\n\n*   Nombres de los representantes legales y sus vigencias de poder debidamente inscritas.\n*   Registro Único de Contribuyentes (RUC).\n\n*   Los teléfonos de contacto, dirección de correo electrónico y/o página web. Deben encontrarse activos, y su variación debe ser comunicada al consumidor.\n\n*   Los antecedentes del proveedor y su comportamiento en el mercado de productos y servicios inmobiliarios, tanto en el caso de una persona natural como jurídica.\n\nAl respecto, el proveedor establece e implementa medidas para que el consumidor conozca la existencia de la Central de Información de Promotores Inmobiliarios y/o Empresas Constructoras de Unidades Inmobiliarias y del portal Mira a Quién le Compras, para que pueda verificar el comportamiento del proveedor en el mercado inmobiliario.\n\nEl consumidor podrá solicitar información sobre el historial del proveedor inmobiliario, revisando su reputación, proyectos anteriores y cumplimientos contractuales.",
+    "source": "0010_el_proveedor_inmobiliario_debe_establecer_e_implementar_medi.txt"
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.1.2. Información sobre el inmueble\n\n*   La descripción del inmueble, cantidad de unidades inmobiliarias y sus características relevantes, tales como, el área exclusiva y común, medidas perimétricas, acabados del inmueble, entre otras. Las características relevantes del inmueble, son aquellas que puedan ser fundamentales para que el consumidor tome su decisión de compra. Por ejemplo, las áreas (exclusivas y comunes), los acabados, las medidas perimétricas, y cualquier otra que resulte trascendente.\n\n*   La condición sismorresistente del inmueble que se oferta, presentándose la documentación que lo acredite, de ser solicitado por el consumidor.\n\n*   La partida registral del inmueble en caso de bienes inscritos, o el título que acredite que el proveedor es el propietario del inmueble, en caso de bienes no inscritos.\n\n*   El estado del proceso de habilitación urbana o de licencia de edificación, según corresponda.\n\n*   Plano del inmueble ofertado. Si alguno de los aspectos del plano tiene únicamente carácter referencial, esto debe ser comunicado al consumidor.\n\n*   Identificación y características del inmueble: ambientes, áreas exclusivas y comunes, acabados, servicios públicos domiciliarios con los que cuenta, diferenciando los servicios propios de los servicios comunes, como la electricidad, agua potable y alcantarillado.\n\n*   Si se trata de bienes futuros, el documento que acredite la aprobación del proyecto de habilitación urbana o el anteproyecto de arquitectura, según corresponda.\n\n*   Si se trata de bienes terminados, copia de la hoja de resumen (HR), predio urbano (PU), acreditación de no adeudo de tributos o de la situación tributaria del inmueble; y, partida registral donde conste la independización del inmueble, de ser el caso.",
+    "source": "0011_ii12_información_sobre_el_inmueble.txt"
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.1.3. Información relacionada con la operación de compraventa\n\n*   Vigencia de la oferta.\n\n*   El precio de venta del inmueble ofertado, incluyendo la forma de pago, la moneda, el plazo en el que el consumidor debe realizarlo, los gastos y tributos, promociones y/o descuentos.\n\n    En caso el pago se realice en cuotas, se debe especificar el cronograma debidamente desagregado, que comprende la fecha y monto exacto de cada cuota. En el caso de existir promociones y/o descuentos, deben especificarse claramente las condiciones, así como las unidades disponibles para el consumidor y el plazo de dicha promoción.\n\n*   Información sobre los canales para la atención de consultas, quejas y reclamos que pudieran ser dirigidos al proveedor, o los canales de denuncia ante las autoridades competentes. Estos canales pueden ser: página web, correo electrónico o medio físico.\n\n    En caso se trate de un medio físico, el proveedor debe exhibirlo a través de un aviso colocado en un lugar visible y fácilmente accesible al público, con las mismas dimensiones establecidas para el aviso del Libro de Reclamaciones.\n\n*   Condiciones de la separación del inmueble, que comprende: vigencia, causales y efectos de la resolución del contrato, como el pago de gastos administrativos y penalidades. El proveedor debe informar previamente al consumidor sobre los montos que serán retenidos bajo el concepto de gastos administrativos o penalidad en caso de incumplimiento, precisando a cuánto ascienden.\n\nEn la venta de inmuebles sobre planos o de bienes futuros y de inmuebles existentes, el proveedor debe devolver el íntegro de los pagos adelantados efectuados por todo concepto a sola solicitud del consumidor, en caso de que la prestación no se llegue a ejecutar por causas atribuibles al proveedor.",
+    "source": "0012_ii13_información_relacionada_con_la_operación_de_compraventa.txt"
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "*   Si el precio de venta del inmueble o parte de este es financiado por el propio proveedor inmobiliario, se debe informar de manera previa y detallada, e incluir en el contrato, una hoja resumen que contenga la siguiente información:\n\n    *   Monto de los intereses y tasas de interés aplicables, así como las cláusulas penales, en caso se establezcan en el contrato.\n    *   Monto y detalle de cualquier cargo adicional, en caso de existir.\n    *   Número de cuotas o pagos a realizar, su periodicidad y fecha de pago.\n    *   Los beneficios otorgados por el proveedor, en caso el consumidor realice el pago de las cuotas en el tiempo y forma pactados.\n    *   La cantidad total a pagar por el inmueble, incluyendo el precio al contado, más los intereses y gastos administrativos.\n    *   En caso de existir garantías y avales, la explicación de sus alcances y obligaciones.\n    *   El derecho de efectuar un pago anticipado o prepago de los saldos, en forma total o parcial, explicando la reducción de intereses compensatorios generados al día de pago y la liquidación de comisiones y gastos derivados de las cláusulas contractuales pactadas.\n    *   Cualquier otra información que sea relevante.\n\n    La hoja resumen debe ser suscrita por el proveedor y el consumidor en señal de conformidad. El pago anticipado o prepago de los saldos, no puede estar afecto al cobro de penalidades, multas o cobros de naturaleza similar, por parte del proveedor.",
+    "source": "0013_si_el_precio_de_venta_del_inmueble_o_parte_de_este_es_financ.txt"
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "*   Si el financiamiento del precio de venta del inmueble o una parte es otorgado por una entidad financiera, es ésta la que detalla las condiciones del préstamo, de acuerdo con las disposiciones del Código y las emitidas por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones - SBS.\n\nToda la información relacionada a los pagos que debe realizar el consumidor sobre el precio de venta del inmueble, debe detallar de manera precisa, el monto y la forma de pago, así como la fecha en la que se debe realizar.\nEs importante que el consumidor conozca el monto al que ascenderá la retención de dinero, en caso el proveedor aplique una cláusula penal por incumplimiento de contrato.\nEs importante que el proveedor habilite al consumidor más de un medio alternativo de pago.",
+    "source": "0014_si_el_financiamiento_del_precio_de_venta_del_inmueble_o_una_.txt"
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.1. Información mínima durante el primer momento: Publicidad y solicitud de información.",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.1.4. Otra información relevante\n\nAsimismo, el proveedor inmobiliario tiene la obligación de informar al consumidor sobre la existencia de:\n\n*   La Central de Información de Promotores Inmobiliarios y/o Empresas Constructoras de Unidades Inmobiliarias\n\n    A través de la plataforma virtual administrada por el Ministerio de Vivienda, Construcción y Saneamiento, el consumidor podrá encontrar información sobre los promotores inmobiliarios y/o empresas constructoras de unidades inmobiliarias, relacionada con sus antecedentes y evolución, que comprende: el nombre de los accionistas, la frecuencia y calidad de transacciones comerciales, la existencia de sanciones impuestas, los indicadores de calidad o el cumplimiento de normas técnicas, entre otros.\n\n*   El Portal Mira a Quién le Compras\n\n    A través de la plataforma virtual, el consumidor podrá conocer e identificar si el proveedor de bienes y servicios inmobiliarios registra denuncias y sanciones impuestas por el Indecopi; así como, visualizar el ranking de los proveedores sancionados en el sector de construcción e inmobiliarios.",
+    "source": "0015_ii14_otra_información_relevante.txt"
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.2. Información mínima durante el segundo momento: Suscripción del contrato y pago del precio",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "Una vez que el consumidor ha recibido la información suficiente y necesaria para decidir la compra de un inmueble, corresponde la suscripción del contrato de compraventa.\n\nEn esta línea, el proveedor asume la obligación de redactar el contrato de compraventa en un lenguaje accesible al consumidor, que debe contener como mínimo, la siguiente información:\n\n*   Identificación de las partes contratantes y sus domicilios legales.\n*   Identificación del inmueble materia de venta.\n*   Identificación de la partida registral del inmueble materia de la venta o del terreno matriz, si es que se trata de un bien futuro.\n*   Identificación del área exclusiva y común, de ser el caso, medidas perimétricas, acabados del inmueble y las características relevantes.\n*   Precio de venta del inmueble ofertado.\n*   Forma de pago y plazo en que se realizará.\n*   Plazo, fecha y condiciones expresas sobre la entrega del inmueble.\n*   Penalidades por incumplimiento de obligaciones, en caso se hubiesen pactado, especificando los montos y supuestos de aplicación.\n*   Mecanismos para la solución de controversias.\n*   La obligación del proveedor de firmar todos los documentos necesarios para perfeccionar la transferencia del inmueble.",
+    "source": "0016_una_vez_que_el_consumidor_ha_recibido_la_información_suficie.txt"
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.2. Información mínima durante el segundo momento: Suscripción del contrato y pago del precio",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "Cabe indicar que, a la firma del contrato de compraventa, el proveedor debe entregar al consumidor, la documentación que contenga la siguiente información:\n\n*   Si se trata de lotes de bienes futuros (aquellos inmuebles que aún no se encuentran construidos, también conocidos como inmueble “en planos”):\n    *   Para lotes de terreno en proyectos de habilitación urbana:\n        *   Resolución emitida por la municipalidad correspondiente que aprueba el proyecto de habilitación urbana, incluyendo el plano correspondiente.\n        *   Plano de la lotización, detallando la ubicación del lote.\n        *   Plano del lote, que debe indicar el área y sus medidas perimétricas.\n        *   Características de la habilitación urbana.\n    *   Para edificaciones futuras:\n        *   Aprobación municipal del anteproyecto o proyecto.\n        *   Plano de distribución.\n        *   Características de los acabados, servicios públicos domiciliarios, áreas comunes y otras relevantes.\n\n*   Si se trata de bienes terminados:\n    *   Copia de la partida registral.\n    *   Copia de los planos de las instalaciones de los servicios del inmueble.\n    *   En caso de propiedad común, copia de los planos de servicios comunes, los que deben ser entregados a la junta de propietarios.\n\nPara iniciar el trámite de compraventa, el proveedor y el consumidor deben acudir ante una notaría a nivel nacional, en la que se redactará la escritura pública que contiene la minuta.\nPosteriormente, la escritura pública deberá ser presentada ante la Superintendencia Nacional de Registros Públicos – SUNARP para la inscripción de la compraventa, con la que se otorga al consumidor seguridad y protección sobre el bien inmueble adquirido.",
+    "source": "0017_cabe_indicar_que_a_la_firma_del_contrato_de_compraventa_el_p.txt"
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.3. Entrega del bien",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.3. Entrega del bien\n\nToda la información recibida por el consumidor generará en él una expectativa de que el proveedor cumplirá todos los acuerdos y ofrecimientos recibidos durante el proceso de compra, así como el respeto de sus derechos reconocidos por el Código y otras normas complementarias de protección al consumidor.\n\nAsí, al momento de la entrega del inmueble, el consumidor tiene el derecho de expresar por escrito en el acta de entrega del inmueble:\n\na. Su aprobación sobre las características, condiciones y estado en general del bien inmueble.\n\nb. Su desaprobación, en caso el inmueble no corresponda a las características o condiciones previstas en el contrato de compraventa.\n\nResulta indispensable que el consumidor deje constancia de las disconformidades verificadas al momento de la entrega del inmueble, a efectos de contar con algún medio probatorio para sustentar un eventual reclamo o denuncia administrativa contra el proveedor.\n\nLas obligaciones del proveedor inmobiliario no terminan con la entrega de los inmuebles al consumidor, debido a que debe garantizar que sus características sean las mismas que se ofrecieron y se pactaron en las dos primeras etapas del proceso de compra, incluidas las que correspondan a las áreas comunes, así como aspectos legales.\nDe no ser así, es obligación del proveedor corregir tal situación para satisfacer la expectativa del consumidor. En este supuesto, el proveedor debe realizar el saneamiento de los aspectos que no estuvieron conformes con lo pactado u ofrecido.",
+    "source": "0018_ii3_entrega_del_bien.txt"
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.3. Entrega del bien",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "*   Saneamiento físico\n    Está relacionado a los componentes, materiales o estructuras del inmueble, y responde a la obligación del proveedor de corregir los errores y defectos presentes en el inmueble al momento de su entrega.\n    Cabe precisar que los errores o defectos pueden ser advertidos al momento de la recepción del inmueble por parte del consumidor, o de manera posterior.\n    Dentro de las observaciones que pueden ser materia de saneamiento encontramos:\n\n    En caso de venta de inmuebles futuros\n    *   Defectos, deficiencias u otras condiciones que desmedren el valor del inmueble que se le entrega. Por ejemplo, el departamento cuenta con un metraje menor al ofrecido.\n    *   Defectos, deficiencias u otras condiciones que impidan o limiten el uso del inmueble. Por ejemplo, falta de implementación de áreas comunes.\n\n    En caso de venta de inmuebles que no son de estreno (o de segunda mano)\n\n    *   Modificaciones de las características y condiciones del inmueble realizadas por el proveedor después de la suscripción del contrato de compraventa y antes de la entrega del inmueble.\n\n    En caso de venta de lotes de terreno en proceso de habilitación urbana\n\n    *   Cambios en el metraje fuera de los rangos acordados.\n    *   Ubicación del lote.\n    *   Mobiliario urbano circundante dentro del proyecto de habilitación urbana.\n    *   Condiciones que impidan o limiten el uso del inmueble.\n\n    Ante las situaciones antes descritas, el consumidor puede hacer uso de los mecanismos legales pertinentes para solicitar la reparación, la reducción del precio y la resolución o rescisión del contrato, según corresponda.",
+    "source": "0019_saneamiento_físico.txt"
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.3. Entrega del bien",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "*   Saneamiento legal\n    Es obligación del proveedor realizar los trámites de conformidad de obra, independización e inscripción del inmueble en los Registros Públicos.\n\n    Para dar cumplimiento a esta obligación, el proveedor deberá realizar los trámites de manera idónea y en un plazo razonable, actuando con la debida diligencia ante las entidades administrativas correspondientes, a fin de evitar retrasos en la independización e inscripción de los inmuebles.\n\n    Parte de la diligencia que el consumidor puede esperar del proveedor inmobiliario, es que este realice el seguimiento de los trámites y levante oportunamente las observaciones de las entidades administrativas correspondientes.",
+    "source": "0020_saneamiento_legal.txt"
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.3.1. Sobre la ejecución de garantías",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.3.1. Sobre la ejecución de garantías\n\nEl proveedor tiene la obligación de implementar y mantener procedimientos para ofrecer información completa sobre los periodos de garantía, que son los plazos en los que se encargará de la reparación de los defectos que se presenten con posterioridad a la entrega del inmueble, que pueden ser de dos tipos:\n\n*   Si se trata de componentes o materiales del inmueble, el periodo de garantía será establecido por el proveedor o acordado por las partes durante las dos primeras etapas del proceso de compra.\n*   Si se trata de aspectos estructurales, el plazo mínimo es de diez (10) años, que se contabiliza desde que se emite el certificado de finalización de obra y recepción de obra por parte de la municipalidad.\n\nEl proveedor debe entregar al consumidor el manual de uso del propietario, que debe contener como mínimo:\n\n*   La descripción de los componentes del inmueble.\n*   Los cuidados para el mantenimiento adecuado del inmueble.\n*   Los posibles riesgos derivados del mal uso.",
+    "source": "0021_ii31_sobre_la_ejecución_de_garantías.txt"
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II.3.2. Servicio postventa",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "II.3.2. Servicio postventa\n\nPor otro lado, el proveedor inmobiliario debe:\n\n*   Disponer de personal idóneo y ofrecer diferentes alternativas de contacto para la recepción de sugerencias, consultas, reclamos o solicitudes de servicio.\n*   Ofrecer un servicio de atención al cliente, a fin de dar respuesta a las comunicaciones y solicitudes formuladas por el consumidor dentro del plazo establecido por el proveedor.\n\n    Si no es posible atender las comunicaciones y solicitudes del consumidor por causas ajenas al proveedor, aquel tiene derecho a que se le informe cuales son.\n\n*   Establecer un procedimiento de atención de quejas, que sea sencillo y rápido y que incluya el registro y seguimiento.",
+    "source": "0022_ii32_servicio_postventa.txt"
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ HACER SI EL INMUEBLE O EL SERVICIO DEL PROVEEDOR NO COINCIDE CON LO ACORDADO U OFRECIDO?",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "¿QUÉ HACER SI EL INMUEBLE O EL SERVICIO DEL PROVEEDOR NO COINCIDE CON LO ACORDADO U OFRECIDO?\n\nEn caso de que el inmueble recibido, o el servicio brindado por parte del proveedor inmobiliario, posea defectos o sea distinto al ofrecido o acordado durante las dos primeras etapas del proceso de compra, el consumidor dispone de las siguientes alternativas:\n\n1.  Presentar un reclamo ante el proveedor inmobiliario, a través del Libro de Reclamaciones o cualquier otro medio idóneo.\n\n    Interpuesto el reclamo, el proveedor contará con un plazo máximo de quince (15) días hábiles improrrogables para brindar una respuesta.\n\n    El proveedor se encuentra obligado a implementar un Libro de Reclamaciones, de naturaleza física o virtual, con las características señaladas por su reglamento.\n\n2.  Presentar un reclamo ante el Indecopi a través de la plataforma “Reclama Virtual”, que consiste en una herramienta digital gratuita, a la que el consumidor puede acceder desde cualquier computadora o dispositivo móvil para registrar su reclamo. Un colaborador de la institución revisará el caso y convocará a las partes a una audiencia de conciliación para arribar a una posible solución.\n\n3.  Presentar un reclamo ante la Defensoría del Cliente Inmobiliario – DCI a través de la herramienta digital gratuita.\n\n    La Defensoría del Cliente Inmobiliario representa un mecanismo privado a través del cual se ofrece una solución directa, especializada, rápida y gratuita de reclamos, sin recurrir a la vía administrativa o judicial, en las relaciones de consumo entre consumidores y empresas inmobiliarias adheridas a la DCI.",
+    "source": "0023_qué_hacer_si_el_inmueble_o_el_servicio_del_proveedor_no_coin.txt"
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ HACER SI EL INMUEBLE O EL SERVICIO DEL PROVEEDOR NO COINCIDE CON LO ACORDADO U OFRECIDO?",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "4.  Presentar una denuncia administrativa ante el Indecopi por la falta de idoneidad o calidad sobre el producto o servicio inmobiliario.\n\n    En caso de propiedad común, cualquiera de los propietarios de los departamentos de un edificio puede denunciar al proveedor por defectos en las áreas comunes, no siendo necesaria la participación de la junta de propietarios o de todos los propietarios para ello.\n\n5.  Acudir al arbitraje de consumo que consiste en un servicio gratuito de solución de conflictos de consumo, donde un tercero denominado árbitro resolverá la controversia de manera definitiva, a través de un documento denominado laudo.\n\n    El arbitraje de consumo se caracteriza por ser voluntario, gratuito, sencillo, vinculante. Es el único mecanismo donde podría otorgarse indemnizaciones, siempre que el daño invocado se encuentre acreditado; además de ser un mecanismo libre de multas al proveedor.",
+    "source": "0024_4_presentar_una_denuncia_administrativa_ante_el_indecopi_por.txt"
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ HACER SI EL INMUEBLE O EL SERVICIO DEL PROVEEDOR NO COINCIDE CON LO ACORDADO U OFRECIDO?",
+    "categoria_consumo": [
+      "inmuebles"
+    ],
+    "texto": "Consideraciones para la denuncia administrativa:\n*   El consumidor debe probar la existencia de un defecto en el bien o servicio. Para ello, puede valerse de pruebas directas, y en caso no cuente con estas, de pruebas indiciarias.\n*   En caso la denuncia administrativa sea estimada, implicará una sanción para el proveedor, además de una medida correctiva en favor del consumidor.\n*   El proveedor debe demostrar que el defecto no fue ocasionado por responsabilidad suya, sino por la existencia de una causa objetiva, justificada y no previsible, caso fortuito o fuerza mayor, o por la imprudencia del propio consumidor afectado.\n*   El proveedor no puede alegar que los defectos no le fueron comunicados, como causal de exoneración de responsabilidad administrativa.\n*   La acción para sancionar las infracciones al Código prescribe a los dos (2) años desde que fueron cometidas, o desde que el consumidor tuvo conocimiento de los hechos que dieron lugar a la denuncia. Si transcurre el plazo antes señalado, el Indecopi pierde la potestad de investigar y sancionar las infracciones cometidas por el proveedor, y el consumidor puede acudir al Poder Judicial para interponer una acción contenciosa administrativa.",
+    "source": "0025_consideraciones_para_la_denuncia_administrativa.txt"
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Guía sobre productos y servicios inmobiliarios",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "BASE LEGAL",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "BASE LEGAL\n\n*   Constitución Política del Perú.\n*   Decreto Legislativo n° 295, Código Civil.\n*   Ley n° 29571, Código de Protección y Defensa del Consumidor.\n*   Reglamento del Libro de Reclamaciones del Código de Protección y Defensa del Consumidor, aprobado mediante Decreto Supremo n° 011-2011-PCM.\n*   Ley n° 29203, Ley que crea la Central de Información de Promotores Inmobiliarios y/o empresas constructoras de unidades inmobiliarias.\n*   Decreto Legislativo n° 1044 Ley de Represión de la Competencia Desleal.",
+    "source": "0026_base_legal.txt"
+  }
+]

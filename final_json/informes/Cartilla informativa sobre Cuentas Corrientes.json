@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué es una cuenta corriente?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Es un contrato en virtud del cual una empresa se obliga a cumplir las órdenes de pago de su cliente hasta por el importe del dinero que hubiera depositado en ella o del crédito que se haya estipulado, esto último en el caso de las empresas autorizadas para conceder sobregiros.",
+    "source": "0001_chunk.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué empresas del sistema financiero pueden recibir depósitos en cuenta corriente?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Los bancos\nLas financieras\nOtras empresas del sistema financiero autorizadas a captar recursos del público, siempre que cumplan con los requisitos establecidos en el artículo 290° de la Ley N° 26702.",
+    "source": "0002_chunk.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuáles son los requisitos para la apertura de una cuenta corriente por parte de una persona natural?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Los requisitos mínimos son:\nCopia de documento de identidad.\nReferencia de 2 personas, a satisfacción de la empresa, sobre la idoneidad moral y económica del solicitante.\nDocumentos que a criterio de la empresa acrediten nivel de ingresos suficiente.\nDomicilio individualizado y determinado en el país.",
+    "source": "0003_chunk.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuáles son los requisitos para la apertura de una cuenta corriente por parte de una persona jurídica?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Los requisitos mínimos son:\nDocumentos que acrediten constitución e inscripción en Registros Públicos.\nReferencia de 2 personas, a satisfacción de la empresa del sistema financiero, sobre la idoneidad moral y económica del solicitante y de su representante autorizado.\nDocumentos que a criterio de la empresa del sistema financiero acrediten nivel de ingresos suficiente.\nCopia certificada del poder del representante autorizado para operar con cuentas corrientes.\nNúmero de RUC de la persona jurídica.\nCopia del documento de identidad del representante del solicitante facultado a operar la cuenta corriente.\nDomicilio del solicitante, perfectamente individualizado y determinado en el país.",
+    "source": "0004_chunk.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuáles son las obligaciones de las empresas del sistema financiero, en la apertura de cuentas corrientes?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Verificar la identidad del solicitante.\nRegistrar la firma e impresión dactilar de la persona que opere la cuenta corriente.\nComprobar que el solicitante no se encuentre prohibido de abrir cuentas corrientes por haber girado cheques sin fondos.\nVerificar la veracidad de la información proporcionada por el solicitante, en especial su domicilio.\nCelebrar un contrato de apertura de cuenta corriente.\nAdoptar medidas para conservar registros de la identidad de los solicitantes.",
+    "source": "0005_chunk.txt"
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué información debe contener el contrato de cuenta corriente?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Señalar expresamente si implica o no el uso de chequera.\nEstablecer los casos en que la empresa del sistema financiero puede cerrar la cuenta corriente, lo cual deberá ser comunicado al titular en la forma y plazo que señala el contrato.\nPrecisar los casos en los que dicha comunicación puede efectuarse con posterioridad al cierre de la cuenta.",
+    "source": "0006_chunk.txt"
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué facultades tiene la empresa del sistema financiero respecto a las cuentas corrientes?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "La empresa del sistema financiero puede negarse a la solicitud de cierre de la cuenta corriente por parte del titular en caso dicha cuenta mantenga saldo deudor o el cliente tuviese obligaciones pendientes de pago con dicha empresa.\nLa empresa del sistema financiero puede remitir en cualquier momento una comunicación al cliente advirtiéndole de la existencia de saldos deudores en su cuenta corriente y requiriéndole el pago.\nTranscurridos 15 días hábiles de la recepción de la comunicación sin observaciones, la empresa está facultada a girar contra el cliente una letra a la vista por el saldo más los intereses generados en dicho período.",
+    "source": "0007_chunk.txt"
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿En qué casos se aplica el cierre de cuentas corrientes por giro de cheques sin fondo?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "De acuerdo a lo establecido en la Ley de Títulos Valores, Ley N° 27287, una cuenta corriente puede ser cerrada por giro de cheques sin fondos si:\nEn 6 meses, la empresa del sistema financiero girada rechace y deje la constancia de falta de pago, por carecer de fondos totales o parciales, en 2 cheques.\nEn 1 año, la empresa del sistema financiero girada rechace 10 veces el pago de uno o más cheques por carecer de fondos totales o parciales.\nLa empresa del sistema financiero sea notificada del inicio de proceso penal por libramiento indebido o proceso civil, de cheques rechazados por falta de fondos.\nAlgún titular de cuenta corriente resulte incluido en relación que publique la SBS.\nOtros hechos previstos por ley.\nLas empresas del sistema financiero podrán acordar con sus clientes otras condiciones no menos exigentes que las antes señaladas.",
+    "source": "0008_chunk.txt"
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuáles son los impedimentos para abrir nuevas cuentas corrientes con giro de cheques?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Están impedidos de abrir nuevas cuentas corrientes, aquellas personas que hubieran girado cheques sin fondos, por los plazos que se indican a continuación:\nPrimera vez: 1 año\nPrimera reincidencia: 3 años\nSegunda reincidencia: Permanente\nDurante el mismo período, las empresas del sistema financiero deben abstenerse de otorgar avances o sobregiros a favor de los titulares de las cuentas cerradas. El período de cómputo de reincidencias es de 6 años.",
+    "source": "0009_chunk.txt"
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué información publica la SBS en relación a las cuentas cerradas?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "La SBS publica mensualmente en el Diario Oficial \"El Peruano\", dentro de los 10 primeros días calendario de cada mes, la relación de cuentas corrientes cerradas por giro de cheques sin fondos, indicando el plazo de duración de la sanción de cierre.\nAdemás dispone que dentro de los 10 días calendario posteriores a la publicación, las demás empresas del sistema financiero cierren las cuentas corrientes con giro de cheques de los titulares cuyas cuentas han sido cerradas.",
+    "source": "0010_chunk.txt"
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "En caso la empresa del sistema financiero haya incurrido en un error al cerrar una cuenta corriente. ¿Cómo debe rectificar este cierre indebido?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "La rectificación del cierre indebido de una cuenta corriente es de responsabilidad de la empresa del sistema financiero y ésta debe proceder de la siguiente manera:\nComunicar la rectificación a la SBS.\nComunicar por escrito el error incurrido a otras empresas del sistema financiero y centrales de riesgo.\nPublicar la rectificación en el mismo diario en que se realizó la publicación errónea.\nProceder a la reapertura inmediata de la cuenta corriente que el titular mantenga en la empresa.",
+    "source": "0011_chunk.txt"
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué es el cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Es un título valor que constituye una orden de pago del girador a una empresa del sistema financiero girada, a fin de que pague con fondos de su cuenta corriente una cantidad de dinero a favor de un tercero denominado tenedor.",
+    "source": "0012_chunk.txt"
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué información debe contener un cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Número o código de identificación.\nLugar y fecha de su emisión.\nOrden de pagar una cantidad determinada de dinero expresada en números o letras, o de ambas formas.\nNombre del beneficiario o la indicación de que es al portador.\nNombre y domicilio de la empresa del sistema financiero girada.\nLugar de pago (no esencial)\nNombre y firma del emitente (obligado principal).",
+    "source": "0013_chunk.txt"
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuándo y cómo se debe pagar un cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Un cheque se debe pagar a la vista el día de su presentación (excepción cheque de pago diferido).\nEl cheque debe ser pagado por su valor nominal y en la misma unidad monetaria que expresa su importe.\nEl plazo de presentación de un cheque para su pago es de 30 días.\nSi no hay revocación ni solicitud de suspensión de pago del cheque, la empresa del sistema financiero puede pagar hasta un año de emitido el cheque, si hay fondos disponibles.",
+    "source": "0014_chunk.txt"
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuál es la responsabilidad de una empresa del sistema financiero por negativa injustificada al pago de cheques?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "La empresa del sistema financiero que sin causa justificada se niegue a pagar un cheque, responde por los daños y perjuicios que su negativa origine al emitente.",
+    "source": "0015_chunk.txt"
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuándo una empresa del sistema financiero no debe pagar un cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Cuando no existan fondos disponibles, salvo que decida sobregirar la cuenta.\nCuando el cheque esté a simple vista raspado, adulterado, borrado o falsificado.\nCuando se presente fuera de los 30 días de su emisión y el emitente hubiera notificado su revocatoria.\nCuando se presente dentro de los 30 días de su emisión y el emitente o, en su caso, el beneficiario o el último tenedor legítimo haya solicitado la suspensión de su pago.\nCuando el cheque sea a la orden y el derecho del tenedor no estuviere legitimado con una serie de endosos.\nCuando conteniendo la cláusula de “intransferible” u otra equivalente, no lo cobrase el beneficiario o el endosatario impedido de endosar, o una entidad financiera a la que haya sido transferido para su cobro.\nCuando el cheque sea al portador y quien exige su pago no se identifique ni (o tampoco) firme en constancia de cancelación parcial o total.\nCuando se trate de un cheque cruzado o para abono en cuenta, o de pago diferido u otro especial, y no se presentase al cobro de acuerdo con las disposiciones legales sobre la materia.",
+    "source": "0016_chunk.txt"
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué características debe contener el endoso de un cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "El endoso es la forma de transmisión de un cheque a la orden y debe constar en el reverso del título respectivo o en hoja adherida a él, con los siguientes requisitos:\nNombre del endosatario.\nClase de endoso.\nFecha de endoso.\nNombre, número del documento oficial de identidad y firma del endosante.\nPueden omitirse cualquiera de los requisitos anteriores excepto el último, pues los datos del endosante son indispensables.",
+    "source": "0017_chunk.txt"
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué sucedería en caso de deterioro parcial del cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Si subsisten los datos para la identificación del cheque, el obligado principal debe reponerlo por otro, siempre que el tenedor lo exija mediante comunicación notarial, contra entrega del título original, debidamente anulado. Si además del obligado principal, el cheque hubiese sido suscrito por otras personas, éstas si el tenedor lo exige mediante comunicación notarial, deberán intervenir y firmar en el nuevo cheque, con derecho a testar sus firmas en el documento original. Este pedido debe ser atendido en un plazo no mayor de tres días hábiles.",
+    "source": "0018_chunk.txt"
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo se debe proceder en el caso de deterioro total, pérdida o robo de un cheque?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "En caso haya desaparecido cualquier dato necesario para la identificación del cheque, éste haya sido extraviado o sustraído, el tenedor puede solicitar al juez la ineficacia del cheque y que se le autorice a exigir el cumplimiento de las obligaciones o la emisión de un duplicado quedando anulado el original, bajo responsabilidad de quien solicita el trámite.",
+    "source": "0019_chunk.txt"
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Cartilla informativa sobre Cuentas Corrientes",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Si giro un cheque para ser cobrado en fecha posterior al día de la emisión, podría ser cobrado antes de dicha fecha?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Se considera no puesta la fecha post datada o una cláusula que consigne un plazo para la negociación o pago del cheque, con excepción del Cheque de Pago Diferido.",
+    "source": "0020_chunk.txt"
+  }
+]

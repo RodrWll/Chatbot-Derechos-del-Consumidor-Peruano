@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. Preguntas Frecuentes y Requisitos de Elegibilidad",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Quiénes se pueden desafiliar del Sistema Privado de Pensiones (SPP) y regresar al Sistema Nacional de Pensiones (SNP)?\nQuienes ingresaron al SNP hasta el 31 de diciembre de 1995, y que al momento de presentar la solicitud de desafiliación cumplen con los años de aportaciones para tener una pensión de jubilación en el SNP.\nQuienes al momento de la afiliación a este sistema privado, cuenten con todos los requisitos para obtener una pensión de jubilación en el SNP.",
+    "source": "0001_quiénes_se_pueden_desafiliar_del_sistema_privado_de_pensione.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. Preguntas Frecuentes y Requisitos de Elegibilidad",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Si accedo a la Ley 27617 (Ley que crea la pensión mínima en el SPP, el Régimen de Jubilación Adelantada DL 19990 del SPP) ¿me puedo desafiliar?\nNo, porque la ley contempla que estos afiliados estarán protegidos en el SPP con una pensión igual a la que recibirían en el SNP. Además, por efecto de dicha ley no deberán pagar el diferencial de aportes al SNP.",
+    "source": "0002_si_accedo_a_la_ley_27617_ley_que_crea_la_pensión_mínima_en_e.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. Preguntas Frecuentes y Requisitos de Elegibilidad",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Existe fecha límite para presentar la solicitud de desafiliación?\nNo existe fecha límite. El afiliado puede presentar su solicitud cuando lo considere conveniente.\n\n¿El desistir de realizar el trámite o nunca firmar la declaración jurada, impide que en el futuro el afiliado pueda nuevamente presentar una solicitud de desafiliación?\nNo. Las situaciones antes señaladas no impiden que el afiliado pueda presentar en el futuro una nueva solicitud de desafiliación.\n\n¿Qué entidad emite la resolución de desafiliación?\nLa SBS, una vez que el afiliado ha firmado la declaración jurada, procederá a emitir la correspondiente Resolución de Desafiliación del SPP.",
+    "source": "0003_existe_fecha_límite_para_presentar_la_solicitud_de_desafilia.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. Proceso de Desafiliación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué es lo primero que debo hacer?\nEl afiliado, o un beneficiario, debe acercarse personalmente a la AFP, o a los locales que se establezcan, para recibir orientación general.\n\n¿Con qué documento inicio el trámite de desafiliación?\nCon el Formato de Solicitud de Desafiliación que le brindará la AFP, en el que deberá llenar la información básica contenida en las Secciones I y II, y adjuntar los documentos que respalden sus aportes al SNP, como por ejemplo boletas de pago o liquidaciones de pago, entre otros. Para los períodos ya verificados en el Bono de Reconocimiento, no será necesario presentar documentación.",
+    "source": "0004_qué_es_lo_primero_que_debo_hacer.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. Proceso de Desafiliación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Cómo acredito la fecha de ingreso al SNP antes del 31 de diciembre de 1995?\nLos Asegurados obligatorios deben presentar el original de algún documento que pruebe la existencia de, al menos, una aportación al SNP.\nLos Asegurados facultativos lo harán mediante la correspondiente resolución de inscripción o comprobantes de pago en original.\n\n¿Qué tendrá en cuenta la ONP para el proceso de calificación de los requisitos en el SNP?\nA partir del período de devengue abril de 2007, la ONP acreditará los períodos en los que se retuvo el aporte y además se pagó dicho descuento.\nPara períodos anteriores a abril de 2007, no reconocidos en el Bono de Reconocimiento confirmado o Título de Bono de Reconocimiento, se verificarán las retenciones que hizo el empleador, y las pruebas adicionales presentadas por el solicitante.\nNo es necesario verificar otra vez los períodos ya reconocidos en el Bono de Reconocimiento.",
+    "source": "0005_cómo_acredito_la_fecha_de_ingreso_al_snp_antes_del_31_de_dic.txt"
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. Proceso de Desafiliación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué información recibirá el afiliado al firmar la solicitud de desafiliación (Secciones I y II)?\nRequisitos para acceder a la desafiliación, así como del procedimiento que deberá seguir; y que al firmar esta solicitud, se suspenderán los trámites (como traslado de fondo o traspaso entre AFP, u otro) que impliquen movimiento de la cuenta individual del afiliado. Además, no será posible iniciar un trámite de Bono de Reconocimiento en tanto se encuentre en evaluación la solicitud de desafiliación.\n\n¿Qué información remitirá la AFP a la ONP?\nLa AFP enviará a la ONP un reporte de situación denominado RESIT-SPP. Este reporte contiene información sobre la pensión estimada en el SPP y los períodos de aporte en el SPP. Dicho reporte se podrá enviar al afiliado, siempre y cuando éste haya dado su conformidad o se haya vencido el plazo para que formule observaciones.",
+    "source": "0006_qué_información_recibirá_el_afiliado_al_firmar_la_solicitud_.txt"
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. Proceso de Desafiliación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Quién se encarga de la calificación del derecho a la desafiliación del SPP?\nLa ONP verificará los aportes efectuados por el afiliado al interior del SNP y sumará los aportes al SPP. Así determinará si alcanza las condiciones que le permitirán desafiliarse. La ONP emitirá el RESIT-SNP, que incluye la estimación de pensión en el SNP, y lo enviará a la AFP.\nLa AFP entregará dicho documento al afiliado para que este, comparándolo con el RESIT-SPP, pueda tomar una decisión informada si quiere proseguir con el trámite.\n\n¿Qué sucede si el afiliado decide proseguir con el trámite?\nDebe suscribir y entregar la Sección III del Formato Solicitud de Desafiliación, que es la Declaración Jurada para la Libre Desafiliación Informada, en la que el afiliado expresa lo siguiente:",
+    "source": "0007_quién_se_encarga_de_la_calificación_del_derecho_a_la_desafil.txt"
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Cartilla informativa sobre desafiliación del Sistema de Pensiones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. Declaración Jurada para la Libre Desafiliación Informada (Sección III)",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Que, conoce los alcances de la irreversibilidad de este trámite, y el cálculo de la deuda a la ONP por el diferencial de aportes previsionales entre el SPP y el SNP.\nQue, sus aportes al SPP, la rentabilidad que hubiera generado y, de ser el caso, el Bono de Reconocimiento, pasarán a formar parte del SNP, por ser éste un sistema de reparto.\nQue, conoce las pensiones anuales estimadas o calculadas que le corresponderían en el SPP y el SNP.\nQue, asumirá el pago del diferencial de aportes previsionales entre el SPP y el SNP, pudiendo efectuar dicho pago según las facilidades establecidas.\nQue, conociendo la ley N° 28991 y normas complementarias, y cumpliendo con las condiciones para desafiliarse, ha decidido proseguir con el trámite de desafiliación.",
+    "source": "0008_que_conoce_los_alcances_de_la_irreversibilidad_de_este_trámi.txt"
+  }
+]

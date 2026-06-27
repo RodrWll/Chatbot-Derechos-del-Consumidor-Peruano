@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 1.- Aprobación del Reglamento\nApruébese el Reglamento del Libro de Reclamaciones a que hace referencia el artículo 150 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor, el cual consta de quince (15) artículos y dos (2) anexos, y forma parte integrante del presente Decreto Supremo.",
+    "source": "0001_artículo_1_aprobación_del_reglamento.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 2.- Vigencia\nEl presente Decreto Supremo, entrará en vigencia a partir del día siguiente de su publicación en el Diario Oficial El Peruano.",
+    "source": "0002_artículo_2_vigencia.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 3.- Publicación\nEl presente Decreto Supremo, el Reglamento y los anexos deberán ser publicados en el Diario Oficial El Peruano, en el Portal del Estado Peruano, en el Portal de la Presidencia del Consejo de Ministros y en el Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual.",
+    "source": "0003_artículo_3_publicación.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 4.- Refrendo\nEl presente Decreto Supremo será refrendado por el Presidente del Consejo de Ministros.",
+    "source": "0004_artículo_4_refrendo.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 1.- Ámbito de aplicación\nLas disposiciones del presente Título son de obligatorio cumplimiento para los proveedores que desarrollen sus actividades económicas en establecimientos comerciales abiertos al público; tomando en consideración la definición detallada en el Artículo 3.2 del presente Reglamento.\nLos consumidores deberán respetar y seguir el procedimiento establecido en la presente norma para el uso del Libro de Reclamaciones.",
+    "source": "0005_artículo_1_ámbito_de_aplicación.txt"
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 2.- Proveedores que desarrollen actividades económicas supervisadas o reguladas\nEn el caso de los proveedores que desarrollen actividades económicas de servicios públicos regulados o se encuentren bajo la supervisión de la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones el procedimiento establecido por el organismo regulador y/o supervisor para la atención de quejas y reclamos de los consumidores deberá entenderse como la implementación y puesta a disposición del Libro de Reclamaciones, siempre y cuando este procedimiento permita dejar constancia de la presentación del reclamo o la queja, de su contenido y que además regule el cómputo de los plazos de atención, así como la puesta a disposición de canales para su presentación. En estos casos los proveedores se regirán por las normas relativas al procedimiento y fiscalización de la atención de quejas y reclamos emitida por dichos organismos.\nAdicionalmente, en el caso de las empresas supervisadas por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, éstas deben cumplir con las siguientes obligaciones:\na) Los sistemas de registro de quejas y reclamos deberán encontrarse a disposición inmediata y accesible al consumidor.\nb) Se habilitará un orden de atención preferente para la recepción de las quejas y reclamos.\nc) Entregarán a los consumidores una copia o constancia de la queja o reclamo presentado, con la información mínima prevista en el Anexo I del presente Reglamento.\nd) Exhibirán el Aviso del Libro de Reclamaciones conforme a lo dispuesto en el artículo 9 del presente Reglamento.\ne) Entregarán la información requerida por el INDECOPI conforme a lo establecido en el artículo 11 del presente Reglamento.\nLa supervisión del cumplimiento de la presente normativa se regirá por las disposiciones contenidas en el Código de Protección y Defensa del Consumidor.",
+    "source": "0006_artículo_2_proveedores_que_desarrollen_actividades_económica.txt"
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 2-A.- Proveedores que desarrollen actividades de transporte de pasajeros\nLos proveedores que desarrollen actividades de transporte público urbano de pasajeros, transporte terrestre interprovincial, transporte terrestre internacional, transporte fluvial deberán habilitar un número telefónico y cualquier otro medio alternativo que permita el ingreso y registro de quejas y reclamos a distancia (correo electrónico, página web, mensaje de texto, etc.), sin perjuicio de la obligación de implementar un Libro de Reclamaciones en sus establecimientos comerciales abiertos al público.\nPara tales efectos los proveedores de los servicios antes señalados difundirán de manera visible dentro de cada unidad de transporte el número telefónico y el medio alternativo elegido para la recepción de quejas y reclamos.\nToda queja y reclamo formulado deberá ser ingresado en forma inmediata por el proveedor en el Libro de Reclamaciones, sea este de naturaleza física o virtual, según corresponda, y cumplir con lo establecido en el presente Reglamento. Durante la recepción del reclamo, el proveedor proporcionará al consumidor un código correlativo de identificación.\nLos proveedores que desarrollen actividades de transporte aéreo de pasajeros deberán poner a disposición un Libro de Reclamaciones físico o virtual en las áreas previas al embarque y posteriores al desembarque en los que preste algún servicio a los usuarios, sin perjuicio de la obligación de implementar y difundir un Libro de Reclamaciones en sus establecimientos comerciales abiertos al público en donde se realiza la contratación del servicio. Adicionalmente podrá implementar cualquier otro medio alternativo que permita el ingreso y registro de quejas y reclamos a distancia.",
+    "source": "0007_artículo_2_a_proveedores_que_desarrollen_actividades_de_tran.txt"
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 2-B.- Instituciones bajo el ámbito de supervisión de SUSALUD\nEn el caso de las IAFAS, IPRESS y UGIPRESS, el procedimiento para la atención de reclamos y quejas de los usuarios de servicios de salud será establecido por la Superintendencia Nacional de Salud - SUSALUD, el mismo que dejará constancia de la presentación del reclamo o queja y de su contenido; estableciendo los plazos de atención y la puesta a disposición de los canales correspondientes para su presentación. Dicho procedimiento se entiende como la implementación y puesta a disposición del Libro de Reclamaciones.\nSUSALUD es competente para fiscalizar el cumplimiento de dicho procedimiento, ejerciendo su potestad sancionadora.",
+    "source": "0008_artículo_2_b_instituciones_bajo_el_ámbito_de_supervisión_de_.txt"
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 3.- Definiciones\nPara los efectos del presente Reglamento, se entiende por:\n3.1. Libro de Reclamaciones: Documento de naturaleza física o virtual provisto por los proveedores en el cual los consumidores podrán registrar quejas o reclamos sobre los productos o servicios ofrecidos en un determinado establecimiento comercial abierto al público.\n3.2. Establecimiento comercial abierto al público: Inmueble, parte del mismo, instalación, construcción, espacio físico, o medio virtual a través del cual un proveedor debidamente identificado desarrolla sus actividades económicas de venta de bienes o prestación de servicios a los consumidores.\nLa identificación a la que se hace alusión en el presente punto se encuentra constituida por el número de Registro Único de Contribuyentes (RUC) que posea el proveedor, de acuerdo a lo establecido en el Decreto Legislativo Nº 943, Ley del Registro Único de Contribuyentes; o norma que la modifique o sustituya.\nLas instalaciones que se ubiquen en el interior de un establecimiento comercial abierto al público, que se presenten o identifiquen como un establecimiento independiente y que otorguen sus propios comprobantes de pago, deberán contar con su propio Libro de Reclamaciones. Se debe entender como establecimiento independiente a aquel con diferente razón social al del establecimiento que lo alberga.\nCuando una entidad pública o empresa estatal, actuando como proveedor, venda productos o preste servicios a los consumidores, estará obligada a contar con un Libro de Reclamaciones; sin perjuicio de las obligaciones que se derivan de lo dispuesto en el Decreto Supremo Nº 042-2011-PCM.\n3.3. Reclamo: Manifestación que un consumidor realiza al proveedor a través de una Hoja de Reclamación del Libro de Reclamaciones, mediante la cual expresa una disconformidad relacionada a los bienes expendidos o suministrados o a los servicios prestados. La reclamación no constituye una denuncia y en consecuencia, no inicia un procedimiento administrativo sancionador por infracción a la normativa sobre protección al consumidor.\n3.4. Queja: Manifestación que un consumidor realiza al proveedor a través de una Hoja de Reclamación del Libro de Reclamaciones, mediante la cual expresa una disconformidad que no se encuentra relacionada a los bienes expendidos o suministrados o a los servicios prestados; o, expresa el malestar o descontento del consumidor respecto a la atención al público. La queja no constituye una denuncia y, en consecuencia, no inicia un procedimiento administrativo sancionador por infracción a la normativa de protección al consumidor.\n3.5. Aviso del Libro de Reclamaciones: Letrero físico o aviso virtual que los proveedores deberán colocar en sus establecimientos comerciales y/o, cuando corresponda, en medios virtuales, en un lugar visible y fácilmente accesible al público, para registrar su queja y/o reclamo en el formato estandarizado del Anexo 2 del presente Reglamento.\n3.6. Proveedor virtual: Es el proveedor con RUC que establece sus relaciones de consumo a través de portales web.",
+    "source": "0009_artículo_3_definiciones.txt"
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 4.- Libro de Reclamaciones\nEl establecimiento comercial abierto al público deberá contar con un Libro de Reclamaciones, sea de naturaleza física o virtual, el mismo que deberá ser puesto inmediatamente a disposición del consumidor cuando lo solicite. Los proveedores que además del establecimiento comercial abierto al público, utilicen medios virtuales para establecer sus relaciones de consumo, deberán implementar un Libro de Reclamaciones Virtual en cada uno de sus establecimientos.\nLos proveedores que cuenten con Libro de Reclamaciones Virtual, deberán brindar el apoyo necesario para que el consumidor ingrese su queja o reclamo en el Libro de Reclamaciones. Esto incluye que el proveedor guíe al consumidor a fin de que toda manifestación que califique como reclamo o queja sea ingresada correctamente en el Libro de Reclamaciones.\nEn los establecimientos comerciales los proveedores deberán habilitar un orden de atención preferente para los consumidores que deseen presentar un reclamo o queja.",
+    "source": "0010_artículo_4_libro_de_reclamaciones.txt"
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 4-A.- Libro de Reclamaciones de Respaldo\nLos proveedores que cuenten con Libro de Reclamaciones Virtual deberán contar adicionalmente en sus establecimientos comerciales con un Libro de Reclamaciones físico al que se denominará expresamente “Libro de Reclamaciones de Respaldo”, conforme a las características del Anexo I del presente reglamento, el mismo que será puesto a disposición del público cuando no sea posible el uso del Libro de Reclamaciones Virtual. La información contenida en el Libro de Respaldo incluyendo el número de la hoja, deberá ser ingresada por el proveedor al Libro de Reclamaciones Virtual en el plazo de un (01) día calendario contado desde que dicho Libro se encuentre habilitado.",
+    "source": "0011_artículo_4_a_libro_de_reclamaciones_de_respaldo.txt"
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "REGLAMENTO DEL LIBRO DE RECLAMACIONES",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 4-B.- Libro de Reclamaciones para proveedores virtuales\nEn el caso de los proveedores virtuales, el Libro de Reclamaciones de naturaleza virtual, deberá estar alojado en la página de inicio del portal web diseñado para establecer las relaciones de consumo. Asimismo, al concluir el proceso de ingreso del reclamo o queja, se debe permitir la impresión de la Hoja de Reclamación y enviarse automáticamente al correo electrónico indicado por el consumidor, dejándose constancia de la fecha y hora de presentación del reclamo o queja.",
+    "source": "0012_artículo_4_b_libro_de_reclamaciones_para_proveedores_virtual.txt"
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 5.- Características de la Hoja de Reclamación\nCada Hoja de Reclamación de naturaleza física deberá contar con tres (03) hojas desglosables, una (01) original y dos (02) autocopiativas; la original será obligatoriamente entregada al consumidor al momento de dejar constancia de su queja o reclamo, la primera copia quedará en posesión del proveedor y la segunda copia será remitida o entregada al INDECOPI cuando sea solicitada por éste.\nLas Hojas de Reclamaciones, tanto de los Libros de Reclamaciones de naturaleza física como virtual, deberán contener como mínimo la información consignada en el formato del Anexo I del presente Reglamento. Dicha información incluye:\n- Denominación que permita identificar claramente a la Hoja de Reclamación como tal, incluyendo la razón social del proveedor, número de Registro Único de Contribuyentes y dirección del establecimiento comercial, los cuales estarán impresos o deberán aparecer por defecto, según corresponda.\n- Numeración correlativa impresa o que deberá aparecer por defecto\n- Código de identificación impreso, o que deberá aparecer por defecto, de conformidad con lo establecido en el Artículo 8, según corresponda.\n- Fecha del reclamo o queja.\n- Nombre, domicilio, número de documento de identidad, teléfono y correo electrónico del consumidor.\n- Nombre, domicilio, teléfono y correo electrónico de uno de los padres o representantes del consumidor, en caso se trate de un menor de edad.\n- Identificación del producto o servicio contratado.\n- Monto del producto o servicio contratado objeto del reclamo.\n- Detalle de la reclamación o queja.\n- Pedido concreto del consumidor respecto al hecho que motiva el reclamo o queja.\n- Espacio físico para que el proveedor anote las observaciones y acciones adoptadas con respecto a la queja o reclamo.\n- Firma del Consumidor en el caso del Libro de Reclamaciones físico.\n- Nombre del destinatario de la hoja de reclamaciones impreso (consumidor, proveedor, INDECOPI)\nEn caso que el consumidor no consigne como mínimo su nombre, DNI, domicilio o correo electrónico, fecha del reclamo o queja y el detalle de los mismos, estos se considerarán como no presentados.",
+    "source": "0013_artículo_5_características_de_la_hoja_de_reclamación.txt"
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 6.- Atención del reclamo\nEl reclamo que se registre en el Libro de Reclamaciones determina la obligación del proveedor de cumplir con atenderlo y darle respuesta en un plazo no mayor a quince (15) días hábiles, mediante comunicación escrita (vía carta y/o correo electrónico, según haya sido solicitado por el consumidor), de conformidad con lo establecido en el artículo 152 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor.\n\nEn el caso que, de la lectura del detalle de la reclamación, se evidencie que se trata de un reclamo, aun cuando el consumidor haya marcado erróneamente la opción “queja” de la Hoja de Reclamaciones o no haya marcado ninguna opción, el proveedor deberá darle el trámite de un reclamo, conforme a lo establecido en el presente Reglamento.\n\nNo puede condicionarse la atención de los reclamos de los consumidores o usuarios al pago previo del producto o servicio materia de dicho reclamo o del monto que hubiera motivado ello, o de cualquier otro pago.",
+    "source": "0014_artículo_6_atención_del_reclamo.txt"
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 6-A.- Acciones adoptadas por el proveedor.\n6-A.1. Si ante el registro de un reclamo, el proveedor ofrece una solución que satisface el pedido del consumidor, aquél debe dejar constancia expresa de lo ofrecido, y el consumidor, de estar de acuerdo, presta su conformidad declarando expresamente “ACUERDO ACEPTADO PARA SOLUCIONAR EL RECLAMO” u otra frase que permita dejar constancia indubitable que acepta la propuesta ofrecida por el proveedor para dar por solucionado su reclamo.\n6-A.2. Para dejar constancia de la solución ofrecida por el proveedor y la aceptación del consumidor, se considera lo siguiente:\na) Para soluciones ofrecidas de manera presencial:\nEl proveedor deja constancia de su ofrecimiento en la sección de la Hoja de Reclamación denominada “Observaciones y acciones adoptadas por el proveedor” y el consumidor debe prestar su conformidad con la indicación “ACUERDO ACEPTADO PARA SOLUCIONAR EL RECLAMO” u otra frase equivalente y en esta misma sección, consignar su firma. El proveedor consigna su firma en la sección del lado derecho denominada “Firma del Proveedor”. En estos casos, un ejemplar de la Hoja de Reclamación o de su constancia impresa -tratándose de reclamos registrados a través de un Libro de Reclamación Virtual- permanece en poder del proveedor y otro ejemplar debe ser entregado al consumidor.\nb) Para soluciones ofrecidas de manera no presencial:\n\nEl proveedor puede remitir su ofrecimiento vía correo electrónico o emplear cualquier otro medio que permita dejar constancia documental de su propuesta. En estos supuestos, se requiere la respuesta del consumidor mediante la cual acepte expresamente el ofrecimiento del proveedor, con la indicación “ACUERDO ACEPTADO PARA SOLUCIONAR EL RECLAMO” u otra frase equivalente. La respuesta del consumidor puede ser enviada por correo electrónico o cualquier otro medio que permita dejar constancia documental de su aceptación.\n\nEl envío del ofrecimiento del proveedor suspende el cómputo del plazo previsto en el artículo 6 de este Reglamento por el plazo máximo de cinco (05) días hábiles. Si el consumidor no manifiesta su aceptación expresa dentro de dicho plazo, se tiene por rechazada la propuesta y subsiste la obligación del proveedor de emitir una respuesta formal al reclamo.\n6-A.3. La Hoja de Reclamación del Libro de Reclamaciones físico, constancia impresa del Libro de Reclamaciones Virtual, intercambio de correos o de cualquier otra comunicación que cumpla con las formalidades indicadas en el numeral 6-A.2, tiene los efectos de un acuerdo que pone fin a la controversia, y obliga al proveedor a cumplir las prestaciones asumidas en mérito a lo ofrecido al consumidor. En estos casos, el reclamo se entiende concluido y el proveedor queda liberado de emitir la respuesta prevista en el artículo 24.1 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor.\n6-A.4. En cualquier caso, si el proveedor no cumple con lo ofrecido al consumidor en la Hoja de Reclamación, el consumidor puede denunciar el incumplimiento del acuerdo, lo que será sancionado de conformidad con lo dispuesto en el literal b) del artículo 106 y en el artículo 110 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor, modificado por Decreto Legislativo Nº 1308.",
+    "source": "0015_artículo_6_a_acciones_adoptadas_por_el_proveedor.txt"
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 6-B.- Atención de Quejas.\nLa queja que se registre en el Libro de Reclamaciones determina la obligación del proveedor de cumplir con atenderla y darle respuesta en un plazo no mayor a quince (15) días hábiles, mediante comunicación escrita (vía carta y/o correo electrónico, según haya sido solicitado por el consumidor), de conformidad con lo establecido en el artículo 152 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor.\n\nEl proveedor debe considerar la queja recibida a fin de optimizar sus procedimientos de atención al público, incluyendo el ofrecimiento de los productos o servicios que realiza en el mercado, u otros que sean objeto de queja pudiendo informar estas medidas si lo considera necesario o manifestar su compromiso de implementarlas, mas no se encuentra obligado a brindar detalles sobre las medidas implementadas o a implementarse en atención a la queja recibida.",
+    "source": "0016_artículo_6_b_atención_de_quejas.txt"
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 7.- Proveedores con varios establecimientos comerciales abiertos al público\nLos proveedores que cuenten con más de un establecimiento comercial abierto al público deberán implementar un Libro de Reclamaciones de naturaleza física o virtual por cada uno de ellos.",
+    "source": "0017_artículo_7_proveedores_con_varios_establecimientos_comercial.txt"
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 8.- Código de Identificación\nSi el proveedor cuenta con varios Libros de Reclamaciones de naturaleza física, deberá contar con un código de identificación que le permita controlar y consolidar todos los Libros en un registro único a nivel nacional.\nCada proveedor es responsable de suministrar las Hojas de Reclamaciones señaladas a cada uno de sus establecimientos comerciales, así como de consolidar toda la información en un único registro de quejas o reclamos.",
+    "source": "0018_artículo_8_código_de_identificación.txt"
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 9.- Exhibición del Aviso del Libro de Reclamaciones\nLos proveedores que cuenten con un Libro de Reclamaciones deberán exhibir en sus establecimientos comerciales, en un lugar visible y fácilmente accesible al público, como mínimo, un Aviso del Libro de Reclamaciones, utilizando el formato establecido en el Anexo II del presente Reglamento.\nEn los casos en que el proveedor cuente con varios establecimientos comerciales, la obligación de exhibir el Aviso del Libro de Reclamaciones se extiende a cada uno de ellos. Los proveedores virtuales deberán colocar como mínimo un aviso fácilmente identificable en la página de inicio del portal web donde establecen sus relaciones de consumo, el mismo que deberá contener un vínculo que dirija al Libro de Reclamaciones Virtual, utilizando el formato establecido en el Anexo III del presente Reglamento.",
+    "source": "0019_artículo_9_exhibición_del_aviso_del_libro_de_reclamaciones.txt"
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 10.- Derogado.",
+    "source": "0020_artículo_10_derogado.txt"
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 11.- Entrega de información al INDECOPI\n11.1. El INDECOPI podrá requerir al proveedor la información necesaria a efectos de supervisar y fiscalizar adecuadamente el cumplimiento del presente Reglamento.\n11.2. Las empresas supervisadas por la Superintendencia de Banca, Seguros y Administradora Privada de Fondo de Pensiones, se encuentran obligadas a poner a disposición del INDECOPI información acerca de los reclamos o quejas presentados por los consumidores que incluya al menos lo siguiente: detalle del reclamo o queja, tipo de producto o servicio, motivo del reclamo o queja, fecha de presentación de reclamo o queja, datos del consumidor (documento de identidad, nombre, dirección, teléfono, domicilio, correo electrónico, etc.), fecha de atención, sustento de la respuesta, así como cualquier otra que sea necesaria para los fines de la supervisión.\nEn el marco de la supervisión, el INDECOPI podrá disponer la periodicidad en que la información indicada en el párrafo anterior será entregada.",
+    "source": "0021_artículo_11_entrega_de_información_al_indecopi.txt"
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 12.- Conservación de información por parte del proveedor\nEl proveedor deberá conservar como mínimo por el lapso de dos (2) años desde la fecha de presentación de la queja o reclamo en el Libro de Reclamaciones, la siguiente información:\ni) las Hojas de Reclamaciones de naturaleza física o virtual;\nii) la información contenida en el Sistema de Reporte de Reclamaciones, cuando corresponda; y\niii) la constancia de la respuesta al reclamo y de la ampliación del plazo, de corresponder.\nEn caso de pérdida o extravío de alguna Hoja de Reclamación o del Libro de Reclamaciones, el proveedor deberá comunicar ello a la autoridad policial competente, realizando la denuncia correspondiente en un plazo máximo de cuarenta y ocho (48) horas de ocurrido el hecho.",
+    "source": "0022_artículo_12_conservación_de_información_por_parte_del_provee.txt"
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 13.- Limitación para solución de controversias.\nLa formulación de una queja o reclamo en el Libro de Reclamaciones no supone limitación alguna para que los consumidores puedan utilizar otros mecanismos de solución de controversias ni constituye una vía previa necesaria para interponer una denuncia por infracción a las normas de protección al consumidor ante el INDECOPI.\nEl Libro de Reclamaciones no limita el derecho del consumidor de interponer una queja o reclamo ante el proveedor utilizando otras vías. Si las partes arriban a un acuerdo en alguno de los supuestos previstos en el artículo 6-A de este Reglamento, se aplica lo establecido en el numeral 6-A.3.",
+    "source": "0023_artículo_13_limitación_para_solución_de_controversias.txt"
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 14.- Responsabilidad administrativa\nEl proveedor tendrá responsabilidad administrativa por cualquier comportamiento que transgreda las disposiciones establecidas en el Código de Protección y Defensa del Consumidor o en el presente Reglamento, conforme a lo establecido en los Artículos 104 y 108 de la Ley Nº 29571, Código de Protección y Defensa del Consumidor; o de la norma que la modifique o sustituya.",
+    "source": "0024_artículo_14_responsabilidad_administrativa.txt"
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 15.- Autoridad competente y Sanciones\nEl INDECOPI es la autoridad con competencia primaria y de alcance nacional para conocer las presuntas infracciones a las disposiciones contenidas en el Código de Protección y Defensa del Consumidor o en el presente Reglamento, así como para imponer las sanciones y medidas correctivas establecidas en el Capítulo III del Título V de la Ley Nº 29571, Código de Protección y Defensa del Consumidor; o de la norma que la modifique o sustituya.",
+    "source": "0025_artículo_15_autoridad_competente_y_sanciones.txt"
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 16.- Sistema de Reportes de Reclamaciones\nEl Sistema de Reportes de Reclamaciones (en adelante, SIREC) tiene por objetivo que los proveedores reporten los reclamos y quejas interpuestas por los consumidores en el Libro de Reclamaciones, a través de un aplicativo informático.\nLos proveedores que se encuentran sujetos a la presente obligación, son aquellos cuyo ingreso anual sea igual o mayor a tres mil (3000) Unidades Impositivas Tributarias. Para efectos de la implementación del SIREC, el ingreso anual corresponderá a aquel declarado en el ejercicio fiscal anterior.\nLa información proporcionada por el proveedor, contenida en el SIREC, tiene carácter de declaración jurada.\nLa incorporación de los proveedores al SIREC será progresiva y su implementación se efectuará en las condiciones que establezca el INDECOPI mediante una Directiva que para tales efectos apruebe el Consejo Directivo de dicha entidad.\nLos proveedores que cumplan con las condiciones establecidas en el artículo 2 del presente Reglamento, no estarán sujetos a lo dispuesto en el presente artículo. Sin perjuicio de ello, dichos proveedores se encuentran sujetos a lo establecido en el artículo 11 del presente Reglamento.",
+    "source": "0026_artículo_16_sistema_de_reportes_de_reclamaciones.txt"
+  },
+  {
+    "id": 27,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 17.- Medida Preventiva\nLlevada a cabo una acción de supervisión y constatado algún incumplimiento de las obligaciones vinculadas al Libro de Reclamaciones, de naturaleza formal, el INDECOPI impondrá a través de los funcionarios a cargo de la verificación del cumplimiento, una medida preventiva mediante la cual se dejará constancia de la advertencia de la comisión de la infracción y la posibilidad de aplicársele, de persistir en ella, las sanciones que correspondan; siempre que se trate de la primera supervisión que se realice al proveedor y que sea microempresa.\nLa medida preventiva debe establecer un plazo, el cual no podrá ser menor a cinco (5) días hábiles, para efectos que el proveedor corrija el incumplimiento detectado y acredite dicho hecho ante la autoridad a cargo de la supervisión.\nLa medida preventiva se entenderá impuesta al proveedor, obligándolo respecto del total de establecimientos comerciales con los que cuente, por lo que la acreditación del cumplimiento de la obligación deberá realizarse respecto de todos los establecimientos.",
+    "source": "0027_artículo_17_medida_preventiva.txt"
+  },
+  {
+    "id": 28,
+    "nombre_doc": "Decreto Supremo N° 011-2011-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 18.- Infracciones y sanciones\nLos incumplimientos de las condiciones, supuestos y demás especificaciones referidas a las obligaciones vinculadas al Libro de Reclamaciones por parte de los proveedores, constituyen infracciones leves, de conformidad con lo previsto en el artículo 110 del Código de Protección y Defensa del Consumidor.\nLas sanciones por la comisión de dichas infracciones se determinan de conformidad con lo establecido en la graduación, metodología y factores para la determinación de las multas que impongan los órganos resolutivos del INDECOPI respecto de las infracciones sancionables en el ámbito de su competencia, aprobada por la normativa vigente.",
+    "source": "0028_artículo_18_infracciones_y_sanciones.txt"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Tarjeta de Crédito: Infórmate sobre tus derechos",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué es una tarjeta de crédito?**\nEs un medio de pago contenido en una tarjeta de plástico que tiene una banda magnética y un chip, mediante la cual el titular de la tarjeta dispone de la línea de crédito contratada, para adquirir bienes y servicios con pagos a futuro. La tarjeta es intransferible y su plazo de vigencia es no mayor de 5 años.\nEl usuario es responsable de pagar a la empresa emisora de la tarjeta, el importe de los bienes y servicios que haya utilizado y demás cargos aplicables según el contrato suscrito.",
+    "source": "0001_qué_es_una_tarjeta_de_crédito.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Para qué sirve una tarjeta de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Para qué sirve una tarjeta de crédito?**\nCon una tarjeta de crédito el titular podrá:\n*   Adquirir bienes o servicios en los establecimientos afiliados.\n*   Pagar obligaciones.\n*   Hacer uso de otros servicios ofrecidos por la entidad emisora según el contrato suscrito, como por ejemplo, el servicio de disposición de efectivo, de compras en el extranjero u otros servicios asociados, cuando el titular no haya renunciado al uso de estos servicios.",
+    "source": "0002_para_qué_sirve_una_tarjeta_de_crédito.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué empresas del sistema financiero pueden emitir tarjetas de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué empresas del sistema financiero pueden emitir tarjetas de crédito?**\nLas tarjetas de crédito pueden ser emitidas por bancos y financieras, cajas municipales y cajas rurales, según la Ley N° 26702. A estas empresas se les llamará emisoras.",
+    "source": "0003_qué_empresas_del_sistema_financiero_pueden_emitir_tarjetas_d.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué son las tarjetas adicionales?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué son las tarjetas adicionales?**\nSon tarjetas de crédito emitidas a favor de un tercero, a solicitud y bajo responsabilidad del titular, con la finalidad de que pueda hacer uso de la línea de crédito otorgada o de parte de ella, de acuerdo a lo pactado en el contrato de tarjeta de crédito.",
+    "source": "0004_qué_son_las_tarjetas_adicionales.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué información debe contener el contrato de tarjeta de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué información debe contener el contrato de tarjeta de crédito?**\nEl contrato de tarjeta de crédito debe contener:\n*   Las condiciones para la reducción o aumento de la línea de crédito, y los mecanismos para requerir el consentimiento previo del usuario en el caso de aumento de la línea de crédito.\n*   Forma y medios de pago permitidos.\n*   Procedimientos y responsabilidades de las partes en caso de extravío de la tarjeta de crédito o de la sustracción, robo o hurto de esta o la información que contiene.\n*   Casos en los que procede el bloqueo o anulación de la tarjeta de crédito y la resolución del contrato.\n*   Condiciones aplicables a la renovación del contrato.\n*   Periodicidad con la que se emitirán los estados de cuenta.\n*   A nombre de quién se emitirán los estados de cuenta, titular o usuario.\n*   Condiciones de emisión y remisión o puesta a disposición, según corresponda, del estado de cuenta en forma física o electrónica y plazo de aceptación del estado de cuenta.\n*   El orden de imputación aplicable para el pago de la línea de crédito.\n*   Las condiciones generales en las que opera la autorización del exceso de línea de crédito.\n*   Información sobre la posibilidad de aceptar o rechazar disposición de efectivo, operaciones por internet y consumos u operaciones efectuadas en el exterior, con presencia física de la tarjeta.\n*   En caso se trate de operaciones de micropago, pactadas con el titular.\n\nAsimismo, deberá adjuntarse al contrato una Hoja Resumen que debe contener, entre otros, el detalle de la tasa de interés compensatoria, la tasa de interés moratoria o penalidad, las comisiones y los gastos que serán cargados al cliente, así como las obligaciones más relevantes contraídas por el cliente y/o por la empresa.",
+    "source": "0005_qué_información_debe_contener_el_contrato_de_tarjeta_de_créd.txt"
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué información debe contener la tarjeta de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué información debe contener la tarjeta de crédito?**\nLas tarjetas de crédito deben contener como mínimo la siguiente información:\n*   Denominación social de la empresa que expide la tarjeta de crédito, o nombre comercial que la empresa asigne al producto.\n*   Número de la tarjeta.\n*   Nombre del usuario de la tarjeta de crédito y su firma.\n*   Fecha de vencimiento.",
+    "source": "0006_qué_información_debe_contener_la_tarjeta_de_crédito.txt"
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿La entidad financiera puede cobrarme por la emisión de una nueva tarjeta de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿La entidad financiera puede cobrarme por la emisión de una nueva tarjeta de crédito?**\nLa empresa emisora está obligada a informar a través de su Tarifario sobre los costos que generen la tarjeta y su uso. Así por ejemplo, es posible que las empresas emisoras cobren por los siguientes conceptos:\n*   Reposición de tarjeta, es decir, emisión de duplicado, reposición o reimpresión de la tarjeta por robo, sustracción, pérdida o deterioro.\n*   Tarjeta adicional para una tercera persona y/u opcional cuando a solicitud del cliente se emite en un nuevo plástico personalizado.\n*   Tarjetas de beneficios asociadas a la tarjeta de crédito, tales como Priority Pass o similares.",
+    "source": "0007_la_entidad_financiera_puede_cobrarme_por_la_emisión_de_una_n.txt"
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Quién asume el costo de las operaciones no reconocidas?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Quién asume el costo de las operaciones no reconocidas?**\nSalvo que la empresa emisora demuestre la responsabilidad del titular, este no es responsable de ninguna pérdida por las operaciones realizadas en los siguientes casos:\n*   Cuando estas hayan sido realizadas luego de que la empresa fuera notificada del extravío, sustracción, robo, hurto o uso no autorizado de la tarjeta, o de la información que contiene.\n*   Cuando la empresa emisora no cuente con infraestructura y sistemas de atención que permitan a los usuarios comunicar el extravío o sustracción de la tarjeta o de su información, así como los cargos indebidos y las operaciones que no reconozcan.\n*   Cuando las tarjetas hayan sido objeto de clonación.\n*   Por el funcionamiento defectuoso de los canales o sistemas puestos a disposición de los usuarios por las empresas emisoras para efectuar operaciones.\n*   Por la manipulación de los cajeros automáticos de la empresa emisora u operadora de estos o los ambientes en que estos operan.\n*   Cuando se haya producido la suplantación del usuario en las oficinas.\n*   En caso se trate de operaciones de micropago, pactadas con el titular.\n*   Operaciones realizadas luego de la cancelación de la tarjeta o cuando esta haya expirado.\n\nLas empresas emisoras son responsables de demostrar que las operaciones fueron autenticadas y registradas.",
+    "source": "0008_quién_asume_el_costo_de_las_operaciones_no_reconocidas.txt"
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Las empresas financieras pueden cargar el costo de los seguros contratados para la protección contra el uso fraudulento de tarjetas?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Las empresas financieras pueden cargar el costo de los seguros contratados para la protección contra el uso fraudulento de tarjetas?**\nLas empresas no pueden trasladar a los titulares, como gasto o comisión, el costo asociado a la contratación de pólizas de seguro y/o mecanismos de protección, que tengan por objeto cubrir las operaciones no reconocidas que sean de responsabilidad de las empresas emisoras de acuerdo a lo señalado en la pregunta anterior. Otro tipo de seguros pueden ser contratados por el titular y cargados a la cuenta de su tarjeta de crédito si así lo solicita.",
+    "source": "0009_las_empresas_financieras_pueden_cargar_el_costo_de_los_segur.txt"
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué medidas de seguridad deben adoptar las empresas emisoras?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué medidas de seguridad deben adoptar las empresas emisoras?**\nLas empresas emisoras deben adoptar diversas medidas de seguridad con respecto a los usuarios, entre ellas:\n*   Entregar la tarjeta al titular, excepto cuando este haya solicitado expresamente que se entregue a una persona distinta, previa verificación de su identidad y dejando constancia de su recepción.\n*   Entregar la clave o número secreto de la tarjeta generado por la empresa emisora únicamente a su titular, siendo obligatorio que el titular realice su cambio antes de realizar la primera operación que requiera el uso de dicha clave.\n*   Otorgar la posibilidad al usuario de poder cambiar dicha clave o número secreto las veces que lo requiera.\n*   Poner a disposición del titular, la posibilidad de comunicar que realizará operaciones con su tarjeta desde el extranjero, antes de la realización de estas operaciones.\n*   Establecer el monto máximo por operación que podrá efectuarse como micropago, de ser el caso.\n*   Para las operaciones de disposición o retiro de efectivo, compras y otras operaciones que la empresa identifique con riesgo de fraude en perjuicio de los titulares, deberá otorgar la opción de contar con un servicio de notificaciones que informe de las operaciones inmediatamente después de ser registradas por la empresa, mediante mensajes a un correo electrónico y/o a un teléfono móvil. Otros mecanismos pueden ser pactados con los titulares.\n*   Las tarjetas que se emitan a partir del año 2015, como medida de seguridad, deben contar además de la banda magnética con un chip que permita almacenar y procesar la información del usuario y sus operaciones, a fin de dar seguridad a los datos cuando se realizan operaciones en terminales habilitados para la tecnología chip. Asimismo, el titular podrá solicitar el cambio de una tarjeta emitida en forma previa al 2015, a fin de que se emita una nueva con chip.",
+    "source": "0010_qué_medidas_de_seguridad_deben_adoptar_las_empresas_emisoras.txt"
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué medidas de seguridad deben tomar los establecimientos afiliados al momento en que se efectúa un pago con tarjeta de crédito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué medidas de seguridad deben tomar los establecimientos afiliados al momento en que se efectúa un pago con tarjeta de crédito?**\nLos establecimientos afiliados deberán verificar de acuerdo a lo que haya pactado con la empresa:\n*   La vigencia de la tarjeta de crédito.\n*   La identidad del usuario.\n*   La firma del usuario en la orden de pago con la que figura en su tarjeta de crédito, o la aplicación del mecanismo alternativo de seguridad que haya establecido la empresa emisora, como puede ser el uso de una clave.",
+    "source": "0011_qué_medidas_de_seguridad_deben_tomar_los_establecimientos_af.txt"
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Es posible realizar operaciones sin firmar la orden de pago o digitar una clave secreta?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Es posible realizar operaciones sin firmar la orden de pago o digitar una clave secreta?**\nEn el caso de micropagos, que son operaciones efectuadas por montos pequeños cuyo límite es determinado por la empresa emisora, no se requiere de la firma, clave secreta ni otro medio de autenticación por parte de los usuarios al momento de efectuar el consumo u operación.\nEn estos casos, si se presentan operaciones no reconocidas, estas resultan de responsabilidad de la empresa emisora.",
+    "source": "0012_es_posible_realizar_operaciones_sin_firmar_la_orden_de_pago_.txt"
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo opera el uso de disposición de efectivo?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Cómo opera el uso de disposición de efectivo?**\nEl uso de disposición de efectivo es una posibilidad que otorga la empresa al titular de la tarjeta, quien podrá elegir esta opción de manera expresa al momento de suscribir el contrato de tarjeta de crédito o con posterioridad, así como rechazarla si la hubiera pactado.",
+    "source": "0013_cómo_opera_el_uso_de_disposición_de_efectivo.txt"
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué es un estado de cuenta?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué es un estado de cuenta?**\nEl estado de cuenta es el documento que remiten las empresas emisoras detallando los cargos y abonos efectuados en el período de facturación en el que se indica el monto de pago que corresponde efectuar.\nLos estados de cuenta contienen diversa información, como por ejemplo:\n*   Período del estado de cuenta.\n*   Indicación del establecimiento afiliado, la fecha y el monto de las transacciones registradas en el período informado.\n*   La fecha límite de pago y monto mínimo a pagar.\n*   Monto de los intereses devengados.\n*   Comisiones y gastos aplicables.\n*   Pagos efectuados por el titular durante el período informado, indicando fecha y monto.\n*   Saldo adeudado a la fecha.\n*   Monto disponible en la línea de crédito.\n*   Tasa de interés compensatorio efectiva anual y tasa de interés moratorio o penalidad aplicables a la fecha del estado de cuenta. Se presentará la información desagregada por cada consumo u operación en aquellos casos en los que la empresa ofrezca tasas diferenciadas.\n*   Fecha en la cual se efectuará el cargo por la renovación de la tarjeta o membresía.",
+    "source": "0014_qué_es_un_estado_de_cuenta.txt"
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Las empresas financieras pueden cargar el costo del envío de los estados de cuenta?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Las empresas financieras pueden cargar el costo del envío de los estados de cuenta?**\nLa empresa emisora debe otorgar a los titulares la posibilidad de elegir la recepción del estado de cuenta en forma física o a través de medios electrónicos, como son la página web de la empresa emisora o el correo electrónico del titular. Las empresas únicamente pueden cargar el costo del envío de los estados de cuenta si el cliente elige que se envíen estados de cuenta en forma física; de lo contrario, el servicio es gratuito.",
+    "source": "0015_las_empresas_financieras_pueden_cargar_el_costo_del_envío_de.txt"
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué debo hacer si no recibo mi estado de cuenta?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué debo hacer si no recibo mi estado de cuenta?**\nLas empresas deben entregar los estados de cuenta con una anticipación mínima de 5 días hábiles previos a su fecha límite de pago. Si los titulares no recibieran los estados de cuenta oportunamente tendrán derecho de solicitarlo a la empresa emisora, la cual está en la obligación de proporcionarle copia de estos, conforme a las condiciones que se hubieran establecido en el contrato. La no recepción del estado de cuenta no exonera el pago que corresponde al mes.\nLa obligación del envío regular de estado de cuenta cesa en caso transcurran cuatro (4) meses consecutivos sin que el cliente cumpla con sus pagos.",
+    "source": "0016_qué_debo_hacer_si_no_recibo_mi_estado_de_cuenta.txt"
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué se debe hacer en caso de extravío o sustracción de la tarjeta o de su información?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué se debe hacer en caso de extravío o sustracción de la tarjeta o de su información?**\nSe debe contactar inmediatamente a la empresa del sistema financiero emisora a la que pertenece y solicitar el bloqueo de la tarjeta. Este servicio está habilitado las 24 horas del día a través de una línea telefónica. La empresa asignará un código a su solicitud, y posteriormente, debe enviarle por medios físicos o electrónicos, a solicitud del cliente, una copia del registro de la comunicación efectuada.\nEfectuado el bloqueo de la tarjeta de crédito, el titular podrá solicitar la emisión de una nueva tarjeta.",
+    "source": "0017_qué_se_debe_hacer_en_caso_de_extravío_o_sustracción_de_la_ta.txt"
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué se entiende por sobreendeudamiento?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué se entiende por sobreendeudamiento?**\nEl sobreendeudamiento se produce cuando un deudor del sistema financiero contrae deudas excesivas en comparación a sus ingresos y a su capacidad de pago, poniendo en riesgo el cumplimiento de sus obligaciones.",
+    "source": "0018_qué_se_entiende_por_sobreendeudamiento.txt"
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué ocurre si el titular de una tarjeta de crédito se encuentra sobreendeudado?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué ocurre si el titular de una tarjeta de crédito se encuentra sobreendeudado?**\nLas empresas del sistema financiero identifican a aquellos deudores que se encuentren en situaciones de sobreendeudamiento a efectos de adoptar acciones que permitan la reducción de dicho riesgo, así por ejemplo, podrían optar por reducir la línea de crédito otorgada, bloquear la tarjeta de crédito, entre otros.",
+    "source": "0019_qué_ocurre_si_el_titular_de_una_tarjeta_de_crédito_se_encuen.txt"
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Crédito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Base Legal",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**Base Legal:**\n*   Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, Ley Nº 26702 y sus normas modificatorias.\n*   Reglamento de Tarjetas de Crédito y Débito aprobado por la Resolución SBS Nº 6523-2013.\n*   Reglamento de Transparencia de Información y Contratación con Usuarios del Sistema Financiero aprobado por la Resolución SBS N° 8181-2012 y sus normas modificatorias.\n*   Reglamento para la Administración del Riesgo de Sobreendeudamiento de Deudores Minoristas, aprobado por la Resolución SBS N° 6941-2008 y sus normas modificatorias.",
+    "source": "0020_base_legal.txt"
+  }
+]

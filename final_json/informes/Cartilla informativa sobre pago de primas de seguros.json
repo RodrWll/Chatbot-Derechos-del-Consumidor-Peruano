@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre pago de primas de seguros",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de la Prima",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Qué es la prima de seguros?**\nLa prima de seguros es el pago que corresponde que realice el contratante o asegurado de una póliza para contar con la cobertura del seguro.",
+    "source": "0001_qué_es_la_prima_de_seguros.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre pago de primas de seguros",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de la Prima",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Desde cuándo se debe la prima? ¿Puede fraccionarse su pago?**\nLa prima se debe desde la celebración del contrato de seguro. Puede ser pagada de manera adelantada en su totalidad o acordarse de que se pague en cuotas, a cuyo efecto se firmará un convenio de pagos.",
+    "source": "0002_desde_cuándo_se_debe_la_prima_puede_fraccionarse_su_pago.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre pago de primas de seguros",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de la Prima",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Cuáles son las consecuencias de la falta de pago de la prima?**\nLa falta de pago de la prima trae como consecuencia perder el derecho a la cobertura del seguro.\nAnte la falta de pago, la aseguradora puede suspender la cobertura del seguro una vez transcurridos 30 días desde la fecha de vencimiento de la obligación, siempre y cuando no se haya convenido un plazo adicional para el pago.\nAntes de la suspensión, la aseguradora debe comunicar al asegurado sobre el incumplimiento de pago y sus consecuencias, así como indicar el plazo del que dispone para pagar antes de que suspenda la cobertura.",
+    "source": "0003_cuáles_son_las_consecuencias_de_la_falta_de_pago_de_la_prima.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre pago de primas de seguros",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de la Prima",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿Puede el asegurado rehabilitar la póliza?**\nSi el asegurado cancela el total de las cuotas vencidas antes de que opere la resolución del contrato, se produce la rehabilitación de la cobertura y esta vuelve a tener efecto a partir de las cero (0:00) horas del día siguiente de aquel en que se paga la obligación.",
+    "source": "0004_puede_el_asegurado_rehabilitar_la_póliza.txt"
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre pago de primas de seguros",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de la Prima",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "**¿La aseguradora puede resolver el contrato en caso de falta de pago puntual de la prima?**\nSi la cobertura del seguro se encuentra suspendida por el incumplimiento en el pago de las primas, el asegurador puede optar por la resolución del contrato, no siendo responsable por los siniestros ocurridos en tales circunstancias.\nTanto en caso de suspensión o no de la cobertura, si la aseguradora no reclama el pago de la prima dentro de los 90 días siguientes al vencimiento del plazo, el contrato queda resuelto automáticamente.",
+    "source": "0005_la_aseguradora_puede_resolver_el_contrato_en_caso_de_falta_d.txt"
+  }
+]

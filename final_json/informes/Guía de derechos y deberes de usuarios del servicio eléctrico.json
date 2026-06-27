@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía de derechos y deberes de usuarios del servicio eléctrico",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Guía de derechos y deberes de usuarios del servicio eléctrico",
+    "categoria_consumo": [
+      "luz y servicio eléctrico"
+    ],
+    "texto": "Como usuario del servicio eléctrico, tienes derecho a:\n- Ser informado cuando la empresa eléctrica requiera revisar el medidor.\n- Recibir un servicio de calidad: sin cortes injustificados, ni subidas o bajones de tensión.\n- Recibir mensualmente y a tiempo el recibo de luz, y que te cobren según la tarifa por kilowatt/hora (kWh) establecida por Osinergmin.\n- Ser informado con anticipación sobre los cortes programados.\n- Recibir una compensación en tu factura cuando, sin previo aviso, se va la luz por más de cuatro horas consecutivas.\n- Si tu predio estará deshabitado, puedes solicitar a la empresa eléctrica la suspensión temporal del servicio.\n- Contar con buena iluminación en las calles.\n- Reclamar y ser atendido si no estás conforme con el servicio.\n- Que no te corten el servicio si solamente tienes un mes de deuda.",
+    "source": "0001_como_usuario_del_servicio_eléctrico_tienes_derecho_a.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía de derechos y deberes de usuarios del servicio eléctrico",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "DEBERES",
+    "categoria_consumo": [
+      "luz y servicio eléctrico"
+    ],
+    "texto": "DEBERES\nComo usuario del servicio eléctrico, también tienes deberes que cumplir:\n- Mantén tus instalaciones internas en buenas condiciones.\n- Utiliza la electricidad solo si cuentas con la autorización de la empresa eléctrica.\n- No revendas la energía eléctrica.\n- No permitas la manipulación del medidor ni de las conexiones exteriores por personas ajenas a la empresa eléctrica.\n- Paga puntualmente tu recibo de luz.\n- Utiliza la electricidad de manera segura para evitar accidentes.\n- Respeta las distancias mínimas de seguridad que deben existir entre las redes eléctricas y las edificaciones.",
+    "source": "0002_deberes.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía de derechos y deberes de usuarios del servicio eléctrico",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "RECUPERO DE ENERGÍA",
+    "categoria_consumo": [
+      "luz y servicio eléctrico"
+    ],
+    "texto": "RECUPERO DE ENERGÍA\n¿Qué es?\nEs el monto que te cobra la empresa eléctrica por la energía que utilizaste pero que no te fue facturada por alguna de estas razones:\n- Error de facturación o defecto en el medidor, que hizo que te facturaran menos consumos. La empresa puede cobrar esa energía en diez cuotas iguales, sin intereses ni moras, en tus próximos recibos.\n- La manipulación al medidor o a las conexiones exteriores, no realizada por la empresa, que impidió que te facturaran lo realmente consumido. La empresa puede cobrar por esa energía en una sola cuota, con intereses y moras.\n- La empresa solo puede cobrarte hasta por los 12 meses anteriores a la fecha en que detecta la omisión.\n- Antes de incluir el recupero en tus recibos, la empresa debe explicarte por escrito las razones que lo sustentan y cómo calculó el importe.\n- Si no estás de acuerdo con el cobro por recupero de energía, tienes derecho a presentar un reclamo.",
+    "source": "0003_recupero_de_energía.txt"
+  }
+]
