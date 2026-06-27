@@ -9,7 +9,7 @@ import glob
 from pathlib import Path
 from tqdm import tqdm
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
@@ -46,9 +46,12 @@ def construir_vectorstore(docs: list[Document], directorio: str = CHROMA_DIR) ->
     print(f"\nGenerando embeddings con: {EMBED_MODEL}")
     print("(Primera ejecución descarga el modelo ~120 MB — puede tardar unos minutos)")
 
+    import torch
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Usando dispositivo: {device}")
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
-        model_kwargs={"device": "cuda"},
+        model_kwargs={"device": device},
         encode_kwargs={"batch_size": 64, "show_progress_bar": True},
     )
 

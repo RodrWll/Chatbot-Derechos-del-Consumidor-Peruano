@@ -43,9 +43,11 @@ def construir_cadena(
     k: int = 4,
     chroma_dir: str = CHROMA_DIR,
 ) -> RetrievalQA:
+    import torch
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
-        model_kwargs={"device": "cuda"},
+        model_kwargs={"device": device},
     )
     vectorstore = Chroma(
         persist_directory=chroma_dir,
