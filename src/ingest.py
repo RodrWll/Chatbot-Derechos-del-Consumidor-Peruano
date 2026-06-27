@@ -52,7 +52,7 @@ def construir_vectorstore(docs: list[Document], directorio: str = CHROMA_DIR) ->
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
         model_kwargs={"device": device},
-        encode_kwargs={"batch_size": 64, "show_progress_bar": True},
+        encode_kwargs={"batch_size": 64},
     )
 
     print(f"\nIndexando {len(docs)} documentos en ChromaDB...")
