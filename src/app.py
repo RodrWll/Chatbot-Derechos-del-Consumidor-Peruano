@@ -18,6 +18,12 @@ st.set_page_config(
     layout="centered",
 )
 
+
+@st.cache_resource(show_spinner="Cargando modelo y base de conocimiento...")
+def cargar_cadena(model: str, k: int):
+    return construir_cadena(model=model, k=k)
+
+
 st.title("⚖️ Chatbot de Derechos del Consumidor Peruano")
 st.caption("Consulta tus derechos como consumidor en lenguaje simple. Basado en normativa de INDECOPI y SPIJ.")
 
@@ -43,13 +49,10 @@ with st.sidebar:
         if st.button(ej, use_container_width=True):
             st.session_state.pregunta_ejemplo = ej
 
+chain = cargar_cadena(modelo, k_docs)
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
-
-if "chain" not in st.session_state or st.session_state.get("modelo_activo") != modelo:
-    with st.spinner(f"Cargando modelo {modelo}..."):
-        st.session_state.chain = construir_cadena(model=modelo, k=k_docs)
-        st.session_state.modelo_activo = modelo
 
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
@@ -65,7 +68,7 @@ if prompt:
 
     with st.chat_message("assistant"):
         with st.spinner("Consultando normativa peruana..."):
-            resultado = st.session_state.chain(prompt)
+            resultado = chain(prompt)
             respuesta = resultado["result"]
 
             if mostrar_fuentes:
