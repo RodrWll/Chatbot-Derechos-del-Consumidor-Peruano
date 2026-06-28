@@ -232,43 +232,104 @@ Reglas anti-alucinación (críticas):
 
 ---
 
-## Experimento 4 — Multi-embedding (EN CURSO, 2026-06-28)
+## Experimento 4 — Multi-embedding (COMPLETADO, 2026-06-28)
 
 ### Motivación
 
 El análisis de causa raíz indica que el retriever es el problema principal. Se evalúan 5 modelos de embedding con distinta capacidad semántica para medir su impacto en la calidad de las respuestas.
 
-### Modelos de embedding evaluados
+### Configuración
 
-| Nombre | Modelo HuggingFace | Dims | Tamaño aprox. | ChromaDB |
-|--------|-------------------|:----:|:-------------:|----------|
-| MiniLM-L12 | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | 384 | 120 MB | `chroma_db_minilm/` |
-| mpnet-base | `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | 768 | 1.1 GB | `chroma_db_mpnet/` |
-| e5-large | `intfloat/multilingual-e5-large` | 1024 | 2.2 GB | `chroma_db_e5large/` |
-| bge-m3 | `BAAI/bge-m3` | 1024 | 2.3 GB | `chroma_db_bgem3/` |
-| LaBSE | `sentence-transformers/LaBSE` | 768 | ~1.9 GB | `chroma_db_labse/` |
+- **Modelos LLM:** mistral:7b-instruct · llama3.1:8b · gemma2:9b · mistral-nemo:12b · qwen2.5:14b
+- **Embeddings:** MiniLM-L12 · mpnet-base · e5-large · bge-m3 · LaBSE
+- **Preguntas:** 12 (P1–P10 + P11 propina + P12 libros escolares)
+- **k:** 3 · **Prompt:** versión anti-alucinación · **Juez:** Gemini 2.5 Flash
+- **Total evaluaciones:** 5 × 5 × 12 = 300
 
-**Nota técnica:** bge-m3 y LaBSE requieren `model_kwargs={"use_safetensors": True}` para evitar error con `pytorch_model.bin` bajo torch 2.5.1.
+### Resultados — Score por modelo (promedio sobre los 5 embeddings)
+
+| Posición | Modelo | Score | Correctas | Parciales | Incorrectas |
+|:--------:|--------|:-----:|:---------:|:---------:|:-----------:|
+| 🥇 1 | **qwen2.5:14b** | 82/120 | 32 (53%) | 18 (30%) | 10 (17%) |
+| 🥈 2 | **llama3.1:8b** | 74/120 | 26 (43%) | 22 (37%) | 12 (20%) |
+| 🥈 2 | **mistral-nemo:12b** | 74/120 | 22 (37%) | 30 (50%) | 8 (13%) |
+| 4 | mistral:7b-instruct | 69/120 | 20 (33%) | 29 (48%) | 11 (18%) |
+| 5 | gemma2:9b | 67/120 | 19 (32%) | 29 (48%) | 12 (20%) |
+
+### Resultados — Score por embedding (promedio sobre los 5 modelos)
+
+| Posición | Embedding | Score promedio |
+|:--------:|-----------|:--------------:|
+| 🥇 1 | **bge-m3** | **1.45** |
+| 🥈 2 | **e5-large** | **1.40** |
+| 3 | MiniLM-L12 | 1.23 |
+| 4 | mpnet-base | 1.18 |
+| 5 | LaBSE | **0.83** ← claramente inferior |
+
+### Top 3 combinaciones modelo × embedding
+
+| # | Modelo | Embedding | Score promedio |
+|:-:|--------|-----------|:--------------:|
+| 🥇 1 | qwen2.5:14b | bge-m3 | **1.75** |
+| 🥈 2 | llama3.1:8b | bge-m3 | **1.58** |
+| 🥉 3 | mistral:7b-instruct | e5-large | **1.50** |
+
+### Hallazgos clave
+
+1. **El embedding es más determinante que el LLM.** LaBSE tiene un score un 40% menor que bge-m3 con los mismos modelos.
+2. **P6 sigue siendo fallo sistémico** — todos los modelos responden que INDECOPI puede dar indemnización (incorrecto). Causa: el corpus no tiene documento que explique los límites de INDECOPI.
+3. **qwen2.5:14b + bge-m3 es la mejor combinación** pero aún tiene alucinaciones: confunde OSIPTEL con INDECOPI (P2), inventa instituciones ("ORFEO", "Proconsumo").
+4. **LaBSE descartado** para producción — rendimiento consistentemente inferior en todas las combinaciones.
+
+---
+
+## Experimento 5 — Corpus ampliado + Pre-filtrado por categoría (PLANIFICADO)
+
+### Motivación
+
+Los dos problemas principales identificados en el Experimento 4 son atacables:
+1. **P6 (fallo sistémico):** el corpus no tiene documentos sobre los límites de INDECOPI ni sobre el arbitraje de consumo como alternativa.
+2. **Contaminación de contexto cruzado:** el retriever recupera documentos de dominios incorrectos (telecomunicaciones para preguntas generales, SOAT para preguntas de INDECOPI).
+
+### Mejoras a implementar
+
+**Mejora 1 — Corpus ampliado**
+
+Se agregan dos documentos nuevos a `final_json/informes/`:
+- `Cartilla Ya lo sabes - Arbitraje de Consumo.json` — aclara que el árbitro SÍ puede ordenar indemnización económica (a diferencia de INDECOPI).
+- `Resolucion Final 016-2022-CPC-INDECOPI.json` — caso real donde INDECOPI explícitamente deniega indemnización y remite al Poder Judicial. Clave para P6.
+
+**Mejora 2 — Pre-filtrado por categoría**
+
+Antes de recuperar del vector store, filtrar por `categoria_consumo` usando metadata de ChromaDB. Ejemplo: preguntas sobre telecomunicaciones solo buscan en documentos de ese dominio, evitando contaminación cruzada.
 
 ### Configuración del experimento
 
-- **Modelos LLM:** mistral:7b-instruct · llama3.1:8b · gemma2:9b · mistral-nemo:12b · qwen2.5:14b
-- **Preguntas:** 12 (set ampliado, incluyendo P11 propina y P12 libros escolares)
-- **k:** 3 documentos recuperados
-- **Prompt:** versión anti-alucinación (actualizado en esta sesión)
-- **Total combinaciones:** 5 × 5 × 12 = 300
-- **Salida:** `evaluacion_embeddings.json` (reanudable)
+- **Modelos LLM:** solo top 3 → **qwen2.5:14b · llama3.1:8b · mistral:7b-instruct**
+- **Embeddings:** solo top 2 → **bge-m3 · e5-large** (LaBSE descartado)
+- **Preguntas:** mismas 12 del Experimento 4
+- **k:** 3 · **Prompt:** mismo anti-alucinación
+- **Total combinaciones:** 3 × 2 × 12 = 72
+- **Juez:** Gemini 2.5 Flash
 
-### Estado
-
-⏳ **CORRIENDO** — se espera terminar en ~2-3 horas. Guardar después de cada pregunta, crash-safe.
-
-### Siguiente paso
+### Pasos para ejecutar
 
 ```bash
-python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida scores_gemini_embeddings
+# 1. Re-indexar con los nuevos documentos (una vez por embedding)
+python src/ingest.py --embedding bge-m3
+python src/ingest.py --embedding e5-large
+
+# 2. Re-evaluar
+python src/evaluacion_embeddings.py --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct --embeddings bge-m3 e5-large
+
+# 3. Evaluar con juez
+python src/evaluar_llm_judge.py --entrada evaluacion_exp5.json --salida scores_gemini_exp5
+
+# 4. Generar reporte comparativo
+python src/generar_reporte.py --entrada scores_gemini_exp5.json --baseline scores_gemini_embeddings.json
 ```
 
-### Resultados
+### Métrica de éxito
 
-*(pendiente — completar cuando termine la evaluación)*
+- P6 deja de ser fallo universal (al menos 2 de 3 modelos la responden correctamente).
+- Score promedio del top 3 supera 1.75 (umbral del mejor resultado actual).

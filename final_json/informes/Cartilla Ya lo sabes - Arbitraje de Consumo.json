@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué es el arbitraje de consumo?",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "El arbitraje de consumo es una alternativa para solucionar las controversias que puedan surgir entre proveedores y consumidores donde se designa a un profesional, denominado árbitro, para que tome una decisión definitiva sobre el caso. Si la demanda es fundada el árbitro ordena al proveedor que cumpla con la medida solicitada por el consumidor y eventualmente realiza una indemnización para compensar daños económicos, pero no impone multas ni ordena indemnizaciones por daños morales.",
+    "source": "0001.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué puede ordenar el árbitro?",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "En caso que el árbitro le dé la razón al consumidor, entonces ordena al proveedor que cumpla con reemplazar un producto o servicio vendido, reparar el bien o devolver el dinero pagado. El árbitro no impone multas al proveedor, pero puede ordenarle que indemnice al consumidor por los daños económicos que le haya generado. Si el consumidor quiere solicitar una indemnización por daños morales tendrá que acudir al Poder Judicial. Esto diferencia al arbitraje de consumo de los procedimientos ante INDECOPI: el árbitro sí puede ordenar indemnización económica, INDECOPI no puede hacerlo.",
+    "source": "0002.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Ventajas del arbitraje de consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "El arbitraje de consumo es gratuito: no hay cobro de tasas ni de honorarios del árbitro. Se ahorra tiempo porque se puede llevar el proceso de forma electrónica, obteniendo la decisión final en un máximo de 45 días hábiles. No puede obligarse a nadie a someterse a un arbitraje, tanto el consumidor como el proveedor deben hacerlo voluntariamente.",
+    "source": "0003.txt"
+  }
+]

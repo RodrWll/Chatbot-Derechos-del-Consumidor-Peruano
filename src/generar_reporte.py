@@ -84,6 +84,91 @@ def grafico_embedding(df: pd.DataFrame) -> str:
     return _b64(fig)
 
 
+def grafico_comparativa_baseline(df_emb: pd.DataFrame, df_base: pd.DataFrame) -> str:
+    modelos = sorted(set(df_emb["modelo"].unique()) | set(df_base["modelo"].unique()))
+    base_scores = df_base.groupby("modelo")["score_gemini"].mean()
+    emb_scores  = df_emb.groupby("modelo")["score_gemini"].mean()
+
+    x = np.arange(len(modelos))
+    ancho = 0.35
+
+    fig, ax = plt.subplots(figsize=(10, max(4, len(modelos) * 0.8)))
+    bars1 = ax.bar(x - ancho/2, [base_scores.get(m, 0) for m in modelos],
+                   ancho, label="Baseline (MiniLM-L12)", color="#7fb3d3")
+    bars2 = ax.bar(x + ancho/2, [emb_scores.get(m, 0) for m in modelos],
+                   ancho, label="Embeddings (promedio)", color="#27ae60")
+
+    for bar in bars1:
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.03,
+                f"{bar.get_height():.2f}", ha="center", va="bottom", fontsize=9)
+    for bar in bars2:
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.03,
+                f"{bar.get_height():.2f}", ha="center", va="bottom", fontsize=9)
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(modelos, rotation=15, ha="right", fontsize=10)
+    ax.set_ylim(0, 2.3)
+    ax.set_ylabel("Score promedio (0–2)", fontsize=11)
+    ax.axhline(1, color="gray", linestyle="--", alpha=0.4)
+    ax.legend(fontsize=10)
+    ax.set_title("Baseline vs Experimento de embeddings por modelo", fontsize=13, fontweight="bold", pad=14)
+    plt.tight_layout()
+    return _b64(fig)
+
+
+def tabla_comparativa_baseline(df_emb: pd.DataFrame, df_base: pd.DataFrame) -> str:
+    modelos = sorted(set(df_emb["modelo"].unique()) | set(df_base["modelo"].unique()))
+    base_scores = df_base.groupby("modelo")["score_gemini"].mean()
+    emb_scores  = df_emb.groupby("modelo")["score_gemini"].mean()
+
+    # mejor embedding por modelo
+    mejor_emb = (
+        df_emb.groupby(["modelo", "embedding"])["score_gemini"]
+        .mean()
+        .reset_index()
+        .sort_values("score_gemini", ascending=False)
+        .drop_duplicates("modelo")
+        .set_index("modelo")
+    )
+
+    rows = ""
+    for modelo in sorted(modelos, key=lambda m: emb_scores.get(m, 0), reverse=True):
+        base = base_scores.get(modelo)
+        emb  = emb_scores.get(modelo)
+        mejor = mejor_emb.loc[modelo] if modelo in mejor_emb.index else None
+
+        base_str = f"{base:.2f}" if base is not None else "—"
+        emb_str  = f"{emb:.2f}"  if emb  is not None else "—"
+
+        if base is not None and emb is not None:
+            delta = emb - base
+            delta_color = COLOR_CORRECTO if delta > 0 else (COLOR_INCORRECTO if delta < 0 else "#888")
+            delta_str = f'<span style="color:{delta_color};font-weight:700">{delta:+.2f}</span>'
+        else:
+            delta_str = "—"
+
+        mejor_str = f"{mejor['embedding']} ({mejor['score_gemini']:.2f})" if mejor is not None else "—"
+
+        rows += f"""<tr>
+            <td><code>{modelo}</code></td>
+            <td>{base_str}</td>
+            <td>{emb_str}</td>
+            <td>{delta_str}</td>
+            <td>{mejor_str}</td>
+        </tr>"""
+
+    return f"""<table>
+        <thead><tr>
+            <th>Modelo</th>
+            <th>Score Baseline</th>
+            <th>Score Embeddings (prom.)</th>
+            <th>Δ Mejora</th>
+            <th>Mejor embedding</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+    </table>"""
+
+
 def heatmap_modelo_embedding(df: pd.DataFrame) -> str:
     pivot = df.pivot_table(values="score_gemini", index="modelo",
                            columns="embedding", aggfunc="mean")
@@ -373,7 +458,7 @@ footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.82rem; }
 """
 
 
-def generar_html(df: pd.DataFrame, fecha: str) -> str:
+def generar_html(df: pd.DataFrame, fecha: str, df_base: pd.DataFrame | None = None) -> str:
     n_total   = len(df)
     n_emb     = df["embedding"].nunique()
     n_modelos = df["modelo"].nunique()
@@ -392,7 +477,23 @@ def generar_html(df: pd.DataFrame, fecha: str) -> str:
     img_emb      = grafico_embedding(df)
     img_emb_llm  = heatmap_modelo_embedding(df)
     img_heat     = heatmap_categoria(df)
-    ejemplos = obtener_ejemplos(df)
+    ejemplos     = obtener_ejemplos(df)
+
+    if df_base is not None:
+        img_base    = grafico_comparativa_baseline(df, df_base)
+        tabla_base  = tabla_comparativa_baseline(df, df_base)
+        seccion_baseline = f"""
+  <section id="baseline">
+    <h2>Comparativa con Baseline</h2>
+    <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
+      Baseline: embedding MiniLM-L12 original · Embeddings: promedio sobre los 5 embeddings evaluados.
+      Δ positivo significa mejora respecto al baseline.
+    </p>
+    {tabla_base}
+    <img class="chart" src="data:image/png;base64,{img_base}" alt="Comparativa baseline">
+  </section>"""
+    else:
+        seccion_baseline = ""
 
     card_mejor = card_ejemplo(ejemplos["mejor"], "Mejor respuesta", COLOR_CORRECTO) \
                  if ejemplos["mejor"] is not None else "<p>Sin datos.</p>"
@@ -419,6 +520,7 @@ def generar_html(df: pd.DataFrame, fecha: str) -> str:
   <a href="#llm">LLM vs LLM</a>
   <a href="#embeddings">Embeddings</a>
   <a href="#categorias">Por categoría</a>
+  {'<a href="#baseline">vs Baseline</a>' if df_base is not None else ''}
   <a href="#ejemplos">Ejemplos</a>
 </nav>
 
@@ -456,6 +558,8 @@ def generar_html(df: pd.DataFrame, fecha: str) -> str:
     <img class="chart" src="data:image/png;base64,{img_heat}" alt="Heatmap categorías">
   </section>
 
+  {seccion_baseline}
+
   <section id="ejemplos">
     <h2>Ejemplos destacados</h2>
     <h3>Mejor respuesta</h3>
@@ -480,9 +584,23 @@ def parsear_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Genera reporte HTML de evaluación RAG")
     p.add_argument("--entrada", default="scores_gemini_embeddings.json",
                    help="JSON de scores (default: scores_gemini_embeddings.json)")
+    p.add_argument("--baseline", default="scores_gemini_baseline.json",
+                   help="JSON de scores baseline para comparativa (default: scores_gemini_baseline.json)")
     p.add_argument("--salida", default="reporte.html",
                    help="Archivo HTML de salida (default: reporte.html)")
     return p.parse_args()
+
+
+def _cargar_df(path: str) -> pd.DataFrame:
+    with open(path, encoding="utf-8") as f:
+        datos = json.load(f)
+    df = pd.DataFrame(datos)
+    df = df[df["score_gemini"].notna()].copy()
+    df["score_gemini"] = df["score_gemini"].astype(int)
+    df["alucinaciones"] = df["alucinaciones"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
+    return df
 
 
 def main() -> None:
@@ -493,23 +611,22 @@ def main() -> None:
         return
 
     print(f"Cargando {args.entrada}...")
-    with open(args.entrada, encoding="utf-8") as f:
-        datos = json.load(f)
+    df = _cargar_df(args.entrada)
+    print(f"  Entradas con score: {len(df)}")
 
-    df = pd.DataFrame(datos)
-    df = df[df["score_gemini"].notna()].copy()
-    df["score_gemini"] = df["score_gemini"].astype(int)
-    df["alucinaciones"] = df["alucinaciones"].apply(
-        lambda x: x if isinstance(x, list) else []
-    )
-
-    print(f"Entradas con score: {len(df)} de {len(datos)}")
+    df_base = None
+    if Path(args.baseline).exists():
+        print(f"Cargando baseline: {args.baseline}...")
+        df_base = _cargar_df(args.baseline)
+        print(f"  Entradas baseline: {len(df_base)}")
+    else:
+        print(f"  (baseline no encontrado: {args.baseline} — se omite sección comparativa)")
 
     if df.empty:
-        print("[ERROR] No hay entradas con score aún. Espera a que termine la evaluación.")
+        print("[ERROR] No hay entradas con score aún.")
         return
 
-    html = generar_html(df, date.today().isoformat())
+    html = generar_html(df, date.today().isoformat(), df_base)
     Path(args.salida).write_text(html, encoding="utf-8")
     print(f"Reporte generado: {args.salida}")
 

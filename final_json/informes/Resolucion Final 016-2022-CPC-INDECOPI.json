@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Resolución Final N° 016-2022/CPC-INDECOPI-PUN",
+    "tipo_doc": "norma_reglamentaria",
+    "capitulo_seccion": "Antecedentes del caso",
+    "categoria_consumo": [
+      "productos y servicios"
+    ],
+    "texto": "Caso: denuncia presentada por la señora Vilma Condori en representación de su menor hijo L.D.F., en contra de Power Park Perú SAC, por infracciones al Código de Protección y Defensa del Consumidor. El menor sufrió fractura de tióia y peroné izquierdos al usar el juego mecánico denominado gusanito, el cual no contaba con medidas de seguridad como cinturón de seguridad y presentaba carriles oxidados. El denunciado fue declarado rebelde al no presentar sus descargos.",
+    "source": "0001.txt"
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Resolución Final N° 016-2022/CPC-INDECOPI-PUN",
+    "tipo_doc": "norma_reglamentaria",
+    "capitulo_seccion": "Deber de seguridad - Artículo 25° del Código",
+    "categoria_consumo": [
+      "productos y servicios"
+    ],
+    "texto": "El artículo 25° del Código de Protección y Defensa del Consumidor (Ley N° 29571) establece que los productos o servicios ofertados en el mercado no deben conllevar, en condiciones normales o previsibles, un riesgo injustificado para la salud o seguridad de los consumidores. El proveedor se libera de responsabilidad solo si acredita una causa objetiva, justificada y no previsible: caso fortuito, fuerza mayor, hecho determinante de un tercero o imprudencia del propio consumidor afectado (artículo 104° del Código).",
+    "source": "0002.txt"
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Resolución Final N° 016-2022/CPC-INDECOPI-PUN",
+    "tipo_doc": "norma_reglamentaria",
+    "capitulo_seccion": "Límites de INDECOPI - Indemnización",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "INDECOPI NO es competente para ordenar indemnizaciones por daños y perjuicios. El artículo 100° del Código establece que la responsabilidad civil del proveedor que ocasione daños se resuelve en la vía jurisdiccional correspondiente, es decir, ante el Poder Judicial. Las indemnizaciones civiles como daño emergente, lucro cesante, daño moral y daño a la persona son de competencia exclusiva del Poder Judicial, no de INDECOPI. INDECOPI solo puede dictar medidas correctivas reparadoras (devolver dinero, reemplazar producto, cubrir gastos médicos) y complementarias (ordenar mejoras al proveedor), pero NO puede ordenar indemnización por daños y perjuicios.",
+    "source": "0003.txt"
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Resolución Final N° 016-2022/CPC-INDECOPI-PUN",
+    "tipo_doc": "norma_reglamentaria",
+    "capitulo_seccion": "Sanciones impuestas",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Se impusieron las siguientes multas a Power Park Perú SAC: 10 UIT por infracción al artículo 25° (falta de medidas de seguridad en los juegos mecánicos) y 5 UIT por infracción al artículo 19° (falta de idoneidad al no auxiliar al menor tras el accidente). Total: 15 UIT. Se ordenó devolver los gastos médicos a la denunciante. Se denegó la solicitud de indemnización por daños, remitiendo a la denunciante al Poder Judicial para ese fin. El incumplimiento de medidas correctivas genera multas coercitivas de al menos 3 UIT, duplicables hasta 200 UIT.",
+    "source": "0004.txt"
+  }
+]
