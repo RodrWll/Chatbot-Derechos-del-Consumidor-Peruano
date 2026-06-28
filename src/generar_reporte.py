@@ -1,0 +1,462 @@
+"""
+Genera reporte.html con los resultados de evaluación LLM-judge.
+
+Uso:
+    python src/generar_reporte.py
+    python src/generar_reporte.py --entrada scores_gemini_embeddings.json --salida reporte.html
+"""
+
+import argparse
+import base64
+import io
+import json
+from datetime import date
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+
+COLOR_CORRECTO  = "#27ae60"
+COLOR_PARCIAL   = "#e67e22"
+COLOR_INCORRECTO = "#e74c3c"
+AZUL            = "#2980b9"
+
+
+# ── Gráficos ─────────────────────────────────────────────────────────────────
+
+def _b64(fig: plt.Figure) -> str:
+    buf = io.BytesIO()
+    fig.savefig(buf, format="png", dpi=150, bbox_inches="tight", facecolor="white")
+    buf.seek(0)
+    data = base64.b64encode(buf.read()).decode()
+    plt.close(fig)
+    return data
+
+
+def grafico_llm(df: pd.DataFrame) -> str:
+    filas = []
+    for modelo, g in df.groupby("modelo"):
+        n = len(g)
+        filas.append({
+            "modelo": modelo,
+            "correctas": (g["score_gemini"] == 2).sum() / n * 100,
+            "parciales":  (g["score_gemini"] == 1).sum() / n * 100,
+            "incorrectas":(g["score_gemini"] == 0).sum() / n * 100,
+            "promedio":   g["score_gemini"].mean(),
+        })
+    r = pd.DataFrame(filas).sort_values("promedio")
+
+    fig, ax = plt.subplots(figsize=(10, max(4, len(r) * 1.0)))
+    y = range(len(r))
+    ax.barh(list(y), r["correctas"],  color=COLOR_CORRECTO,  label="Correcto")
+    ax.barh(list(y), r["parciales"],  left=r["correctas"],   color=COLOR_PARCIAL,   label="Parcial")
+    ax.barh(list(y), r["incorrectas"],left=r["correctas"]+r["parciales"],
+            color=COLOR_INCORRECTO, label="Incorrecto")
+    ax.set_yticks(list(y))
+    ax.set_yticklabels(r["modelo"].tolist(), fontsize=11)
+    ax.set_xlabel("% de respuestas", fontsize=11)
+    ax.set_xlim(0, 100)
+    ax.axvline(50, color="gray", linestyle="--", alpha=0.35)
+    ax.legend(loc="lower right", fontsize=10)
+    ax.set_title("Distribución de scores por modelo LLM", fontsize=13, fontweight="bold", pad=14)
+    plt.tight_layout()
+    return _b64(fig)
+
+
+def grafico_embedding(df: pd.DataFrame) -> str:
+    r = df.groupby("embedding")["score_gemini"].mean().reset_index()
+    r = r.sort_values("score_gemini", ascending=False)
+
+    fig, ax = plt.subplots(figsize=(max(6, len(r) * 1.6), 4))
+    bars = ax.bar(r["embedding"], r["score_gemini"], color=AZUL, width=0.5)
+    ax.set_ylim(0, 2.3)
+    ax.set_ylabel("Score promedio (0–2)", fontsize=11)
+    ax.axhline(1, color="gray", linestyle="--", alpha=0.4)
+    ax.set_title("Score promedio por modelo de embeddings", fontsize=13, fontweight="bold", pad=14)
+    for bar, val in zip(bars, r["score_gemini"]):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.05,
+                f"{val:.2f}", ha="center", va="bottom", fontsize=12, fontweight="bold")
+    plt.tight_layout()
+    return _b64(fig)
+
+
+def heatmap_modelo_embedding(df: pd.DataFrame) -> str:
+    pivot = df.pivot_table(values="score_gemini", index="modelo",
+                           columns="embedding", aggfunc="mean")
+    fig, ax = plt.subplots(figsize=(max(8, len(pivot.columns) * 2.0),
+                                    max(4, len(pivot) * 0.9)))
+    im = ax.imshow(pivot.values, cmap="RdYlGn", vmin=0, vmax=2, aspect="auto")
+    ax.set_xticks(range(len(pivot.columns)))
+    ax.set_yticks(range(len(pivot.index)))
+    ax.set_xticklabels(pivot.columns, fontsize=11)
+    ax.set_yticklabels(pivot.index, fontsize=10)
+    for i in range(len(pivot.index)):
+        for j in range(len(pivot.columns)):
+            val = pivot.values[i, j]
+            if not np.isnan(val):
+                color = "white" if val < 0.7 or val > 1.6 else "black"
+                ax.text(j, i, f"{val:.2f}", ha="center", va="center",
+                        fontsize=11, fontweight="bold", color=color)
+    plt.colorbar(im, ax=ax, label="Score promedio  (0 = incorrecto · 2 = correcto)")
+    ax.set_title("Score promedio por modelo LLM × embedding", fontsize=13, fontweight="bold", pad=14)
+    plt.tight_layout()
+    return _b64(fig)
+
+
+def heatmap_categoria(df: pd.DataFrame) -> str:
+    pivot = df.pivot_table(values="score_gemini", index="modelo",
+                           columns="categoria", aggfunc="mean")
+    fig, ax = plt.subplots(figsize=(max(8, len(pivot.columns) * 2.2),
+                                    max(4, len(pivot) * 0.9)))
+    im = ax.imshow(pivot.values, cmap="RdYlGn", vmin=0, vmax=2, aspect="auto")
+    ax.set_xticks(range(len(pivot.columns)))
+    ax.set_yticks(range(len(pivot.index)))
+    ax.set_xticklabels(pivot.columns, rotation=30, ha="right", fontsize=10)
+    ax.set_yticklabels(pivot.index, fontsize=10)
+    for i in range(len(pivot.index)):
+        for j in range(len(pivot.columns)):
+            val = pivot.values[i, j]
+            if not np.isnan(val):
+                color = "white" if val < 0.7 or val > 1.6 else "black"
+                ax.text(j, i, f"{val:.1f}", ha="center", va="center",
+                        fontsize=11, fontweight="bold", color=color)
+    plt.colorbar(im, ax=ax, label="Score promedio  (0 = incorrecto · 2 = correcto)")
+    ax.set_title("Score promedio por modelo × categoría", fontsize=13, fontweight="bold", pad=14)
+    plt.tight_layout()
+    return _b64(fig)
+
+
+# ── Ejemplos destacados ───────────────────────────────────────────────────────
+
+def _alucinaciones(val) -> list:
+    if isinstance(val, list):
+        return [a for a in val if a]
+    return []
+
+
+def obtener_ejemplos(df: pd.DataFrame) -> dict:
+    correctas   = df[df["score_gemini"] == 2]
+    incorrectas = df[df["score_gemini"] == 0]
+    con_aluc    = df[df["alucinaciones"].apply(_alucinaciones).apply(bool)]
+
+    mejor      = correctas.loc[correctas["justificacion_gemini"].str.len().idxmax()] \
+                 if not correctas.empty else None
+    peor       = incorrectas.iloc[0] if not incorrectas.empty else None
+    alucinacion = con_aluc.iloc[0]   if not con_aluc.empty   else None
+
+    return {"mejor": mejor, "peor": peor, "alucinacion": alucinacion}
+
+
+# ── Tablas HTML ───────────────────────────────────────────────────────────────
+
+def _badge(score) -> str:
+    if score == 2:
+        return f'<span class="badge correcto">Correcto</span>'
+    if score == 1:
+        return f'<span class="badge parcial">Parcial</span>'
+    if score == 0:
+        return f'<span class="badge incorrecto">Incorrecto</span>'
+    return f'<span class="badge na">—</span>'
+
+
+def tabla_llm(df: pd.DataFrame) -> str:
+    filas = []
+    for modelo, g in df.groupby("modelo"):
+        n  = len(g)
+        s  = g["score_gemini"]
+        ok = (s == 2).sum()
+        pa = (s == 1).sum()
+        no = (s == 0).sum()
+        aluc = sum(len(_alucinaciones(v)) for v in g["alucinaciones"])
+        filas.append({
+            "Modelo": modelo, "N": n,
+            "Score": f"{s.sum():.0f}/{n*2}",
+            "Promedio": f"{s.mean():.2f}",
+            "% Correcto":   f"{ok/n*100:.0f}%",
+            "% Parcial":    f"{pa/n*100:.0f}%",
+            "% Incorrecto": f"{no/n*100:.0f}%",
+            "Alucinaciones": aluc,
+        })
+    filas.sort(key=lambda x: float(x["Promedio"]), reverse=True)
+
+    rows = ""
+    for f in filas:
+        rows += f"""<tr>
+            <td><code>{f['Modelo']}</code></td>
+            <td>{f['N']}</td>
+            <td><strong>{f['Score']}</strong></td>
+            <td><strong>{f['Promedio']}</strong></td>
+            <td style="color:{COLOR_CORRECTO};font-weight:600">{f['% Correcto']}</td>
+            <td style="color:{COLOR_PARCIAL};font-weight:600">{f['% Parcial']}</td>
+            <td style="color:{COLOR_INCORRECTO};font-weight:600">{f['% Incorrecto']}</td>
+            <td>{'⚠️ ' + str(f['Alucinaciones']) if f['Alucinaciones'] else '—'}</td>
+        </tr>"""
+    return f"""<table>
+        <thead><tr>
+            <th>Modelo</th><th>N</th><th>Score total</th><th>Promedio</th>
+            <th>% Correcto</th><th>% Parcial</th><th>% Incorrecto</th><th>Alucinaciones</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+    </table>"""
+
+
+def tabla_embedding(df: pd.DataFrame) -> str:
+    filas = []
+    for emb, g in df.groupby("embedding"):
+        s = g["score_gemini"]
+        n = len(g)
+        filas.append({
+            "Embedding": emb,
+            "Modelo completo": g["embedding_modelo"].iloc[0] if "embedding_modelo" in g.columns else "—",
+            "N": n,
+            "Promedio": f"{s.mean():.2f}",
+            "% Correcto": f"{(s==2).sum()/n*100:.0f}%",
+            "% Incorrecto": f"{(s==0).sum()/n*100:.0f}%",
+        })
+    filas.sort(key=lambda x: float(x["Promedio"]), reverse=True)
+
+    rows = ""
+    for f in filas:
+        rows += f"""<tr>
+            <td><strong>{f['Embedding']}</strong></td>
+            <td style="font-size:0.85em;color:#555">{f['Modelo completo']}</td>
+            <td>{f['N']}</td>
+            <td><strong>{f['Promedio']}</strong></td>
+            <td style="color:{COLOR_CORRECTO};font-weight:600">{f['% Correcto']}</td>
+            <td style="color:{COLOR_INCORRECTO};font-weight:600">{f['% Incorrecto']}</td>
+        </tr>"""
+    return f"""<table>
+        <thead><tr>
+            <th>Embedding</th><th>Modelo</th><th>N</th>
+            <th>Promedio</th><th>% Correcto</th><th>% Incorrecto</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+    </table>"""
+
+
+def card_ejemplo(row, titulo: str, color: str) -> str:
+    aluc = _alucinaciones(row.get("alucinaciones", []))
+    aluc_html = ""
+    if aluc:
+        items = "".join(f"<li>{a}</li>" for a in aluc)
+        aluc_html = f'<div class="aluc"><strong>⚠️ Alucinaciones detectadas:</strong><ul>{items}</ul></div>'
+
+    return f"""<div class="card" style="border-left:4px solid {color}">
+        <div class="card-header" style="color:{color}">{titulo}</div>
+        <p class="meta">
+            <span class="tag">{row.get('modelo','?')}</span>
+            <span class="tag">{row.get('embedding','?')}</span>
+            <span class="tag">{row.get('categoria','?')}</span>
+            {_badge(row.get('score_gemini'))}
+        </p>
+        <p><strong>Pregunta:</strong> {row.get('pregunta','')}</p>
+        <div class="box-ref"><strong>Referencia:</strong><br>{row.get('respuesta_referencia','')}</div>
+        <div class="box-resp"><strong>Respuesta del chatbot:</strong><br>{row.get('respuesta','').strip()}</div>
+        {aluc_html}
+        <p class="justif"><em>Justificación Gemini:</em> {row.get('justificacion_gemini','')}</p>
+    </div>"""
+
+
+# ── HTML principal ────────────────────────────────────────────────────────────
+
+CSS = """
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f4f6f9; color: #2c3e50; line-height: 1.6; }
+header { background: #1a252f; color: white; padding: 2rem 3rem; }
+header h1 { font-size: 1.7rem; margin-bottom: 0.3rem; }
+header p  { opacity: 0.75; font-size: 0.95rem; }
+nav { background: #2c3e50; padding: 0.6rem 3rem; display: flex; gap: 2rem; }
+nav a { color: #bdc3c7; text-decoration: none; font-size: 0.9rem; }
+nav a:hover { color: white; }
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+section { background: white; border-radius: 8px; padding: 2rem;
+          margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+h2 { font-size: 1.25rem; margin-bottom: 1.2rem; color: #1a252f;
+     padding-bottom: 0.5rem; border-bottom: 2px solid #e8edf2; }
+h3 { font-size: 1rem; margin: 1.2rem 0 0.6rem; color: #34495e; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th { background: #f0f3f7; text-align: left; padding: 0.6rem 0.8rem;
+     font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em;
+     color: #555; border-bottom: 2px solid #dde3ea; }
+td { padding: 0.55rem 0.8rem; border-bottom: 1px solid #edf0f4; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbfc; }
+code { background: #eef1f5; padding: 0.1em 0.4em; border-radius: 3px;
+       font-size: 0.88em; color: #c0392b; }
+.badge { display: inline-block; padding: 0.15em 0.6em; border-radius: 12px;
+         font-size: 0.78rem; font-weight: 600; }
+.correcto   { background: #d5f5e3; color: #1e8449; }
+.parcial    { background: #fdebd0; color: #a04000; }
+.incorrecto { background: #fadbd8; color: #922b21; }
+.na         { background: #eee; color: #888; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+              gap: 1rem; margin-bottom: 1.5rem; }
+.stat { background: #f8fafc; border-radius: 6px; padding: 1rem; text-align: center;
+        border: 1px solid #e3e8ef; }
+.stat .num  { font-size: 2rem; font-weight: 700; color: #2980b9; }
+.stat .lbl  { font-size: 0.8rem; color: #777; margin-top: 0.2rem; }
+.card { background: #fdfdfd; border-radius: 6px; padding: 1.4rem;
+        margin-bottom: 1.2rem; border: 1px solid #e8edf2; }
+.card-header { font-size: 1rem; font-weight: 700; margin-bottom: 0.8rem; }
+.meta { margin-bottom: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items:center; }
+.tag { background: #e8edf2; color: #444; padding: 0.15em 0.55em;
+       border-radius: 10px; font-size: 0.78rem; }
+.box-ref, .box-resp { background: #f8fafc; border-left: 3px solid #bdc3c7;
+                       padding: 0.7rem 1rem; margin: 0.6rem 0; font-size: 0.9rem;
+                       border-radius: 0 4px 4px 0; }
+.box-resp { border-left-color: #2980b9; }
+.aluc { background: #fef9e7; border-left: 3px solid #f39c12; padding: 0.6rem 1rem;
+        margin: 0.6rem 0; font-size: 0.88rem; border-radius: 0 4px 4px 0; }
+.aluc ul { margin: 0.3rem 0 0 1.2rem; }
+.justif { font-size: 0.85rem; color: #666; margin-top: 0.8rem; }
+img.chart { max-width: 100%; height: auto; display: block; margin: 1rem auto; }
+footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.82rem; }
+"""
+
+
+def generar_html(df: pd.DataFrame, fecha: str) -> str:
+    n_total   = len(df)
+    n_emb     = df["embedding"].nunique()
+    n_modelos = df["modelo"].nunique()
+    pct_ok    = (df["score_gemini"] == 2).mean() * 100
+    prom_gral = df["score_gemini"].mean()
+
+    stats = f"""<div class="stats-grid">
+        <div class="stat"><div class="num">{n_total}</div><div class="lbl">Evaluaciones</div></div>
+        <div class="stat"><div class="num">{n_modelos}</div><div class="lbl">Modelos LLM</div></div>
+        <div class="stat"><div class="num">{n_emb}</div><div class="lbl">Embeddings</div></div>
+        <div class="stat"><div class="num">{pct_ok:.0f}%</div><div class="lbl">Respuestas correctas</div></div>
+        <div class="stat"><div class="num">{prom_gral:.2f}</div><div class="lbl">Score promedio global (0–2)</div></div>
+    </div>"""
+
+    img_llm      = grafico_llm(df)
+    img_emb      = grafico_embedding(df)
+    img_emb_llm  = heatmap_modelo_embedding(df)
+    img_heat     = heatmap_categoria(df)
+    ejemplos = obtener_ejemplos(df)
+
+    card_mejor = card_ejemplo(ejemplos["mejor"], "Mejor respuesta", COLOR_CORRECTO) \
+                 if ejemplos["mejor"] is not None else "<p>Sin datos.</p>"
+    card_peor  = card_ejemplo(ejemplos["peor"],  "Peor respuesta",  COLOR_INCORRECTO) \
+                 if ejemplos["peor"] is not None else "<p>Sin datos.</p>"
+    card_aluc  = card_ejemplo(ejemplos["alucinacion"], "Alucinación detectada", COLOR_PARCIAL) \
+                 if ejemplos["alucinacion"] is not None else "<p>No se detectaron alucinaciones.</p>"
+
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reporte de Evaluación — Chatbot Derechos del Consumidor</title>
+<style>{CSS}</style>
+</head>
+<body>
+<header>
+  <h1>Chatbot de Simplificación de Derechos del Consumidor Peruano</h1>
+  <p>Reporte de evaluación LLM-as-a-judge · Juez: Gemini 2.5 Flash · Generado: {fecha}</p>
+</header>
+<nav>
+  <a href="#resumen">Resumen</a>
+  <a href="#llm">LLM vs LLM</a>
+  <a href="#embeddings">Embeddings</a>
+  <a href="#categorias">Por categoría</a>
+  <a href="#ejemplos">Ejemplos</a>
+</nav>
+
+<div class="container">
+
+  <section id="resumen">
+    <h2>Resumen general</h2>
+    {stats}
+  </section>
+
+  <section id="llm">
+    <h2>Comparativa LLM vs LLM</h2>
+    {tabla_llm(df)}
+    <img class="chart" src="data:image/png;base64,{img_llm}" alt="LLM chart">
+  </section>
+
+  <section id="embeddings">
+    <h2>Comparativa de modelos de embeddings</h2>
+    {tabla_embedding(df)}
+    <img class="chart" src="data:image/png;base64,{img_emb}" alt="Embedding chart">
+    <h3>Score por combinación modelo × embedding</h3>
+    <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
+      Verde = correcto · Rojo = incorrecto. Permite identificar qué pares modelo+embedding funcionan mejor.
+    </p>
+    <img class="chart" src="data:image/png;base64,{img_emb_llm}" alt="Heatmap modelo x embedding">
+  </section>
+
+  <section id="categorias">
+    <h2>Score por categoría de pregunta</h2>
+    <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
+      Score promedio por combinación modelo × categoría (verde = correcto · rojo = incorrecto).
+    </p>
+    <img class="chart" src="data:image/png;base64,{img_heat}" alt="Heatmap categorías">
+  </section>
+
+  <section id="ejemplos">
+    <h2>Ejemplos destacados</h2>
+    <h3>Mejor respuesta</h3>
+    {card_mejor}
+    <h3>Peor respuesta</h3>
+    {card_peor}
+    <h3>Caso con alucinación</h3>
+    {card_aluc}
+  </section>
+
+</div>
+<footer>
+  Proyecto académico — Curso PLN · Décimo ciclo · {fecha}
+</footer>
+</body>
+</html>"""
+
+
+# ── main ──────────────────────────────────────────────────────────────────────
+
+def parsear_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Genera reporte HTML de evaluación RAG")
+    p.add_argument("--entrada", default="scores_gemini_embeddings.json",
+                   help="JSON de scores (default: scores_gemini_embeddings.json)")
+    p.add_argument("--salida", default="reporte.html",
+                   help="Archivo HTML de salida (default: reporte.html)")
+    return p.parse_args()
+
+
+def main() -> None:
+    args = parsear_args()
+
+    if not Path(args.entrada).exists():
+        print(f"[ERROR] No se encontró: {args.entrada}")
+        return
+
+    print(f"Cargando {args.entrada}...")
+    with open(args.entrada, encoding="utf-8") as f:
+        datos = json.load(f)
+
+    df = pd.DataFrame(datos)
+    df = df[df["score_gemini"].notna()].copy()
+    df["score_gemini"] = df["score_gemini"].astype(int)
+    df["alucinaciones"] = df["alucinaciones"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
+
+    print(f"Entradas con score: {len(df)} de {len(datos)}")
+
+    if df.empty:
+        print("[ERROR] No hay entradas con score aún. Espera a que termine la evaluación.")
+        return
+
+    html = generar_html(df, date.today().isoformat())
+    Path(args.salida).write_text(html, encoding="utf-8")
+    print(f"Reporte generado: {args.salida}")
+
+
+if __name__ == "__main__":
+    main()

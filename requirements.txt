@@ -1,18 +1,45 @@
-torch>=2.3.0
-torchvision
+# Chatbot Derechos del Consumidor Peruano
+# Instalar con: pip install -r requirements.txt
+# NOTA: PyTorch con CUDA se instala por separado en setup.bat
+
+# --- LangChain ---
 langchain>=0.2
 langchain-community>=0.2
 langchain-core>=0.2
+langchain-huggingface>=0.1
+langchain-chroma>=0.1
+langchain-ollama>=0.1
+
+# --- Vector store y embeddings ---
 chromadb>=0.5
 sentence-transformers>=3.0
 transformers>=4.40
 huggingface-hub>=0.23
+
+# --- LLM local ---
 ollama>=0.2
+
+# --- Interfaz web ---
 streamlit>=1.35
+
+# --- API ---
 fastapi>=0.111
 uvicorn>=0.29
+
+# --- Evaluación LLM-judge ---
+google-genai>=1.0
 python-dotenv>=1.0
+rouge-score>=0.1.2
+
+# --- Análisis y reporte ---
+pandas>=2.0
+matplotlib>=3.8
+numpy>=1.26,<2.0
+
+# --- Jupyter ---
 jupyter
 ipywidgets
+ipykernel
+
+# --- Utilidades ---
 tqdm
-rouge-score>=0.1.2
