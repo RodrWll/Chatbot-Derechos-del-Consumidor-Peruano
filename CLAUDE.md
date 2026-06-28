@@ -4,24 +4,46 @@
 
 Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales sobre derechos del consumidor en Perú para que ciudadanos comunes los entiendan. Usa arquitectura RAG: recupera fragmentos del corpus legal y los procesa con un LLM local para generar respuestas en lenguaje simple.
 
-## Estado actual (actualizado 2026-06-28 — sesión 2)
+## Estado actual (actualizado 2026-06-28 — sesión 3)
 
-- ✅ Fase 1 completa: corpus indexado, RAG funcionando, Streamlit operativo
-- ✅ Fase 2 completa: evaluación de 5 modelos × 10 preguntas (manual)
-- ✅ Fase 3 completa: evaluación automática con Gemini juez — baseline + v2 finalizadas
-- ✅ Corpus ampliado (1356 docs): guía INDECOPI indexada en `chroma_db/`
-- ✅ `evaluacion_resultados.json` — baseline: 5 modelos × 10 preguntas
-- ✅ `evaluacion_resultados_v2.json` — v2: corpus + guía INDECOPI, 5 × 10
-- ✅ `scores_gemini_baseline.json` / `scores_gemini_v2.json` — scores Gemini juez
-- ✅ Prompt anti-alucinación actualizado en `rag_chain.py` (Ley N°29571, INDECOPI vs OSIPTEL/SBS, no indemnización vía INDECOPI)
-- ✅ Modelo default actualizado a `qwen2.5:14b` en `rag_chain.py` y `app.py`
-- ✅ Preguntas de evaluación ampliadas a **12** (P11: propina restaurante · P12: libros escolares)
-- ✅ 5 ChromaDB de embeddings indexadas: `chroma_db_minilm/` `chroma_db_mpnet/` `chroma_db_e5large/` `chroma_db_bgem3/` `chroma_db_labse/`
-- ⏳ **`evaluacion_embeddings.py` CORRIENDO** — 5 embeddings × 5 modelos × 12 = 300 combinaciones → `evaluacion_embeddings.json` (reanudable)
-- ⏳ **Siguiente al terminar:** `python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida scores_gemini_embeddings`
-- ⏳ Documentar resultados de embeddings en `EVALUACION.md`
-- ⏳ Notebooks 01, 02, 03 pendientes
-- ⏳ Fase 4 (deploy) pendiente
+### Completado en esta sesión
+- ✅ **Experimento 4 COMPLETO** — 300 evaluaciones (5 embeddings × 5 modelos × 12 preguntas) evaluadas con Gemini juez
+- ✅ `scores_gemini_embeddings.json` / `scores_gemini_embeddings.csv` — scores completos
+- ✅ `src/generar_reporte.py` — genera `reporte.html` con comparativas LLM, embeddings, heatmaps, ejemplos y comparativa vs baseline
+- ✅ `reporte.html` generado — listo para compartir con el grupo
+- ✅ `setup.bat` + `requirements.txt` actualizados para usar **venv** en lugar de conda (funciona en cualquier terminal, no requiere Anaconda Prompt)
+- ✅ Dos documentos nuevos agregados a `final_json/informes/`:
+  - `Cartilla Ya lo sabes - Arbitraje de Consumo.json`
+  - `Resolucion Final 016-2022-CPC-INDECOPI.json` ← clave para P6 (INDECOPI no puede dar indemnización)
+- ✅ `EVALUACION.md` actualizado con resultados del Exp. 4 y plan del Exp. 5
+
+### Resultados del Experimento 4
+
+**Ganador absoluto: qwen2.5:14b + bge-m3 = 1.75/2.0**
+
+| Top | Modelo | Embedding | Score |
+|:---:|--------|-----------|:-----:|
+| 🥇 1 | qwen2.5:14b | bge-m3 | 1.75 |
+| 🥈 2 | llama3.1:8b | bge-m3 | 1.58 |
+| 🥉 3 | mistral:7b-instruct | e5-large | 1.50 |
+
+**LaBSE descartado** — rendimiento consistentemente inferior (~0.83 vs ~1.45 de bge-m3).
+
+### Pendiente — Experimento 5
+
+**Objetivo:** verificar si agregar los 2 documentos nuevos y pre-filtrar por categoría resuelve P6 (fallo universal).
+
+**Configuración:** top 3 modelos × top 2 embeddings = 72 combinaciones (ver `EVALUACION.md` para pasos exactos).
+
+**Pasos al iniciar la siguiente sesión:**
+1. Re-indexar corpus con los 2 nuevos docs para bge-m3 y e5-large
+2. Correr `evaluacion_embeddings.py` con los 3 modelos y 2 embeddings
+3. Evaluar con Gemini juez
+4. Generar reporte comparativo vs Exp. 4
+
+### Otros pendientes
+- ⏳ Notebooks 01, 02, 03 — exploración y análisis
+- ⏳ Fase 4 (deploy) — pendiente
 
 ## Hardware de desarrollo
 
