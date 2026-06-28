@@ -163,6 +163,60 @@ def _badge(score) -> str:
     return f'<span class="badge na">—</span>'
 
 
+def tabla_modelo_embedding(df: pd.DataFrame) -> str:
+    modelos    = sorted(df["modelo"].unique())
+    embeddings = sorted(df["embedding"].unique())
+
+    # encabezado con colspan por embedding
+    header_emb = "".join(
+        f'<th colspan="4" style="text-align:center;border-left:2px solid #dde3ea">{emb}</th>'
+        for emb in embeddings
+    )
+    header_sub = "".join(
+        '<th style="border-left:2px solid #dde3ea">Prom.</th>'
+        '<th style="color:#27ae60">✓</th>'
+        '<th style="color:#e67e22">~</th>'
+        '<th style="color:#e74c3c">✗</th>'
+        for _ in embeddings
+    )
+
+    rows = ""
+    for modelo in modelos:
+        celdas = ""
+        for emb in embeddings:
+            g = df[(df["modelo"] == modelo) & (df["embedding"] == emb)]
+            if g.empty:
+                celdas += '<td colspan="4" style="text-align:center;color:#aaa;border-left:2px solid #edf0f4">—</td>'
+                continue
+            s  = g["score_gemini"]
+            n  = len(s)
+            ok = (s == 2).sum()
+            pa = (s == 1).sum()
+            no = (s == 0).sum()
+            prom = s.mean()
+            # color de fondo según promedio
+            if prom >= 1.5:
+                bg = "#d5f5e3"
+            elif prom >= 1.0:
+                bg = "#fef9e7"
+            else:
+                bg = "#fadbd8"
+            celdas += f"""
+                <td style="font-weight:700;background:{bg};border-left:2px solid #dde3ea">{prom:.2f}</td>
+                <td style="color:{COLOR_CORRECTO};font-weight:600">{ok/n*100:.0f}%</td>
+                <td style="color:{COLOR_PARCIAL};font-weight:600">{pa/n*100:.0f}%</td>
+                <td style="color:{COLOR_INCORRECTO};font-weight:600">{no/n*100:.0f}%</td>"""
+        rows += f"<tr><td><code>{modelo}</code></td>{celdas}</tr>"
+
+    return f"""<table>
+        <thead>
+            <tr><th rowspan="2">Modelo</th>{header_emb}</tr>
+            <tr>{header_sub}</tr>
+        </thead>
+        <tbody>{rows}</tbody>
+    </table>"""
+
+
 def tabla_llm(df: pd.DataFrame) -> str:
     filas = []
     for modelo, g in df.groupby("modelo"):
@@ -387,8 +441,10 @@ def generar_html(df: pd.DataFrame, fecha: str) -> str:
     <img class="chart" src="data:image/png;base64,{img_emb}" alt="Embedding chart">
     <h3>Score por combinación modelo × embedding</h3>
     <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
-      Verde = correcto · Rojo = incorrecto. Permite identificar qué pares modelo+embedding funcionan mejor.
+      Promedio (0–2) con fondo verde ≥ 1.5 · amarillo ≥ 1.0 · rojo &lt; 1.0.
+      Columnas ✓ correcto · ~ parcial · ✗ incorrecto.
     </p>
+    {tabla_modelo_embedding(df)}
     <img class="chart" src="data:image/png;base64,{img_emb_llm}" alt="Heatmap modelo x embedding">
   </section>
 
