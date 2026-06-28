@@ -58,5 +58,17 @@
     "categoria": "precios",
     "pregunta": "¿Pueden subir o cobrarme más del precio que muestran en la tienda o página web?",
     "respuesta_referencia": "No. Cualquier aumento o sobreprecio al precio que se exhibe en la página web o en la tienda física está prohibido. La empresa debe mostrar exactamente el precio final a cobrar, o avisar claramente si existe algún recargo o pago adicional."
+  },
+  {
+    "id": 11,
+    "categoria": "precios",
+    "pregunta": "¿Me pueden obligar a pagar propina o un adicional al precio de la carta en un restaurante?",
+    "respuesta_referencia": "No. La propina es únicamente voluntaria, y cualquier recargo, suma o pago adicional que deba hacerse por el servicio de restaurante o alimentación debe figurar y ser informado al cliente de forma íntegra y adecuada antes de producirse el consumo."
+  },
+  {
+    "id": 12,
+    "categoria": "educacion",
+    "pregunta": "¿El colegio puede obligarme a comprar libros de texto nuevos para mis hijos?",
+    "respuesta_referencia": "No. Por ley los textos escolares que lleven los alumnos pueden ser reutilizados o de segunda mano. Está prohibido y sancionado exigir la compra de libros totalmente nuevos."
   }
 ]

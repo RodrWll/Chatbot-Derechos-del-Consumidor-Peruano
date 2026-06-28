@@ -15,6 +15,7 @@ API key — se carga desde .env (recomendado) o variable de entorno:
 import json
 import csv
 import os
+import re
 import time
 import argparse
 
@@ -83,12 +84,31 @@ def evaluar_respuesta(
         respuesta_referencia=respuesta_referencia,
         respuesta_modelo=respuesta_modelo,
     )
-    respuesta = cliente.models.generate_content(
-        model=MODELO_JUEZ,
-        contents=prompt,
-        config=types.GenerateContentConfig(response_mime_type="application/json"),
-    )
-    return json.loads(respuesta.text)
+    for intento in range(3):
+        try:
+            respuesta = cliente.models.generate_content(
+                model=MODELO_JUEZ,
+                contents=prompt,
+                config=types.GenerateContentConfig(response_mime_type="application/json"),
+            )
+            text = respuesta.text
+            # Gemini a veces envuelve el JSON en bloques markdown
+            match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text)
+            if match:
+                text = match.group(1)
+            return json.loads(text)
+        except json.JSONDecodeError:
+            if intento < 2:
+                time.sleep(5)
+            else:
+                raise
+        except Exception as e:
+            if ("503" in str(e) or "UNAVAILABLE" in str(e)) and intento < 2:
+                espera = 30 * (intento + 1)
+                print(f"\n      [503] Esperando {espera}s...", end=" ", flush=True)
+                time.sleep(espera)
+            else:
+                raise
 
 
 def cargar_resultados(path: str) -> list[dict]:
@@ -144,7 +164,7 @@ def imprimir_resumen(resultados: list[dict]) -> None:
     print("-" * 65)
 
     for modelo, filas in por_modelo.items():
-        total = sum(r.get("score_gemini", 0) for r in filas)
+        total = sum(r.get("score_gemini") or 0 for r in filas)
         maximo = len(filas) * 2
         correctas = sum(1 for r in filas if r.get("score_gemini") == 2)
         parciales = sum(1 for r in filas if r.get("score_gemini") == 1)
@@ -180,6 +200,23 @@ def parsear_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def cargar_progreso(salida_json: str) -> tuple[list[dict], set]:
+    """Carga evaluaciones previas y retorna (lista con score, set de claves ya evaluadas).
+    Las entradas con score=null (errores previos) se descartan para que se reintenten.
+    """
+    if not os.path.exists(salida_json):
+        return [], set()
+    with open(salida_json, encoding="utf-8") as f:
+        existentes = json.load(f)
+    ya_con_score = [r for r in existentes if r.get("score_gemini") is not None]
+    ya_evaluados = {
+        (r["id_pregunta"], r["modelo"], r.get("embedding", ""))
+        for r in ya_con_score
+    }
+    print(f"Progreso previo: {len(ya_evaluados)} entradas ya evaluadas por Gemini.")
+    return ya_con_score, ya_evaluados
+
+
 def main() -> None:
     args = parsear_args()
 
@@ -191,20 +228,36 @@ def main() -> None:
     resultados = cargar_resultados(args.entrada)
     print(f"Total de respuestas a evaluar: {len(resultados)}")
 
+    salida_json = f"{args.salida}.json"
+    salida_csv = f"{args.salida}.csv"
+    evaluados, ya_evaluados = cargar_progreso(salida_json)
+
+    pendientes = [
+        r for r in resultados
+        if (r.get("id_pregunta"), r.get("modelo"), r.get("embedding", "")) not in ya_evaluados
+    ]
+    print(f"Pendientes de evaluar: {len(pendientes)} | Ya evaluadas: {len(ya_evaluados)}")
+
+    if not pendientes:
+        print("Nada que evaluar — todos los resultados ya tienen score.")
+        imprimir_resumen(evaluados)
+        return
+
     print(f"\nConectando con Gemini ({MODELO_JUEZ})...")
     cliente = configurar_gemini()
 
-    evaluados: list[dict] = []
     errores = 0
 
-    for i, resultado in enumerate(resultados, 1):
+    for i, resultado in enumerate(pendientes, 1):
         modelo = resultado.get("modelo", "?")
         pid = resultado.get("id_pregunta", "?")
+        embedding = resultado.get("embedding", "")
         pregunta = resultado.get("pregunta", "")
         ref = resultado.get("respuesta_referencia", "")
         respuesta = resultado.get("respuesta", "")
 
-        print(f"  [{i:02d}/{len(resultados)}] {modelo} | P{pid} ...", end=" ", flush=True)
+        prefijo = f"[emb={embedding}] " if embedding else ""
+        print(f"  [{i:02d}/{len(pendientes)}] {prefijo}{modelo} | P{pid} ...", end=" ", flush=True)
 
         if respuesta.startswith("ERROR:") or not ref:
             print("saltado (error o sin referencia)")
@@ -218,6 +271,7 @@ def main() -> None:
                 "justificacion_gemini": "Saltado por error en respuesta original o sin referencia.",
             })
             evaluados.append(resultado_aug)
+            guardar_json(evaluados, salida_json)
             continue
 
         try:
@@ -235,6 +289,7 @@ def main() -> None:
             score = evaluacion.get("score")
             icon = "[OK]" if score == 2 else "[PARC]" if score == 1 else "[FAIL]"
             print(f"{icon} score={score}")
+            guardar_json(evaluados, salida_json)
 
         except Exception as e:
             print(f"ERROR: {e}")
@@ -252,12 +307,13 @@ def main() -> None:
 
         time.sleep(PAUSA_ENTRE_LLAMADAS)
 
-    guardar_json(evaluados, f"{args.salida}.json")
-    guardar_csv(evaluados, f"{args.salida}.csv")
+    guardar_json(evaluados, salida_json)
+    guardar_csv(evaluados, salida_csv)
     imprimir_resumen(evaluados)
 
     if errores:
         print(f"\n[WARNING] {errores} llamadas a Gemini fallaron. Revisa tu API key y cuota.")
+        print("          Vuelve a correr el mismo comando — reanudara desde donde quedo.")
 
 
 if __name__ == "__main__":

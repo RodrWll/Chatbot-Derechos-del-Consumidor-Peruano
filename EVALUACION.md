@@ -6,7 +6,7 @@
 |-----------|-------|
 | Modelo de embeddings | `paraphrase-multilingual-MiniLM-L12-v2` |
 | Vector store | ChromaDB local |
-| Documentos indexados | 1349 |
+| Documentos indexados | 1356 (corpus ampliado con guía INDECOPI) |
 | Hardware | Intel Core i9-14 · 64 GB RAM · RTX 4080 (CUDA) |
 
 ---
@@ -43,7 +43,8 @@
 
 ### Conjunto de evaluación
 
-Archivo: `preguntas_evaluacion.json` — 10 preguntas con respuesta de referencia validada.
+Archivo: `preguntas_evaluacion.json` — 12 preguntas con respuesta de referencia validada.  
+P1–P10 usadas en la evaluación comparativa original. P11–P12 agregadas para el experimento multi-embedding.
 
 | ID | Categoría | Pregunta |
 |----|-----------|---------|
@@ -57,6 +58,8 @@ Archivo: `preguntas_evaluacion.json` — 10 preguntas con respuesta de referenci
 | 8 | servicios_financieros | ¿El banco puede cobrar comisiones a mi tarjeta sin avisarme? |
 | 9 | libro_reclamaciones | ¿Un negocio digital debe tener libro de reclamaciones? |
 | 10 | precios | ¿Pueden cobrarme más del precio que muestran en tienda o web? |
+| 11 | precios | ¿Me pueden obligar a pagar propina o un adicional al precio de la carta en un restaurante? |
+| 12 | educacion | ¿El colegio puede obligarme a comprar libros de texto nuevos para mis hijos? |
 
 ### Scorecard (✅ correcto · ⚠️ parcial · ❌ incorrecto)
 
@@ -151,3 +154,121 @@ La mayoría de los errores no son atribuibles al LLM sino al **retriever**: cuan
 | Pre-filtrado por `categoria` antes del retrieval | Alto | Media | P1, P2, P3 |
 | Modelo de embeddings más potente (`bge-m3` o `multilingual-e5-large`) | Medio | Media | P1, P6 |
 | Evaluar `qwen2.5:14b` como modelo de producción (ganador actual) | Alto | Baja | General |
+
+---
+
+## Evaluación con Gemini como juez — baseline y v2 (2026-06-28)
+
+### Metodología
+
+- **Juez:** `gemini-2.5-flash` via `google-genai` SDK
+- **Escala:** 0 (incorrecto) · 1 (parcial) · 2 (correcto) → máximo 20 pts por modelo
+- **Criterio 0 automático:** respuesta de sí/no contraria a la referencia, dominio incorrecto, o alucinaciones que cambian el sentido
+- **Reanudación:** el script salta entradas ya evaluadas usando clave `(id_pregunta, modelo, embedding)`
+
+### Scores baseline (corpus original, 10 preguntas)
+
+| Modelo | Puntaje | Correctas (2) | Parciales (1) | Incorrectas (0) |
+|--------|:-------:|:-------------:|:-------------:|:---------------:|
+| qwen2.5:14b | **9/20** | 1 | 7 | 2 |
+| mistral:7b-instruct | 9/20 | 3 | 3 | 3 |
+| gemma2:9b | 8/20 | 1 | 6 | 3 |
+| llama3.1:8b | 6/20 | 1 | 4 | 5 |
+| mistral-nemo:12b | 4/20 | 1 | 2 | 7 |
+
+### Scores v2 (corpus + guía INDECOPI, 10 preguntas)
+
+| Modelo | Puntaje | Correctas (2) | Parciales (1) | Incorrectas (0) |
+|--------|:-------:|:-------------:|:-------------:|:---------------:|
+| qwen2.5:14b | **10/20** | 4 | 2 | 4 |
+| gemma2:9b | 8/20 | 3 | 2 | 5 |
+| mistral:7b-instruct | 8/20 | 1 | 6 | 3 |
+| mistral-nemo:12b | 6/20 | 1 | 4 | 5 |
+| llama3.1:8b | 5/20 | 0 | 5 | 5 |
+
+### Delta v1 → v2
+
+| Modelo | Baseline | V2 | Delta |
+|--------|:--------:|:--:|:-----:|
+| mistral-nemo:12b | 4 | 6 | **+2** |
+| qwen2.5:14b | 9 | 10 | **+1** |
+| gemma2:9b | 8 | 8 | 0 |
+| mistral:7b-instruct | 9 | 8 | -1 |
+| llama3.1:8b | 6 | 5 | -1 |
+
+**Conclusión:** impacto marginal (+0.4 promedio). La guía INDECOPI mejoró específicamente las preguntas sobre procedimientos INDECOPI, pero el retriever sigue trayendo documentos de dominio incorrecto para P2, P3, P5.
+
+### Alucinaciones más frecuentes detectadas por Gemini
+
+- **Todas las modelos:** P6 — afirman que INDECOPI puede otorgar indemnizaciones (INCORRECTO: solo puede multar y dar medidas correctivas)
+- **mistral:7b:** inventa instituciones (ORCT), decretos legislativos inexistentes, URLs
+- **llama3.1:8b:** cita leyes incorrectas (Ley N°30634, DL N°1056/2018)
+- **gemma2:9b:** confunde "queja" y "reclamo", inventa artículos de ley
+- **mistral-nemo:12b:** cita leyes inexistentes (DL N°730, DL N°748), confunde instituciones (CONADECUS es chilena)
+- **qwen2.5:14b:** confunde OSIPTEL con INDECOPI (P2), inventa "ORFEO" y "Proconsumo"
+
+---
+
+## Experimento 3 — Prompt anti-alucinación (2026-06-28)
+
+**Problema:** todos los modelos inventan leyes, instituciones y plazos inexistentes cuando el contexto recuperado es de dominio incorrecto.
+
+**Mejora implementada** en `PROMPT_TEMPLATE` de `src/rag_chain.py`:
+
+```
+Reglas anti-alucinación (críticas):
+- NUNCA inventes nombres de leyes, números de decretos, instituciones o plazos.
+  Si un dato no aparece textualmente en el contexto, no lo menciones.
+- La ley principal de protección al consumidor en Perú es el Código de Protección y
+  Defensa del Consumidor, Ley N° 29571. No atribuyas ese rol a otras leyes.
+- Distingue correctamente las entidades reguladoras: INDECOPI protege derechos del
+  consumidor en general; OSIPTEL regula telecomunicaciones; SBS regula banca y seguros.
+  No confundas sus competencias ni las mezcles.
+- INDECOPI puede imponer multas y medidas correctivas a empresas, pero NO puede otorgar
+  indemnizaciones por daños y perjuicios — eso requiere un proceso civil judicial separado.
+```
+
+**Impacto esperado:** reducción de alucinaciones en P2, P3, P5, P6, P7, P8. A evaluar en el experimento de embeddings.
+
+---
+
+## Experimento 4 — Multi-embedding (EN CURSO, 2026-06-28)
+
+### Motivación
+
+El análisis de causa raíz indica que el retriever es el problema principal. Se evalúan 5 modelos de embedding con distinta capacidad semántica para medir su impacto en la calidad de las respuestas.
+
+### Modelos de embedding evaluados
+
+| Nombre | Modelo HuggingFace | Dims | Tamaño aprox. | ChromaDB |
+|--------|-------------------|:----:|:-------------:|----------|
+| MiniLM-L12 | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | 384 | 120 MB | `chroma_db_minilm/` |
+| mpnet-base | `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | 768 | 1.1 GB | `chroma_db_mpnet/` |
+| e5-large | `intfloat/multilingual-e5-large` | 1024 | 2.2 GB | `chroma_db_e5large/` |
+| bge-m3 | `BAAI/bge-m3` | 1024 | 2.3 GB | `chroma_db_bgem3/` |
+| LaBSE | `sentence-transformers/LaBSE` | 768 | ~1.9 GB | `chroma_db_labse/` |
+
+**Nota técnica:** bge-m3 y LaBSE requieren `model_kwargs={"use_safetensors": True}` para evitar error con `pytorch_model.bin` bajo torch 2.5.1.
+
+### Configuración del experimento
+
+- **Modelos LLM:** mistral:7b-instruct · llama3.1:8b · gemma2:9b · mistral-nemo:12b · qwen2.5:14b
+- **Preguntas:** 12 (set ampliado, incluyendo P11 propina y P12 libros escolares)
+- **k:** 3 documentos recuperados
+- **Prompt:** versión anti-alucinación (actualizado en esta sesión)
+- **Total combinaciones:** 5 × 5 × 12 = 300
+- **Salida:** `evaluacion_embeddings.json` (reanudable)
+
+### Estado
+
+⏳ **CORRIENDO** — se espera terminar en ~2-3 horas. Guardar después de cada pregunta, crash-safe.
+
+### Siguiente paso
+
+```bash
+python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida scores_gemini_embeddings
+```
+
+### Resultados
+
+*(pendiente — completar cuando termine la evaluación)*
