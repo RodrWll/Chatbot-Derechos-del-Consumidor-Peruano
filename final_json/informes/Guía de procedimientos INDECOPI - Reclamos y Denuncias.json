@@ -1,0 +1,79 @@
+[
+{
+"id": 1,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "I. ¿QUÉ ES INDECOPI Y CUÁL ES SU ROL?",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "El Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual, conocido como INDECOPI, es el organismo público encargado de proteger los derechos de los consumidores en el Perú. Su función principal es garantizar que las relaciones de consumo se desarrollen de manera justa, transparente y equitativa, en estricto cumplimiento de lo establecido en el Código de Protección y Defensa del Consumidor (Ley N° 29571). INDECOPI tiene competencia para fiscalizar, investigar y sancionar a aquellos proveedores, sean empresas o personas naturales, que vulneren los derechos de los ciudadanos al ofrecer productos o servicios defectuosos, no brindar información adecuada o incurrir en prácticas comerciales abusivas. Este rol protector abarca diversos sectores del mercado, desde la compra de electrodomésticos y alimentos, hasta servicios educativos, financieros y de transporte. A través de sus distintas oficinas a nivel nacional, la institución busca empoderar a los consumidores, educándolos sobre sus derechos fundamentales, tales como el derecho a recibir un producto idóneo, el derecho a la información veraz y el derecho a la reparación o reposición. Es importante destacar que el rol de INDECOPI no es actuar como abogado del consumidor, sino como un árbitro imparcial o entidad administrativa que vela por el orden del mercado y el respeto a la legalidad. Así, cuando un consumidor siente que sus derechos han sido vulnerados y el proveedor no le ofrece una solución satisfactoria, puede recurrir a esta institución para buscar orientación, mediación o, de ser necesario, iniciar un procedimiento administrativo sancionador.",
+"source": "0001_el_instituto_nacional_de.txt"
+},
+{
+"id": 2,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "II. DIFERENCIA ENTRE QUEJA, RECLAMO Y DENUNCIA",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Para defender sus derechos adecuadamente, es fundamental que el consumidor conozca la diferencia exacta entre una queja, un reclamo y una denuncia. En primer lugar, la queja expresa un malestar o descontento respecto a la atención recibida por parte del proveedor, pero que no se relaciona directamente con el producto o servicio adquirido. Por ejemplo, si el personal de seguridad de un establecimiento comercial es descortés o los servicios higiénicos están sucios, se debe presentar una queja. Por otro lado, el reclamo sí está vinculado directamente a una falla o disconformidad con el producto o servicio. Se presenta a través del Libro de Reclamaciones del proveedor, ya sea físico o virtual, y obliga a la empresa a dar una respuesta formal. Por ejemplo, si compraste un televisor que no enciende, interpones un reclamo. Finalmente, la denuncia administrativa es el mecanismo formal mediante el cual el consumidor solicita la intervención de INDECOPI cuando el proveedor no resolvió el reclamo o cometió una infracción al Código de Protección y Defensa del Consumidor. A diferencia de las anteriores, la denuncia inicia un procedimiento que puede culminar con una sanción o multa económica al proveedor por parte del Estado, además del dictado de medidas correctivas a favor del consumidor afectado. Es decir, mientras el reclamo es una comunicación directa con la empresa para solucionar el problema, la denuncia es el paso posterior ante la autoridad competente cuando la vía directa ha fracasado.",
+"source": "0002_para_defender_sus_derechos.txt"
+},
+{
+"id": 3,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "III. CÓMO PRESENTAR UNA DENUNCIA ANTE INDECOPI",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Iniciar una acción ante INDECOPI es un proceso diseñado para ser accesible a todos los ciudadanos. Para presentar una denuncia, el consumidor cuenta con diversos canales de atención. En la etapa inicial, puede utilizar el servicio gratuito Reclama Virtual a través de la página web oficial, o comunicarse con el Servicio de Atención al Ciudadano (SAC) acudiendo de manera presencial a cualquiera de sus oficinas a nivel nacional. También se puede recibir orientación llamando a los teléfonos oficiales: el 224-7777 para Lima y el 0800-4-4040 para consultas desde provincias (línea gratuita). Si la etapa de mediación inicial no funciona, el consumidor puede presentar una denuncia administrativa formal. Para ello, debe cumplir con requisitos básicos como identificar claramente al proveedor (con su número de RUC o razón social), relatar los hechos de manera cronológica y clara, y adjuntar todos los medios probatorios que sustenten su caso, tales como boletas de venta, facturas, contratos, correos electrónicos, fotografías o capturas de pantalla de conversaciones. Un aspecto muy importante que facilita el acceso a la justicia administrativa en materia de consumo es que para presentar una denuncia formal no es obligatorio contar con la firma ni el patrocinio de un abogado, especialmente cuando se trata de casos cuyo valor no supere las 3 Unidades Impositivas Tributarias (UIT), los cuales se tramitan mediante el procedimiento sumarísimo. Solo se debe pagar una tasa administrativa para el inicio del procedimiento formal.",
+"source": "0003_iniciar_una_accion_ante.txt"
+},
+{
+"id": 4,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "IV. QUÉ PUEDE ORDENAR INDECOPI",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Una vez concluido el procedimiento administrativo y si se comprueba que el proveedor cometió una infracción a la Ley N° 29571, INDECOPI tiene la facultad de imponer dos tipos de consecuencias fundamentales. En primer lugar, puede sancionar al proveedor infractor mediante una multa económica, la cual se calcula en Unidades Impositivas Tributarias (UIT) dependiendo de la gravedad de la falta, el perjuicio causado y el tamaño de la empresa. Además, la autoridad puede ordenar la publicación de dicha sanción para informar a otros consumidores. En segundo lugar, y quizás lo más importante para el ciudadano, INDECOPI puede dictar medidas correctivas destinadas a revertir el daño o solucionar el problema concreto del consumidor afectado. Estas medidas pueden incluir la orden de reparar un producto defectuoso sin costo adicional, reponer el artículo por uno nuevo de idénticas características, o proceder con la devolución total del precio pagado por el producto o servicio no brindado adecuadamente. Para agilizar estos trámites, INDECOPI cuenta con el Órgano Resolutivo de Procedimientos Sumarísimos (ORPS), el cual se encarga de resolver rápidamente los casos donde la cuantía económica involucrada no supera las 3 UIT o cuando se trata de temas específicos como requerimientos de información, métodos abusivos de cobranza o falta de Libro de Reclamaciones. Este procedimiento sumarísimo garantiza que los problemas más cotidianos y de menor impacto económico de los consumidores sean atendidos y resueltos con celeridad.",
+"source": "0004_una_vez_concluido_el.txt"
+},
+{
+"id": 5,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "V. QUÉ NO PUEDE HACER INDECOPI — LÍMITES DE SU COMPETENCIA",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Es de vital importancia que los consumidores comprendan los límites de la autoridad administrativa, ya que existen confusiones muy comunes sobre lo que INDECOPI puede y no puede hacer. El límite más importante es que INDECOPI bajo ninguna circunstancia puede ordenar o exigir el pago de indemnizaciones por daños y perjuicios. La labor de esta institución es estrictamente administrativa: sanciona al proveedor por infringir el Código de Protección y Defensa del Consumidor e intenta restaurar la situación dictando medidas correctivas (como devolver el monto pagado o cambiar el producto). Sin embargo, si un consumidor ha sufrido daños económicos mayores (lucro cesante, daño emergente), daños físicos, lesiones o daño moral a causa de un producto defectuoso o un mal servicio, la compensación económica por dichos sufrimientos o pérdidas no puede ser otorgada por INDECOPI. En estos escenarios, para obtener una indemnización económica integral, el ciudadano afectado debe iniciar de forma obligatoria un proceso judicial ordinario ante el Poder Judicial, preferentemente por la vía civil, lo cual sí requiere de la asistencia de un abogado. Por lo tanto, INDECOPI es la autoridad idónea para sancionar la conducta indebida y reparar el valor del consumo, pero el resarcimiento integral del daño causado a la persona o a su patrimonio es competencia exclusiva de los jueces del Poder Judicial.",
+"source": "0005_es_de_vital_importancia.txt"
+},
+{
+"id": 6,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "VI. PLAZOS DEL PROCEDIMIENTO",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Para brindar seguridad jurídica y predictibilidad a los ciudadanos, las acciones y resoluciones de INDECOPI se rigen por plazos estrictamente establecidos en la normativa legal. Cuando el consumidor opta por presentar su caso a través del Procedimiento Sumarísimo, diseñado para reclamos cuya cuantía no excede las 3 Unidades Impositivas Tributarias (UIT), la autoridad tiene un plazo máximo de treinta (30) días hábiles por cada instancia para emitir una resolución final. Esto significa que el Órgano Resolutivo de Procedimientos Sumarísimos (ORPS) debe pronunciarse en ese periodo desde que admite a trámite la denuncia. En contraste, para el Procedimiento Ordinario (casos más complejos o montos mayores a 3 UIT), el plazo máximo de duración por instancia es de ciento veinte (120) días hábiles. Una vez que INDECOPI emite y notifica su resolución de primera instancia, tanto el consumidor como el proveedor tienen el derecho a presentar un recurso de apelación si no están de acuerdo con la decisión. Para el procedimiento sumarísimo, el plazo para apelar es de cinco (5) días hábiles contados a partir del día siguiente de la notificación, mientras que, en el procedimiento ordinario, este plazo se extiende a quince (15) días hábiles. Si se apela, el caso se eleva a la instancia superior (la Comisión de Protección al Consumidor o el Tribunal, según corresponda), la cual tendrá nuevamente el mismo plazo para resolver de manera definitiva, agotando así la vía administrativa.",
+"source": "0006_para_brindar_seguridad_juridica.txt"
+},
+{
+"id": 7,
+"nombre_doc": "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+"tipo_doc": "informe",
+"capitulo_seccion": "VII. MEDIACIÓN Y CONCILIACIÓN PREVIA",
+"categoria_consumo": [
+"consumo en general"
+],
+"texto": "Antes de iniciar un procedimiento administrativo sancionador formal, que suele implicar el pago de una tasa y plazos más largos, INDECOPI promueve mecanismos alternativos de resolución de conflictos, principalmente la mediación y la conciliación. A través del Servicio de Atención al Ciudadano (SAC), la institución busca acercar al consumidor y al proveedor para que puedan llegar a un acuerdo rápido, gratuito y satisfactorio. En esta fase de mediación, un funcionario de INDECOPI actúa como puente de comunicación, invitando al proveedor a brindar una solución al problema planteado por el ciudadano sin necesidad de evaluar quién tiene la razón o emitir un fallo sancionador. Si ambas partes logran entenderse, pueden suscribir un acta de conciliación, la cual tiene calidad de título ejecutivo; esto significa que el acuerdo es de cumplimiento obligatorio y, en caso el proveedor lo incumpla, el consumidor puede exigir su ejecución de forma inmediata. La gran ventaja de este paso previo es su celeridad y la ausencia de costos. Sin embargo, ¿qué ocurre si el proveedor no asiste a la invitación de conciliación, rechaza llegar a un acuerdo o simplemente no responde? En ese escenario, la etapa de conciliación se da por concluida sin éxito. Esto deja expedito el derecho del consumidor para interponer formalmente su denuncia administrativa para que el órgano resolutivo inicie las investigaciones, evalúe las pruebas y, de corresponder, sancione al infractor por vulnerar la normativa.",
+"source": "0007_antes_de_iniciar_un.txt"
+}
+]
