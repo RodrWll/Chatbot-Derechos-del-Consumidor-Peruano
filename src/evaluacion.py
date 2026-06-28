@@ -97,7 +97,7 @@ def evaluar_modelo(modelo: str, preguntas: list[dict], k: int = 3) -> list[dict]
                     "num_docs_recuperados": len(fuentes),
                 }
             )
-            print(f"      ✓ {elapsed:.1f}s — {len(fuentes)} docs recuperados")
+            print(f"      [OK] {elapsed:.1f}s - {len(fuentes)} docs recuperados")
 
         except Exception as e:
             elapsed = time.time() - t0

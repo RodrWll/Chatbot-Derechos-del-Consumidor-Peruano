@@ -19,11 +19,12 @@ import time
 import argparse
 
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 load_dotenv()  # carga .env automáticamente si existe
 
-MODELO_JUEZ = "gemini-2.0-flash"  # Tier gratuito: 1500 req/día — suficiente para este proyecto
+MODELO_JUEZ = "gemini-2.5-flash"  # Tier gratuito: 1500 req/día — suficiente para este proyecto
 PAUSA_ENTRE_LLAMADAS = 1
 
 PROMPT_JUEZ = """Eres un evaluador experto en derechos del consumidor peruano. \
@@ -61,22 +62,18 @@ Responde ÚNICAMENTE con este JSON, sin texto adicional:
 }}"""
 
 
-def configurar_gemini() -> genai.GenerativeModel:
+def configurar_gemini() -> genai.Client:
     api_key = os.environ.get("GOOGLE_API_KEY", "")
     if not api_key:
         raise EnvironmentError(
             "Variable de entorno GOOGLE_API_KEY no encontrada.\n"
-            "Ejecuta: $env:GOOGLE_API_KEY='tu_clave'  (PowerShell)"
+            "Crea un archivo .env en la raiz del proyecto con: GOOGLE_API_KEY=tu_clave"
         )
-    genai.configure(api_key=api_key)
-    return genai.GenerativeModel(
-        MODELO_JUEZ,
-        generation_config={"response_mime_type": "application/json"},
-    )
+    return genai.Client(api_key=api_key)
 
 
 def evaluar_respuesta(
-    modelo_juez: genai.GenerativeModel,
+    cliente: genai.Client,
     pregunta: str,
     respuesta_referencia: str,
     respuesta_modelo: str,
@@ -86,7 +83,11 @@ def evaluar_respuesta(
         respuesta_referencia=respuesta_referencia,
         respuesta_modelo=respuesta_modelo,
     )
-    respuesta = modelo_juez.generate_content(prompt)
+    respuesta = cliente.models.generate_content(
+        model=MODELO_JUEZ,
+        contents=prompt,
+        config=types.GenerateContentConfig(response_mime_type="application/json"),
+    )
     return json.loads(respuesta.text)
 
 
@@ -191,7 +192,7 @@ def main() -> None:
     print(f"Total de respuestas a evaluar: {len(resultados)}")
 
     print(f"\nConectando con Gemini ({MODELO_JUEZ})...")
-    juez = configurar_gemini()
+    cliente = configurar_gemini()
 
     evaluados: list[dict] = []
     errores = 0
@@ -220,7 +221,7 @@ def main() -> None:
             continue
 
         try:
-            evaluacion = evaluar_respuesta(juez, pregunta, ref, respuesta)
+            evaluacion = evaluar_respuesta(cliente, pregunta, ref, respuesta)
             resultado_aug = resultado.copy()
             resultado_aug.update({
                 "score_gemini": evaluacion.get("score"),
@@ -232,7 +233,7 @@ def main() -> None:
             })
             evaluados.append(resultado_aug)
             score = evaluacion.get("score")
-            icon = "✅" if score == 2 else "⚠️" if score == 1 else "❌"
+            icon = "[OK]" if score == 2 else "[PARC]" if score == 1 else "[FAIL]"
             print(f"{icon} score={score}")
 
         except Exception as e:

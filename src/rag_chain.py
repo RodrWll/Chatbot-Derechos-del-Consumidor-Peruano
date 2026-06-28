@@ -46,7 +46,7 @@ def _formatear_docs(docs):
 
 
 def construir_cadena(
-    model: str = "mistral:7b-instruct",
+    model: str = "qwen2.5:14b",
     k: int = 4,
     chroma_dir: str = CHROMA_DIR,
 ):

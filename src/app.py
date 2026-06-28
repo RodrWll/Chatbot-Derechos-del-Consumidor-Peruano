@@ -31,7 +31,7 @@ with st.sidebar:
     st.header("Configuración")
     modelo = st.selectbox(
         "Modelo LLM (Ollama)",
-        ["mistral:7b-instruct", "llama3.1:8b", "gemma2:9b", "llama3.1:13b"],
+        ["qwen2.5:14b", "gemma2:9b", "llama3.1:8b", "mistral:7b-instruct"],
         index=0,
     )
     k_docs = st.slider("Documentos a recuperar", min_value=2, max_value=8, value=4)
