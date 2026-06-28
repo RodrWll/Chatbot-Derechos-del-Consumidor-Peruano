@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "categoria": "libro_reclamaciones",
+    "pregunta": "¿Cuál es la diferencia entre queja y reclamo en el Libro de Reclamaciones?",
+    "respuesta_referencia": "La reclamación trata sobre problemas o deficiencias en el producto o servicio en sí, como un aparato que no funcione o una comida contaminada, mientras que una queja trata sobre el servicio al cliente y el trato al consumidor por parte del establecimiento o proveedor, como un mesero que exija propina."
+  },
+  {
+    "id": 2,
+    "categoria": "telecomunicaciones",
+    "pregunta": "¿A quién reclamo si tengo un problema con mi servicio de telefonía móvil?",
+    "respuesta_referencia": "El primer reclamo debe hacerse a la empresa prestadora del servicio, sea Claro, Movistar, Entel, etc. Ellos te deben brindar medios o canales para presentar tu reclamo. Si, luego de su respuesta, no sientes que han satisfecho tus derechos, puedes interponer una denuncia ante INDECOPI."
+  },
+  {
+    "id": 3,
+    "categoria": "indecopi",
+    "pregunta": "¿Qué diferencia una denuncia de una reclamación?",
+    "respuesta_referencia": "Un reclamo o queja es una muestra de disconformidad que brinda el consumidor contra la empresa o proveedor a través del Libro de Reclamaciones. Una denuncia es una solicitud dirigida a INDECOPI para que sancionen con una multa al proveedor o empresa por vulnerar tus derechos como consumidor. Primero debe realizarse el reclamo antes de acudir a la denuncia."
+  },
+  {
+    "id": 4,
+    "categoria": "inmobiliario",
+    "pregunta": "¿Qué debe figurar en el contrato de compraventa de un departamento que me brinda la inmobiliaria?",
+    "respuesta_referencia": "Deben brindarse todos los datos y condiciones de la venta del departamento. Algunas cosas indispensables son el área del inmueble, el precio exacto, la forma y plazos de pago, las penalidades que hubieran y la forma de resolver controversias. Estos datos deben coincidir con las ofertas y ofrecimientos dados en la publicidad o las negociaciones previas."
+  },
+  {
+    "id": 5,
+    "categoria": "servicios_financieros",
+    "pregunta": "¿Tengo derecho a pagar por adelantado mis préstamos con el banco, para evitar intereses?",
+    "respuesta_referencia": "Sí. El consumidor tiene derecho a pagar por adelantado los créditos o deudas que haya contraído con la institución financiera, libremente. El banco no puede negarse a recibir el pago."
+  },
+  {
+    "id": 6,
+    "categoria": "indecopi",
+    "pregunta": "¿Puedo pedir indemnización o reparación por los daños sufridos mediante el Libro de Reclamaciones o INDECOPI?",
+    "respuesta_referencia": "No. La reclamación y la denuncia por derechos de consumidor no permiten exigirle a la empresa o proveedor una indemnización por daños y perjuicios. La indemnización por los daños sufridos debe interponerse como un juicio ordinario, ante el Poder Judicial."
+  },
+  {
+    "id": 7,
+    "categoria": "productos_defectuosos",
+    "pregunta": "¿Pueden negarse a cambiarme una prenda de ropa porque la que compré tiene roturas o mala calidad?",
+    "respuesta_referencia": "No. Si el producto no cumple con la calidad, materiales o cualificaciones que se ofrecieron, entonces están obligados a restituirte un nuevo producto."
+  },
+  {
+    "id": 8,
+    "categoria": "servicios_financieros",
+    "pregunta": "¿El banco puede cobrar comisiones o conceptos a mi tarjeta de crédito sin avisarme?",
+    "respuesta_referencia": "No. Está prohibido aumentar o cambiar las comisiones y otros gastos que pague el consumidor sin que primero se le informe adecuadamente."
+  },
+  {
+    "id": 9,
+    "categoria": "libro_reclamaciones",
+    "pregunta": "¿Una empresa o negocio digital tiene que tener un libro de reclamaciones?",
+    "respuesta_referencia": "Sí. Todos los negocios, sean con tienda física o virtual, deben contar con un libro de reclamaciones. En caso de un negocio digital, el libro de reclamaciones es virtual, y tiene las mismas características que un libro de reclamaciones físico."
+  },
+  {
+    "id": 10,
+    "categoria": "precios",
+    "pregunta": "¿Pueden subir o cobrarme más del precio que muestran en la tienda o página web?",
+    "respuesta_referencia": "No. Cualquier aumento o sobreprecio al precio que se exhibe en la página web o en la tienda física está prohibido. La empresa debe mostrar exactamente el precio final a cobrar, o avisar claramente si existe algún recargo o pago adicional."
+  }
+]

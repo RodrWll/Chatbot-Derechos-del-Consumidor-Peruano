@@ -1,0 +1,146 @@
+[
+  {
+    "modelo": "mistral:7b-instruct",
+    "pregunta": "¿Cuáles son mis derechos si un producto que compré está defectuoso?",
+    "respuesta": " Si el producto que has comprado está defectuoso, tienes derecho a reclamar la reparación o reposición del mismo. En caso de no poder repararse o reponerse, puedes solicitar devolverte lo que pagaste por él.\n\nPara hacerlo:\n1. Verifica si el defecto se encuentra dentro de los límites de tolerancia permitidos (Artículo 98). Si el contenido neto de un producto es inferior al que debiera ser o menor al indicado en el envase o empaque, o si un instrumento de medición ha sido utilizado en tu perjuicio fuera de los límites de tolerancia fijados por la autoridad competente para ese tipo de instrumentos, tienes derecho a reclamar. Tú tiene que hacerlo dentro de los diez días hábiles siguientes a la fecha en que se advierta la deficiencia de la medición o del instrumento empleado para ella.\n2. Si el producto no puede ser reparado o reemplazado y no cumplen con las especificaciones correspondientes, o si los materiales, elementos, substancias o ingredientes que constituyen o integren los productos no corresponden a las especificaciones que ostentan (Artículo 97), puedes solicitar devolverte lo que pagaste por él.\n3. Si el producto por sus deficiencias de fabricación, elaboración, estructura, calidad o condiciones sanitarias no es apto para el uso al cual está destinado, tienes derecho a reclamar también (Artículo 97).\n4. En todo caso, si la entrega del producto o la prestación del servicio no se efectúe en su debida oportunidad y su ejecución no resulte útil para el consumidor, tienes derecho a reclamar (Artículo 97).\n5. Si hay una garantía legal o voluntaria sobre el producto, deberás seguir los términos de esa garantía sin perjuicio de los derechos legales del consumidor (Artículo 97).\n6. De devolverse el monto pagado, se tomará como base el valor del producto o servicio en el momento de la devolución. Si el valor del producto o del servicio es menor en el momento de la devolución, se debe restituir el precio o retribución originalmente abonado (Artículo 97).\n\nFuente legal:\n- Ley 28341 - Ley del Consumidor y sus Derogatorias.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 7.74,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "mistral:7b-instruct",
+    "pregunta": "¿Cómo presento una queja ante INDECOPI?",
+    "respuesta": " Para presentar una queja ante INDECOPI (Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual), sigue estos pasos:\n\n1. Identificate bien a ti mismo o a tercero legitimado: nombre completo, dirección de notificación, número de DNI (Documento Nacional de Identidad), C.E. (Carné de Extranjería) o Pasaporte.\n2. Indica la empresa quejada: IAFAS, IPRESS o UGIPRESS.\n3. Detalla tus quejas: incluye los detalles relevantes y por qué crees que hayan infringido tus derechos.\n4. Manifesta tu voluntad para recibir notificaciones en correo electrónico (si aplica).\n5. Autoriza el acceso a la Historia Clínica si se trata de una empresa médica o similar.\n6. Firma tú queja: puedes hacerlo en persona, electrónicamente o digitalmente, según sea más conveniente para ti. En caso de no poder firmar, imprimirás solo tu huella digital.\n7. No es obligatorio presentar documentos, pero si tienes algo que acredite tu reclamo puedes adjuntarlos.\n8. Presenta la queja ante INDECOPI y espera su atención. Si no se admite a trámite, INDECOPI comunicará las observaciones al quejoso o tercero legitimado para efectos de subsanación. En caso de no recibir la subsanación dentro de un plazo máximo de dos (2) días hábiles, sigue los procedimientos establecidos en el artículo 125 de la Ley General de Protección al Consumidor y al Usuario Final de Servicios.\n\nFuentes legales:\n- Ley General de Protección al Consumidor y al Usuario Final de Servicios (Ley No. 30643)\n- Reglamento de Procedimiento para la Atención de las Quejas del Consumidor y el Usuario Final de Servicios (Resolución Dirigente INDECOPI No. 129-2015-RD)",
+    "fuentes": [
+      "Decreto Supremo N° 030-2016-SA",
+      "Decreto Supremo N° 030-2016-SA",
+      "Guía de reclamos y quejas en el servicio público de telecomunicaciones"
+    ],
+    "tiempo_segundos": 4.75,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "mistral:7b-instruct",
+    "pregunta": "¿Qué cubre el SOAT en caso de accidente de tránsito?",
+    "respuesta": " El Seguro Obligatorio contra Accidentes de Tránsito (SOAT) cubre las indemnizaciones a las víctimas de un accidente de tránsito. Es independiente del vehículo que sea el responsable del accidente. La cobertura incluye indemnización por daños personales y materiales, así como coberturas adicionales en caso de muerte o discapacidad permanente.",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 1.06,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "mistral:7b-instruct",
+    "pregunta": "¿Tengo derecho a atención preferente si soy adulto mayor?",
+    "respuesta": " Sí, como adulto mayor tienes derecho a un trato preferencial en la prestación de servicios por parte de las entidades financieras y otros establecimientos comerciales. Puedes exigir ser atendido de manera prioritaria y recibir una mejor atención que otros clientes comunes. Si alguna vez te niegan este derecho, no dudes en denunciarlo.\n\nFuente: Ley N° 27408 modificada por la Ley N° 28683\n\n[Referencia: https://www.leyesperuanas.pe/boletin-oficial-el-peru/legislacion/lei/351909/ley-27408-modificada-por-la-ley-28683]",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 1.83,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "llama3.1:8b",
+    "pregunta": "¿Cuáles son mis derechos si un producto que compré está defectuoso?",
+    "respuesta": "Si un producto que compraste está defectuoso, tienes derecho a reclamar al proveedor para que lo repare o te lo reemplace. También puedes pedir la devolución del dinero si prefieres.\n\nAquí te explico paso a paso qué debes hacer:\n\n1. **Verifica si el producto es defectuoso**: Asegúrate de que el problema con el producto no sea solo una falla normal o un uso indebido.\n2. **Sigue las instrucciones del proveedor**: Algunos productos tienen instrucciones especiales para manejar reclamaciones, así que primero mira si hay algo escrito sobre cómo proceder.\n3. **Reclama al proveedor**: Puedes hacer esto en persona o por teléfono, dependiendo de la política del proveedor. Explica el problema con el producto y solicita una reparación o reemplazo.\n4. **Mantén un registro**: Anota fechas, detalles sobre lo que pasó, y cualquier comunicación con el proveedor. Esto puede ayudar si hay problemas posteriores.\n\nRecuerda que tienes derecho a reclamar dentro de 10 días hábiles después de haber advertido la deficiencia del producto. Si el proveedor no responde en 15 días hábiles, pueden estar incurriendo en mora y debes considerar tomar medidas adicionales para proteger tus derechos.\n\nFuente: Artículo 98 del Código del Consumidor.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 5.09,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "llama3.1:8b",
+    "pregunta": "¿Cómo presento una queja ante INDECOPI?",
+    "respuesta": "Para presentar una queja ante Indecopi, es importante tener claro qué información debes proporcionar. En primer lugar debes identificarte con tu nombre completo, domicilio de notificación, número de Documento Nacional de Identidad (DNI), Carné de Extranjería (C.E.) o Pasaporte. A continuación debes denunciar la IAFAS, IPRESS o UGIPRESS quejada y dar detalles sobre lo que te ha sucedido.\n\nTambién necesitarás manifestar tu voluntad para ser notificado en el correo electrónico que proporcionas, aunque no es obligatorio. Es importante autorizar el acceso a tu Historia Clínica si corresponde. Si vas de manera presencial o virtual debes firmar la queja, pero también puedes regularizar la firma durante el procedimiento de atención.\n\nEn caso de que seas iletrado o no puedas firmar, solo necesitarás imprimir tu huella digital. \n\nAdemás, puedes proporcionar tus números de teléfono para facilitar el contacto con Indecopi.\n\nSi tu reclamo es acreditado por algún documento, también puedes adjuntarlo.\n\n**Fuentes legales utilizadas:**\n\n*   Artículo 29. Requisitos de la queja. \n*   Otras materias reclamables",
+    "fuentes": [
+      "Decreto Supremo N° 030-2016-SA",
+      "Decreto Supremo N° 030-2016-SA",
+      "Guía de reclamos y quejas en el servicio público de telecomunicaciones"
+    ],
+    "tiempo_segundos": 2.93,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "llama3.1:8b",
+    "pregunta": "¿Qué cubre el SOAT en caso de accidente de tránsito?",
+    "respuesta": "En caso de accidente de tránsito, el Seguro Obligatorio contra Accidentes de Tránsito (SOAT) cubre a cualquier vehículo asegurado que participe en el accidente, independientemente de si se encuentra en marcha o en reposo.\n\n**Paso a paso para solicitar indemnización por SOAT:**\n\n1. Presentar la denuncia correspondiente ante las autoridades policiales y de tránsito.\n2. Presentar los documentos necesarios como el SOAT, licencia de conducir y otros relevantes según sea necesario.\n3. Se le realizará un estudio para determinar la participación del vehículo asegurado en el accidente.\n4. Si es aplicable, se procederá al pago correspondiente a la indemnización.\n\n**Fuente legal:** Ley (referencia a la definición de accidente de tránsito).\n\n* Artículo 1º, Decreto Legislativo N° 830, que establece el Reglamento del Seguro Obligatorio contra Accidentes de Tránsito (SOAT).",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 2.55,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "llama3.1:8b",
+    "pregunta": "¿Tengo derecho a atención preferente si soy adulto mayor?",
+    "respuesta": "Sí, tienes derecho a atención preferente como adulto mayor. Los proveedores deben atenderte de manera preferencial al igual que a las madres gestantes, niños, adultos mayores y personas con discapacidad.\n\nPuedes exigir ser atendido de manera preferencial en lugares de atención al público, como tiendas, bancos, cines, etc., siempre y cuando estés acompañado de tu menor hija de ocho años si ésta tiene derecho a atención preferente.\n\nRecuerda que para acceder a la atención preferente solo debes indicarle al personal del servicio que eres adulto mayor y que deseas ser atendido con prioridad. Si no te lo brindan, puedes reportarlo a las autoridades competentes.\n\nFuente legal: Ley N° 27408 y su modificación por la Ley N° 28683.",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 2.14,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "gemma2:9b",
+    "pregunta": "¿Cuáles son mis derechos si un producto que compré está defectuoso?",
+    "respuesta": "Si compraste un producto que está defectuoso, tienes derecho a que te lo reparen o te lo cambien por uno nuevo. También puedes pedir el dinero de vuelta si no quieres otro producto.  \n\nPara reclamar tus derechos, debes hacer lo siguiente:\n\n1. **Mantén las pruebas:** Guarda el ticket de compra y cualquier otra documentación relacionada con la compra del producto defectuoso.\n2. **Contacta al proveedor:** Informa al vendedor o fabricante sobre el problema con el producto dentro de los 10 días hábiles siguientes a la fecha en que lo compraste.\n3. **Describe el defecto:** Explica claramente qué pasa con el producto y cómo afecta su funcionamiento.\n4. **Solicita una solución:** Pide al proveedor que te reparen, cambien o devuelvan el dinero del producto defectuoso.\n\nSi el proveedor no te da una solución satisfactoria dentro de los 15 días hábiles siguientes a tu reclamación, puedes acudir a las autoridades competentes para defender tus derechos como consumidor. \n\n\n**Fuentes legales:**\n\n* Artículo 97 del Código de Protección y Defensa al Consumidor \n",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 31.3,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "gemma2:9b",
+    "pregunta": "¿Cómo presento una queja ante INDECOPI?",
+    "respuesta": "Para presentar una queja ante INDECOPI, primero debes tener en cuenta lo siguiente: necesitas tu DNI o Carné de Extranjería, el nombre completo y dirección del servicio al que te diriges (IAFAS, IPRESS o UGIPRESS), un detalle claro sobre tu problema y tu autorización para acceder a tu Historia Clínica si aplica.  \n\nPuedes presentar la queja en persona, por internet o telefónicamente. ¡Recuerda que no necesitas abogado!\n\nSi presentas tu queja en persona, debes firmarla. Si lo haces online o por teléfono, puedes regularizar tu firma durante el proceso.\n\n\n**Fuentes legales:**\n* Artículo 29 de la  LPAG.  \n\n\n\n",
+    "fuentes": [
+      "Decreto Supremo N° 030-2016-SA",
+      "Decreto Supremo N° 030-2016-SA",
+      "Guía de reclamos y quejas en el servicio público de telecomunicaciones"
+    ],
+    "tiempo_segundos": 2.39,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "gemma2:9b",
+    "pregunta": "¿Qué cubre el SOAT en caso de accidente de tránsito?",
+    "respuesta": "El SOAT te cubre si tienes un accidente de tránsito, sin importar si tú fuiste el que lo provocó o no.  Te ayuda a pagar los gastos médicos de las personas heridas y hasta una indemnización por fallecimiento. \n\n\nFuentes legales utilizadas: \n\n- Reglamento del SOAT  \n",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 1.33,
+    "num_docs_recuperados": 3
+  },
+  {
+    "modelo": "gemma2:9b",
+    "pregunta": "¿Tengo derecho a atención preferente si soy adulto mayor?",
+    "respuesta": "Sí, tienes derecho a atención preferente si eres adulto mayor. \n\n\nEso significa que las empresas deben atenderte primero que a otras personas cuando vayas a un lugar público como un banco o una tienda.  \n\n\n\n\n**Para asegurarte de recibir atención preferente:**\n\n1. **Indícale al personal que eres adulto mayor y necesitas atención preferencial.**\n2. Si te dan una fila diferente, espera ahí.\n3. Si no hay filas separadas, pídele amablemente al personal que te atiendan primero.\n\n\nRecuerda que tienes derecho a ser atendido con respeto y preferencia. \n\nFuentes: Ley N°27408, modificada por la Ley N° 28683  \n",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 2.32,
+    "num_docs_recuperados": 3
+  }
+]
