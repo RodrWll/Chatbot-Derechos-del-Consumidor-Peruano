@@ -25,7 +25,7 @@ from google.genai import types
 
 load_dotenv()  # carga .env automáticamente si existe
 
-MODELO_JUEZ = "gemini-2.5-flash"  # Tier gratuito: 1500 req/día — suficiente para este proyecto
+MODELO_JUEZ = "gemini-1.5-flash"  # Tier gratuito: 1500 req/día, 15 req/min
 PAUSA_ENTRE_LLAMADAS = 5  # tier gratuito: 15 req/min → 1 req cada 4s mínimo
 
 PROMPT_JUEZ = """Eres un evaluador experto en derechos del consumidor peruano. \
