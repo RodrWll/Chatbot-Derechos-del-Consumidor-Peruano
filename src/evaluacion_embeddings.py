@@ -72,6 +72,19 @@ EMBEDDINGS_CONFIG = [
     },
 ]
 
+# Mapeo de categorias de preguntas_evaluacion.json → valores reales en ChromaDB metadata
+# Los valores del ChromaDB son los que aparecen en categoria_consumo de cada JSON del corpus
+CATEGORIA_MAP: dict[str, list[str]] = {
+    "telecomunicaciones":    ["telecomunicaciones"],
+    "educacion":             ["educación", "productos y servicios, educación"],
+    "inmobiliario":          ["inmuebles"],
+    "servicios_financieros": ["servicios financieros y seguros"],
+    "productos_defectuosos": ["productos y servicios", "productos y servicios, educación"],
+    "libro_reclamaciones":   ["consumo en general"],
+    "precios":               ["consumo en general"],
+    "indecopi":              ["consumo en general", "entidades públicas"],
+}
+
 MODELOS_LLM = [
     "mistral:7b-instruct",
     "llama3.1:8b",
@@ -271,12 +284,15 @@ def main() -> None:
                 t0 = time.time()
                 try:
                     # Pre-filtrado por categoría: filtra la ChromaDB antes del retrieval
+                    # Usa $in con el mapeo de categorias (ChromaDB 1.x no soporta $contains)
                     # Si quedan menos de k docs con el filtro, cae a búsqueda sin filtro
                     filtro_aplicado = False
                     if args.prefiltrar and categoria:
+                        cats_chroma = CATEGORIA_MAP.get(categoria, [categoria])
+                        chroma_filter = {"categorias": {"$in": cats_chroma}}
                         docs = vectorstore.similarity_search(
                             pregunta, k=args.k,
-                            filter={"categorias": {"$contains": categoria}},
+                            filter=chroma_filter,
                         )
                         if len(docs) >= args.k:
                             filtro_aplicado = True
