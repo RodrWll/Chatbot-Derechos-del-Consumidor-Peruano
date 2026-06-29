@@ -18,8 +18,8 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
-CHROMA_DIR = "./chroma_db"
-EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+CHROMA_DIR = "./chroma_db_bgem3_exp5"
+EMBED_MODEL = "BAAI/bge-m3"
 
 PROMPT_TEMPLATE = """Eres un asistente especializado en derechos del consumidor peruano.
 Tu misión es ayudar a ciudadanos comunes a entender sus derechos de forma clara y práctica.
@@ -44,6 +44,9 @@ consumidor en general; OSIPTEL regula telecomunicaciones; SBS regula banca y seg
 No confundas sus competencias ni las mezcles.
 - INDECOPI puede imponer multas y medidas correctivas a empresas, pero NO puede otorgar \
 indemnizaciones por daños y perjuicios — eso requiere un proceso civil judicial separado.
+- Los bancos y entidades financieras están OBLIGADOS a notificar previamente al usuario \
+antes de cobrar cualquier nueva comisión o cargo en tarjetas de crédito o cuentas. \
+Es INCORRECTO afirmar que pueden hacerlo sin previo aviso.
 
 Contexto legal:
 {context}
@@ -59,13 +62,14 @@ def _formatear_docs(docs):
 
 def construir_cadena(
     model: str = "qwen2.5:14b",
-    k: int = 4,
+    k: int = 3,
     chroma_dir: str = CHROMA_DIR,
 ):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
-        model_kwargs={"device": device},
+        model_kwargs={"device": device, "use_safetensors": True},
+        encode_kwargs={"normalize_embeddings": True},
     )
     vectorstore = Chroma(
         persist_directory=chroma_dir,

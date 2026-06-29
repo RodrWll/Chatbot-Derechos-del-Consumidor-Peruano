@@ -1,0 +1,218 @@
+[
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 1,
+    "categoria": "libro_reclamaciones",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Cuál es la diferencia entre queja y reclamo en el Libro de Reclamaciones?",
+    "respuesta": "Claro, te explico la diferencia entre una queja y un reclamo:\n\n1. **Queja**: Es cuando tienes algún malestar o descontento con el trato recibido en un establecimiento comercial, pero no tiene que ver directamente con los productos o servicios que compraste. Por ejemplo, si el personal de seguridad fue poco amable contigo.\n\n2. **Reclamo**: Se utiliza cuando hay una falla o disconformidad específica con el producto o servicio que adquiriste. Es decir, si te llegó un producto roto, si no funciona como debería, o si tienes problemas con el servicio, entonces debes hacer un reclamo en el Libro de Reclamaciones.\n\nAmbas son importantes para comunicar tus inquietudes, pero cada una trata sobre situaciones diferentes y tienen procedimientos distintos. Siempre es recomendable usar la queja cuando se trata del trato recibido y el reclamo cuando hay problemas con lo que compraste o contrataste.",
+    "respuesta_referencia": "La reclamación trata sobre problemas o deficiencias en el producto o servicio en sí, como un aparato que no funcione o una comida contaminada, mientras que una queja trata sobre el servicio al cliente y el trato al consumidor por parte del establecimiento o proveedor, como un mesero que exija propina.",
+    "fuentes": [
+      "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Decreto Supremo N° 011-2011-PCM"
+    ],
+    "tiempo_segundos": 7.49,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 2,
+    "categoria": "telecomunicaciones",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿A quién reclamo si tengo un problema con mi servicio de telefonía móvil?",
+    "respuesta": "Si tienes un problema con tu servicio de telefonía móvil, lo primero que debes hacer es contactar a la empresa operadora directamente. Aquí te explico cómo puedes proceder paso a paso:\n\n1. **Contacta a la Empresa Operadora:** Llama al número gratuito o pagado que ofrece tu compañía telefónica para atender reclamos.\n\n2. **Completa el Formulario de Reclamo:**\n   - Ingresa tus datos personales y el correo electrónico donde te gustaría recibir respuestas.\n   - Describe el problema específico que estás experimentando.\n   - Proporciona información sobre tu servicio, como la empresa operadora, el número del servicio y cualquier otro dato relevante.\n\n3. **Especifica tu Problema:**\n   - Selecciona la materia reclamable (por ejemplo, calidad del servicio, facturación o cobro).\n   - Elige el problema específico que describes claramente en el formulario.\n\n4. **Envía tus Datos y Espera Respuesta:**\n   - Una vez completado el formulario, envíalo a través de la línea telefónica, página web o personalmente.\n   - La empresa operadora debe responder dentro del plazo establecido por OSIPTEL (generalmente es 5 días hábiles).\n\nSi no obtienes una respuesta adecuada o estás insatisfecho con el resultado inicial, puedes presentar un recurso de apelación a través de los canales que te ofrece la empresa operadora. Recuerda guardar toda la documentación relacionada con tu reclamo y el proceso de solución.\n\n**Si después del trámite con la empresa operadora sigues insatisfecho**, puedes dirigirte al OSIPTEL para presentar una queja sobre cómo fue manejado tu reclamo.\n\nRecuerda, si necesitas ayuda adicional o no obtienes respuesta de la empresa, el OSIPTEL está disponible para ayudarte.",
+    "respuesta_referencia": "El primer reclamo debe hacerse a la empresa prestadora del servicio, sea Claro, Movistar, Entel, etc. Ellos te deben brindar medios o canales para presentar tu reclamo. Si, luego de su respuesta, no sientes que han satisfecho tus derechos, puedes interponer una denuncia ante INDECOPI.",
+    "fuentes": [
+      "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+      "Resolución del Consejo Directivo N° 099-2022-CD-OSIPTEL",
+      "Resolución del Consejo Directivo N° 099-2022-CD-OSIPTEL"
+    ],
+    "tiempo_segundos": 7.46,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 3,
+    "categoria": "indecopi",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Qué diferencia una denuncia de una reclamación?",
+    "respuesta": "Claro, aquí te explico las diferencias entre un reclamo y una denuncia de forma sencilla:\n\n- **Reclamo**: Es cuando tienes problemas con un producto o servicio que compraste. Por ejemplo, si tu televisor no funciona correctamente después de la compra. Puedes ir al Libro de Reclamaciones del establecimiento donde hiciste la compra para dejar constancia de tu problema y esperar una respuesta formal de la empresa.\n\n- **Denuncia**: Usas esto cuando la empresa no resuelve el reclamo o si cometieron alguna falta según las leyes. Por ejemplo, si presentaste un reclamo por un televisor roto y la tienda no te dio una respuesta ni solucionó tu problema, puedes denunciar a INDECOPI para que intervengan y puedan sancionar a la empresa si es necesario.\n\nEn resumen, el reclamo es con la empresa directamente mientras que la denuncia es cuando necesitas ayuda de las autoridades para resolverlo.",
+    "respuesta_referencia": "Un reclamo o queja es una muestra de disconformidad que brinda el consumidor contra la empresa o proveedor a través del Libro de Reclamaciones. Una denuncia es una solicitud dirigida a INDECOPI para que sancionen con una multa al proveedor o empresa por vulnerar tus derechos como consumidor. Primero debe realizarse el reclamo antes de acudir a la denuncia.",
+    "fuentes": [
+      "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 4.12,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 4,
+    "categoria": "inmobiliario",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Qué debe figurar en el contrato de compraventa de un departamento que me brinda la inmobiliaria?",
+    "respuesta": "Según las reglas establecidas en el Código de Protección y Defensa del Consumidor, cuando firmes un contrato de compra venta para adquirir un departamento con una inmobiliaria, este debe incluir la siguiente información mínima:\n\n1. Los nombres completos y domicilios legales tanto del comprador como del vendedor.\n2. Detalles sobre el departamento que estás comprando, como su dirección exacta y cualquier número de identificación o partida registral.\n3. La descripción detallada del inmueble, incluyendo sus medidas perimétricas y acabados.\n4. El precio total del departamento.\n5. Cómo pagarás por el departamento (en cuotas, con una sola vez, etc.) y cuánto tiempo tienes para hacerlo.\n6. La fecha en que recibirás el departamento y qué sucede si uno de los dos no cumple con lo acordado a tiempo.\n7. Si hay métodos establecidos para resolver cualquier problema o conflicto que pueda surgir entre tú y la inmobiliaria.\n8. El compromiso del vendedor (la inmobiliaria en este caso) de firmar todos los documentos necesarios para completar la venta.\n\nAdemás, si estás comprando un departamento que aún no está terminado (como uno \"en planos\"), deberán darte información adicional como:\n\n- Resoluciones municipales y planos relacionados con el proyecto.\n- Detalles sobre las características del edificio futuro y sus instalaciones.\n\nSi el departamento ya está terminado, recibirás copias de la partida registral y los planos que demuestran cómo están conectadas las instalaciones eléctricas, agua, etc. Si hay áreas comunes como parques o piscinas, también tendrán que darte información sobre esas áreas.\n\nAntes de firmar cualquier cosa, asegúrate de leer atentamente este contrato y entender bien lo que te está ofreciendo la inmobiliaria y tus responsabilidades al aceptarlo. Si tienes dudas, no dudes en pedir más explicaciones o asesoramiento legal.\n\nFuente: Artículo 78 del Código de Protección y Defensa del Consumidor, Ley N° 29571.",
+    "respuesta_referencia": "Deben brindarse todos los datos y condiciones de la venta del departamento. Algunas cosas indispensables son el área del inmueble, el precio exacto, la forma y plazos de pago, las penalidades que hubieran y la forma de resolver controversias. Estos datos deben coincidir con las ofertas y ofrecimientos dados en la publicidad o las negociaciones previas.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Guía sobre productos y servicios inmobiliarios",
+      "Guía sobre productos y servicios inmobiliarios"
+    ],
+    "tiempo_segundos": 8.38,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 5,
+    "categoria": "servicios_financieros",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Tengo derecho a pagar por adelantado mis préstamos con el banco, para evitar intereses?",
+    "respuesta": "Sí, tienes ese derecho según la ley. Si estás pagando un préstamo a plazos, puedes hacer pagos adicionales antes de lo que está programado sin recibir penalizaciones. Esto ayuda a reducir el monto total de los intereses que debes pagar.\n\nAquí te explico cómo podrías actuar:\n\n1. Comunícate con tu banco para confirmar cuánto estás dispuesto a pagar adicionalmente.\n2. Realiza el pago extra según la forma habitual de abonos (transferencia, efectivo en sucursal, etc.).\n3. Verifica que tus pagos adicionales se aplican primero a los intereses y luego al capital adeudado.\n\nRecuerda que no pueden cobrarte comisiones por hacer este tipo de pago anticipado.\n\nSi sientes que tu banco está dificultando el ejercicio de este derecho, puedes denunciarlo en INDECOPI.",
+    "respuesta_referencia": "Sí. El consumidor tiene derecho a pagar por adelantado los créditos o deudas que haya contraído con la institución financiera, libremente. El banco no puede negarse a recibir el pago.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 3.75,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 6,
+    "categoria": "indecopi",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Puedo pedir indemnización o reparación por los daños sufridos mediante el Libro de Reclamaciones o INDECOPI?",
+    "respuesta": "No puedes solicitar una indemnización directamente a través del Libro de Reclamaciones ni a INDECOPI. Estos recursos son para resolver problemas menores y hacer que las empresas corrijan sus errores, como devolver dinero o cambiar un producto defectuoso. Si has sufrido daños más serios como pérdidas financieras significativas, lesiones físicas o daño emocional, necesitas ir a la justicia ordinaria (un tribunal) para pedir una indemnización completa.\n\nEstos son los pasos que debes seguir:\n\n1. Documenta todos tus problemas y pruebas.\n2. Intenta resolver el problema con la empresa directamente.\n3. Si no funciona, usa el Libro de Reclamaciones o presentas tu caso a INDECOPI para pedir medidas correctivas.\n4. Si sigues sufriendo daños serios, contrata a un abogado y presenta una demanda en un tribunal.\n\nINDECOPI puede hacer que la empresa cambie su comportamiento incorrecto, pero no pueden darte dinero por tus problemas personales o financieros importantes. Eso es algo que debe decidir un juez después de escuchar tu caso.\n\nFuente: Artículos mencionados del Código de Protección y Defensa al Consumidor y contexto legal proporcionado sobre INDECOPI.",
+    "respuesta_referencia": "No. La reclamación y la denuncia por derechos de consumidor no permiten exigirle a la empresa o proveedor una indemnización por daños y perjuicios. La indemnización por los daños sufridos debe interponerse como un juicio ordinario, ante el Poder Judicial.",
+    "fuentes": [
+      "Decreto Supremo N° 011-2011-PCM",
+      "Guía de procedimientos INDECOPI - Reclamos y Denuncias",
+      "Resolución Final N° 016-2022/CPC-INDECOPI-PUN"
+    ],
+    "tiempo_segundos": 5.04,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 7,
+    "categoria": "productos_defectuosos",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Pueden negarse a cambiarme una prenda de ropa porque la que compré tiene roturas o mala calidad?",
+    "respuesta": "No pueden negarte el cambio de una prenda si está defectuosa. Si encuentras un problema como roturas o baja calidad en tu ropa nueva, tienes derecho a que te la cambien sin costo adicional. Lo primero que debes hacer es llevar la prenda al lugar donde la compraste para que evalúen el problema. Luego, presenta una reclamación por escrito detallando el defecto y anexa cualquier prueba como fotos o recibos.\n\nSi no resuelven tu solicitud dentro de un plazo razonable, puedes acudir a INDECOPI para que intervengan en tu caso. No tienes que aguantar recibir un producto de mala calidad; exige lo que te corresponde según la ley.\n\nFuente: Código de Protección y Defensa del Consumidor, Ley N° 29571",
+    "respuesta_referencia": "No. Si el producto no cumple con la calidad, materiales o cualificaciones que se ofrecieron, entonces están obligados a restituirte un nuevo producto.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 3.47,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 8,
+    "categoria": "servicios_financieros",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿El banco puede cobrar comisiones o conceptos a mi tarjeta de crédito sin avisarme?",
+    "respuesta": "No, el banco no puede cobrarte comisiones o nuevos conceptos a tu tarjeta de crédito sin aviso previo. Antes de que puedan cobrar algo nuevo, deben notificarte con al menos 30 días de anticipación sobre cualquier nueva comisión o cargo. Si ya te están cobrando algo sin haber sido advertido con anterioridad, deberías contactar a tu banco para resolverlo y si es necesario, puedes presentar una queja ante INDECOPI.\n\nFuente: Ley N° 29571 - Código de Protección y Defensa del Consumidor.",
+    "respuesta_referencia": "No. Está prohibido aumentar o cambiar las comisiones y otros gastos que pague el consumidor sin que primero se le informe adecuadamente.",
+    "fuentes": [
+      "Resolución SBS N° 3274-2017",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Cartilla informativa sobre Tarjetas de Crédito"
+    ],
+    "tiempo_segundos": 2.57,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 9,
+    "categoria": "libro_reclamaciones",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Una empresa o negocio digital tiene que tener un libro de reclamaciones?",
+    "respuesta": "Sí, una empresa o negocio digital también debe tener un Libro de Reclamaciones, ya sea en forma física o virtual. Si el comercio se realiza online, la empresa tiene que implementar un Libro de Reclamaciones Virtual para que los clientes puedan dejar sus quejas y reclamos fácilmente.\n\nAquí te explico cómo puedes hacerlo:\n\n1. **Busca el libro de reclamaciones:** Entra en el sitio web del negocio o busca dentro de la aplicación si hay una sección dedicada al Libro de Reclamaciones.\n2. **Registra tu queja o reclamo:** Una vez que encuentres el Libro, debes poder registrar tu problema sin problemas. Si no sabes cómo hacerlo, puedes contactar a la empresa para pedirles ayuda.\n3. **Espera una respuesta en 15 días hábiles:** Después de dejar tu queja o reclamo, la empresa tiene un plazo máximo de 15 días hábiles (días laborables) para responder.\n\nSi no encuentras el libro de reclamaciones o te dan problemas al intentar registrar algo, puedes poner una denuncia ante INDECOPI.",
+    "respuesta_referencia": "Sí. Todos los negocios, sean con tienda física o virtual, deben contar con un libro de reclamaciones. En caso de un negocio digital, el libro de reclamaciones es virtual, y tiene las mismas características que un libro de reclamaciones físico.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Decreto Supremo N° 011-2011-PCM",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022"
+    ],
+    "tiempo_segundos": 4.62,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 10,
+    "categoria": "precios",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Pueden subir o cobrarme más del precio que muestran en la tienda o página web?",
+    "respuesta": "No pueden aumentar el precio una vez que lo han mostrado a los consumidores. Si ves un producto con un precio específico en una tienda física o en una página web, ese es el precio al que debes pagar por él sin ninguna suma adicional, excepto si se trata de servicios adicionales como transporte o instalación que estén fuera del precio base y sean aceptados expresamente por ti.\n\nSi te cobran algo más que lo mostrado, deberías denunciarlo. Recuerda también que el vendedor debe informarte antes si hay algún cargo adicional para un servicio extra.\n\nSi esto sucede, puedes hacer una queja en INDECOPI. Aquí tienes los pasos básicos:\n\n1. Documenta bien la situación: toma fotos del precio mostrado y cualquier recibo o factura.\n2. Visita el sitio web de INDECOPI (www.indecopi.gob.pe) para denunciar el caso.\n3. Sigue las instrucciones en línea para presentar tu queja.\n\nEs importante actuar rápidamente si ocurre esto, ya que la ley está a tu favor como consumidor.\n\nFuente: Código de Protección y Defensa del Consumidor, Ley N° 29571 (artículos 4, 5, y 7).",
+    "respuesta_referencia": "No. Cualquier aumento o sobreprecio al precio que se exhibe en la página web o en la tienda física está prohibido. La empresa debe mostrar exactamente el precio final a cobrar, o avisar claramente si existe algún recargo o pago adicional.",
+    "fuentes": [
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 5.02,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 11,
+    "categoria": "precios",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿Me pueden obligar a pagar propina o un adicional al precio de la carta en un restaurante?",
+    "respuesta": "Según las normas del Código de Protección y Defensa del Consumidor, los restaurantes no pueden cobrarte montos adicionales sin que tú lo hayas aceptado expresamente. Esto significa que si un restaurante quiere cobrarte una propina o algún adicional al precio que ya venía en la carta, deben informarte claramente sobre este cargo antes y obtener tu consentimiento.\n\nAquí te dejo los pasos que puedes seguir:\n\n1. Antes de pagar, pregunta por cualquier monto extra como propinas.\n2. Si el restaurante intenta cobrarte algo adicional sin haberlo mencionado previamente en la carta o durante tu comida, pide explicaciones.\n3. Si no estás conforme con el cargo extra, puedes negarte a pagarlo y denunciar este hecho ante INDECOPI.\n\nRecuerda que cualquier recargo debe ser informado de manera clara y aceptado por ti antes del servicio, así te proteges de prácticas engañosas o abusivas.\n\nFuente: Código de Protección y Defensa del Consumidor, Ley N° 29571.",
+    "respuesta_referencia": "No. La propina es únicamente voluntaria, y cualquier recargo, suma o pago adicional que deba hacerse por el servicio de restaurante o alimentación debe figurar y ser informado al cliente de forma íntegra y adecuada antes de producirse el consumo.",
+    "fuentes": [
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Código de Protección y Defensa del Consumidor",
+      "Código de Protección y Defensa del Consumidor"
+    ],
+    "tiempo_segundos": 4.59,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  },
+  {
+    "embedding": "bge-m3",
+    "embedding_modelo": "BAAI/bge-m3",
+    "id_pregunta": 12,
+    "categoria": "educacion",
+    "modelo": "qwen2.5:14b",
+    "pregunta": "¿El colegio puede obligarme a comprar libros de texto nuevos para mis hijos?",
+    "respuesta": "No, el colegio no puede obligarte a comprar libros de texto nuevos para tus hijos. Según la Ley N° 29571 (Código de Protección y Defensa del Consumidor), las instituciones educativas públicas y privadas no pueden forzarte ni sugerirte que compres textos escolares nuevos o diseñados solo para un uso. Tienes el derecho de comprar libros usados, que son más económicos y cumplen la función de consulta y estudio.\n\nSi te sientes presionado por alguna institución educativa a comprar libros nuevos, puedes presentar una denuncia ante INDECOPI para que investiguen este caso.",
+    "respuesta_referencia": "No. Por ley los textos escolares que lleven los alumnos pueden ser reutilizados o de segunda mano. Está prohibido y sancionado exigir la compra de libros totalmente nuevos.",
+    "fuentes": [
+      "Ley N° 29694",
+      "Lineamientos sobre Protección al Consumidor - Actualizado 2022",
+      "Ley N° 29694"
+    ],
+    "tiempo_segundos": 2.79,
+    "num_docs_recuperados": 3,
+    "prefiltrado": true
+  }
+]
