@@ -1,166 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="drawio" version="26.0.0">
   <diagram name="Secuencia de Consulta">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="970" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
         <mxCell id="2" value="Diagrama de Secuencia — Consulta al Chatbot RAG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="10" width="1060" height="40" as="geometry" />
+          <mxGeometry x="40" y="10" width="1250" height="40" as="geometry" />
         </mxCell>
 
-        <!-- Participantes -->
-        <mxCell id="10" value="Usuario" style="shape=mxgraph.flowchart.actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="60" y="60" width="60" height="70" as="geometry" />
+        <!-- PARTICIPANTES -->
+        <!-- Usuario — azul profundo -->
+        <mxCell id="10" value="Usuario" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f4fd;strokeColor=#1a5276;fontStyle=1;fontSize=11;fontColor=#1a5276;" vertex="1" parent="1">
+          <mxGeometry x="50" y="60" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="Streamlit&#xa;app.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="240" y="60" width="130" height="60" as="geometry" />
+        <!-- Streamlit UI — azul profundo -->
+        <mxCell id="11" value="Streamlit UI&#xa;app.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4fd;strokeColor=#1a5276;fontStyle=1;fontSize=11;fontColor=#1a5276;" vertex="1" parent="1">
+          <mxGeometry x="210" y="60" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="12" value="RAG Chain&#xa;rag_chain.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="460" y="60" width="140" height="60" as="geometry" />
+        <!-- LangChain — dorado -->
+        <mxCell id="12" value="LangChain&#xa;rag_chain.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9e7;strokeColor=#9a7d0a;fontStyle=1;fontSize=11;fontColor=#7d6608;" vertex="1" parent="1">
+          <mxGeometry x="430" y="60" width="155" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="13" value="ChromaDB&#xa;Vector Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="700" y="50" width="130" height="80" as="geometry" />
+        <!-- bge-m3 — verde legal -->
+        <mxCell id="13" value="bge-m3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eafaf1;strokeColor=#1e8449;fontStyle=1;fontSize=11;fontColor=#1e5c36;" vertex="1" parent="1">
+          <mxGeometry x="660" y="60" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="14" value="Ollama / Mistral 7B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="930" y="60" width="150" height="60" as="geometry" />
+        <!-- ChromaDB — verde oscuro -->
+        <mxCell id="14" value="ChromaDB&#xa;chroma_db_bgem3_exp5/" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#1e8449;fontStyle=1;fontSize=11;fontColor=#1e5c36;" vertex="1" parent="1">
+          <mxGeometry x="870" y="50" width="160" height="80" as="geometry" />
         </mxCell>
-
-        <!-- Lifelines -->
-        <mxCell id="20" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" edge="1" parent="1">
-          <mxGeometry x="90" y="130" relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="90" y="830" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="21" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" edge="1" parent="1">
-          <mxGeometry x="305" y="120" relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="305" y="830" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="22" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#d79b00;" edge="1" parent="1">
-          <mxGeometry x="530" y="120" relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="530" y="830" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="23" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" edge="1" parent="1">
-          <mxGeometry x="765" y="130" relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="765" y="830" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="24" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry x="1005" y="120" relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="1005" y="830" as="targetPoint" />
-          </mxGeometry>
+        <!-- qwen2.5:14b — púrpura -->
+        <mxCell id="15" value="qwen2.5:14b&#xa;(Ollama)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5eef8;strokeColor=#6c3483;fontStyle=1;fontSize=11;fontColor=#4a235a;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="60" width="155" height="60" as="geometry" />
         </mxCell>
 
-        <!-- Mensaje 1: Usuario → Streamlit -->
-        <mxCell id="30" value="1. Escribe pregunta en el chat" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#6c8ebf;fontStyle=0;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="90" y="185" relative="1" as="geometry">
-            <mxPoint x="90" y="185" as="sourcePoint" />
-            <mxPoint x="305" y="185" as="targetPoint" />
+        <!-- LÍNEAS DE VIDA -->
+        <mxCell id="20" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#1a5276;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="90" y="125" as="sourcePoint" />
+            <mxPoint x="90" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- Mensaje 2: Streamlit → RAG Chain -->
-        <mxCell id="31" value="2. chain(prompt)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;fontStyle=2;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="305" y="240" relative="1" as="geometry">
-            <mxPoint x="305" y="240" as="sourcePoint" />
-            <mxPoint x="530" y="240" as="targetPoint" />
+        <mxCell id="21" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#1a5276;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="285" y="125" as="sourcePoint" />
+            <mxPoint x="285" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- Mensaje 3: RAG Chain → ChromaDB -->
-        <mxCell id="32" value="3. retriever.invoke(query)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#82b366;fontStyle=2;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="530" y="295" relative="1" as="geometry">
-            <mxPoint x="530" y="295" as="sourcePoint" />
-            <mxPoint x="765" y="295" as="targetPoint" />
+        <mxCell id="22" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#9a7d0a;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="125" as="sourcePoint" />
+            <mxPoint x="507" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#1e8449;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="725" y="125" as="sourcePoint" />
+            <mxPoint x="725" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#1e8449;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="950" y="140" as="sourcePoint" />
+            <mxPoint x="950" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#6c3483;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="1187" y="125" as="sourcePoint" />
+            <mxPoint x="1187" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
-        <!-- Nota en RAG Chain: generar embedding -->
-        <mxCell id="33" value="[genera embedding de la consulta&#xa;con MiniLM-L12-v2]" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="545" y="268" width="200" height="50" as="geometry" />
-        </mxCell>
+        <!-- MENSAJES -->
 
-        <!-- Mensaje 4: ChromaDB → RAG Chain (retorno) -->
-        <mxCell id="34" value="4. top-3 documentos relevantes" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#82b366;fontStyle=0;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="765" y="350" relative="1" as="geometry">
-            <mxPoint x="765" y="350" as="sourcePoint" />
-            <mxPoint x="530" y="350" as="targetPoint" />
+        <!-- 1. Usuario → Streamlit UI -->
+        <mxCell id="30" value="1. escribe pregunta" style="html=1;strokeColor=#1a5276;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="90" y="200" as="sourcePoint" />
+            <mxPoint x="285" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
-        <!-- Mensaje 5: RAG Chain self (construir prompt) -->
-        <mxCell id="35" value="5. Construir prompt con contexto legal" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d79b00;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="530" y="405" relative="1" as="geometry">
-            <mxPoint x="530" y="405" as="sourcePoint" />
-            <mxPoint x="620" y="405" as="targetPoint" />
+        <!-- 2. Streamlit → LangChain -->
+        <mxCell id="31" value="2. pregunta (texto)" style="html=1;strokeColor=#9a7d0a;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="285" y="265" as="sourcePoint" />
+            <mxPoint x="507" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3. LangChain → bge-m3 -->
+        <mxCell id="32" value="3. encode(pregunta)" style="html=1;strokeColor=#1e8449;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="330" as="sourcePoint" />
+            <mxPoint x="725" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 4. bge-m3 → LangChain (return, dashed) -->
+        <mxCell id="33" value="4. vector 1024-dim" style="html=1;dashed=1;strokeColor=#1e8449;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="725" y="395" as="sourcePoint" />
+            <mxPoint x="507" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 5. LangChain → ChromaDB -->
+        <mxCell id="34" value="5. similarity_search(vector, k=3, filter=categoría)" style="html=1;strokeColor=#1e8449;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="460" as="sourcePoint" />
+            <mxPoint x="950" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Nota ChromaDB: CATEGORIA_MAP — dorado (notes) -->
+        <mxCell id="50" value="CATEGORIA_MAP mapea&#xa;pregunta → filtro Chroma" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fef9e7;strokeColor=#9a7d0a;fontSize=9;fontColor=#7d6608;" vertex="1" parent="1">
+          <mxGeometry x="970" y="440" width="205" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 6. ChromaDB → LangChain (return, dashed) -->
+        <mxCell id="35" value="6. top-3 fragmentos relevantes" style="html=1;dashed=1;strokeColor=#1e8449;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="950" y="525" as="sourcePoint" />
+            <mxPoint x="507" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7. LangChain self-loop: formatear prompt -->
+        <mxCell id="36" value="7. formatear prompt (contexto + pregunta)" style="html=1;strokeColor=#9a7d0a;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="590" as="sourcePoint" />
+            <mxPoint x="507" y="615" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="620" y="405" />
-              <mxPoint x="620" y="430" />
-              <mxPoint x="530" y="430" />
+              <mxPoint x="600" y="590" />
+              <mxPoint x="600" y="615" />
             </Array>
           </mxGeometry>
         </mxCell>
 
-        <!-- Mensaje 6: RAG Chain → Ollama -->
-        <mxCell id="36" value="6. llm.invoke(prompt_con_contexto)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9673a6;fontStyle=2;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="530" y="470" relative="1" as="geometry">
-            <mxPoint x="530" y="470" as="sourcePoint" />
-            <mxPoint x="1005" y="470" as="targetPoint" />
+        <!-- Nota: PROMPT_TEMPLATE — dorado -->
+        <mxCell id="51" value="PROMPT_TEMPLATE&#xa;anti-alucinación v3" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fef9e7;strokeColor=#9a7d0a;fontSize=9;fontColor=#7d6608;" vertex="1" parent="1">
+          <mxGeometry x="615" y="582" width="195" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- 8. LangChain → qwen2.5:14b -->
+        <mxCell id="37" value="8. prompt completo" style="html=1;strokeColor=#6c3483;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="645" as="sourcePoint" />
+            <mxPoint x="1187" y="645" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
-        <!-- Nota Ollama: inferencia GPU -->
-        <mxCell id="37" value="[inferencia en RTX 4080&#xa;~3-8 segundos]" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="830" y="445" width="160" height="50" as="geometry" />
+        <!-- Nota: qwen — púrpura -->
+        <mxCell id="52" value="14B params · RTX 4080&#xa;~10 GB VRAM" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#f5eef8;strokeColor=#6c3483;fontSize=9;fontColor=#4a235a;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="630" width="185" height="40" as="geometry" />
         </mxCell>
 
-        <!-- Mensaje 7: Ollama → RAG Chain (retorno) -->
-        <mxCell id="38" value="7. respuesta generada (texto)" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#9673a6;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="1005" y="535" relative="1" as="geometry">
-            <mxPoint x="1005" y="535" as="sourcePoint" />
-            <mxPoint x="530" y="535" as="targetPoint" />
+        <!-- 9. qwen → LangChain (return, dashed) -->
+        <mxCell id="38" value="9. respuesta en lenguaje simple" style="html=1;dashed=1;strokeColor=#6c3483;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="1187" y="710" as="sourcePoint" />
+            <mxPoint x="507" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
-        <!-- Mensaje 8: RAG Chain → Streamlit -->
-        <mxCell id="39" value="8. {result, source_documents}" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#d79b00;fontStyle=2;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="530" y="590" relative="1" as="geometry">
-            <mxPoint x="530" y="590" as="sourcePoint" />
-            <mxPoint x="305" y="590" as="targetPoint" />
+        <!-- 10. LangChain → Streamlit (return, dashed) -->
+        <mxCell id="39" value="10. {result, source_documents}" style="html=1;dashed=1;strokeColor=#9a7d0a;fontStyle=2;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="507" y="775" as="sourcePoint" />
+            <mxPoint x="285" y="775" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
-        <!-- Mensaje 9: Streamlit → Usuario -->
-        <mxCell id="40" value="9. Muestra respuesta simplificada + fuentes" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#6c8ebf;fontSize=10;" edge="1" parent="1">
-          <mxGeometry x="305" y="645" relative="1" as="geometry">
-            <mxPoint x="305" y="645" as="sourcePoint" />
-            <mxPoint x="90" y="645" as="targetPoint" />
+        <!-- 11. Streamlit → Usuario (return, dashed) -->
+        <mxCell id="40" value="11. respuesta + fuentes citadas" style="html=1;dashed=1;strokeColor=#1a5276;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="285" y="840" as="sourcePoint" />
+            <mxPoint x="90" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
 
         <!-- Labels de participantes en la parte inferior -->
-        <mxCell id="50" value="Usuario" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="60" y="835" width="60" height="20" as="geometry" />
+        <mxCell id="60" value="Usuario" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="910" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="51" value="Streamlit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="240" y="835" width="130" height="20" as="geometry" />
+        <mxCell id="61" value="Streamlit UI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="910" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="52" value="RAG Chain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="460" y="835" width="140" height="20" as="geometry" />
+        <mxCell id="62" value="LangChain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="910" width="155" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="53" value="ChromaDB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="700" y="835" width="130" height="20" as="geometry" />
+        <mxCell id="63" value="bge-m3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="910" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="54" value="Ollama / Mistral" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="930" y="835" width="150" height="20" as="geometry" />
+        <mxCell id="64" value="ChromaDB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="870" y="910" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="qwen2.5:14b (Ollama)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="910" width="155" height="20" as="geometry" />
         </mxCell>
 
       </root>
