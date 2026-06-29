@@ -1,0 +1,26 @@
+# HuggingFace Spaces — CPU Basic
+# PyTorch se instala desde PyPI (CPU mode: torch.cuda.is_available() = False en HF Spaces)
+
+# --- LangChain ---
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-huggingface>=0.1.0
+langchain-chroma>=0.1.0
+langchain-groq>=0.2.0
+
+# --- Vector store y embeddings ---
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+transformers>=4.40.0
+huggingface-hub>=0.23.0
+
+# --- PyTorch (CPU) ---
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Interfaz ---
+streamlit>=1.32.0
+
+# --- Utilidades ---
+python-dotenv>=1.0.0

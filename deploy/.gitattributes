@@ -1,0 +1,5 @@
+# Git LFS — archivos binarios grandes de ChromaDB
+# chroma.sqlite3 pesa ~20 MB: supera el umbral de 10 MB recomendado por HF
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.pickle filter=lfs diff=lfs merge=lfs -text
