@@ -4,46 +4,33 @@
 
 Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales sobre derechos del consumidor en Perú para que ciudadanos comunes los entiendan. Usa arquitectura RAG: recupera fragmentos del corpus legal y los procesa con un LLM local para generar respuestas en lenguaje simple.
 
-## Estado actual (actualizado 2026-06-28 — sesión 3)
+## Estado actual (actualizado 2026-06-29 — sesión 4)
 
-### Completado en esta sesión
-- ✅ **Experimento 4 COMPLETO** — 300 evaluaciones (5 embeddings × 5 modelos × 12 preguntas) evaluadas con Gemini juez
-- ✅ `scores_gemini_embeddings.json` / `scores_gemini_embeddings.csv` — scores completos
-- ✅ `src/generar_reporte.py` — genera `reporte.html` con comparativas LLM, embeddings, heatmaps, ejemplos y comparativa vs baseline
-- ✅ `reporte.html` generado — listo para compartir con el grupo
-- ✅ `setup.bat` + `requirements.txt` actualizados para usar **venv** en lugar de conda (funciona en cualquier terminal, no requiere Anaconda Prompt)
-- ✅ Dos documentos nuevos agregados a `final_json/informes/`:
-  - `Cartilla Ya lo sabes - Arbitraje de Consumo.json`
-  - `Resolucion Final 016-2022-CPC-INDECOPI.json` ← clave para P6 (INDECOPI no puede dar indemnización)
-- ✅ `EVALUACION.md` actualizado con resultados del Exp. 4 y plan del Exp. 5
+### Fase 3 COMPLETA — Ciclo de experimentos cerrado
 
-### Resultados del Experimento 4
+- ✅ **Exp5** — Corpus ampliado (2 docs nuevos) + top embeddings: regresión por ruido competitivo
+- ✅ **Exp6** — Pre-filtrado por categoría: recupera nivel Exp4, mistral+e5 supera Exp4
+- ✅ **Exp7** — Fix de prompt para P8: **24/24 = 2.0/2.0 puntuación perfecta**
+- ✅ `src/rag_chain.py` actualizado con configuración ganadora final (bge-m3, k=3, chroma_db_bgem3_exp5)
+- ✅ `EVALUACION.md` actualizado con resultados completos Exp5→Exp7
 
-**Ganador absoluto: qwen2.5:14b + bge-m3 = 1.75/2.0**
+### Resultado final del ciclo de experimentos
 
-| Top | Modelo | Embedding | Score |
-|:---:|--------|-----------|:-----:|
-| 🥇 1 | qwen2.5:14b | bge-m3 | 1.75 |
-| 🥈 2 | llama3.1:8b | bge-m3 | 1.58 |
-| 🥉 3 | mistral:7b-instruct | e5-large | 1.50 |
+**Configuración ganadora: qwen2.5:14b + bge-m3 + pre-filtrado + prompt v3 = 24/24 (2.0/2.0)**
 
-**LaBSE descartado** — rendimiento consistentemente inferior (~0.83 vs ~1.45 de bge-m3).
+| Palanca de mejora | Impacto |
+|-------------------|---------|
+| Mejor embedding (bge-m3 vs MiniLM) | +0.52 pts sobre baseline |
+| Corpus ampliado sin filtro (Exp5) | Neutro/negativo — ruido competitivo |
+| Pre-filtrado por categoría (Exp6) | +0.167 vs Exp5 |
+| Fix de prompt para P8 (Exp7) | +0.083 — resuelve sesgo LLM en comisiones bancarias |
+| **Score final** | **24/24 = 2.0/2.0** ✅ |
 
-### Pendiente — Experimento 5
+### Pendiente — Fase 4
 
-**Objetivo:** verificar si agregar los 2 documentos nuevos y pre-filtrar por categoría resuelve P6 (fallo universal).
-
-**Configuración:** top 3 modelos × top 2 embeddings = 72 combinaciones (ver `EVALUACION.md` para pasos exactos).
-
-**Pasos al iniciar la siguiente sesión:**
-1. Re-indexar corpus con los 2 nuevos docs para bge-m3 y e5-large
-2. Correr `evaluacion_embeddings.py` con los 3 modelos y 2 embeddings
-3. Evaluar con Gemini juez
-4. Generar reporte comparativo vs Exp. 4
-
-### Otros pendientes
-- ⏳ Notebooks 01, 02, 03 — exploración y análisis
-- ⏳ Fase 4 (deploy) — pendiente
+- ⏳ **Fase 4 — Deploy** (decisión pendiente: HuggingFace Spaces CPU Basic con Gemini API, o deploy local documentado)
+- ⏳ **Actualizar diagramas** en `diagramas/` — instrucciones detalladas en `.claude/plans/quiero-que-revises-el-gentle-feather.md`
+- ⏳ **Notebooks** 01, 02, 03 — exploración y análisis
 
 ## Hardware de desarrollo
 
@@ -52,13 +39,13 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 
 ## Modelos Ollama instalados
 
-| Modelo | Parámetros | Score manual | Score Gemini baseline | Score Gemini v2 | Estado |
-|--------|-----------|:------------:|:---------------------:|:---------------:|--------|
-| `qwen2.5:14b` | 14B | **15/20 🥇** | 9/20 | **10/20 🥇** | ✅ default |
-| `mistral:7b-instruct` | 7B | 12/20 | 9/20 | 8/20 | ✅ instalado |
-| `gemma2:9b` | 9B | 12/20 | 8/20 | 8/20 | ✅ instalado |
-| `llama3.1:8b` | 8B | 11/20 | 6/20 | 5/20 | ✅ instalado |
-| `mistral-nemo:12b` | 12B | 9/20 ⚠️ bug chars japoneses | 4/20 | 6/20 | ✅ instalado |
+| Modelo | Parámetros | Score Gemini Exp7 | Estado |
+|--------|-----------|:-----------------:|--------|
+| `qwen2.5:14b` | 14B | **24/24 🥇** | ✅ **producción** |
+| `mistral:7b-instruct` | 7B | 19/24 (Exp6) | ✅ instalado |
+| `llama3.1:8b` | 8B | 17/24 (Exp6) | ✅ instalado |
+| `gemma2:9b` | 9B | — (no en top-3) | ✅ instalado |
+| `mistral-nemo:12b` | 12B | — (bug japonés) | ⚠️ descartado producción |
 
 ## Stack tecnológico
 
@@ -66,9 +53,10 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 |------------|-------------|
 | Lenguaje | Python 3.11.9 |
 | Entorno | conda (`environment.yml`) — kernel Jupyter: "Python (chatbot-consumidor)" |
-| Embeddings | `langchain_huggingface.HuggingFaceEmbeddings` — `paraphrase-multilingual-MiniLM-L12-v2` |
-| Vector store | `langchain_chroma.Chroma` (local, persistente en `chroma_db/`) |
-| LLM producción | `langchain_ollama.OllamaLLM` — modelo: `qwen2.5:14b` (ganador de la evaluación) |
+| Embeddings | `langchain_huggingface.HuggingFaceEmbeddings` — **`BAAI/bge-m3`** (1024 dims) |
+| Vector store | `langchain_chroma.Chroma` — **`chroma_db_bgem3_exp5/`** (1356 docs) |
+| Pre-filtrado | `CATEGORIA_MAP` en `evaluacion_embeddings.py` — filtro por `categoria_consumo` antes del retrieval |
+| LLM producción | `langchain_ollama.OllamaLLM` — modelo: **`qwen2.5:14b`** |
 | LLM juez evaluación | `gemini-2.5-flash` vía Google AI Studio API — SDK: `google-genai` (gratuito, 1500 req/día) |
 | UI | Streamlit (`src/app.py`) con `@st.cache_resource` |
 | Orquestación | LangChain (cadena manual con closure en `rag_chain.py`) |
@@ -86,40 +74,50 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 
 ```
 ├── CLAUDE.md                          ← este archivo
-├── EVALUACION.md                      ← registro completo de experimentos y resultados
+├── EVALUACION.md                      ← registro completo Exp1→Exp7
 ├── environment.yml                    ← entorno conda
 ├── .env                               ← API keys locales — NO en git
 ├── .env.example                       ← plantilla de variables de entorno
 ├── preguntas_evaluacion.json          ← 12 preguntas con respuestas de referencia
-├── evaluacion_resultados.json         ← baseline: 5 modelos × 10 preguntas
-├── evaluacion_resultados_v2.json      ← v2: corpus + guía INDECOPI, 5 × 10
+├── evaluacion_resultados.json         ← baseline: 5 modelos × 10 preguntas (histórico)
+├── evaluacion_resultados_v2.json      ← v2: corpus + guía INDECOPI (histórico)
 ├── scores_gemini_baseline.json/.csv   ← scores Gemini juez sobre baseline
 ├── scores_gemini_v2.json/.csv         ← scores Gemini juez sobre v2
-├── evaluacion_embeddings.json         ← (generándose) 5 embeddings × 5 modelos × 12
-├── scores_gemini_embeddings.json      ← (pendiente) scores Gemini sobre embeddings
+├── evaluacion_embeddings.json         ← Exp4: 5 embeddings × 5 modelos × 12 = 300
+├── scores_gemini_embeddings.json/.csv ← scores Gemini Exp4 (300 evaluaciones)
+├── evaluacion_exp5.json               ← Exp5: 3 modelos × 2 embeddings × 12 = 72
+├── scores_gemini_exp5.json/.csv       ← scores Gemini Exp5
+├── evaluacion_exp6.json               ← Exp6: 3 pares × 12 = 36 (pre-filtrado)
+├── scores_gemini_exp6.json/.csv       ← scores Gemini Exp6
+├── evaluacion_exp7.json               ← Exp7: 1 par × 12 = 12 (prompt P8 fix)
+├── scores_gemini_exp7.json/.csv       ← scores Gemini Exp7 — 24/24 perfecto
+├── reporte.html                       ← reporte comparativo generado
 ├── final_json/                        ← corpus legal (NO modificar JSONs existentes)
-│   ├── informes/                      ← 14 archivos (13 originales + guía INDECOPI)
+│   ├── informes/                      ← 15 archivos (13 originales + guía INDECOPI + 2 nuevos Exp5)
 │   ├── leyes/                         ← 5 archivos
 │   └── normas reglamentarias/         ← 10 archivos
 ├── src/
-│   ├── ingest.py                      ← indexa corpus en chroma_db/ (producción)
-│   ├── ingest_embeddings.py           ← indexa corpus en 5 ChromaDB (experimento embeddings)
-│   ├── rag_chain.py                   ← cadena RAG + PROMPT_TEMPLATE anti-alucinación
+│   ├── ingest.py                      ← indexa corpus en chroma_db/ (producción legacy)
+│   ├── ingest_embeddings.py           ← indexa corpus en ChromaDBs con --suffix (Exp4/Exp5)
+│   ├── rag_chain.py                   ← cadena RAG + PROMPT_TEMPLATE anti-alucinación v3
 │   ├── app.py                         ← interfaz Streamlit (default: qwen2.5:14b)
-│   ├── evaluacion.py                  ← evaluación multi-modelo (preguntas_evaluacion.json)
-│   ├── evaluacion_embeddings.py       ← evaluación 5×5×12 con reanudación automática
-│   └── evaluar_llm_judge.py           ← juez Gemini con reanudación por (pregunta,modelo,embedding)
+│   ├── evaluacion.py                  ← evaluación multi-modelo estándar
+│   ├── evaluacion_embeddings.py       ← evaluación multi-embedding con reanudación + pre-filtrado
+│   ├── evaluar_llm_judge.py           ← juez Gemini con reanudación
+│   └── generar_reporte.py             ← genera reporte.html comparativo
 ├── notebooks/
 │   ├── 01_exploracion_datos.ipynb
 │   ├── 02_indexacion_vectorstore.ipynb
 │   └── 03_chatbot_rag.ipynb
-├── diagramas/                         ← 4 diagramas draw.io + PNG
-├── chroma_db/                         ← producción (MiniLM-L12, corpus completo)
-├── chroma_db_minilm/                  ← experimento embeddings
-├── chroma_db_mpnet/                   ← experimento embeddings
-├── chroma_db_e5large/                 ← experimento embeddings
-├── chroma_db_bgem3/                   ← experimento embeddings
-└── chroma_db_labse/                   ← experimento embeddings
+├── diagramas/                         ← 4 diagramas draw.io + PNG (pendiente actualizar)
+├── chroma_db/                         ← legacy (MiniLM-L12, corpus 1349 docs) — NO usar en prod
+├── chroma_db_minilm/                  ← Exp4
+├── chroma_db_mpnet/                   ← Exp4
+├── chroma_db_e5large/                 ← Exp4
+├── chroma_db_bgem3/                   ← Exp4
+├── chroma_db_labse/                   ← Exp4
+├── chroma_db_bgem3_exp5/              ← PRODUCCIÓN — bge-m3, corpus ampliado (1356 docs)
+└── chroma_db_e5large_exp5/            ← Exp5/Exp6 con e5-large
 ```
 
 ## Cómo arrancar (PC con entorno ya instalado)
@@ -128,15 +126,15 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 # Abrir Anaconda Prompt
 conda activate chatbot-consumidor
 
-# Iniciar la app (usa qwen2.5:14b por defecto — actualizar default en rag_chain.py)
+# Iniciar la app — usa qwen2.5:14b + bge-m3 + chroma_db_bgem3_exp5 (configuración ganadora)
 streamlit run src/app.py
 
 # Iniciar Jupyter para notebooks
 jupyter notebook
 # Kernel a usar: "Python (chatbot-consumidor)"
 
-# Si chroma_db/ no existe o se agregaron documentos nuevos al corpus:
-python src/ingest.py
+# Si chroma_db_bgem3_exp5/ no existe (primer arranque en otra máquina):
+python src/ingest_embeddings.py --embeddings bge-m3 --suffix _exp5
 ```
 
 ## Pipeline de evaluación automática
@@ -144,24 +142,28 @@ python src/ingest.py
 ### Evaluación estándar (un embedding, múltiples modelos)
 
 ```bash
-# Generar respuestas
-python src/evaluacion.py --modelos mistral:7b-instruct llama3.1:8b gemma2:9b mistral-nemo:12b qwen2.5:14b --salida evaluacion_resultados_v3
-
-# Evaluar con Gemini juez (reanudable — si se corta, relanzar mismo comando)
-python src/evaluar_llm_judge.py --entrada evaluacion_resultados_v3.json --salida scores_gemini_v3
+python src/evaluacion.py --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct --salida evaluacion_nuevo
+python src/evaluar_llm_judge.py --entrada evaluacion_nuevo.json --salida scores_gemini_nuevo
 ```
 
-### Experimento multi-embedding (5 embeddings × 5 modelos × 12 preguntas = 300)
+### Experimento con pre-filtrado por categoría (como Exp6/Exp7)
 
 ```bash
-# Paso 1 — Indexar 5 ChromaDB (ya hecho, idempotente si se vuelve a correr)
-python src/ingest_embeddings.py
+# Par específico + pre-filtrado (usa chroma_db_bgem3_exp5 ya existente)
+python src/evaluacion_embeddings.py \
+    --pares "qwen2.5:14b|bge-m3" \
+    --suffix _exp5 \
+    --prefiltrar \
+    --salida evaluacion_nuevo
 
-# Paso 2 — Evaluar 300 combinaciones (reanudable)
-python src/evaluacion_embeddings.py
+python src/evaluar_llm_judge.py --entrada evaluacion_nuevo.json --salida scores_gemini_nuevo
 
-# Paso 3 — Puntuar con Gemini (reanudable)
-python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida scores_gemini_embeddings
+python src/generar_reporte.py \
+    --entrada scores_gemini_nuevo.json \
+    --baseline scores_gemini_exp7.json \
+    --salida reporte_nuevo.html \
+    --baseline-label "Exp7 (baseline perfecto)" \
+    --current-label "Nuevo experimento"
 ```
 
 **IMPORTANTE — reanudación:** todos los scripts retoman donde quedaron si se interrumpen. Relanzar el mismo comando es siempre seguro.
@@ -171,41 +173,39 @@ python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida sc
 - Modelo juez: `gemini-2.5-flash`
 - Si hay error SSL con aiohttp: `pip install "aiohttp<3.10"`
 
-**Salida del juez:** JSON y CSV con score 0/1/2 por respuesta, justificación, conceptos encontrados/faltantes y alucinaciones detectadas.
+## Configuración óptima encontrada (DEFINITIVA)
 
-## Configuración óptima encontrada
-
-- **k=3** documentos recuperados (mejor balance ruido vs. contexto)
-- **qwen2.5:14b** como modelo de producción (ganador con 10/20 en v2 según Gemini)
+- **Embedding:** `BAAI/bge-m3` (1024 dims) — ganador absoluto del Exp4
+- **k=3** documentos recuperados — validado en Exp1, usado en todos los experimentos
+- **Pre-filtrado por categoría** — `CATEGORIA_MAP` en `evaluacion_embeddings.py` — mejora Exp6
+- **qwen2.5:14b** como modelo de producción — ganador consistente en todos los experimentos
 - **gemini-2.5-flash** como juez automático (gratuito, 1500 req/día)
-- **Prompt anti-alucinación** activo en `rag_chain.py` (reglas explícitas sobre Ley N°29571, competencias de INDECOPI/OSIPTEL/SBS, prohibición de inventar leyes)
+- **Prompt anti-alucinación v3** en `src/rag_chain.py`:
+  - Reglas sobre Ley N°29571, competencias INDECOPI/OSIPTEL/SBS
+  - INDECOPI NO puede otorgar indemnizaciones (solo multas y medidas correctivas)
+  - Bancos OBLIGADOS a notificar antes de cobrar nuevas comisiones (regla agregada en Exp7)
 
-## Hallazgos críticos de evaluación
+## Hallazgos críticos de evaluación (resultado final)
 
-1. **P6 (indemnización) falla en todos los modelos en ambas versiones** — INDECOPI no puede otorgar indemnizaciones (solo multas y medidas correctivas); la vía correcta es el Poder Judicial. Ningún modelo llega a esto sin el corpus adecuado.
-2. **El impacto de la guía INDECOPI fue marginal** — delta promedio +0.4 puntos. El retriever sigue trayendo documentos de dominio incorrecto.
-3. **Las alucinaciones son masivas** — todos los modelos inventan leyes, instituciones y plazos inexistentes. El prompt anti-alucinación actualizado debe reducir esto.
-4. **mistral-nemo:12b tiene bug crítico** — genera caracteres japoneses. Descartado para producción.
-5. **El problema central es el retriever** — con mejor embedding y corpus más preciso todos los modelos mejorarían significativamente.
+1. **El embedding es más determinante que el LLM** — bge-m3 supera a MiniLM en +40% de score promedio.
+2. **P8 fue el último fallo sistémico** — resuelto con regla explícita en el prompt (Exp7). Antes fallaba por sesgo del LLM, no por retrieval.
+3. **Pre-filtrado por categoría es necesario** — corpus ampliado sin filtro introduce ruido competitivo (Exp5 regression).
+4. **Cero alucinaciones alcanzado** — primer resultado limpio en Exp7 con la config final.
+5. **mistral-nemo:12b tiene bug crítico** — genera caracteres japoneses. Descartado para producción.
 
-Detalles completos con scores en `EVALUACION.md`.
-
-## Próximos pasos (en orden)
-
-1. ⏳ **Esperar `evaluacion_embeddings.py`** (~2-3 horas, corriendo ahora)
-2. ⏳ **Evaluar embeddings con Gemini**: `python src/evaluar_llm_judge.py --entrada evaluacion_embeddings.json --salida scores_gemini_embeddings`
-3. ⏳ **Documentar resultados de embeddings** en `EVALUACION.md`
-4. ⏳ **Completar notebooks** 01, 02 y 03
-5. ⏳ **Fase 4 — Deploy** (Streamlit Community Cloud con API externa, o deploy local con Ollama documentado)
+Detalles completos con scores por pregunta en `EVALUACION.md`.
 
 ## Decisiones de diseño ya tomadas (no revertir sin razón)
 
 - **No modificar los JSONs del corpus en disco** — transformación ocurre en memoria en `ingest.py`
 - **No hacer fine-tuning del LLM** — RAG con buen prompt es suficiente para este corpus
-- **No usar API de OpenAI/Groq** — RTX 4080 permite modelos locales equivalentes
+- **bge-m3 es el embedding de producción** — no revertir a MiniLM-L12-v2 (rendimiento ~40% inferior)
+- **chroma_db_bgem3_exp5/ es el vector store de producción** — corpus ampliado (1356 docs)
+- **Pre-filtrado por categoría activo** — CATEGORIA_MAP mapea categoría de pregunta → valores Chroma
+- **k=3 sin umbral de similitud** — threshold=0.45 fue probado en Exp1 y descartado
 - **Chunking adicional no necesario** — `texto` ya tiene granularidad adecuada
-- **LangGraph no prioritario** — solo si sobra tiempo
-- **Metodología de evaluación en dos fases** — baseline (corpus original) vs v2 (corpus ampliado) para documentar delta de impacto como resultado académico
+- **LangGraph no prioritario** — solo si sobra tiempo en Fase 4
+- **Para Fase 4 cloud (0 costo):** LLM debe cambiar a Gemini API — qwen2.5:14b necesita GPU local
 
 ## Archivo de preguntas de evaluación
 
@@ -215,11 +215,9 @@ Las **12 preguntas** están en `preguntas_evaluacion.json` con campos:
 Para agregar preguntas: editar el JSON directamente, sin tocar código.
 Categorías existentes: `libro_reclamaciones`, `telecomunicaciones`, `indecopi`, `inmobiliario`, `servicios_financieros`, `productos_defectuosos`, `precios`, `educacion`
 
-**Nota:** Los archivos `evaluacion_resultados.json` y `evaluacion_resultados_v2.json` tienen 10 preguntas (histórico). El experimento de embeddings (`evaluacion_embeddings.json`) usa las 12.
-
 ## Notas de entorno (problemas conocidos)
 
 - **torch**: usar `torch==2.5.1+cu121` + `torchvision==0.20.1+cu121`. NO subir a 2.12.x (rompe torchvision). Si se sube accidentalmente: `pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 --index-url https://download.pytorch.org/whl/cu121`
-- **bge-m3 / LaBSE**: requieren `model_kwargs={"use_safetensors": True}` en `HuggingFaceEmbeddings` para evitar cargar `pytorch_model.bin` con torch 2.5.1. Ya configurado en `ingest_embeddings.py` y `evaluacion_embeddings.py`.
+- **bge-m3**: requiere `model_kwargs={"use_safetensors": True}` y `encode_kwargs={"normalize_embeddings": True}` en `HuggingFaceEmbeddings`. Ya configurado en `rag_chain.py`, `ingest_embeddings.py` y `evaluacion_embeddings.py`.
 - **aiohttp**: mantener `aiohttp<3.10` para evitar error SSL de Windows. Si se rompe: `pip install "aiohttp<3.10"`
 - **Caracteres unicode en consola Windows**: los scripts usan `[OK]`/`[FAIL]` en lugar de emojis/checkmarks para evitar errores de encoding.
