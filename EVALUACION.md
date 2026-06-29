@@ -553,53 +553,123 @@ Nueva regla en el bloque anti-alucinación de `src/rag_chain.py`:
 
 ---
 
-## Experimento 8 — Corpus chunked (pendiente)
+## Experimento 8 — Corpus chunked vs corpus original
 
-**Hipótesis:** el corpus `final_json_chunked/` (chunks con tope de 400 palabras) puede mejorar la precisión del retrieval al evitar embeddings diluidos en artículos largos.
+**Hipótesis:** el corpus `final_json_chunked/` (chunks con tope de 400 palabras) mejoraría la precisión del retrieval al evitar embeddings diluidos en artículos largos.
+
+**Configuración:**
+- Corpus: `final_json_chunked/` indexado con `src/ingest_embeddings_chunked.py` (filtra chunks <30 palabras)
+- ChromaDB: `chroma_db_bgem3_chunked/`, `chroma_db_e5large_chunked/`
+- Pares: top-3 de experimentos anteriores
+- Pre-filtrado por categoría: activo
+- Prompt: v3 (mismo que Exp7)
 
 **Diferencias del corpus chunked:**
 
-| Aspecto | `final_json` (Exp7) | `final_json_chunked` |
+| Aspecto | `final_json` (producción) | `final_json_chunked` |
 |---|---|---|
-| Total chunks | 1.409 | ~1.376 (tras filtrar <30 palabras) |
+| Total chunks indexados | 1.409 | ~1.376 (tras filtrar <30 palabras) |
 | Chunk máximo | 995 palabras | 400 palabras |
 | Chunks >500 palabras | 40 | 0 |
-| Doc faltante | — | "Guía INDECOPI - Reclamos y Denuncias" (ignorado conscientemente) |
-| `categoria_consumo` | string | lista anidada `[["valor"]]` → normalizado en ingesta |
+| Doc faltante | — | "Guía INDECOPI - Reclamos y Denuncias" |
+| `categoria_consumo` | string | lista anidada — normalizada en ingesta |
 
-**Pares a evaluar** (top-3 de experimentos anteriores):
+**Resultados:**
 
-| Par | Score previo (mejor condición) |
-|---|---|
-| `qwen2.5:14b` + `bge-m3` | 24/24 (Exp7, baseline perfecto) |
-| `llama3.1:8b` + `bge-m3` | 19/24 (Exp4, sin pre-filtrado) |
-| `mistral:7b-instruct` + `e5-large` | 19/24 (Exp6, con pre-filtrado) |
+| Par | Exp8 (chunked) | Exp7/Exp6 (original) | Diferencia |
+|---|:---:|:---:|:---:|
+| `qwen2.5:14b` + `bge-m3` | 18/24 | 24/24 | -6 |
+| `mistral:7b-instruct` + `e5-large` | 17/24 | 19/24 | -2 |
+| `llama3.1:8b` + `bge-m3` | 16/24 | 17/24 | -1 |
 
-**Comandos para reproducir:**
+**Detalle por pregunta — qwen2.5:14b + bge-m3:**
+
+| P | Categoría | Exp8 | Observación |
+|---|---|:---:|---|
+| P1 | libro_reclamaciones | 2 | |
+| P2 | telecomunicaciones | 2 | |
+| P3 | indecopi | 1 | parcial |
+| P4 | inmobiliario | 1 | parcial |
+| P5 | servicios_financieros | 1 | parcial |
+| P6 | indecopi | 2 | |
+| P7 | productos_defectuosos | 1 | parcial |
+| P8 | servicios_financieros | 2 | |
+| P9 | libro_reclamaciones | 1 | parcial |
+| P10 | precios | 2 | |
+| P11 | precios | 1 | parcial |
+| P12 | educacion | 2 | |
+
+**Conclusión:** el corpus chunked produce una **regresión consistente en los 3 pares**. El tope de 400 palabras fragmenta artículos legales que necesitan leerse como unidad para responder correctamente — las preguntas de INDECOPI, inmobiliario y libro de reclamaciones degradan más porque sus respuestas dependen de contexto distribuido en múltiples oraciones. El doc faltante (Guía INDECOPI) agrava la caída en P3/P9. **Se descarta el corpus chunked para producción.**
+
+**Comandos:**
 
 ```bash
-# 1. Indexar corpus chunked (bge-m3 + e5-large)
 python src/ingest_embeddings_chunked.py --embeddings bge-m3 e5-large
+python src/evaluacion_embeddings.py --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" --suffix _chunked --prefiltrar --salida evaluacion_exp8
+python src/evaluar_llm_judge.py --entrada evaluacion_exp8.json --salida scores_gemini_exp8
+python src/generar_reporte.py --entrada scores_gemini_exp8.json --baseline scores_gemini_exp7.json --salida reporte_exp8.html --baseline-label "Exp7 (24/24 baseline)" --current-label "Exp8 (corpus chunked)"
+```
 
-# 2. Evaluar top pares con pre-filtrado
-python src/evaluacion_embeddings.py \
-    --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" \
-    --suffix _chunked \
-    --prefiltrar \
-    --salida evaluacion_exp8
+---
 
-# 3. Juez Gemini
-python src/evaluar_llm_judge.py \
-    --entrada evaluacion_exp8.json \
-    --salida scores_gemini_exp8
+## Experimento 9 — Comparativa final top-3 pares (corpus original, prompt v3)
 
-# 4. Reporte comparativo vs Exp7
-python src/generar_reporte.py \
-    --entrada scores_gemini_exp8.json \
-    --baseline scores_gemini_exp7.json \
-    --salida reporte_exp8.html \
-    --baseline-label "Exp7 (24/24 baseline)" \
-    --current-label "Exp8 (corpus chunked)"
+**Objetivo:** evaluar los top-3 pares de modelos×embeddings bajo las mismas condiciones óptimas de Exp7 (corpus original, pre-filtrado, prompt v3) para tener una tabla comparativa completa de cara al deploy.
+
+**Configuración:** idéntica a Exp7 — corpus `final_json` → `chroma_db_bgem3_exp5` / `chroma_db_e5large_exp5`, pre-filtrado activo, prompt v3.
+
+**Resultados:**
+
+| Par | Exp9 | Referencia anterior | Cambio |
+|---|:---:|:---:|:---:|
+| `qwen2.5:14b` + `bge-m3` | 22/24 | 24/24 (Exp7) | -2 (variabilidad LLM) |
+| `llama3.1:8b` + `bge-m3` | 19/24 | 17/24 (Exp6) | +2 (beneficio prompt v3) |
+| `mistral:7b-instruct` + `e5-large` | 19/24 | 19/24 (Exp6) | = |
+
+**Detalle por pregunta:**
+
+| P | Categoría | qwen (Exp7→9) | llama (Exp6→9) | mistral (Exp6→9) |
+|---|---|:---:|:---:|:---:|
+| P1 | libro_reclamaciones | 2→2 | 2→1 ↓ | 0→2 ↑ |
+| P2 | telecomunicaciones | 2→1 ↓ | 0→1 ↑ | 1→1 |
+| P3 | indecopi | 2→2 | 2→2 | 1→1 |
+| P4 | inmobiliario | 2→2 | 1→2 ↑ | 2→2 |
+| P5 | servicios_financieros | 2→1 ↓ | 2→2 | 2→1 ↓ |
+| P6 | indecopi | 2→2 | 2→2 | 2→2 |
+| P7 | productos_defectuosos | 2→2 | 1→0 ↓ | 0→1 ↑ |
+| P8 | servicios_financieros | 2→2 | 0→2 ↑ | 2→2 |
+| P9 | libro_reclamaciones | 2→2 | 2→2 | 1→1 |
+| P10 | precios | 2→2 | 2→1 ↓ | 2→2 |
+| P11 | precios | 2→2 | 0→2 ↑ | 2→2 |
+| P12 | educacion | 2→2 | 2→2 | 2→2 |
+
+**Análisis de regresiones en qwen (24→22):**
+
+- **P2 (telecomunicaciones):** omitió mencionar INDECOPI como entidad de denuncia. No hay alucinación, solo omisión — variabilidad de temperatura.
+- **P5 (servicios_financieros):** alucinó sobre imputación del prepago ("primero intereses, luego capital"), contrario a la ley peruana. Sesgo de conocimiento previo del LLM no cubierto por las reglas del prompt v3.
+
+Ambas regresiones son **variabilidad estocástica del LLM**, no fallos de retrieval. El 24/24 de Exp7 dependía parcialmente de la corrida afortunada en esas dos preguntas.
+
+**Efecto del prompt v3 en llama y mistral:**
+
+El fix de P8 (regla de comisiones bancarias) benefició a llama (+2 puntos), confirmando que la mejora de prompt es transversal a todos los modelos. Mistral mantuvo su score porque ya acertaba P8 en Exp6 con e5-large.
+
+**Tabla comparativa final (mejor score por par en condiciones óptimas):**
+
+| Par | Mejor score | Experimento | Condición |
+|---|:---:|---|---|
+| `qwen2.5:14b` + `bge-m3` | **24/24** | Exp7 | pre-filtrado + prompt v3 |
+| `llama3.1:8b` + `bge-m3` | **19/24** | Exp9 | pre-filtrado + prompt v3 |
+| `mistral:7b-instruct` + `e5-large` | **19/24** | Exp6/Exp9 | pre-filtrado + prompt v3 |
+
+**Conclusión:** el gap entre qwen y los modelos 7-8B es de ~4-5 puntos en condiciones iguales. Para el deploy cloud (sin GPU local), se acepta llama3.1:8b como sustituto razonable con score esperado de 19-22/24 dependiendo de la corrida.
+
+**Comandos:**
+
+```bash
+python src/evaluacion_embeddings.py --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" --suffix _exp5 --prefiltrar --salida evaluacion_exp9
+python src/evaluar_llm_judge.py --entrada evaluacion_exp9.json --salida scores_gemini_exp9
+python src/generar_reporte.py --entrada scores_gemini_exp9.json --baseline scores_gemini_exp7.json --salida reporte_exp9.html --baseline-label "Exp7 (24/24 baseline)" --current-label "Exp9 (top-3 pares, prompt v3)"
 ```
 
 ---

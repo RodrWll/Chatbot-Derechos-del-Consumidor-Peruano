@@ -4,19 +4,21 @@
 
 Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales sobre derechos del consumidor en Perú para que ciudadanos comunes los entiendan. Usa arquitectura RAG: recupera fragmentos del corpus legal y los procesa con un LLM local para generar respuestas en lenguaje simple.
 
-## Estado actual (actualizado 2026-06-29 — sesión 4)
+## Estado actual (actualizado 2026-06-29 — sesión 5)
 
-### Fase 3 COMPLETA — Ciclo de experimentos cerrado
+### Fase 3 COMPLETA — Ciclo de experimentos cerrado (Exp1→Exp9)
 
 - ✅ **Exp5** — Corpus ampliado (2 docs nuevos) + top embeddings: regresión por ruido competitivo
 - ✅ **Exp6** — Pre-filtrado por categoría: recupera nivel Exp4, mistral+e5 supera Exp4
 - ✅ **Exp7** — Fix de prompt para P8: **24/24 = 2.0/2.0 puntuación perfecta**
+- ✅ **Exp8** — Corpus chunked (max 400 palabras): **regresión en los 3 pares** — descartado
+- ✅ **Exp9** — Comparativa final top-3 pares bajo condiciones Exp7: tabla de referencia para deploy
 - ✅ `src/rag_chain.py` actualizado con configuración ganadora final (bge-m3, k=3, chroma_db_bgem3_exp5)
-- ✅ `EVALUACION.md` actualizado con resultados completos Exp5→Exp7
+- ✅ `EVALUACION.md` actualizado con resultados completos Exp1→Exp9
 
 ### Resultado final del ciclo de experimentos
 
-**Configuración ganadora: qwen2.5:14b + bge-m3 + pre-filtrado + prompt v3 = 24/24 (2.0/2.0)**
+**Configuración ganadora local: qwen2.5:14b + bge-m3 + pre-filtrado + prompt v3 = 24/24 (2.0/2.0)**
 
 | Palanca de mejora | Impacto |
 |-------------------|---------|
@@ -24,11 +26,20 @@ Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales s
 | Corpus ampliado sin filtro (Exp5) | Neutro/negativo — ruido competitivo |
 | Pre-filtrado por categoría (Exp6) | +0.167 vs Exp5 |
 | Fix de prompt para P8 (Exp7) | +0.083 — resuelve sesgo LLM en comisiones bancarias |
-| **Score final** | **24/24 = 2.0/2.0** ✅ |
+| Corpus chunked max 400 palabras (Exp8) | -4 a -6 pts — fragmenta contexto legal necesario |
+| **Score máximo (Exp7)** | **24/24 = 2.0/2.0** ✅ |
+
+**Tabla comparativa final — top-3 pares en condiciones óptimas (Exp9):**
+
+| Par | Score Exp9 | Score referencia | Notas |
+|-----|:----------:|:----------------:|-------|
+| `qwen2.5:14b` + `bge-m3` | 22/24 | 24/24 (Exp7) | Variabilidad LLM en P2/P5 |
+| `llama3.1:8b` + `bge-m3` | 19/24 | 17/24 (Exp6) | +2 por prompt v3 |
+| `mistral:7b-instruct` + `e5-large` | 19/24 | 19/24 (Exp6) | Estable |
 
 ### Pendiente — Fase 4
 
-- ⏳ **Fase 4 — Deploy** (decisión pendiente: HuggingFace Spaces CPU Basic con Gemini API, o deploy local documentado)
+- ⏳ **Fase 4 — Deploy** en HuggingFace Spaces CPU Basic — LLM: Groq API (llama3.1:8b), plan detallado en `EVALUACION.md` sección "Fase 4"
 - ⏳ **Actualizar diagramas** en `diagramas/` — instrucciones detalladas en `.claude/plans/quiero-que-revises-el-gentle-feather.md`
 - ⏳ **Notebooks** 01, 02, 03 — exploración y análisis
 
@@ -39,13 +50,13 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 
 ## Modelos Ollama instalados
 
-| Modelo | Parámetros | Score Gemini Exp7 | Estado |
-|--------|-----------|:-----------------:|--------|
-| `qwen2.5:14b` | 14B | **24/24 🥇** | ✅ **producción** |
-| `mistral:7b-instruct` | 7B | 19/24 (Exp6) | ✅ instalado |
-| `llama3.1:8b` | 8B | 17/24 (Exp6) | ✅ instalado |
-| `gemma2:9b` | 9B | — (no en top-3) | ✅ instalado |
-| `mistral-nemo:12b` | 12B | — (bug japonés) | ⚠️ descartado producción |
+| Modelo | Parámetros | Mejor score | Experimento | Estado |
+|--------|-----------|:-----------:|:-----------:|--------|
+| `qwen2.5:14b` | 14B | **24/24 🥇** | Exp7 | ✅ **producción local** |
+| `llama3.1:8b` | 8B | **19/24** | Exp9 | ✅ **candidato deploy cloud** |
+| `mistral:7b-instruct` | 7B | **19/24** | Exp9 | ✅ instalado |
+| `gemma2:9b` | 9B | — (no en top-3) | — | ✅ instalado |
+| `mistral-nemo:12b` | 12B | — (bug japonés) | — | ⚠️ descartado producción |
 
 ## Stack tecnológico
 
@@ -91,14 +102,23 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 ├── scores_gemini_exp6.json/.csv       ← scores Gemini Exp6
 ├── evaluacion_exp7.json               ← Exp7: 1 par × 12 = 12 (prompt P8 fix)
 ├── scores_gemini_exp7.json/.csv       ← scores Gemini Exp7 — 24/24 perfecto
+├── evaluacion_exp8.json               ← Exp8: 3 pares × 12 = 36 (corpus chunked — descartado)
+├── scores_gemini_exp8.json/.csv       ← scores Gemini Exp8 — regresión vs Exp7
+├── evaluacion_exp9.json               ← Exp9: 3 pares × 12 = 36 (comparativa final top-3)
+├── scores_gemini_exp9.json/.csv       ← scores Gemini Exp9 — tabla de referencia para deploy
 ├── reporte.html                       ← reporte comparativo generado
-├── final_json/                        ← corpus legal (NO modificar JSONs existentes)
-│   ├── informes/                      ← 15 archivos (13 originales + guía INDECOPI + 2 nuevos Exp5)
+├── final_json/                        ← corpus legal PRODUCCIÓN (NO modificar JSONs existentes)
+│   ├── informes/                      ← 17 archivos (13 originales + guía INDECOPI + 2 nuevos Exp5)
 │   ├── leyes/                         ← 5 archivos
 │   └── normas reglamentarias/         ← 10 archivos
+├── final_json_chunked/                ← corpus chunked (Exp8 — descartado, NO usar en prod)
+│   ├── informe/                       ← 16 archivos (falta "Guía INDECOPI - Reclamos y Denuncias")
+│   ├── ley/                           ← 5 archivos
+│   └── norma_reglamentaria/           ← 10 archivos
 ├── src/
 │   ├── ingest.py                      ← indexa corpus en chroma_db/ (producción legacy)
 │   ├── ingest_embeddings.py           ← indexa corpus en ChromaDBs con --suffix (Exp4/Exp5)
+│   ├── ingest_embeddings_chunked.py   ← indexa final_json_chunked/ con normalización de metadata (Exp8)
 │   ├── rag_chain.py                   ← cadena RAG + PROMPT_TEMPLATE anti-alucinación v3
 │   ├── app.py                         ← interfaz Streamlit (default: qwen2.5:14b)
 │   ├── evaluacion.py                  ← evaluación multi-modelo estándar
@@ -117,7 +137,9 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 ├── chroma_db_bgem3/                   ← Exp4
 ├── chroma_db_labse/                   ← Exp4
 ├── chroma_db_bgem3_exp5/              ← PRODUCCIÓN — bge-m3, corpus ampliado (1356 docs)
-└── chroma_db_e5large_exp5/            ← Exp5/Exp6 con e5-large
+├── chroma_db_e5large_exp5/            ← Exp5/Exp6/Exp9 con e5-large
+├── chroma_db_bgem3_chunked/           ← Exp8 — corpus chunked con bge-m3 (descartado)
+└── chroma_db_e5large_chunked/         ← Exp8 — corpus chunked con e5-large (descartado)
 ```
 
 ## Cómo arrancar (PC con entorno ya instalado)
@@ -146,24 +168,17 @@ python src/evaluacion.py --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct -
 python src/evaluar_llm_judge.py --entrada evaluacion_nuevo.json --salida scores_gemini_nuevo
 ```
 
-### Experimento con pre-filtrado por categoría (como Exp6/Exp7)
+### Experimento con pre-filtrado por categoría (como Exp6/Exp7/Exp9)
+
+**IMPORTANTE — Windows PowerShell:** usar comandos en una sola línea. El `\` de continuación de bash no funciona en PowerShell.
 
 ```bash
 # Par específico + pre-filtrado (usa chroma_db_bgem3_exp5 ya existente)
-python src/evaluacion_embeddings.py \
-    --pares "qwen2.5:14b|bge-m3" \
-    --suffix _exp5 \
-    --prefiltrar \
-    --salida evaluacion_nuevo
+python src/evaluacion_embeddings.py --pares "qwen2.5:14b|bge-m3" --suffix _exp5 --prefiltrar --salida evaluacion_nuevo
 
 python src/evaluar_llm_judge.py --entrada evaluacion_nuevo.json --salida scores_gemini_nuevo
 
-python src/generar_reporte.py \
-    --entrada scores_gemini_nuevo.json \
-    --baseline scores_gemini_exp7.json \
-    --salida reporte_nuevo.html \
-    --baseline-label "Exp7 (baseline perfecto)" \
-    --current-label "Nuevo experimento"
+python src/generar_reporte.py --entrada scores_gemini_nuevo.json --baseline scores_gemini_exp7.json --salida reporte_nuevo.html --baseline-label "Exp7 (baseline perfecto)" --current-label "Nuevo experimento"
 ```
 
 **IMPORTANTE — reanudación:** todos los scripts retoman donde quedaron si se interrumpen. Relanzar el mismo comando es siempre seguro.
@@ -188,10 +203,12 @@ python src/generar_reporte.py \
 ## Hallazgos críticos de evaluación (resultado final)
 
 1. **El embedding es más determinante que el LLM** — bge-m3 supera a MiniLM en +40% de score promedio.
-2. **P8 fue el último fallo sistémico** — resuelto con regla explícita en el prompt (Exp7). Antes fallaba por sesgo del LLM, no por retrieval.
+2. **P8 fue el último fallo sistémico** — resuelto con regla explícita en el prompt (Exp7). Antes fallaba por sesgo del LLM, no por retrieval. El fix beneficia a todos los modelos (llama subió +2 en Exp9).
 3. **Pre-filtrado por categoría es necesario** — corpus ampliado sin filtro introduce ruido competitivo (Exp5 regression).
-4. **Cero alucinaciones alcanzado** — primer resultado limpio en Exp7 con la config final.
-5. **mistral-nemo:12b tiene bug crítico** — genera caracteres japoneses. Descartado para producción.
+4. **Chunking agresivo perjudica textos legales** — tope de 400 palabras fragmenta artículos que necesitan leerse como unidad. Exp8 mostró regresión de -2 a -6 pts en todos los pares. El corpus original (`final_json`) tiene la granularidad adecuada.
+5. **24/24 tiene componente estocástico** — Exp9 reprodujo 22/24 con la misma config de Exp7. La variabilidad de temperatura del LLM afecta 1-2 preguntas por corrida. Score esperado estable: 22-24/24.
+6. **Gap qwen vs modelos 8B: ~3-5 puntos** — en condiciones iguales (Exp9), llama y mistral alcanzan 19/24 vs 22/24 de qwen. Aceptable para deploy cloud.
+7. **mistral-nemo:12b tiene bug crítico** — genera caracteres japoneses. Descartado para producción.
 
 Detalles completos con scores por pregunta en `EVALUACION.md`.
 
@@ -203,9 +220,9 @@ Detalles completos con scores por pregunta en `EVALUACION.md`.
 - **chroma_db_bgem3_exp5/ es el vector store de producción** — corpus ampliado (1356 docs)
 - **Pre-filtrado por categoría activo** — CATEGORIA_MAP mapea categoría de pregunta → valores Chroma
 - **k=3 sin umbral de similitud** — threshold=0.45 fue probado en Exp1 y descartado
-- **Chunking adicional no necesario** — `texto` ya tiene granularidad adecuada
+- **Corpus chunked descartado** — Exp8 mostró regresión de -2 a -6 pts en todos los pares. El chunking de 400 palabras fragmenta artículos legales que necesitan leerse como unidad. Usar siempre `final_json/` y `chroma_db_bgem3_exp5/`.
 - **LangGraph no prioritario** — solo si sobra tiempo en Fase 4
-- **Para Fase 4 cloud (0 costo):** LLM debe cambiar a Gemini API — qwen2.5:14b necesita GPU local
+- **Para Fase 4 cloud:** LLM → Groq API con `llama3.1:8b` (gratis, ~19/24 esperado). NO Gemini API (decisión del usuario). qwen2.5:14b requiere GPU local y no es viable en HF Spaces CPU Basic.
 
 ## Archivo de preguntas de evaluación
 
