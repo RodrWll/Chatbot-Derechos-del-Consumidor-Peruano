@@ -34,7 +34,7 @@ with st.sidebar:
         ["qwen2.5:14b", "gemma2:9b", "llama3.1:8b", "mistral:7b-instruct"],
         index=0,
     )
-    k_docs = st.slider("Documentos a recuperar", min_value=2, max_value=8, value=4)
+    k_docs = st.slider("Documentos a recuperar", min_value=2, max_value=8, value=3)
     mostrar_fuentes = st.toggle("Mostrar fuentes legales", value=True)
     st.divider()
     st.markdown("**Preguntas de ejemplo:**")

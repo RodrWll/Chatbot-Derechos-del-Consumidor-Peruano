@@ -1,6 +1,5 @@
 # Chatbot Derechos del Consumidor Peruano
-# Instalar con: pip install -r requirements.txt
-# NOTA: PyTorch con CUDA se instala por separado en setup.bat
+# PyTorch con CUDA se instala por separado en setup.bat (ver instrucciones)
 
 # --- LangChain ---
 langchain>=0.2
@@ -22,16 +21,17 @@ ollama>=0.2
 # --- Interfaz web ---
 streamlit>=1.35
 
-# --- API ---
-fastapi>=0.111
-uvicorn>=0.29
-
-# --- Evaluación LLM-judge ---
+# --- API juez evaluacion ---
 google-genai>=1.0
 python-dotenv>=1.0
+
+# --- Compatibilidad Windows ---
+aiohttp<3.10
+
+# --- Evaluacion ---
 rouge-score>=0.1.2
 
-# --- Análisis y reporte ---
+# --- Analisis y reporte ---
 pandas>=2.0
 matplotlib>=3.8
 numpy>=1.26,<2.0

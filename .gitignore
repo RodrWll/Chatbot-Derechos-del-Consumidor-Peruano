@@ -1,10 +1,31 @@
+# Vector stores — solo se conserva el de producción en git
 chroma_db/
+chroma_db_minilm/
+chroma_db_mpnet/
+chroma_db_e5large/
+chroma_db_bgem3/
+chroma_db_labse/
+chroma_db_e5large_exp5/
+chroma_db_e5large_exp6/
+chroma_db_bgem3_exp6/
+
+# Entorno virtual
+venv/
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
-.env
-.ipynb_checkpoints/
 *.egg-info/
 dist/
 build/
+
+# Secretos
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
 .DS_Store
+Thumbs.db
