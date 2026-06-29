@@ -4,7 +4,7 @@
 
 Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales sobre derechos del consumidor en Perú para que ciudadanos comunes los entiendan. Usa arquitectura RAG: recupera fragmentos del corpus legal y los procesa con un LLM local para generar respuestas en lenguaje simple.
 
-## Estado actual (actualizado 2026-06-29 — sesión 5)
+## Estado actual (actualizado 2026-06-29 — sesión 6)
 
 ### Fase 3 COMPLETA — Ciclo de experimentos cerrado (Exp1→Exp9)
 
@@ -37,9 +37,17 @@ Chatbot académico (curso de PLN, décimo ciclo) que simplifica textos legales s
 | `llama3.1:8b` + `bge-m3` | 19/24 | 17/24 (Exp6) | +2 por prompt v3 |
 | `mistral:7b-instruct` + `e5-large` | 19/24 | 19/24 (Exp6) | Estable |
 
-### Pendiente — Fase 4
+### Fase 4 COMPLETA — Deploy en HuggingFace Spaces (2026-06-29)
 
-- ⏳ **Fase 4 — Deploy** en HuggingFace Spaces CPU Basic — LLM: Groq API (llama3.1:8b), plan detallado en `EVALUACION.md` sección "Fase 4"
+- ✅ **Deploy** en HuggingFace Spaces CPU Basic con Docker SDK
+- ✅ **LLM cloud:** Groq API — `llama-3.1-8b-instant` (funcionando en producción)
+- ✅ **Memoria conversacional** implementada con toggle en sidebar (checkbox, default: OFF)
+- ✅ Space público: `huggingface.co/spaces/RodrWll/derechos-consumidor-pe`
+- ✅ Archivos en `deploy/`: `app.py`, `rag_chain_cloud.py`, `Dockerfile`, `requirements.txt`, `README.md`, `.gitattributes`
+- ✅ ChromaDB subido vía Git LFS (`chroma.sqlite3` 20.7 MB)
+
+### Pendiente
+
 - ⏳ **Actualizar diagramas** en `diagramas/` — instrucciones detalladas en `.claude/plans/quiero-que-revises-el-gentle-feather.md`
 - ⏳ **Notebooks** 01, 02, 03 — exploración y análisis
 
@@ -53,7 +61,7 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 | Modelo | Parámetros | Mejor score | Experimento | Estado |
 |--------|-----------|:-----------:|:-----------:|--------|
 | `qwen2.5:14b` | 14B | **24/24 🥇** | Exp7 | ✅ **producción local** |
-| `llama3.1:8b` | 8B | **19/24** | Exp9 | ✅ **candidato deploy cloud** |
+| `llama3.1:8b` | 8B | **19/24** | Exp9 | ✅ **producción cloud (Groq API)** |
 | `mistral:7b-instruct` | 7B | **19/24** | Exp9 | ✅ instalado |
 | `gemma2:9b` | 9B | — (no en top-3) | — | ✅ instalado |
 | `mistral-nemo:12b` | 12B | — (bug japonés) | — | ⚠️ descartado producción |
@@ -67,10 +75,13 @@ Intel Core i9-14 · 64 GB RAM · NVIDIA RTX 4080 (16 GB VRAM)
 | Embeddings | `langchain_huggingface.HuggingFaceEmbeddings` — **`BAAI/bge-m3`** (1024 dims) |
 | Vector store | `langchain_chroma.Chroma` — **`chroma_db_bgem3_exp5/`** (1356 docs) |
 | Pre-filtrado | `CATEGORIA_MAP` en `evaluacion_embeddings.py` — filtro por `categoria_consumo` antes del retrieval |
-| LLM producción | `langchain_ollama.OllamaLLM` — modelo: **`qwen2.5:14b`** |
+| LLM producción (local) | `langchain_ollama.OllamaLLM` — modelo: **`qwen2.5:14b`** |
+| LLM cloud (deploy) | `langchain_groq.ChatGroq` — modelo: **`llama-3.1-8b-instant`** (Groq API, gratuito) |
 | LLM juez evaluación | `gemini-2.5-flash` vía Google AI Studio API — SDK: `google-genai` (gratuito, 1500 req/día) |
-| UI | Streamlit (`src/app.py`) con `@st.cache_resource` |
-| Orquestación | LangChain (cadena manual con closure en `rag_chain.py`) |
+| UI local | Streamlit (`src/app.py`) con `@st.cache_resource` |
+| UI cloud | Streamlit (`deploy/app.py`) — Docker en HF Spaces CPU Basic, puerto 7860 |
+| Orquestación | LangChain (cadena manual con closure en `rag_chain.py` / `rag_chain_cloud.py`) |
+| Deploy cloud | HuggingFace Spaces — `huggingface.co/spaces/RodrWll/derechos-consumidor-pe` |
 
 **IMPORTANTE — imports correctos** (versiones instaladas usan los paquetes nuevos):
 ```python
@@ -85,7 +96,7 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 
 ```
 ├── CLAUDE.md                          ← este archivo
-├── EVALUACION.md                      ← registro completo Exp1→Exp7
+├── EVALUACION.md                      ← registro completo Exp1→Exp9 + Fase 4 deploy
 ├── environment.yml                    ← entorno conda
 ├── .env                               ← API keys locales — NO en git
 ├── .env.example                       ← plantilla de variables de entorno
@@ -125,6 +136,13 @@ from langchain_core.prompts import PromptTemplate         # NO langchain.prompts
 │   ├── evaluacion_embeddings.py       ← evaluación multi-embedding con reanudación + pre-filtrado
 │   ├── evaluar_llm_judge.py           ← juez Gemini con reanudación
 │   └── generar_reporte.py             ← genera reporte.html comparativo
+├── deploy/                            ← archivos para HuggingFace Spaces (Fase 4)
+│   ├── app.py                         ← app Streamlit para HF Spaces (raíz del Space repo)
+│   ├── rag_chain_cloud.py             ← RAG chain con ChatGroq en lugar de OllamaLLM
+│   ├── requirements.txt               ← dependencias cloud (sin Ollama, sin Jupyter)
+│   ├── Dockerfile                     ← imagen Docker para HF Spaces (puerto 7860)
+│   ├── README.md                      ← metadata YAML del Space (sdk: docker)
+│   └── .gitattributes                 ← Git LFS para chroma.sqlite3 (20.7 MB)
 ├── notebooks/
 │   ├── 01_exploracion_datos.ipynb
 │   ├── 02_indexacion_vectorstore.ipynb

@@ -674,97 +674,58 @@ python src/generar_reporte.py --entrada scores_gemini_exp9.json --baseline score
 
 ---
 
-## Fase 4 — Plan de Deploy (pendiente de implementación)
+## Fase 4 — Deploy en HuggingFace Spaces (COMPLETO — 2026-06-29)
 
-> **Nota para el agente de IA que implemente este deploy:** antes de comenzar,
-> debes hacer las siguientes preguntas al usuario y esperar sus respuestas.
-> No asumas valores por defecto para estas decisiones.
+### Decisiones tomadas
 
-### Preguntas que el agente DEBE hacer al usuario antes de implementar
+| Pregunta | Decisión |
+|----------|----------|
+| [P1] Proveedor LLM cloud | **Groq API** |
+| [P2] Modelo LLM | **`llama-3.1-8b-instant`** |
+| [P3] Corpus | `chroma_db_bgem3_exp5/` — original, NO chunked (Exp8 mostró regresión) |
+| [P4] Memoria conversacional | **Con toggle** en sidebar (checkbox, default: OFF) |
+| [P5] Nombre del Space | **`derechos-consumidor-pe`** |
+| [P6] Visibilidad | **Público** |
+| [P7] API Key Groq | Configurada como Secret `GROQ_API_KEY` en HF Spaces Settings |
 
-**[P1] Proveedor LLM cloud**
-¿Qué API usarás para el LLM en el deploy? Opciones evaluadas:
-- **Groq API** — llama3.1:8b gratis (6.000 tokens/min), muy rápido, sin costo
-- **Mistral API** — mistral:7b gratis (25 req/día en tier gratuito), muy limitado
-- **OpenAI / otro** — de pago
-¿Cuál prefieres, o tienes alguna otra en mente?
+### Stack del deploy
 
-**[P2] Modelo LLM a usar en cloud**
-Dado el proveedor elegido, ¿qué modelo específico se usará?
-(Ej: para Groq → `llama-3.1-8b-instant`, `llama-3.1-70b-versatile`; para Mistral → `mistral-7b-instruct`)
+| Componente | Configuración |
+|------------|---------------|
+| Plataforma | HuggingFace Spaces CPU Basic (gratuito) |
+| SDK | **Docker** — HF eliminó Streamlit como SDK directo; se usa Docker con Streamlit interno |
+| LLM | `langchain_groq.ChatGroq` — `llama-3.1-8b-instant` |
+| Embedding | `BAAI/bge-m3` en CPU (descarga ~570 MB en primer arranque del Space) |
+| Vector store | `chroma_db_bgem3_exp5/` — subido al repo vía Git LFS (chroma.sqlite3: 20.7 MB) |
+| Memoria | Últimas 3 turnos en contexto cuando toggle activo (`st.session_state.chat_history`) |
+| Puerto | 7860 (requerido por HF Spaces Docker) |
 
-**[P3] Corpus a usar en producción cloud**
-¿El deploy usará el corpus original (`final_json` → `chroma_db_bgem3_exp5`) o el chunked (`final_json_chunked` → `chroma_db_bgem3_chunked`)?
-Depende del resultado del Exp8. Si el chunked mejora, usar chunked; si regresiona, mantener el original.
+### Archivos del deploy (`deploy/`)
 
-**[P4] Memoria conversacional**
-¿Se activa la memoria conversacional en el deploy?
-- **Con toggle** — el usuario puede activar/desactivar desde la UI (checkbox en sidebar)
-- **Siempre activa** — más simple de implementar
-- **Desactivada** — stateless como el actual
+| Archivo | Descripción |
+|---------|-------------|
+| `app.py` | App Streamlit para HF Spaces — toggle de memoria, check de GROQ_API_KEY |
+| `rag_chain_cloud.py` | RAG chain con `ChatGroq` en lugar de `OllamaLLM`; acepta `chat_history` opcional |
+| `requirements.txt` | Dependencias cloud (sin Ollama, sin Jupyter, sin google-genai) |
+| `Dockerfile` | Imagen Python 3.11-slim, instala deps, `streamlit run app.py --server.port=7860` |
+| `README.md` | Metadata YAML del Space (`sdk: docker`, emoji, colores, licencia) |
+| `.gitattributes` | Git LFS para `*.sqlite3`, `*.bin`, `*.pickle` |
 
-**[P5] Nombre / título de la app en Hugging Face**
-¿Cómo se llamará el Space en HF? Ej: `chatbot-consumidor-peru`, `derechos-consumidor-pe`
-Esto define la URL pública: `huggingface.co/spaces/<tu-usuario>/<nombre>`
+### Implementación de memoria conversacional
 
-**[P6] Visibilidad del Space**
-¿El Space será público o privado? (Privado requiere HF Pro o plan de pago)
+- `st.session_state.chat_history` — lista de tuplas `(pregunta_usuario, respuesta_llm)`
+- Se pasa a `rag_chain_cloud.invoke(query, chat_history=historia)` solo si toggle activo
+- La chain formatea los últimos `MAX_HISTORIAL=3` turnos como texto en el prompt
+- El historial almacena solo la respuesta del LLM (sin el bloque de fuentes) para no contaminar el contexto
 
-**[P7] Variables de entorno / secretos**
-¿Tienes ya creada la API key del proveedor elegido (Groq, etc.)?
-El agente necesitará que la configures como Secret en HF Spaces (`Settings > Secrets`).
-Confirma que tienes: `GROQ_API_KEY` (u otra según proveedor).
+### Nota sobre SDK — cambio respecto al plan original
 
-### Contexto técnico para el agente
+El plan original indicaba usar SDK `streamlit` directamente en HF Spaces. Durante el deploy se descubrió que **HuggingFace eliminó Streamlit como opción de SDK** — ahora solo ofrece Gradio, Docker y Static. Se usó **Docker** con un `Dockerfile` que arranca Streamlit en el puerto 7860. El código de `app.py` no requirió ningún cambio por este motivo.
 
-**Stack actual (local):**
+### Resultado del deploy
 
-```python
-# src/rag_chain.py — lo que debe cambiar para cloud
-from langchain_ollama import OllamaLLM          # REEMPLAZAR por langchain_groq.ChatGroq
-llm = OllamaLLM(model="qwen2.5:14b")           # REEMPLAZAR
-```
-
-**Cambio mínimo para Groq:**
-
-```python
-from langchain_groq import ChatGroq
-llm = ChatGroq(model="llama-3.1-8b-instant", api_key=os.getenv("GROQ_API_KEY"))
-```
-
-**ChromaDB en HF Spaces:** subir el directorio `chroma_db_bgem3_exp5/` (o `_chunked`) dentro del repo del Space. HF Spaces tiene 50 GB de storage. El directorio pesa ~200-400 MB.
-
-**bge-m3 en CPU:** el embedding solo se computa para la query (1 vez por consulta). El modelo se descarga de HF Hub al primer arranque (~570 MB, ~2 min). Tiempo por query en CPU Basic: ~3-8s solo para embedding.
-
-**Archivos clave a modificar:**
-- `src/rag_chain.py` — cambiar LLM (OllamaLLM → ChatGroq u otro)
-- `src/app.py` — agregar toggle de memoria si se decide en P4
-- `requirements.txt` / `environment.yml` — agregar dependencias cloud (`langchain-groq`, etc.)
-- `.env.example` — actualizar con nueva API key
-- Crear `app.py` en raíz del Space (HF Spaces busca `app.py` en la raíz, no en `src/`)
-
-**Implementación de memoria conversacional (si P4 = con toggle o siempre activa):**
-
-```python
-# En app.py — estructura base del toggle
-usar_memoria = st.sidebar.checkbox("Memoria conversacional", value=False)
-
-if usar_memoria:
-    # ConversationalRetrievalChain con st.session_state["chat_history"]
-    ...
-else:
-    # Cadena actual stateless (rag_chain.py sin cambios)
-    ...
-```
-
-**Pre-filtrado por categoría:** el `CATEGORIA_MAP` en `evaluacion_embeddings.py` se debe replicar o importar en `rag_chain.py` para la app de producción. Actualmente la app NO usa pre-filtrado — evaluar si agregarlo mejora la UX (requiere detectar la categoría de la pregunta del usuario).
-
-**Nota sobre ChromaDB en HF Spaces:** HF Spaces con Streamlit soporta archivos estáticos. El directorio ChromaDB se puede incluir directamente en el repositorio del Space usando Git LFS para archivos grandes (>100 MB).
-
-### Resultado esperado del deploy
-
-- URL pública: `huggingface.co/spaces/<usuario>/<nombre-space>`
-- Tiempo de respuesta estimado: 8-15s por consulta (3-8s embedding CPU + 2-5s LLM Groq)
-- Costo: $0 (HF Spaces CPU Basic gratuito + Groq free tier)
-- Score esperado: ~19-21/24 con llama3.1:8b + prompt v3 (sin alcanzar los 24/24 de qwen local)
-| Prompt | Anti-alucinación v3 (incluye regla P8 de comisiones bancarias) |
+- **URL pública:** `https://huggingface.co/spaces/RodrWll/derechos-consumidor-pe`
+- **Estado:** Running ✅ — respondiendo consultas con citas correctas de la Ley N° 29571
+- **Score esperado:** ~19/24 con llama3.1:8b + bge-m3 + prompt v3
+- **Costo:** $0 (HF Spaces CPU Basic gratuito + Groq free tier 6.000 tokens/min)
+- **Tiempo de respuesta estimado:** 8-15s por consulta (embedding CPU + Groq API)
