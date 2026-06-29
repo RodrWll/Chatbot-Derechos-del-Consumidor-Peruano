@@ -68,7 +68,7 @@ def construir_cadena(
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBED_MODEL,
-        model_kwargs={"device": device, "use_safetensors": True},
+        model_kwargs={"device": device, "model_kwargs": {"use_safetensors": True}},
         encode_kwargs={"normalize_embeddings": True},
     )
     vectorstore = Chroma(

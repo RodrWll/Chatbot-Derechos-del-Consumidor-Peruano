@@ -1,9 +1,3 @@
-"""
-Interfaz web del chatbot usando Streamlit.
-Ejecutar con:
-    streamlit run src/app.py
-"""
-
 import sys
 from pathlib import Path
 
@@ -20,8 +14,8 @@ st.set_page_config(
 
 
 @st.cache_resource(show_spinner="Cargando modelo y base de conocimiento...")
-def cargar_cadena(model: str, k: int):
-    return construir_cadena(model=model, k=k)
+def cargar_cadena():
+    return construir_cadena()
 
 
 st.title("⚖️ Chatbot de Derechos del Consumidor Peruano")
@@ -29,12 +23,9 @@ st.caption("Consulta tus derechos como consumidor en lenguaje simple. Basado en 
 
 with st.sidebar:
     st.header("Configuración")
-    modelo = st.selectbox(
-        "Modelo LLM (Ollama)",
-        ["qwen2.5:14b", "gemma2:9b", "llama3.1:8b", "mistral:7b-instruct"],
-        index=0,
-    )
-    k_docs = st.slider("Documentos a recuperar", min_value=2, max_value=8, value=3)
+    st.markdown("**Modelo:** qwen2.5:14b")
+    st.markdown("**Documentos recuperados:** 3")
+    st.divider()
     mostrar_fuentes = st.toggle("Mostrar fuentes legales", value=True)
     st.divider()
     st.markdown("**Preguntas de ejemplo:**")
@@ -49,7 +40,7 @@ with st.sidebar:
         if st.button(ej, use_container_width=True):
             st.session_state.pregunta_ejemplo = ej
 
-chain = cargar_cadena(modelo, k_docs)
+chain = cargar_cadena()
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
