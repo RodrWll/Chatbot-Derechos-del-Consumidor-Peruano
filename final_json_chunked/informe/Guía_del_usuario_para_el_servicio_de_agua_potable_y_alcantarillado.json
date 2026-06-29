@@ -1,0 +1,561 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "SUNASS\nSuperintendencia Nacional de Servicios de Saneamiento\n\nGUÍA DEL USUARIO\nPara el Servicio de Agua Potable y Alcantarillado\n\nSUNASS es el organismo regulador que fiscaliza a las empresas de saneamiento, orienta a los usuarios y resuelve reclamos en segunda instancia administrativa. Si necesitas información sobre el procedimiento de reclamo llama al FONOSUNASS 01 6143180 / 01 6143181. Para provincia, la línea gratuita es 0800 00121.",
+    "source": "0001_sunass.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 65
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "ESTIMADO USUARIO (A):\n\nEs frecuente que dejemos el caño abierto mientras realizamos diversas actividades en el hogar, centro de trabajo y/o estudios, o no detectamos, a tiempo, las instalaciones sanitarias con fugas de agua o en mal estado que pierden, sin darnos cuenta, una gran cantidad de agua.\n\nEstos factores, por más simples que parezcan, incrementan la tarifa en nuestros recibos mensuales y dejan sin este importante recurso a miles de personas que también lo necesitan.\n\nEsta guía fue elaborada para orientarlo e informarle sus derechos y obligaciones como usuario, así como los derechos y obligaciones de las empresas que llevan el agua a su casa, llamadas Empresas Prestadoras de Servicios de Saneamiento (EPS).\n\nEn las siguientes páginas le ofrecemos consejos prácticos y fáciles de aplicar para reducir su facturación mensual de agua y le damos a conocer, paso a paso, las etapas para el procedimiento de un reclamo, en caso tenga alguna queja con la facturación o con el servicio que recibe.\n\nRecuerde que la información de esta guía le servirá para realizar un control responsable de su servicio y le dará las pautas sobre cómo ejercer sus derechos ante cualquier reclamo o queja.\n\nEl agua es indispensable para la vida por lo que debemos cuidarla y preservarla.",
+    "source": "0002_estimado_usuario_a.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 209
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUIÉNES SOMOS?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿QUIÉNES SOMOS?\n\nSomos la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), organismo regulador que aprueba las tarifas, norma, supervisa y fiscaliza a las 50 Empresas Prestadoras de Servicios de Saneamiento (EPS) que brindan el servicio de agua potable y alcantarillado a nivel nacional. Además, como parte de una política del Gobierno nacional, para contribuir a alcanzar la cobertura universal de estos servicios, hemos iniciado un proceso de desconcentración de funciones en las regiones, donde se reforzarán las acciones de supervisión, regulación, orientación, comunicación y gestión del ámbito de la prestación.\nDesde ahora supervisaremos, progresivamente, el adecuado abastecimiento de agua potable en todas las localidades de las 24 regiones de nuestro país, trabajando desde el campo para la mejora de la gestión de las EPS, prestadores públicos, privados o mixtos y con otros proveedores organizados del servicio de agua.",
+    "source": "0003_quiénes_somos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 138
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Y CUÁLES SON LOS DERECHOS QUE TENGO COMO USUARIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Y CUÁLES SON LOS DERECHOS QUE TENGO COMO USUARIO?\n\nRESPECTO AL SERVICIO:\n* Recibir un servicio de agua potable y alcantarillado sanitario de calidad y en la cantidad adecuada, salvo en lugares donde, por imposibilidad técnica, no sea posible.\n* Exigir el buen funcionamiento de los servicios de agua potable y alcantarillado sanitario.\n* Contar con un medidor en la conexión domiciliaria.\n* Ser informado por la EPS sobre los cortes programados del servicio con 48 horas de anticipación, a excepción de aquellos que sean imprevistos.\n\nRESPECTO A LA FACTURACIÓN:\n* Recibir información clara y precisa sobre el servicio que se le brinda y se le factura.\n* Recibir una factura que sea proporcional al volumen de agua que haya consumido, si tiene un medidor de consumo.\n* Reclamar por cobros injustificados.",
+    "source": "0004_y_cuáles_son_los_derechos_que_tengo_como_usuario.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 132
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Y CUÁLES SON LOS DERECHOS QUE TENGO COMO USUARIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "RESPECTO A LAS CONEXIONES:\n* Exigir que las conexiones domiciliarias externas, tuberías de red de agua potable y colectores de alcantarillado averiados sean reparados por la EPS a la brevedad.\n\nRESPECTO A LAS CONDICIONES DEL SERVICIO:\n* Recibir un servicio con la calidad técnica adecuada.\n* Recibir compensación por daños económicos, de acuerdo al perjuicio, si es que la EPS actuó con negligencia, impericia o descuido en la prestación del servicio.\n\nRESPECTO A LA ATENCIÓN QUE RECIBE:\n* Ser atendido con cortesía, respeto y eficiencia, por personal capacitado, con iniciativa y actitud positiva.\n* Recibir información veraz, clara y oportuna sobre sus derechos y deberes.\n* Recibir respuestas a los reclamos comerciales dentro del plazo establecido (35 días útiles).",
+    "source": "0005_respecto_a_las_conexiones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 119
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Y MIS OBLIGACIONES COMO USUARIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Y MIS OBLIGACIONES COMO USUARIO?\n\nRESPECTO A LOS GASTOS A REALIZAR, USTED DEBERÁ:\n* Pagar el derecho de conexión por el servicio de agua potable y alcantarillado sanitario (que incluye mano de obra y accesorios comprendidos entre la red de distribución o colector y la caja del medidor o de registro del desagüe). Dichas obras son ejecutadas por las EPS o por terceros autorizados por estas.\n* Pagar puntualmente todos sus recibos por consumo de agua, así como otras obligaciones contraídas con la EPS.\n* El que no le llegue el recibo, no lo exime de responsabilidad de pago.\n* Detectar y reparar las instalaciones internas de su domicilio que presenten fallas.\n* Cancelar todos los pagos pendientes antes de cambiar de domicilio. El nuevo ocupante del inmueble deberá verificar que el predio no mantenga deudas con la EPS.",
+    "source": "0006_y_mis_obligaciones_como_usuario.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 139
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Y MIS OBLIGACIONES COMO USUARIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "RESPECTO AL SERVICIO, USTED DEBERÁ:\n* Solicitar a la EPS una conexión de agua potable y de alcantarillado donde exista una red de distribución y colectores.\n* Permitir la instalación de un medidor de consumo y la toma de lectura mensual, así como otros trabajos externos de conexión.\n* Hacer buen uso de los servicios sin dañar la infraestructura (tuberías de agua, desagüe, medidor, caja de la conexión de agua, etc.).\n* Mantener en buen estado sus instalaciones internas, siendo su responsabilidad los daños y averías que pudieran afectar el servicio.\n* Denunciar ante la EPS aquellas instalaciones que se hayan realizado clandestinamente.\n* Hacer buen uso del servicio de alcantarillado, evitando echar desechos sólidos y otros en los desagües para evitar atoros.\n* No manipular los medidores. La EPS está facultada a aplicar un recupero por esta manipulación.\n* Avisar los daños o averías a la EPS que, a su juicio, pudieran afectar el servicio.",
+    "source": "0007_respecto_al_servicio_usted_deberá.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 156
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁLES SON LOS DERECHOS DE LA EMPRESA PRESTADORA DE SERVICIOS DE SANEAMIENTO (EPS)?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿CUÁLES SON LOS DERECHOS DE LA EMPRESA PRESTADORA DE SERVICIOS DE SANEAMIENTO (EPS)?\n\nRespecto a los cobros y recuperaciones, la EPS tiene el derecho de:\n* Cobrar las tarifas y precios aprobados por la SUNASS de acuerdo a la modalidad del servicio prestado, que puede ser:\n    * Facturar por los servicios prestados de agua potable y alcantarillado, según el tipo de uso de acuerdo al sistema tarifario establecido.\n    * Facturar por servicios colaterales como instalación y reubicación de conexiones domiciliarias, cierre y reapertura de conexiones, etc.\n    * Cobrar intereses por moras y gastos derivados cuando el usuario no cumple con pagar dentro del plazo de pago.\n    * Cobrar el costo de las reparaciones de daños y desperfectos que el usuario o terceros ocasionen a las instalaciones de los servicios.\n    * Cobrar los servicios correspondientes dejados de facturar hasta dos meses después de originados.",
+    "source": "0008_cuáles_son_los_derechos_de_la_empresa_prestadora_de_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 143
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁLES SON LOS DERECHOS DE LA EMPRESA PRESTADORA DE SERVICIOS DE SANEAMIENTO (EPS)?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "RESPECTO A LAS CONDICIONES DEL SERVICIO, LA EPS TIENE EL DERECHO DE:\n* Determinar el diámetro de las conexiones domiciliarias de agua potable y alcantarillado sanitario de acuerdo a las necesidades de los usuarios.\n* Suspender los servicios al usuario, sin la necesidad de previo aviso ni intervención de autoridad alguna, cuando el usuario no cumple con pagar dos meses consecutivos o una cuota de convenio por financiamiento.\n* Anular las conexiones de agua potable y alcantarillado sanitario no autorizadas.\n* Inspeccionar y revisar las instalaciones al interior de los inmuebles, previa autorización del usuario.",
+    "source": "0009_respecto_a_las_condiciones_del_servicio_la_eps_tiene_el_dere.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 95
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁLES SON LAS OBLIGACIONES DE LA EPS?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿CUÁLES SON LAS OBLIGACIONES DE LA EPS?\n\nRESPECTO AL SERVICIO, LA EPS TIENE LA OBLIGACIÓN DE:\n* Comunicar con anticipación, y de manera clara y oportuna, los cortes programados del servicio de agua potable.\n* Proporcionar información veraz, clara y suficiente sobre el servicio para que el usuario conozca sus derechos.\n* Cumplir con la responsabilidad establecida de brindar calidad y eficiencia en los compromisos adquiridos.\n* Prestar el servicio de agua de acuerdo a la cantidad de horas establecidas; de presentar una reducción comunicarlo previamente a los usuarios.\n* Realizar el mantenimiento de todas las instalaciones de los sistemas de agua potable y alcantarillado sanitario de manera preventiva y correctiva.\n* Reparar, en el más breve plazo posible, todas las conexiones domiciliarias de agua potable y alcantarillado externas, así como las redes de distribución y colectores que sufran desperfectos sin que esto signifique un cobro adicional a los usuarios.\n* Mediante su personal o servicio de terceros, la EPS deberá operar y/o mantener en buen estado las instalaciones de los servicios.\n* Garantizar la buena calidad de los materiales, ejecución de obras y conexiones domiciliarias.\n* Avisar, con no menos de 48 horas de anticipación, los cortes programados por razones de mantenimiento, ampliación o mejora del sistema.\n* Velar por el buen estado y funcionamiento de la red de distribución y la red de alcantarillado sanitario, así como las acometidas y conexiones externas (hasta el medidor o red de colectores).\n* Instalar medidores de consumo en las conexiones domiciliarias de agua potable.",
+    "source": "0010_cuáles_son_las_obligaciones_de_la_eps.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 253
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁLES SON LAS OBLIGACIONES DE LA EPS?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "RESPECTO A LA FACTURACIÓN, LA EPS TIENE LA OBLIGACIÓN DE:\n* Emitir y entregar mensualmente los recibos de agua por los servicios prestados e informar sobre los locales habilitados o centros autorizados para el pago de los mismos.\n* Investigar el incremento o la disminución significativos del consumo del usuario, de un mes a otro, para efectuar las correcciones que correspondan.\n* Notificar al usuario advirtiéndole el incremento de su consumo (tratamiento de casos atípicos).",
+    "source": "0011_respecto_a_la_facturación_la_eps_tiene_la_obligación_de.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 75
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁLES SON LAS OBLIGACIONES DE LA EPS?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "RESPECTO A LA ATENCIÓN, LA EPS DEBE:\n* Establecer una Oficina de Atención al Cliente o al Usuario, con los mecanismos necesarios para recibir, atender y responder reclamos, solicitudes y quejas, dentro de los plazos establecidos en la normativa vigente; así como recibir sugerencias, inquietudes y consultas acerca del servicio.\n* Ofrecer un trato cortés, diligente y satisfactorio al usuario o a los posibles clientes, así como brindar respuestas adecuadas a consultas y reclamos. Asimismo, deberá recibir y atender solicitudes de trámites o de información de los mismos en el menor tiempo posible.\n* Informar al usuario acerca de sus derechos para que, en caso no estuviera de acuerdo con los recibos emitidos, pueda realizar su reclamo formal.\n* Establecer procedimientos con formatos uniformes y prenumerados para que los usuarios sean atendidos oportuna y eficazmente, teniendo en cuenta los Reglamentos Generales de Reclamos y de Calidad de la Prestación de Servicios de las EPS.\n* Responder a los reclamos dentro de 35 días hábiles siguientes a su recepción (30 días hábiles para la emisión de la resolución más 5 días hábiles para la notificación).\n* Efectuar la indemnización pertinente, en casos de negligencia comprobada y de acuerdo a las características del perjuicio ocasionado. Para ello, es necesario que el afectado solicite una constatación policial (le servirá para el reconocimiento de los daños).",
+    "source": "0012_respecto_a_la_atención_la_eps_debe.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 222
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "LA PRESENTACIÓN DEL RECLAMO",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "LA PRESENTACIÓN DEL RECLAMO\n\n¿Qué puede esperar el usuario con la presentación del reclamo?\nEl reclamo tiene como objetivo obtener la refacturación del mes reclamado. En el caso de reclamos por consumo elevado, el usuario podrá acceder a la refacturación del mes reclamado, cuyo monto será calculado en base a un promedio de las seis últimas lecturas válidas o de las que existan, o, en su defecto, se le aplicará la asignación distrital.\n\n¿Quién puede presentar un reclamo?\nPuede reclamar el titular del servicio o cualquier persona mayor de edad que acredite ser usuario efectivo de la conexión, con copia del recibo objeto del reclamo.\n\n¿Dónde y cuál es el plazo para reclamar?\nDebe presentar su reclamo ante la Empresa Prestadora de Servicios de Saneamiento (EPS), que es la primera instancia de resolución. Cuenta con 60 días calendario contados desde la fecha de vencimiento del recibo.",
+    "source": "0013_la_presentación_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 146
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "LA PRESENTACIÓN DEL RECLAMO",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Cómo se debe reclamar?\nEs muy sencillo formalizar un reclamo: solo debe acercarse a la EPS y pedir el formato N° 2 para cuestionamientos de la facturación. Puede acompañar al formato los documentos que considere conveniente para respaldar su reclamo (Ejemplo: una carta simple con su sustento).\n\nY para temas operativos, una vez que se hayan vencido los plazos para su atención, puede reclamar, igualmente, con el formato N° 1, luego de producido el hecho, teniendo un plazo de 10 días útiles como máximo para responder, lo que dependerá del tipo de incidencia.\n\n¿Se puede condicionar la presentación del reclamo?\nLa EPS no podrá pedir que primero pague el recibo para poder atender su reclamo, ya que no cuenta con una base legal. Asimismo, en los recibos posteriores no podrá incluirse el concepto o monto objeto de reclamo, mientras este no haya sido resuelto en instancia final.\n\n¿Se puede disponer el cierre del servicio?\nNinguna EPS puede cortarle el servicio por no haber pagado uno o más recibos que estén en proceso de reclamo, hasta haber concluido el procedimiento. Sin embargo, si usted debe otros recibos (anteriores o posteriores), incluyendo intereses y moras, la EPS podrá cortarle el servicio.",
+    "source": "0014_cómo_se_debe_reclamar.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 199
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS\n\nEl procedimiento se llevará a cabo en la EPS en tres etapas:\n(I) Investigación (inspección al predio)\n(II) Negociación (conciliación)\n(III) Decisión",
+    "source": "0015_etapas_del_procedimiento_del_reclamo_en_las_eps.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 30
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿En qué consiste la Etapa de Investigación?\nEs la etapa en la cual se dispondrá la realización de pruebas según el tipo de reclamo. Así, por ejemplo, en el caso de reclamos por consumo elevado, se requiere de una inspección interna y externa, para determinar si existen fugas dentro del predio o en la caja del medidor, y de la contrastación del medidor, para determinar si el medidor de consumo está operando en condiciones normales.\n\nEn el caso de reclamos por tipo de unidades de uso se requiere de la inspección interna, para determinar la actividad que se desarrolla en el predio.\n\nEl día y la hora para realizar la inspección debe ser comunicado por la EPS al reclamante (detallado en el formato N.° 2) con una anticipación de al menos dos días hábiles y su realización no debe durar más de dos horas.\n\nLos resultados se registrarán en un acta cuya copia se entregará al usuario o la persona que se encuentre presente durante la constatación.",
+    "source": "0016_en_qué_consiste_la_etapa_de_investigación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 167
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿En qué consiste la Etapa de Negociación?\nEs la etapa en la cual usted y la EPS tienen la oportunidad de poner fin al conflicto llegando a un acuerdo. Para ello, al presentarse el reclamo, la EPS citará al usuario a una reunión que se realizará, a más tardar, al décimo día hábil posterior a la presentación del reclamo. Se levantará un acta en la que se señalará si hubo acuerdo total, parcial o si se continúa con el reclamo. Asimismo, se le entregará al usuario el resumen histórico de sus recibos y una cartilla informativa.",
+    "source": "0017_en_qué_consiste_la_etapa_de_negociación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 96
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿En qué consiste el derecho del usuario a la contrastación del medidor?\nAl momento de presentar el reclamo, la EPS deberá informarle acerca de su derecho a solicitar la contrastación del medidor y la existencia de contrastadoras privadas acreditadas por Indecopi. Luego, el usuario deberá especificar el tipo de contrastación que desea realizar, así como seleccionar a la empresa contrastadora.\n\nCabe precisar que la contrastación es otra prueba a la cual usted puede acceder en caso su reclamo sea por consumo elevado y se realizará solo si la EPS demostró que no existen factores que distorsionen el registro del medidor.",
+    "source": "0018_en_qué_consiste_el_derecho_del_usuario_a_la_contrastación_de.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 100
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿En qué consiste la Etapa de Decisión?\nEs la etapa en la cual se evalúan las pruebas con la finalidad de determinar, mediante Resolución, si el reclamo es fundado o infundado. La decisión se acredita mediante un informe técnico de control operacional del servicio de la EPS.\n\nEn los casos de consumo elevado, el reclamo será declarado fundado cuando la contrastación determina que el medidor sobrerregistra consumos en, al menos, uno de los caudales de prueba; caso contrario será declarado infundado.\n\nCabe agregar que, si la contrastación la hace la EPS de oficio, usted no tendrá que pagar nada porque la EPS asume el costo.\n\nEn caso que la contrastación sea realizada por una contrastadora privada, usted tendrá que pagar solamente si la prueba determina que el medidor no sobrerregistra. Este costo se cargará en el siguiente recibo de su facturación.",
+    "source": "0019_en_qué_consiste_la_etapa_de_decisión.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 141
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Cuál es el plazo para que la Empresa Prestadora resuelva el reclamo?\nLa EPS tiene un plazo máximo de treinta días hábiles para emitir la resolución de primera instancia, contados desde el día que usted presentó el reclamo y con un plazo máximo de cinco días hábiles, desde la emisión de la resolución, para entregarle los resultados.",
+    "source": "0020_cuál_es_el_plazo_para_que_la_empresa_prestadora_resuelva_el_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 57
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "ETAPAS DEL PROCEDIMIENTO DEL RECLAMO EN LAS EPS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Qué ocurre si la resolución de Primera Instancia no es notificada al usuario en el plazo indicado?\nSi la EPS no notificara la resolución en los plazos establecidos, que son 35 días hábiles, dará origen a lo que llamamos Silencio Administrativo Positivo (SAP) y, en consecuencia, el reclamo se entenderá como fundado. El SAP deberá ser ejecutado por la EPS. No obstante, el reclamante puede solicitar acogerse al silencio administrativo positivo en la EPS.\n\nEn caso de no ejecutarse el SAP, el usuario podrá:\n1. Solicitar una reconsideración o apelación contra el recibo reclamado, invocando, además, acogerse al SAP; de esta manera se mantendrá congelado el recibo hasta que concluya su reclamo.\n2. Solicitar a la EPS que disponga la ejecución del SAP y, de ser el caso, el inicio de los trámites para sancionar al responsable.\n3. Presentar en las oficinas de la SUNASS una carta simple adjuntando copia de su formato de reclamo. El Regulador ordenará la ejecución del SAP, actuando conforme a lo dispuesto en el Reglamento de Infracciones y Sanciones.",
+    "source": "0021_qué_ocurre_si_la_resolución_de_primera_instancia_no_es_notif.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 174
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IMPUGNACIÓN DE LA RESOLUCIÓN",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "IMPUGNACIÓN DE LA RESOLUCIÓN\n\n¿QUÉ PASA SI USTED NO ESTÁ DE ACUERDO CON LA RESOLUCIÓN EMITIDA POR LA EPS?\nLos medios de impugnación son:\n\nEn caso de no estar conforme con la Resolución de Primera Instancia, usted tiene quince días hábiles, contados a partir de la fecha de notificación, para presentar:\n1. Recurso de Reconsideración: Es opcional y solo aplica si tiene nuevas pruebas. Este debe ser presentado ante la EPS que se encargará de resolver, a través de una Resolución, en un plazo no mayor a 20 días útiles (15 días para emitir la resolución y 5 días útiles para notificar). Si no llegara dentro de este plazo podrá solicitar acogerse al silencio administrativo positivo.\n2. Recurso de Apelación: Se basa en una apreciación diferente de las pruebas y el usuario tiene derecho a presentarlo en la empresa de agua. En este caso, la EPS deberá enviar el expediente que contiene todo lo actuado a la oficina del Tribunal de Solución de Reclamos (TRASS de la SUNASS) para que resuelva el caso en Segunda y Última Instancia. La EPS tiene un plazo de 5 días hábiles, desde la presentación del recurso de apelación, para elevar el expediente al TRASS.",
+    "source": "0022_impugnación_de_la_resolución.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 200
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "SEGUNDA Y ÚLTIMA INSTANCIA",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "SEGUNDA Y ÚLTIMA INSTANCIA\n\nLa Segunda Instancia es un procedimiento que evalúa el reclamo fuera del ámbito de la EPS, antes explicado como recurso de apelación.\n\nEste procedimiento se realiza a través del TRASS de la SUNASS y su resolución será definitiva e inapelable en la vía administrativa.",
+    "source": "0023_segunda_y_última_instancia.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 48
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "SEGUNDA Y ÚLTIMA INSTANCIA",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Cuál es el plazo para que el TRASS resuelva el recurso de apelación?\nEl TRASS tiene un plazo referencial de treinta días hábiles, desde que recibe su expediente, para investigar y emitir la resolución de segunda instancia. Además, cuenta con un plazo de cinco días hábiles para informar, por medio de una resolución, sobre los resultados en esta segunda instancia.",
+    "source": "0024_cuál_es_el_plazo_para_que_el_trass_resuelva_el_recurso_de_ap.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 60
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "SEGUNDA Y ÚLTIMA INSTANCIA",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "¿Qué ocurre si la resolución no es notificada al usuario en el plazo indicado?\nSi el TRASS no notifica dentro de los 35 días hábiles, se dará origen a lo que llamamos el Silencio Administrativo Negativo (SAN) con resultado adverso, ante lo cual el usuario podrá presentar su demanda ante el Poder Judicial o exigir al TRASS la expedición de la Resolución.",
+    "source": "0025_qué_ocurre_si_la_resolución_no_es_notificada_al_usuario_en_e.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 62
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "FACTURACIÓN EN BASE A LA MEDICIÓN",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "La instalación del medidor es un requisito importante para propiciar una facturación justa del servicio de agua potable, beneficiando al usuario que pagará, efectivamente, por su real consumo.\n\nPara llevar a cabo el procedimiento en un predio que tiene el abastecimiento de agua potable y al que se le factura por una cantidad fija mensual denominada asignación de consumo, la EPS deberá informar al usuario la fecha cuando se llevará a cabo la instalación del medidor, con un periodo de anticipación de 15 días útiles. Esta comunicación deberá hacerse por escrito.",
+    "source": "0026_la_instalación_del_medidor_es_un_requisito_importante_para_p.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 91
+  },
+  {
+    "id": 27,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo es la facturación de los consumos en las conexiones nuevas?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "Si las conexiones son nuevas, estas siempre deberán contar con su respectivo medidor de consumo. Al principio es posible que se aplique la asignación distrital de la zona. Posteriormente, al instalar un medidor, tenga en cuenta lo siguiente:\n\nTendrá una facturación gradual si se instala el medidor por primera vez en la conexión o si se retiró el medidor de la conexión por un periodo igual o mayor a doce (12) meses.\n\nLa EPS se encuentra obligada a aplicar gradualmente la facturación por diferencia de lecturas de la siguiente forma:\n\n*   **Primera etapa:** En el caso de que se instale el medidor en fecha distinta al inicio del ciclo de facturación vigente, desde la instalación hasta que se inicie el siguiente ciclo de facturación, el Volumen a Facturar (VAF) corresponderá a la asignación de consumo:\n    1.  Primera facturación, el VAF corresponderá a la asignación de consumo, salvo que la diferencia de lecturas sea menor, en cuyo caso se aplicará el mismo.\n    2.  Segunda facturación, el VAF corresponderá a la diferencia de lecturas.\n\nSin perjuicio de lo anterior, la EPS podrá establecer otro esquema de gradualidad en cuanto favorezca al usuario de acuerdo a las condiciones del servicio. La empresa debe informar al usuario y mediante comunicación escrita a SUNASS.",
+    "source": "0027_si_las_conexiones_son_nuevas_estas_siempre_deberán_contar_co.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 209
+  },
+  {
+    "id": 28,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cuándo pueden retirar el medidor?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "El medidor de consumo solo podrá retirarse por personas autorizadas para:\n\n*   Darle mantenimiento. En este caso deberá reinstalarse en un plazo máximo de cinco días útiles.\n*   Realizar su contrastación en un laboratorio. Debiendo reinstalarse en un plazo máximo de dos días útiles.\n*   Para reemplazarlo por un medidor operativo. Si es retirado para ser reemplazado por otro, la EPS deberá reinstalarlo en un plazo no mayor de quince días.\n*   Para que la persona autorizada pueda retirar el medidor, el usuario debió haber recibido una comunicación escrita por lo menos dos (2) días antes.\n*   Mientras el medidor no sea reinstalado, la EPS deberá facturar el promedio histórico de consumo (promedio de 6 lecturas anteriores a las que existan en el lapso de un año).",
+    "source": "0028_el_medidor_de_consumo_solo_podrá_retirarse_por_personas_auto.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 127
+  },
+  {
+    "id": 29,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo es la facturación por promedio?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   La facturación promedio se calculará de acuerdo al promedio de las seis últimas lecturas válidas o de las que existan, sin incluir el mes o meses reclamados. Por ejemplo:\n\n| MES      | PAGO DE ACUERDO A MEDICIÓN |\n| :------- | :------------------------- |\n| Abril    | 30 m3                      |\n| Mayo     | 38 m3                      |\n| Junio    | 28 m3                      |\n| Julio    | 35 m3                      |\n| Agosto   | 32 m3                      |\n| Setiembre| 36 m3                      |\n| **Total**| **199/6 = 33 m3 Promedio** |\n\n(Se cobrará en el mes siguiente que no cuente con medidor)\n\n*   **Otro caso de facturación por promedio.**\n    Si la EPS comprueba que se ha manipulado el medidor o alterado sus mecanismos internos para cambiar la lectura de su registro, podrá cobrar un recupero con retroactividad hasta por un año.",
+    "source": "0029_la_facturación_promedio_se_calculará_de_acuerdo_al_promedio_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 137
+  },
+  {
+    "id": 30,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ ASPECTOS DEBEMOS CONSIDERAR EN LA FACTURACIÓN?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   La facturación por el servicio de agua potable está basada en las lecturas registradas por el medidor o en el promedio de consumo de las 6 últimas diferencias de lecturas válidas o de las que existan. De no tener este promedio, se le aplicará la asignación distrital.\n*   Las razones de una facturación por consumo elevado pueden deberse a diferentes causas: fugas en las instalaciones sanitarias interiores, uso ineficiente del servicio, consumo excesivo, fallas del medidor o factores distorsionantes del registro de consumo.\n*   Los recibos son mensuales y serán entregados en el domicilio del usuario, por lo menos 10 días hábiles antes de la fecha de vencimiento señalada en el recibo.\n*   Si no llega el recibo, no es motivo para que el usuario deje de pagar a tiempo su servicio. En este caso deberá ir a la EPS para reclamarlo o llamar al centro de servicios para informarse cuánto es el monto a pagar. Tenga a la mano el número de suministro o código de su recibo anterior.\n*   El recibo debe contener información sobre el consumo, cómo se determinó y valoró el mismo, el periodo facturado, tipo de facturación, así como la fecha de emisión y vencimiento.",
+    "source": "0030_la_facturación_por_el_servicio_de_agua_potable_está_basada_e.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 201
+  },
+  {
+    "id": 31,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ ASPECTOS DEBEMOS CONSIDERAR EN LA FACTURACIÓN?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   Las tarifas para el consumo de agua potable y uso del sistema de alcantarillado son cobradas en un mismo recibo y son propuestas por la EPS, luego analizadas y aprobadas por SUNASS, conforme a disposiciones legales vigentes que puede consultar en la web de SUNASS.\n*   Existen diferentes tarifas en el país, por lo que el usuario debe consultar en las oficinas de la EPS de su localidad cuál es la estructura tarifaria de su región. También puede consultar en nuestra oficina desconcentrada de la localidad. Los datos de consulta pueden ser:\n    *   Consumo medido: tarifa por m3 según rango de consumo y categoría.\n    *   Consumo no medido: volumen asignado y tarifa por m3 según rango de consumo y categoría.\n*   Las tarifas que se establecen deben generar ingresos que permitan financiar los costos de administración, comercialización, operación y mantenimiento de los servicios, así como nuevas inversiones para desarrollo y expansión.",
+    "source": "0031_las_tarifas_para_el_consumo_de_agua_potable_y_uso_del_sistem.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 152
+  },
+  {
+    "id": 32,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿POR QUÉ RAZONES ME PUEDEN CORTAR EL SERVICIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   En caso de incumplimiento en el pago de la facturación de dos (2) meses o falta de pago de una cuota de financiamiento, sin necesidad de previo aviso ni intervención de autoridad alguna.\n*   La reapertura del servicio se dará después de cancelados los montos, incluyendo intereses, cargos de suspensión y reposición, dentro de las 24 horas siguientes al pago.\n*   La EPS no podrá cortar el servicio si existiera un acuerdo previo sobre el pago puntual del monto adeudado o si los recibos pendientes de pago se encuentran en un proceso de reclamo.",
+    "source": "0032_en_caso_de_incumplimiento_en_el_pago_de_la_facturación_de_do.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 95
+  },
+  {
+    "id": 33,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ DEBEMOS CONSIDERAR COMO INFRACCIONES DEL USUARIO?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   Comercializar o vender agua potable sin autorización expresa de la EPS.\n*   Manipular por cuenta propia la red externa de agua potable o alcantarillado sanitario, la caja de la conexión y el medidor para efectuar cualquier acción que impida o modifique el registro del consumo de agua.\n*   Dañar el medidor.\n*   Evitar el paso del agua por el medidor al realizar puentes o derivaciones antes de que marque el medidor.\n*   Realizar o permitir derivaciones o prolongaciones de las instalaciones internas de un inmueble a otro.\n*   Emplear bombas de succión directas de la red.\n*   Reponer clandestinamente el servicio cerrado por la EPS.\n*   Conectarse clandestinamente a las redes del servicio.\n*   Depositar basura, grasas, vísceras de animales, residuos industriales o cualquier otro objeto que ocasione sobrecargas o desperfectos en la red de desagüe. Así evitarás colapsos de tuberías y que se afecten los predios.\n*   Impedir u obstaculizar el acceso a la caja del medidor al personal autorizado por la EPS, para la lectura de los medidores, inspección de las instalaciones o el ejercicio de cualquiera de las actividades necesarias para la prestación de los servicios.\n*   Alterar la condición de una pileta pública o similar en beneficio de uso intradomiciliario.",
+    "source": "0033_comercializar_o_vender_agua_potable_sin_autorización_expresa.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 205
+  },
+  {
+    "id": 34,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ SANCIONES SE APLICAN?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   **Amonestación.** En el caso de que el usuario cometa infracciones leves y por primera vez.\n*   **Suspensión temporal del servicio.** Cuando el usuario comete infracciones tipificadas. Se aplica por un periodo máximo de 15 días si es recurrente.\n*   **Clausura del servicio.** Si el usuario vuelve a cometer la misma infracción. Se procederá al retiro del medidor, accesorios de empalme, válvula y al cierre temporal de la tubería de ingreso del agua.\n*   **Levantamiento de la conexión.** Se aplica cuando el usuario comete nuevamente la infracción que ocasionó la clausura del servicio o si hay un pago pendiente de seis meses o más. En este caso, la EPS retira toda la conexión de agua potable o alcantarillado, cerrando el acceso a la red de distribución de ambos.\n*   Para los usuarios a los que se sancionó con la clausura o el levantamiento de la conexión, la reinstalación del servicio significará una nueva solicitud de conexión y se efectuará con el pago de la deuda y los derechos correspondientes.",
+    "source": "0034_amonestación_en_el_caso_de_que_el_usuario_cometa_infraccione.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 169
+  },
+  {
+    "id": 35,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "FUGAS DE AGUA QUE SUELEN PRESENTARSE EN LOS DOMICILIOS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "Cuando se instala un medidor de consumo en un predio, el usuario debe tomar algunas precauciones para evitar alarmarse. Sobre todo si su facturación era por asignación de consumo o por consumo promedio, lo que significa que desconoce cuánto consume en realidad y cuánto es por:\n\n*   Volumen de agua perdido como consecuencia de malos hábitos de consumo.\n*   Volumen de agua desperdiciado por fugas internas que se originan por el mal estado de sus instalaciones (inodoros, tanques elevados, cisternas, caños, duchas, etc.).",
+    "source": "0035_cuando_se_instala_un_medidor_de_consumo_en_un_predio_el_usua.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 83
+  },
+  {
+    "id": 36,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿DÓNDE SE DAN LOS DESPERDICIOS Y FUGAS DE AGUA?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "Una de las principales causas del consumo elevado, en el caso de los usuarios que tienen medidor, es el desperdicio del agua potable por los malos hábitos de consumo, como dejar mal cerrado el caño o no reparar las conexiones internas de la vivienda. Principalmente los consumos excesivos y las principales fugas que se suelen presentar dentro de los domicilios son, por ejemplo:\n\n*   **Una DUCHA de 20 MINUTOS** por persona consume 160 LITROS DE AGUA. Puede significar hasta S/ 1000 en el recibo mensual.\n*   **El RIEGO DEL JARDÍN por 30 MINUTOS** equivale a un gasto de 360 LITROS DE AGUA. Puede significar hasta S/ 55 al mes.\n*   **El LAVADO DE UN AUTO por 30 MINUTOS** consume 540 LITROS DE AGUA. Puede llegar hasta S/ 2200 mensuales.\n*   **El LAVADO DE PLATOS por 10 MINUTOS** consume 50 LITROS DE AGUA. Puede significar hasta S/ 2600.\n*   **Un INODORO MALOGRADO** desperdicia 150 MIL LITROS DE AGUA.\n*   **Un CAÑO MALOGRADO** desperdicia 22 MIL LITROS DE AGUA AL MES.\n*   **Una FUGA EN LA VÁLVULA DE TANQUE ELEVADO** desperdicia 300 MIL LITROS DE AGUA.\n*   **Una FUGA EN LA CISTERNA** desperdicia 360 MIL LITROS DE AGUA.\n\nEl consumo promedio de agua por familia es de 28 o 30 metros cúbicos (m3). El cálculo aproximado sobre las necesidades de consumo promedio de una familia de cinco personas no debe exceder los 28 o 30 metros cúbicos (m3) al mes.\n\nEl uso responsable del agua potable en nuestro hogar debe ser una sana costumbre. ¡EVITEMOS EL DERROCHE, ES NUESTRA RESPONSABILIDAD!",
+    "source": "0036_una_de_las_principales_causas_del_consumo_elevado_en_el_caso.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 258
+  },
+  {
+    "id": 37,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "FUGAS",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   **Caño con gotero o chorro:** Se origina porque la empaquetadura o “trompito” del caño está gastado y no hay un cierre total. Por esta razón puede perderse desde 675 litros al día, lo que, por cada caño, equivale a 20 m3 por mes sumado al consumo mensual de una familia.\n*   **Inodoro descompuesto:** Se da cuando la válvula flotadora está malograda, descalibrada o el sistema de cerrado del tanque no es hermético. Esto puede perder hasta 5 m3 al día, equivalente a 150 m3 al mes, es decir, el consumo mensual de seis familias.\n*   **Tanque elevado:** Se produce cuando la válvula flotadora está descalibrada o malograda y se da la fuga por la tubería de rebose, cuando el tanque se llena y no se controla el tiempo de bombeo. Esto significa la pérdida de hasta 10 m3 por día, equivalente a 300 m3 al mes, es decir, al consumo mensual de dieciocho familias.\n*   **Cisterna:** Sucede cuando la válvula flotadora está descalibrada o malograda y ya no ejerce control. Se pierde agua constantemente por la tubería de rebose, cuando la cisterna se llena. Se desperdician hasta 12 m3 al día, equivalente a 360 m3 al mes, es decir, el consumo mensual de dieciséis familias.\n\n*   Recuerde que si una familia tiene varios puntos de fuga, el medidor de consumo registrará la suma de los volúmenes correspondientes. Así, puede resultar una factura treinta o cuarenta veces mayor a su consumo promedio.\n*   Es importante revisar periódicamente la llave general interna del predio, pues, por su antigüedad, tiende a malograrse y generar goteos, inclusive silenciosos.",
+    "source": "0037_caño_con_gotero_o_chorro_se_origina_porque_la_empaquetadura_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 265
+  },
+  {
+    "id": 38,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "CONSEJOS PARA REDUCIR LA FACTURACIÓN MENSUAL DE AGUA",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "*   Introduzca una botella plástica llena de agua (de 600 ml. o 1l) dentro del tanque del inodoro: esto le permitirá ahorrar varios litros cada vez que jale la cadena.\n*   Lave la fruta y verduras utilizando un recipiente con agua, servirá para el regado de su jardín; si no lo hace, gastará el doble de agua con el caño abierto.\n*   A la hora de lavar la vajilla, llene el lavadero para enjabonar la vajilla sucia. Para enjuagar, ajuste la presión del grifo a la que necesite.\n*   Evite las fugas manteniendo en buen estado las conexiones internas del domicilio (caños, inodoros, tanques elevados, etc.).\n*   Procure realizar la revisión de las conexiones con un gasfitero o especialista (por lo menos 2 veces al año) para evitar fugas no visibles.\n*   Infórmese y cambie a equipos ahorradores como caños, duchas e inodoros con doble tipo de sifonaje (para residuos líquidos y sólidos).\n*   No arroje desechos sólidos (papel higiénico, toallas de papel, algodones, trapos, etc.) que ocasionen desperfectos en las conexiones del desagüe.\n*   Tome duchas cortas (no más de 5 minutos) y cierre la llave del agua mientras se enjabone o aplique champú. Asimismo, cuando se cepille los dientes.\n*   Alrededor de 285 litros utiliza la lavadora cada vez que se usa: ocúpela a carga completa.\n*   Nunca use la manguera para limpiar la calle o patio. Para eso, use la escoba. Evitará gastar alrededor de 300 litros de agua.\n*   Al regar el jardín, hágalo solo cuando sea necesario y muy temprano o después que se ponga el sol.\n*   Evite lavar su auto a diario; una o dos veces por semana es más que suficiente.",
+    "source": "0038_introduzca_una_botella_plástica_llena_de_agua_de_600_ml_o_1l.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 279
+  },
+  {
+    "id": 39,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "PARA PRESERVAR LA HIGIENE Y LA SALUD, TOME EN CUENTA QUE:",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "El agua que se recibe en los domicilios cumple las normas de calidad, pero existe la posibilidad de contaminación en los puntos de ingreso; por ello, se deben tomar algunas precauciones:\n\n*   En las casas con tanques elevados, es necesario revisar constantemente que las tapas estén en buen estado, sin roturas y debidamente selladas a fin de evitar el ingreso de animales o insectos que contaminen el agua.\n*   Los tanques de almacenamiento deben ser limpiados y desinfectados periódicamente.\n*   En edificios multifamiliares, nunca está de más hervir el agua antes de tomarla, sobre todo si no se tiene certeza del mantenimiento que se da a los tanques.",
+    "source": "0039_el_agua_que_se_recibe_en_los_domicilios_cumple_las_normas_de.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 108
+  },
+  {
+    "id": 40,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "CUIDEMOS EL SERVICIO DE ALCANTARILLADO O DESAGÜE",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "Las redes de alcantarillado van por debajo de las calles, transportando los residuos por desnivel o gravedad. Por esta razón, los usuarios deben tomar medidas para evitar atoros que generen colapsos e inundaciones del desagüe. Considerar lo siguiente:\n\n*   No arrojar a la alcantarilla basura, residuos sólidos como restos de animales, ropa, plásticos, ni grasas y/o residuos industriales que pueden corroer o deteriorar las redes.\n*   Al rasurarse o cepillarse, retire los cabellos de la rejilla.\n*   Evite desechar en el inodoro toallas de papel, envolturas, paños higiénicos, algodones o cualquier objeto sólido.\n*   No dañe las tapas del desagüe en la calle, esto atenta contra la seguridad de su familia y la de todos.\n*   Si encuentra un buzón de desagüe sin tapa, cúbralo provisionalmente, coloque señales de alerta y, luego, comuníquese inmediatamente con la empresa de agua (EPS) para que solucione el problema.",
+    "source": "0040_las_redes_de_alcantarillado_van_por_debajo_de_las_calles_tra.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 145
+  },
+  {
+    "id": 41,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "CUIDEMOS EL SERVICIO DE ALCANTARILLADO O DESAGÜE",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "Si desea consultar algunos aspectos legales del servicio, revise los siguientes documentos:\n\n1.  Ley Marco de los Organismos Reguladores de la Inversión Privada en los Servicios Públicos.\n2.  Reglamento de Calidad de la Prestación de los Servicios de Saneamiento y sus modificatorias.\n3.  Reglamento General de Reclamos de Usuarios de Servicios de Saneamiento y modificatorias.\n4.  Ley Marco de la Gestión y Prestación de los Servicios de Saneamiento, aprobada mediante Decreto Supremo N.° 1280.\n5.  Reglamento de la Ley Marco de la Gestión y Prestación de los Servicios de Saneamiento.",
+    "source": "0041_si_desea_consultar_algunos_aspectos_legales_del_servicio_rev.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 90
+  },
+  {
+    "id": 42,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿QUÉ ASPECTOS SE DEBEN CONSIDERAR EN SITUACIONES DE EMERGENCIA?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "La EPS está obligada a:\n\n*   Proporcionar información sobre las reparaciones y tareas de mantenimiento que deben realizarse por razones de emergencia.\n*   Suministrar el servicio de agua de manera gratuita y mediante camiones cisternas si no se pudiera reparar el desperfecto en las tuberías en el plazo que establece la normativa (18 horas).\n*   Prestar servicios de emergencia con la rapidez y eficiencia que el caso requiera, en un plazo no mayor a 24 horas.\n*   Informar a través de medios de comunicación sobre los procedimientos a seguir en caso de modificación de la calidad del agua, para evitar que se ponga en riesgo la salud de la población.\n*   Dar trato cortés y diligente al usuario, además de ofrecer respuestas adecuadas a consultas y reclamos.",
+    "source": "0042_la_eps_está_obligada_a.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 127
+  },
+  {
+    "id": 43,
+    "nombre_doc": "Guía del usuario para el servicio de agua potable y alcantarillado",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿CUÁL ES EL PROCEDIMIENTO PARA EL REGISTRO DE LLAMADAS DE EMERGENCIA Y CONSULTA?",
+    "categoria_consumo": [
+      "agua y alcantarillado"
+    ],
+    "texto": "**HABILITACIÓN DE LÍNEA TELEFÓNICA.**\nLa empresa de agua (EPS) deberá tener una línea telefónica para la orientación y atención de todo tipo de reclamos del usuario, pueden ser comerciales, operacionales o de cualquier otro relacionado a la prestación del servicio.\n\n**ATENCIÓN DE EMERGENCIA Y CONSULTA.**\nLas llamadas de emergencia y consultas deberán ser resueltas de forma inmediata. Cuando usted llame, el operador deberá darle un número de registro que tiene que anotar y conservar como constancia de la llamada. Posteriormente será atendido por un orientador. Recuerde que el personal de la EPS, desde el momento que registra la llamada, está obligado a informarlo sobre el estado en el que se encuentra el proceso de atención a su reclamo.\n\nSi no recibe atención, puede llamar al:\n**FONO SUNASS:** 614-3180 / 614-3181\n**Línea gratuita SUNASS en provincias:** 0 800 00 121\n\nSUNASS es el organismo regulador que fiscaliza a las empresas de saneamiento, orienta a los usuarios y resuelve reclamos en segunda instancia administrativa. Si necesitas información sobre el procedimiento de reclamo llama al:\n**FONOSUNASS:** 01 6143180 | 01 6143181\n**Línea gratuita para provincias:** 0800 00121",
+    "source": "0043_habilitación_de_línea_telefónica.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario para el servicio de agua potable y alcantarillado.json",
+    "num_palabras": 184
+  }
+]

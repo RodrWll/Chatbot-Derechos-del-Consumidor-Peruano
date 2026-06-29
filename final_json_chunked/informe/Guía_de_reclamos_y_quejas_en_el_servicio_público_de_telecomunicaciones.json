@@ -1,0 +1,912 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Encuentra el paso a paso para la presentación de un reclamo o queja.\n\nBienvenido a nuestro ABC de los Reclamos en Telecomunicaciones\n\nÍndice\n\n1.  **¿Cómo presentar tu reclamo?**\n    Conoce los pasos para realizar un reclamo ante tu operador.\n    *   Paso a paso del reclamo\n    *   ¿Cómo llenar el formulario?\n    *   Temas de reclamos\n    *   Resultados que obtendrás\n\n2.  **¿Cómo presentar tu queja?**\n    Conoce los pasos para solucionar problemas en el trámite de tu reclamo.\n    *   Paso a paso de la queja\n    *   ¿Cómo llenar el formulario?\n    *   Temas de quejas\n    *   Resultados que obtendrás\n\n3.  **Diccionario de palabras**\n    Conoce el significado de términos técnicos relacionados a reclamos y quejas.",
+    "source": "0001_encuentra_el_paso_a_paso_para_la_presentación_de_un_reclamo_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 109
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo presentar tu reclamo?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Te presentamos los 5 pasos:\n\n**Paso 1:** Elige el canal para presentar tu reclamo ante tu operador:\n*   Acude a un centro de atención.\n*   Comunícate por teléfono.\n*   Ingresa a la página web y ubica la sección de reclamos.\n*   Descarga e ingresa al aplicativo móvil.\n\n    Si presentas el reclamo por la web o aplicativo debes llenar el formulario de reclamo. En los demás canales, el asesor de servicio del operador completará el formulario con la información que brindes. Exige tu código y constancia de reclamo.\n\n**Paso 2:** Conoce los plazos de respuesta de tu reclamo en las siguientes páginas.\n*   Verificas que el operador te dé una respuesta dentro del plazo establecido para que te notifique.\n    *   Nota: Si no tienes respuesta, presenta una queja por silencio administrativo.\n\n**Paso 3:** El operador debe elevar el recurso de apelación al OSIPTEL en 5 días hábiles, salvo que haya acogido tu reclamo y te informe de ello.\n\n**Paso 4:** Revisa la respuesta de tu operador y si no estás de acuerdo con el resultado, puedes presentar un recurso de apelación dentro de los 15 días hábiles siguientes a la fecha en que recibiste la respuesta.\n\n**Paso 5:** Esperas la respuesta del TRASU (Tribunal del OSIPTEL) dentro del plazo de 30 días hábiles. Se incluyen los 5 días hábiles que se tiene para notificar la resolución de segunda instancia.",
+    "source": "0002_te_presentamos_los_5_pasos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 228
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo llenar el formulario?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Cómo completar el formulario de reclamos y/o apelaciones**\n\n**Formulario - Datos del usuario**\n\nEl formulario solo lo debes llenar si eres abonado o usuario. Al iniciar el formulario debes identificarte.\n**FORMULARIO DE RECLAMO**\n\nPrimero debes elegir si eres abonado, usuario o representante. Luego indicas o ingresas tus datos personales.\n*   **Abonado:** personas que contrataron o titulares del servicio.\n*   **Usuario:** personas que utilizan el servicio.\n\n**Datos del reclamante**\n*   Condición de quién presenta el reclamo*\n*   Nombres del reclamante*\n*   Apellidos del reclamante*\n*   Razón social*\n*   Tipo de documento de identidad*\n*   Nro de documento de identidad*\n\n**Datos del representante**\nSi eres un representante debes llenar esta parte del formulario y presentar una carta poder simple con la firma del abonado o titular del servicio, que acredite que eres tú quien lo está representando.\n*   Nombres del representante*\n*   Apellidos del representante*\n*   Tipo de documento de identidad*\n*   Nro de documento de identidad*\n*(Se adjunta carta poder simple con la firma del usuario)*",
+    "source": "0003_cómo_completar_el_formulario_de_reclamos_yo_apelaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 165
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo llenar el formulario?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Datos para la notificación y contacto**\n\nAsimismo, debes ingresar los datos donde deseas que te llegue la respuesta del operador respecto a tu reclamo.\n*   Dirección de correo electrónico\n*   Reclamante autoriza ser notificado por correo: Si/No\n*   Correo electrónico\n*   Departamento*\n*   Provincia*\n*   Distrito*\n*   Dirección*\n*   Número de servicio de telefonía móvil/fija de contacto para cualquier información con relación al reclamo\n\n**Motivo de reclamo**\n\nComo siguiente paso, debes ingresar información específica sobre tu reclamo:\n*   Materia reclamable*\n*   Problema específico\n    *   Selecciona la materia reclamable, esto es, el tipo de problemas que tienes, si es un problema de calidad del servicio, en la facturación o cobro, migración, entre otros.\n    *   Elige el problema específico. Aquí el formulario te brinda opciones para que elijas aquella que describe de forma específica tu problema.\n\n**Información necesaria**\n*   Descripción del problema y solicitud necesaria*\n    *   Según lo que hayas elegido, el formulario te solicitará ingreses información necesaria para que la empresa pueda resolver tu reclamo.\n*   ¿Se desea registrar otra materia reclamable?\n\n**2. Datos del servicio**\n\nAhora, debes ingresar información general sobre tu reclamo:\n*   Empresa operadora*\n    *   Primero debes elegir tu empresa operadora.\n*   Servicio contratado*\n*   Número o código del servicio o del contrato abonado\n    *   Luego el servicio que tienes contratado y el número de tu servicio o código.\n*   Servicio materia de reclamo*\n*   Especificar (Otros servicios)\n    *   Finalmente debes especificar el servicio materia de reclamo. Por ejemplo, si tienes contratado con la empresa un trío de telefonía fija, acceso a Internet y televisión de paga, aquí solo debes elegir el servicio con el cual tengas problemas.",
+    "source": "0004_datos_para_la_notificación_y_contacto.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 270
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo llenar el formulario?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Datos del recibo (incluye el monto reclamado)**\n\nPor ejemplo, en reclamos en los cuales solicites se realice un ajuste o anulación de tu recibo, debes ingresar la siguiente información:\n*   N° de recibo:\n*   Fecha de emisión:\n*   Fecha de vencimiento:\n*   Monto reclamado: *\n    *   (*Obligatorio 1 dato del recibo y el monto reclamado)\n\n**Detalle de la solicitud (en caso de falta de atención de un pedido o solicitud)**\n\nEn los reclamos en los cuales el problema se origina por la falta de atención de un pedido o solicitud que realizaste debes brindar el detalle de dicha solicitud.\n*   Fecha de solicitud:\n*   Canal de presentación de la solicitud de baja:\n    *   Teléfono\n    *   Oficina\n    *   Web\n    *   Aplicativo\n    *   Otro (especificar)\n*   Código de pedido (opcional):\n*   ¿Se adjunta la solicitud? (opciones):\n    *   Sí\n    *   No\n\nPuedes hacer llegar el formulario al operador por medio de su web o de forma presencial.",
+    "source": "0005_datos_del_recibo_incluye_el_monto_reclamado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 154
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Formulario de apelación",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Formulario de apelación**\n\n**Cómo completar el formulario de apelación**\n\nEste formulario debe ser llenado por el abonado o usuario que presentó el reclamo. Al iniciar el formulario debes identificarte.\n**FORMULARIO DE APELACIÓN**\n\nPrimero debes elegir si eres abonado, usuario o representante. Luego indicas o ingresas tus datos personales.\n*   **Abonado:** personas que contrataron o titulares del servicio.\n*   **Usuario:** personas que utilizan el servicio.\n\n**Datos del apelante**\n*   Condición de quién presenta la apelación*\n*   Nombres del apelante*\n*   Apellidos del apelante*\n*   Razón social*\n*   Tipo de documento de identidad*\n*   Nro de documento de identidad*\n*   (*) Campos obligatorios para ser llenados.\n\n**Datos del representante**\nSi eres un representante debes presentar una carta poder simple con la firma del abonado o usuario que presentó el reclamo, que acredite que eres tú quien lo está representando.\n*   Nombres del representante*\n*   Apellidos del representante*\n*   Tipo de documento de identidad*\n*   Nro de documento de identidad*\n\n**Datos para la notificación y contacto**\n\nAsimismo, debes ingresar los datos donde deseas que te llegue la respuesta del Tribunal del OSIPTEL (TRASU) respecto de tu recurso de apelación.\n*   Dirección de correo electrónico\n*   Reclamante autoriza ser notificado por correo: Si/No\n*   Correo electrónico\n*   Departamento*\n*   Provincia*\n*   Distrito*\n*   Dirección*\n*   Número de servicio de telefonía móvil/fija de contacto para cualquier información con relación al reclamo\n\n**2. Datos del servicio (del reclamo apelado)**\n\nAhora, debes ingresar información general sobre el reclamo que estás apelando:\n*   Empresa operadora*\n    *   Primero debes elegir tu empresa operadora.\n*   Servicio materia de apelación*\n*   Especificar (Otros servicios)\n    *   Luego debes especificar el servicio materia del recurso de apelación. Por ejemplo, si tienes contratado con la empresa un trío de telefonía fija, acceso a Internet y televisión de paga, aquí solo debes elegir el servicio con el cual tuviste problemas, presentaste tu reclamo y ahora requieres apelar.\n*   Número del servicio o del contrato abonado\n*   Código o Nro de reclamo\n*   Número de la carta que resuelve el reclamo\n*   Fecha de emisión de la carta que resuelve el reclamo",
+    "source": "0006_formulario_de_apelación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 346
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Formulario de apelación",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Información adicional**\n\nPuedes adjuntar información o documentos adicionales relacionados a tu recurso de apelación.\n*   ¿Se adjunta información adicional?\n\n**Motivo de apelación**\n\nComo siguiente paso, debes ingresar información específica sobre tu recurso de apelación:\n*   Motivo específico*\n    *   Selecciona el motivo específico del por qué no te encuentras de acuerdo con el pronunciamiento del operador.\n*   Información necesaria*\n    *   Según el motivo específico que hayas elegido, el formulario te solicitará ingreses información necesaria para que el Tribunal del OSIPTEL (TRASU) pueda evaluar tu recurso de apelación.\n    *   Por ejemplo, en caso el motivo de tu recurso de apelación sea que el \"Operador emitió pronunciamiento por materia distinta a la reclamada” debes ingresar la siguiente información: (Nota: La información específica a ingresar no se detalla en el texto original).\n*   Sustento de apelación\n    *   En la parte “Sustento de la apelación” podrás expresar todo lo relacionado al por qué presentas tu recurso de apelación.\n\nFecha: __/__/__ Hora: __/__/__",
+    "source": "0007_información_adicional.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 157
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Temas de reclamos",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Temas sobre los que puedes reclamar**\n\n**1. Facturación y cobro**\nPuedes reclamar en caso no te encuentres conforme con los montos facturados en tu recibo o requerimientos de pago.\n\n**Posibles resultados:** Si tu reclamo se declara a tu favor, el operador anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, el operador deberá devolver dicho monto en el mismo plazo.\n**Recuerda:** Durante la tramitación del reclamo, el operador no debe requerir el pago del monto reclamado.\n\n*   **Consumos adicionales (Casos comunes)**\n    Cuando no estás de acuerdo con los cobros adicionales de llamadas, datos o SMS en tu recibo, dado que cuentas con un plan control que no permite que excedas el consumo del plan.\n    Al evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el OSIPTEL.\n\n*   **Consumos facturados (Casos comunes)**\n    Cuando te facturan por llamadas que no has realizado desde tu teléfono fijo.\n    **Posibles resultados:** Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.\n    Al evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el OSIPTEL.",
+    "source": "0008_temas_sobre_los_que_puedes_reclamar.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 207
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Temas de reclamos",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   **Cargo por reactivación (Casos comunes)**\n    Cuando estás al día en tus pagos y en el recibo te han facturado un cargo por reconexión que no te corresponde.\n    Cuando reclamas la falta de entrega de un recibo y la empresa te suspendió el servicio por la falta de pago y luego te cobra el cargo por reconexión, puedes presentar tu reclamo por la facturación de ese concepto.\n    Al evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el OSIPTEL.\n    **Posibles resultados:** Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.\n\n*   **Pagos no registrados (Casos comunes)**\n    Cuando el operador de telecomunicaciones te solicitó el pago de un recibo que pagaste anteriormente.\n    Al evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el OSIPTEL.\n    **Documentos que debes adjuntar:** Constancia de pago, para que acredites el pago del recibo que cuestionas.\n    **Posibles resultados:** Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.\n\n*   **Facturación antigua (Casos comunes)**\n    Cuando te facturan un periodo antiguo, el cual no fue cobrado oportunamente o no te corresponde.\n    **Posibles resultados:** Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.\n\n*   **Consumo desconocido (Casos comunes)**\n    Cuando te facturan suscripciones, cargos por cambio de número u otros conceptos que no reconoces.\n    Al evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el OSIPTEL.\n    **Posibles resultados:** Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.",
+    "source": "0009_cargo_por_reactivación_casos_comunes.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 338
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cobros de equipos e Incremento no informado",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "¿Cómo presentar tu reclamo?\n\n1. Cobros de equipos e Incremento no informado\n\nCasos comunes:\n*   Incremento no informado: Cuando el operador ha incrementado la renta mensual o cargo fijo de tu servicio fijo o móvil sin haberte informado previamente sobre dicha situación.\n*   Cuando te facturan las cuotas de un equipo que no te informaron en el momento de comprarlo.\n*   Cuando te facturan un concepto de reintegro de un equipo que nunca compraste.\n*   Cuando te facturan un concepto de reintegro de equipo pero al momento de contratar pagaste el equipo al contado.\n*   Cuando te facturan un concepto de reintegro de equipo pero ya no te encuentras en plazo forzoso.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo se declara a tu favor, la empresa anulará el importe del concepto reclamado en el plazo máximo de un mes. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.",
+    "source": "0010_cómo_presentar_tu_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 164
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Calidad e idoneidad en el servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2. Calidad e idoneidad en el servicio\n\nPuedes reclamar problemas relacionados a una inadecuada prestación del servicio, tales como intermitencia, lentitud, comunicaciones entrecortadas o con ruido, entre otros.\n\nDocumentos que debes adjuntar:\n*   Constancia de medición de velocidad del servicio de Internet: Con el cual se deja constancia de la medición de la velocidad del servicio de Internet que realizaste a través de las herramientas de tu operador puestas a disposición de sus usuarios.\n\nCasos comunes:\n*   Cuando presentas inconvenientes con tu servicio de telefonía móvil, específicamente lentitud en la navegación por internet.\n*   Presentas inconvenientes con tu servicio de telefonía fija, específicamente comunicaciones entrecortadas o con ruido.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador debe realizar pruebas de operatividad para tratar de solucionar los inconvenientes en tu servicio en el plazo máximo de 10 días hábiles en que se notifica la resolución.",
+    "source": "0011_2_calidad_e_idoneidad_en_el_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 162
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Incumplimiento de contrato",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3. Incumplimiento de contrato\n\nPuedes reclamar por condiciones y tarifas distintas a las contratadas, incumplimiento de ofertas, descuentos de saldos no reconocidos o información inexacta.\n\nCasos comunes:\n*   Cambio de condiciones: Contrataste un plan de telefonía móvil de 129.00 soles; sin embargo, el operador te asignó un plan de 169.00 soles.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es fundado, el operador debe cumplir con las condiciones y tarifas pactadas en el contrato en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Si lo consideras podrás terminar el contrato dentro de los 30 días calendario siguientes a la fecha en que te notifican la resolución, sin el pago de penalidades. Asimismo, podrás terminar el contrato del equipo, debiendo devolverlo al operador, así evitarás cobros por reintegro de equipo.",
+    "source": "0012_3_incumplimiento_de_contrato.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 150
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Incumplimiento de contrato",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Incumplimiento de promoción: Cuando contrataste, el operador te ofreció duplicar los Gigabytes durante 6 meses; sin embargo, no te brindaron los Gigabytes adicionales.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe cumplir con la promoción en el plazo máximo de 10 días hábiles a la fecha en que se notifica la resolución.\n\n*   Descuento de plan: Al consultar el saldo de tu plan, adviertes un descuento de megabytes; sin embargo, no accediste a Internet o no realizaste dicho consumo desde tu teléfono.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe entregarte los atributos y/o beneficios descontados en un plazo máximo de 10 días hábiles a la fecha en que recibes la resolución.",
+    "source": "0013_incumplimiento_de_promoción_cuando_contrataste_el_operador_t.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 151
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Falta de servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "4. Falta de servicio\n\nLos problemas relacionados con la interrupción, reactivación, cambio de titularidad, reposición sin consentimiento, cortes y suspensión del servicio ofrecido.\n\nDocumentos que debes adjuntar:\n*   Solo para el caso de uso prohibido: Debes acudir con el equipo y chip a tu operador. El operador o el TRASU podrá requerirte información de los números a los que llamaste.\n\nCasos comunes:\n*   Interrupción: Te quedaste sin servicio y desconoces el motivo. Tu servicio presentó una avería que te impide utilizarlo.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador debe hacer pruebas y/o coordinaciones para reponerte el servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Asimismo, no debe cobrar por los días en que el servicio no fue brindado.\n\n*   Información de cobertura: Cuando contrataste un servicio de Internet Fijo inalámbrico y el operador te informó que brindaba cobertura en el lugar donde se ubica tu domicilio; sin embargo, no cuentas con cobertura.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, el operador debe informarte las limitaciones del servicio. Dentro de los 30 días calendario siguientes a la fecha en que te notifican la resolución, tú podrás terminar el contrato de servicio sin el pago de penalidades y terminar el contrato de equipo, debiendo devolverlo al operador para evitar cobros por reintegro de equipo.",
+    "source": "0014_4_falta_de_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 277
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Falta de servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Suspensión del servicio: Tu servicio ha sido suspendido por falta de pago de manera injustificada. Te quedaste sin servicio y el operador te informó que la suspensión se debió a un uso prohibido (en un establecimiento penitenciario).\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador te debe reconectar el servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Asimismo, no debe cobrarte por los días en que el servicio no fue brindado.\n\n*   No reactivación del servicio: Realizaste el pago de tu recibo y el operador aún no reactiva el servicio.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador te debe reconectar el servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Asimismo, no debe cobrarte por los días en que el servicio no fue brindado.\n\n*   Reposición de SIM card: Te quedaste sin servicio y el operador te informó que se ha realizado una reposición de SIM Card que desconoces.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Con la presentación del reclamo, el operador, por tu seguridad, de manera inmediata, debe suspender el servicio. Si el reclamo es a tu favor, el operador debe coordinar contigo la reposición de un nuevo SIM card (entrega de un nuevo chip), en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Ello en caso no hayas recuperado previamente tu servicio.",
+    "source": "0015_suspensión_del_servicio_tu_servicio_ha_sido_suspendido_por_f.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 293
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Falta de servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Cambio de titularidad: Te quedaste sin servicio y el operador te informó que se habría realizado un cambio de titularidad que desconoces.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador debe: Retornar el servicio a nombre del titular en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Si el número no se encuentra disponible, deberás coordinar con el titular el retorno del servicio bajo otro número.\n\n*   Baja del servicio: Tu servicio fue dado de baja, pese a que no lo solicitaste.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador te debe reconectar el servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. Asimismo, no debe cobrarte por los días en que el servicio no fue brindado.",
+    "source": "0016_cambio_de_titularidad_te_quedaste_sin_servicio_y_el_operador.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 173
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Instalación, activación o traslado de servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "5. Instalación, activación o traslado de servicio\n\nLos problemas relacionados a la falta de la instalación o activación del servicio. Así como la falta de devolución de los montos cobrados por instalación, ejecución o traslados no ejecutados.\n\nCasos comunes:\n*   Falta de instalación/activación: A pesar de haber cumplido con tus obligaciones asumidas en el contrato, el operador no cumplió con instalar y/o activar el servicio.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe instalar o activar tu servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, y en caso de alguna imposibilidad debe informártelo.\n\n*   Falta de traslado del servicio: Solicitaste el traslado del servicio y el operador no cumple con ejecutarlo, o hay una negativa por parte de éste.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador deberá proceder con el traslado de tu servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, y en caso de alguna imposibilidad debe informártelo. También puedes solicitar la baja del servicio dentro de los 30 días calendario desde la fecha que te notifican la resolución, en cuyo caso el operador deberá ejecutar la baja en un plazo máximo de 5 días hábiles siguientes a tu solicitud.",
+    "source": "0017_5_instalación_activación_o_traslado_de_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 236
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Instalación, activación o traslado de servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Falta de devolución por servicio no ejecutados: Si el operador no cumplió con realizar la instalación o traslado pero realizó el cobro del servicio, puedes presentar tu reclamo.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es fundado, el operador anulará los montos cobrados por la instalación, activación o traslado que no se ejecutó, en el plazo máximo de un mes contado desde el día siguiente en que se notifica la resolución. Si ya lo pagaste, deberá devolver dicho monto en el mismo plazo.\n\n*   Negativa a solicitud de traslado: Presentaste una solicitud para el traslado de tu servicio y el operador no te respondió.\n\nPosibles resultados: Si tu reclamo sale a tu favor, el operador deberá proceder con el traslado de tu servicio en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, y en caso de alguna imposibilidad debe informártelo.",
+    "source": "0018_falta_de_devolución_por_servicio_no_ejecutados_si_el_operado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 163
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Falta de ejecución de baja o suspensión del servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "6. Falta de ejecución de baja o suspensión del servicio\n\nLos problemas relacionados con la falta de ejecución de la baja o suspensión temporal del servicio e inconvenientes, con los montos que fueron cobrados posterior a la fecha en que se efectuó la baja o suspensión del servicio.\n\nDocumentos que debes adjuntar:\n*   Constancia de haber presentado la solicitud de suspensión del servicio.\n*   Si tu solicitud fue telefónica debes indicar la fecha y el código de la solicitud.\n\nCasos comunes:\n*   Suspensión temporal: Solicitaste al operador la suspensión temporal del servicio durante dos meses; sin embargo, luego de presentada tu solicitud aún cuentas con el servicio. Durante el periodo de la suspensión temporal, el operador ha emitido recibos.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe: Se debe ejecutar la suspensión temporal del servicio por el periodo solicitado en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución. En el plazo máximo de un mes contado desde el día siguiente en que se notifica la resolución, anular los montos cobrados.",
+    "source": "0019_6_falta_de_ejecución_de_baja_o_suspensión_del_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 198
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Falta de ejecución de baja o suspensión del servicio",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Falta de baja del servicio: Solicitaste al operador la baja de tu servicio; sin embargo, posteriormente el operador te informó que no encuentra la solicitud en su sistema y continúa emitiendo recibos por el servicio. Solicitaste expresamente al operador la baja de tu servicio; sin embargo, te informaron que sólo registraste una suspensión temporal del servicio y no así la baja, por lo que reanuda la emisión de los recibos una vez culminada la suspensión temporal.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador deberá en el plazo máximo de 5 días hábiles siguientes a la fecha en que se notifica la resolución, ejecutar la baja del servicio y en el plazo máximo de un mes, contado desde el día siguiente en que te notifican la resolución, anular los montos cobrados por el servicio posteriores a la baja. Si ya lo pagaste, tu operador te deberá devolver lo pagado.",
+    "source": "0020_falta_de_baja_del_servicio_solicitaste_al_operador_la_baja_d.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 168
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Recargas",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "7. Recargas\n\nProblemas relacionados con las recargas de tu servicio.\n\nCasos comunes:\n*   Falta de saldos: Realizaste una recarga de saldo; sin embargo, no te ha sido asignada.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe responder en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, asignarte el saldo e informarte desde cuándo puedes utilizarlo.\n\n*   Descuentos de saldos: Consideras que el operador te ha descontado de manera indebida el saldo de una recarga.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es fundado, el operador debe: En el plazo máximo de 5 días hábiles siguientes a la fecha en que se notifica la resolución, devolver el saldo o crédito que fue indebidamente descontado, debiendo informarte desde cuándo puedes utilizarlo.",
+    "source": "0021_7_recargas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 160
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Recargas",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Afiliación de promociones: Al realizar una recarga de saldo, el operador te afilió a una promoción o a un paquete que no solicitaste.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe desafiliar los servicios no solicitados en el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.",
+    "source": "0022_afiliación_de_promociones_al_realizar_una_recarga_de_saldo_e.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 74
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Contratación no solicitada",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "8. Contratación no solicitada\n\nPuedes reclamar por la contratación no solicitada del servicio principal, servicios adicionales o suplementarios, adquisición de paquetes de tráfico, el contrato de adquisición o financiamiento de equipo cuyo pago es incluido en el recibo como concepto facturable.\n\nCasos comunes:\n*   Desconoces la contratación del servicio y/o equipo: Cuando tomaste conocimiento de la existencia de una línea móvil y equipo celular a tu nombre, que no reconoces.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es a tu favor, el operador debe:\n*   En el plazo máximo de 5 días hábiles siguientes a la fecha en que se notifica la resolución, ejecutar la baja del servicio que no reconoces.\n*   En el plazo máximo de un mes contado desde el día siguiente en que se notifica la resolución, anular todos los importes generados por dicho servicio, y si ya lo pagaste, tu operador deberá devolver lo pagado.\n*   En el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, dar por terminado el contrato de adquisición o financiamiento de equipo.",
+    "source": "0023_8_contratación_no_solicitada.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 192
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Contratación no solicitada",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Desconoces la contratación del servicio adicionales o paquetes: Cuando te han facturado paquetes de datos en tu servicio de telefonía móvil o canales de TV en el servicio de TV Paga, que no solicitaste.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nPosibles resultados: Si tu reclamo es fundado, el operador debe:\n*   En el plazo máximo de 5 días hábiles siguientes a la fecha en que se notifica la resolución, ejecutar la baja del servicio que no reconoces.\n*   En el plazo máximo de un mes contado desde el día siguiente en que se notifica la resolución, anular todos los importes generados por dicho servicio, y si ya lo pagaste, tu operador deberá devolver lo pagado.\n*   En el plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, dar por terminado el contrato de adquisición o financiamiento de equipo.",
+    "source": "0024_desconoces_la_contratación_del_servicio_adicionales_o_paquet.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 155
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Migración",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "9. Migración\n\nPuedes reclamar cuando el operador cambió tu plan sin que lo hayas solicitado o cuando solicitaste cambio de plan y no lo han ejecutado.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nCasos comunes y Posibles resultados:\n*   Negativa ante una migración: Cuando solicitaste al operador la migración de tu servicio postpago a prepago; sin embargo, te respondieron que debes permanecer un periodo más con tu mismo plan, a pesar de que no cuentas con un contrato a plazo forzoso.\n    Posibles resultados: Si tu reclamo es a tu favor, el operador debe: En un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, realizar la migración al plan que solicitaste, y en caso éste no exista, debe ofrecerte otro plan vigente con similares características. En el plazo máximo de 1 mes contado desde el día siguiente en que se notifica la resolución, anular la diferencia de lo facturado entre el plan anterior y el nuevo plan. Si ya lo pagaste, deberá devolver el monto de dicha diferencia.",
+    "source": "0025_9_migración.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 183
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Migración",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Falta de ejecución: El operador aceptó tu solicitud de cambio de plan; sin embargo, demora en realizar el cambio de plan.\n    Posibles resultados: Si el operador no realizó el cambio de plan en un plazo máximo de 10 días hábiles de notificada la resolución, realizar la migración al plan que solicitaste, y en caso éste no exista, debe ofrecerte otro plan vigente con similares características.\n\n*   Migración no solicitada: En tu recibo se ha facturado un nuevo plan, el cual no contrataste, por lo que requieres el retorno al plan anterior.\n    Posibles resultados: Si tu reclamo es a tu favor, el operador debe notificarte en un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, retornar el plan anterior, y en caso no sea posible por razones técnicas, deberá ofrecerte otro plan o la baja del servicio sin pago de penalidades.\n\n*   Facturación del plan anterior: Solicitaste el cambio a un plan de tarifa menor; sin embargo, el operador no aplicó en tu recibo la facturación del nuevo plan.\n    Posibles resultados: Si tu reclamo es a tu favor, el operador debe: En un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, realizar la migración al plan que solicitaste, y en caso éste no exista, debe ofrecerte otro plan vigente con similares características. En el plazo máximo de 1 mes contado desde el día siguiente en que se notifica la resolución, anular la diferencia de lo facturado entre el plan anterior y el nuevo plan. Si ya lo pagaste, deberá devolver el monto de dicha diferencia.",
+    "source": "0026_falta_de_ejecución_el_operador_aceptó_tu_solicitud_de_cambio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 271
+  },
+  {
+    "id": 27,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Portabilidad",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "10. Portabilidad\n\nProblemas con el cambio de tu servicio a otro operador.\n\nDocumentos que debes adjuntar:\n*   Constancia de haber solicitado la portabilidad de tu servicio manteniendo tu número.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nCasos comunes y Posibles resultados:\n*   Negativa de nuevo operador: Cuando solicitaste la portabilidad ante el nuevo operador y se negó a recibirla.\n    Posibles resultados: Si tu reclamo es a tu favor, el operador debe recibir tu solicitud de portabilidad y registrarla, debiendo previamente haber suscrito el contrato del servicio en un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.\n\n*   Rechazo de actual operador: Cuando presentaste la solicitud de portabilidad ante el operador, sin embargo, ésta te informó que no procedió porque presentas deuda con tu anterior operador.\n    Posibles resultados: Si tu reclamo es a tu favor, el actual operador debe coordinar con el nuevo operador para registrar tu solicitud de portabilidad y suscribir el contrato en un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.",
+    "source": "0027_10_portabilidad.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 187
+  },
+  {
+    "id": 28,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Portabilidad",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Falta de consentimiento: Tu número telefónico ha sido portado a otro operador sin tu consentimiento.\n    Posibles resultados: Si tu reclamo es a tu favor, en un plazo máximo de 4 días hábiles siguientes a la fecha en que recibes la resolución, tu número telefónico retornará a tu operador, en el mismo plan tarifario. Asimismo, se deben anular los cobros generados por la portabilidad, en el plazo máximo de 1 mes contado desde el día siguiente en que recibes la resolución.\n\n*   Falta de cobertura: El nuevo operador no cuenta con cobertura, sin embargo, realizaste la portabilidad.\n    Posibles resultados: Si tu reclamo es a tu favor, en un plazo máximo de 4 días hábiles siguientes a la fecha en que recibes la resolución, tu número telefónico retornará a tu operador, en el mismo plan tarifario. Asimismo, se deben anular los cobros generados por la portabilidad, en el plazo máximo de 1 mes contado desde el día siguiente en que recibes la resolución.\n\n*   Falta de información: Cuando realizaste la portabilidad, no te informaron que sólo aplicaría al servicio de telefonía y no a los demás servicios empaquetados (Ej. Internet y TV Paga)\n    Posibles resultados: Si tu reclamo es a tu favor, el operador debe brindarte la información relacionada a la portabilidad, en un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.\n\n*   No retorna el número: Cuentas con un reclamo a tu favor por falta de cobertura o portabilidad no solicitada; sin embargo, el operador no cumple con retornar tu número telefónico a tu operador anterior.\n    Posibles resultados: Si tu reclamo es a tu favor, en un plazo máximo de 10 días hábiles siguientes a la fecha en que se notifica la resolución, el operador ante quien reclamaste deberá retornar tu línea a tu operador anterior.",
+    "source": "0028_falta_de_consentimiento_tu_número_telefónico_ha_sido_portado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 304
+  },
+  {
+    "id": 29,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Otras materias reclamables",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "11. Otras materias reclamables\n\nOtros conceptos por los cuáles también puedes presentar tu reclamo.\n\nDocumentos que debes adjuntar:\n*   No es obligatorio presentar alguna documentación, pero si cuentas con algún documento que acredite tu reclamo también puedes presentarlo.\n\nAl evaluar tu reclamo, el Operador debe revisar los medios probatorios que requiere el Osiptel.\n\nCasos comunes y Posibles resultados:\n*   Negativa al contratar: El operador te comunicó que podías contratar el nuevo servicio; sin embargo, al acercarte a sus oficinas te informaron que no pueden brindarte dicho plan.\n    Posibles resultados: Si tu reclamo es a tu favor, en un plazo máximo de 10 días hábiles el operador te notificará y coordinará contigo la suscripción del contrato de servicio, verificando el cumplimiento de los requisitos de contratación que establece la normativa de los servicios públicos de telecomunicaciones.",
+    "source": "0029_11_otras_materias_reclamables.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 135
+  },
+  {
+    "id": 30,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Otras materias reclamables",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "*   Falta de entrega de recibos: El operador no envía los recibos a tu cuenta de correo electrónico. Solicitaste expresamente al operador el envío de los recibos a tu domicilio; sin embargo, no los remite o los remite por correo electrónico.\n    Posibles resultados: El operador debe entregarte el recibo al correo electrónico o domicilio, según lo hayas solicitado. El operador no puede cobrarte alguna tarifa por reactivación del servicio o interés por la demora en el pago del recibo.\n\n*   Falta de detalle de llamadas: Solicitaste a tu operador el registro de las llamadas que recibiste en el mes anterior (llamadas entrantes); sin embargo, transcurrieron 15 días hábiles y éste no cumplió con su entrega. Solicitaste a tu operador el detalle de las llamadas facturadas en tu último recibo (facturación detallada); sin embargo, transcurrieron 3 días hábiles y éste no cumplió con su entrega.\n    Posibles resultados: Si tu reclamo es a tu favor, en un plazo máximo de 10 días hábiles en que se notifica la resolución, el operador debe entregarte la facturación detallada o el registro de llamadas entrantes.",
+    "source": "0030_falta_de_entrega_de_recibos_el_operador_no_envía_los_recibos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 180
+  },
+  {
+    "id": 31,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Resultados que obtendrás",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Existen 6 resultados que tu reclamo puede tener, revisa cada uno de ellos:\n\n**Cuando tu reclamo se encuentra fundado**\nSi tu reclamo es fundado, significa que tu operador te dio la razón y procederá a atender lo que solicitaste.\n\n**Cuando tu reclamo o recurso de apelación es parcialmente fundado**\nSi tu reclamo es parcialmente fundado, significa que el operador acogió solo una parte de lo que reclamaste. Si no estás de acuerdo, puedes presentar un recurso de apelación ante el mismo operador, para que tu caso sea evaluado por el TRASU (Tribunal del OSIPTEL).\n\nSi tu recurso de apelación es fundado significa que tienes la razón y se ordena al operador que cumpla con lo resuelto por el TRASU (Tribunal del OSIPTEL).\n\nSi tu recurso de apelación es parcialmente fundado, significa que el Tribunal acogió solo una parte de lo que reclamaste. En ese sentido, se ordena al operador que cumpla con aquello que el Tribunal ha señalado a tu favor.\n\nPuedes cuestionar el extremo que no te favorece de dicha resolución en la vía judicial, si no estás conforme.",
+    "source": "0031_existen_6_resultados_que_tu_reclamo_puede_tener_revisa_cada_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 180
+  },
+  {
+    "id": 32,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Resultados que obtendrás",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Cuando tu reclamo o recurso de apelación es infundado**\nSi tu reclamo es infundado, significa que tu operador no te dio la razón. Si no estás de acuerdo, puedes presentar un recurso de apelación ante el mismo operador, para que tu caso sea evaluado por el TRASU (Tribunal del OSIPTEL).\n\nSi tu recurso de apelación es infundado significa que no se acoge tu reclamo, debido a que el Tribunal analizó la documentación y confirma la decisión del operador.\n\nPuedes cuestionar dicha resolución en la vía judicial, si no estás conforme.\n\n**Cuando tu reclamo o recurso de apelación es inadmisible**\nEllo sucede cuando falta algún requisito en el reclamo o recurso de apelación. Lo cual ocurre, en las siguientes circunstancias:\n\n*   Cuando no eres el abonado del servicio o no presentaste el respectivo poder de representación, o cuando presentas el recurso de apelación y no eres la persona que inició el reclamo o su representante.\n*   Cuando la solicitud y los fundamentos que motivan la interposición del reclamo o del recurso de apelación no son claros.\n*   Cuando en los reclamos por facturación, no indicaste la fecha o mes de emisión o vencimiento del recibo o el número del recibo que reclamas.\n\nEn estos casos, la empresa o el TRASU (Tribunal del OSIPTEL) te otorga un plazo de 3 días para enviar la documentación y/o información faltante, de no hacerlo se archivará el caso.",
+    "source": "0032_cuando_tu_reclamo_o_recurso_de_apelación_es_infundado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 233
+  },
+  {
+    "id": 33,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Resultados que obtendrás",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Cuando tu reclamo o recurso de apelación es improcedente**\nSignifica que el operador o el TRASU (Tribunal del OSIPTEL) no puede analizar tu reclamo, debido a las siguientes circunstancias:\n\n*   El Tribunal o el operador no tienen competencia para resolver el reclamo, recurso de apelación o queja (por ejemplo, solicitudes de indemnización).\n*   El reclamo ya fue resuelto en otro expediente o existe otro en trámite que fue presentado previamente.\n*   Cuando presentas un recurso de apelación, pese a que el operador está en plazo para emitir la resolución en primera instancia.\n*   Cuando presentas un recurso de apelación luego de los 15 días hábiles desde que recibiste la resolución del operador, es decir, fuera del plazo máximo que tenías para poder apelar.\n\n**Cuando se deja sin efecto la elevación de tu recurso de apelación**\nSignifica que el operador no remitió toda la documentación obligatoria al TRASU (Tribunal del OSIPTEL) para la evaluación del expediente de reclamo. En este caso el operador debe comunicarte que acogió el reclamo, salvo que solicitaste algo que no es materia de reclamo o va contra las normas.\n\nSi el operador no te informa que acogió tu reclamo, puedes solicitar el pronunciamiento del Tribunal presentando ante el OSIPTEL una comunicación escrita adjuntando:\n\n*   Copia del formulario de reclamo; o copia de la información del formulario recibido por correo electrónico o de los SMS, en caso hayas presentado tu reclamo por el canal telefónico.\n*   Copia de la resolución impugnada.\n*   Copia de la constancia de presentación del recurso de apelación; o del correo electrónico o de los SMS con el contenido de lo registrado en el campo del formulario referido a las razones para la apelación, en caso hayas presentado tu recurso por el canal telefónico.\n\nDe manera opcional, puedes adjuntar otra documentación que consideres pertinente.",
+    "source": "0033_cuando_tu_reclamo_o_recurso_de_apelación_es_improcedente.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 301
+  },
+  {
+    "id": 34,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**¿Cómo llenar el formulario?**\n\n**Cómo completar el formulario de quejas**\n\n**Formulario - Datos del usuario**\n\nAl iniciar el formulario debes identificarte. Primero debes elegir si eres abonado, usuario o representante. Luego indicas o ingresas tus datos personales.\n\n*   **Abonado:** personas que contrataron o titulares del servicio.\n*   **Usuario:** personas que utilizan el servicio.\n\n**FORMULARIO DE QUEJA**\n\n**Datos generales**\n**Datos de quién presenta la queja\\***\n**Condición de quién presenta la queja\\***\n**Nombres de quién presenta la queja \\***\n**Apellidos de quién presenta la queja \\***\n**Razón social\\***\n**Tipo de documento de identidad\\***\n**Nro de documento de identidad\\***\n\n(\\*) Campos obligatorios para ser llenados.\n\n**Datos del representante**\nEste formulario debe ser llenado por el abonado o usuario que presentó el reclamo.\n\nSi eres un representante debes presentar una carta poder simple con la firma del abonado o usuario que presentó el reclamo, que acredite que eres tú quien lo está representando.\n\n**Código de queja:**___\n**Nombres del representante\\***\n**Apellidos del representante\\***\n**Tipo de documento de identidad\\***\n**Nro de documento de identidad\\***\nSe adjunta carta poder simple con la firma del usuario\n\nEn la sección: **Datos para la notificación y contacto**, debes ingresar los datos donde deseas que te llegue la respuesta del operador respecto de tu queja.\n\n**Datos para la notificación y contacto**\n**Dirección de correo electrónico**\n**Reclamante autoriza ser notificado por correo: Si/No**\n**Correo electrónico**\n**Departamento\\*** **Provincia\\***\n**Distrito\\*** **Dirección\\***\n**Nro de servicio de telefonía móvil/fija de contacto para cualquier información con relación a la queja**",
+    "source": "0034_cómo_llenar_el_formulario.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 243
+  },
+  {
+    "id": 35,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "En la sección: **Motivo de queja**\nSelecciona el objeto de la queja, esto es, si es por “Falta de respuesta al reclamo”, “No se permitió la presentación de reclamo, recurso de apelación o queja o no se otorgó el código respectivo”, “Suspensión del servicio pese a reclamo en trámite”, entre otros.\n\n**Motivo de la queja**\n**Objeto de la queja\\***\n**Descripción del problema\\***\n**¿Se desea registrar la queja por otro motivo?**\n\nSegún lo que hayas elegido, el formulario te solicitará ingreses información necesaria para que el TRASU (Tribunal del OSIPTEL) pueda resolver tu queja.\n\nNo se permitió la presentación del reclamo, recurso de apelación o queja o no se otorgó el código respectivo.\n**Negativa relacionada a: (opciones)**\n**Presentación del reclamo**\n**Presentación del recurso de apelación**\n**Presentación de la queja**\n\nEn la sección **2. Datos del servicio**\nPrimero debes elegir tu operador. Luego debes especificar el servicio objeto de la queja. Por ejemplo, si tienes contratado con el operador un trío de telefonía fija, acceso a Internet y televisión de paga, aquí solo debes elegir el servicio con el cual tuviste problemas, y ahora requieres presentar una queja.\n\n**2. Datos del servicio**\n**Empresa operadora\\***\n**Servicio objeto de la queja\\*** **Especificar (Otros servicios)**\n\nPor ejemplo, en una queja por no permitir la presentación de tu reclamo, debes ingresar la siguiente información:\n\n**Información necesaria**\n**Brindar código de reclamo**\n**Brindar código de recurso de apelación**\n**Brindar código de la queja**\n**Nro del servicio de reclamado o del contrato del abonado\\***\n**Fecha de la negativa:**\n**Código o Nro del reclamo**\n**Canal donde se intentó presentar el reclamo, apelación o queja: (opciones)**\n**Telefónico**\n**Oficina**\n**Web**\n**Aplicativo**\n**Otros, especificar:**\n\nPuedes adjuntar información o documentos adicionales relacionados a tu recurso de apelación.\n\n**Adjuntar captura de pantalla u otra prueba (opciones:)**\n**Si**\n**No**\n\nRecuerda que debes incluir el código de reclamo, en caso la queja se encuentre relacionada a un reclamo en trámite.\n\n**Materia del reclamo o la queja que se intentó presentar:**\n\nEn la parte **descripción de problema y solicitud concreta** podrás expresar todo lo relacionado a tu queja.\n\n**Información adicional**\n**¿Se adjunta información adicional?**\n\nEn caso requieras registrar una queja por otro problema con el mismo servicio, responde sí a esta pregunta.\n\n**Fecha: __/__/__ Hora: __:__:**\n**Información adicional:**\n\nPuedes adjuntar información o documentos adicionales relacionados a tu queja.",
+    "source": "0035_en_la_sección_motivo_de_queja.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 380
+  },
+  {
+    "id": 36,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Temas de quejas (Tipos de queja)**\n\n**1. No te contestan oportunamente a tu reclamo**\nPuedes reclamar que no te encuentras conforme con los montos facturados en tu recibo o requerimientos de pago.\n\n**Casos comunes**\nCuando presentaste un reclamo por calidad y transcurridos 8 días hábiles no recibes respuesta del operador; a partir del noveno día hábil puedes presentar una queja.\n\nAl evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.\n\n**Posibles resultados:** Si tu queja es fundada con aplicación del silencio administrativo positivo, el operador debe cumplir con lo ordenado por el TRASU (Tribunal del OSIPTEL), en el plazo establecido según la materia de reclamo que presentaste.\n\nSi tu queja es fundada sin aplicación del silencio administrativo positivo no se ordena nada al operador.\n\n**2. Suspensión o corte del servicio con reclamo en trámite**\nPuedes presentar una queja cuando suspenden o cortan tu servicio por falta de pago el cual se encuentra cuestionado en un procedimiento de reclamo.\n\n**Casos comunes**\nCuando el operador suspende tu servicio por la falta de pago de un importe reclamado.\n\nAl evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.\n\n**Posibles resultados:** Si tu queja es a tu favor, el operador debe reconectar el servicio siempre que se encuentre suspendido en el plazo de un 1 día hábil siguiente a la fecha en que se notifica la resolución.\n\nTu servicio no podrá ser reactivado si se presenta alguna de las siguientes circunstancias:\n\n*   Falta de pago de un recibo distinto al reclamado u otro motivo justificado.\n*   Falta de pago de la parte no reclamada.\n*   La suspensión se encuentra justificada por el OSIPTEL como el uso indebido o prohibido del servicio.\n*   El reclamo es improcedente por no ser materia de reclamo.\n*   El reclamo fue presentado o encauzado a la materia de calidad e idoneidad en la prestación del servicio o falta del servicio.",
+    "source": "0036_temas_de_quejas_tipos_de_queja.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 321
+  },
+  {
+    "id": "37-1",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**3. No reciben reclamos, apelaciones o quejas** Puedes presentar una queja si el operador se niega a recibir tu reclamo, apelación o queja vía telefónica, presencial o web.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 28
+  },
+  {
+    "id": "37-2",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Casos comunes**",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 2
+  },
+  {
+    "id": "37-3",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "* Cuando el operador se niega a generar tu reclamo, apelación o queja solicitada vía telefónica. * Cuando el operador se niega a recibir tu reclamo, apelación o queja solicitada de forma presencial. * Cuando no puedas generar tu reclamo, apelación o queja en la página web del operador.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 49
+  },
+  {
+    "id": "37-4",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Al evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 15
+  },
+  {
+    "id": "37-5",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Posibles resultados:** Si tu queja es fundada, el operador debe registrar tu reclamo, apelación o queja en la fecha que lo solicitaste, en el plazo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 39
+  },
+  {
+    "id": "37-6",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**4. Por la negativa a otorgarte el código de reclamo, apelación o queja** Puedes presentar tu queja cuando el operador se niega a brindarte el código de reclamo o queja por la vía presencial o telefónica.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 36
+  },
+  {
+    "id": "37-7",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Casos comunes** Cuando el operador se niega a entregarte el código de reclamo, apelación o queja por la vía presencial o telefónica.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 22
+  },
+  {
+    "id": "37-8",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Al evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 15
+  },
+  {
+    "id": "37-9",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Posibles resultados:** Si tu queja es fundada, el operador debe otorgarte el código de reclamo, apelación o queja, en el plazo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 35
+  },
+  {
+    "id": "37-10",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**5. No puedes realizar el pago del monto no reclamado** Puedes presentar una queja, por la negativa de la empresa a recibir el pago a cuenta del monto que no es materia de reclamo vía web o presencial.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 38
+  },
+  {
+    "id": "37-11",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Debes remitir la constancia de la negativa, para verificar el motivo de la queja, de lo contrario, podría ser declarada infundada.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 21
+  },
+  {
+    "id": "37-12",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Documentos que debes adjuntar:** Capturas de pantalla del aplicativo del operador con el cual se verificará las dificultades que tuviste para realizar el pago del importe que no reclamaste o alguna otra constancia de la negativa.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 36
+  },
+  {
+    "id": "37-13",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Casos comunes**",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 2
+  },
+  {
+    "id": "37-14",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "* Cuando no puedas realizar el pago del importe del recibo que no fue reclamado a través del aplicativo de la empresa operadora. * Cuando el operador se niega a recibirte el importe del recibo que no fue reclamado.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 39
+  },
+  {
+    "id": "37-15",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Al evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 15
+  },
+  {
+    "id": "37-16",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "El documento que acredita la negativa de la empresa debe ser remitido para verificar lo que señalaste, de lo contrario la queja será declarada infundada.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 25
+  },
+  {
+    "id": "37-17",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Posibles resultados:** Si tu queja es fundada, el operador debe actualizar su sistema de pago y permitirte el pago del monto que no ha sido reclamado, en el plazo de 10 días hábiles siguientes a la fecha en que se notifica la resolución.",
+    "source": "0037_3_no_reciben_reclamos_apelaciones_o_quejas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 43
+  },
+  {
+    "id": 38,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**6. Te exigen el pago del monto reclamado**\nPuedes presentar una queja en caso el operador te exija el pago del importe reclamado a través de una carta de cobranza o un recibo.\n\n**Documentos que debes adjuntar:**\nCarta de cobranza o recibo a través del cual se estaría requiriendo el pago del monto reclamado.\n\n**Casos comunes**\nCuando la empresa operadora te exija el pago del importe reclamado a través de una carta de cobranza o un recibo.\n\nAl evaluar tu queja, el operador debe revisar los medios probatorios que requiere en OSIPTEL.\n\n**Posibles resultados:** Si tu queja es fundada, el operador no podrá requerirte el pago del importe reclamado mientras el procedimiento de reclamo no haya concluido.\n\n**Resultados que obtendrás**\nExisten 5 resultados que tu queja puede tener, revisa cada uno de ellos:\n\n**Cuando tu queja se encuentra fundada**\nSignifica que tienes la razón debido a que el Tribunal ha concluido que el operador cometió un error en el procedimiento.\n\n**Cuando tu queja se encuentra infundada**\nSignifica que no tienes la razón debido a que el Tribunal ha concluido que el operador no cometió error en el procedimiento.\n\n**Cuando tu queja se encuentra sin efecto de elevación**\nSignifica que el operador remitió una queja distinta o no ha remitido la documentación obligatoria al Tribunal para la evaluación del expediente.\n\nEn estos casos puedes solicitar el pronunciamiento del Tribunal presentando ante OSIPTEL una comunicación escrita adjuntado:\n\n*   Código de la queja presentada ante el operador.\n*   Copia de la información del formulario de queja recibido por correo electrónico o por SMS, de haber sido realizada por el canal telefónico.\n*   Copia del cargo o constancia de recepción de la queja ante el operador, de haber sido presentada por escrito, personalmente, vía página web o aplicativo.\n\nDe manera opcional, puedes adjuntar otra documentación que consideres pertinente.",
+    "source": "0038_6_te_exigen_el_pago_del_monto_reclamado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 304
+  },
+  {
+    "id": "39-1",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Cuando tu queja se encuentra inadmisible** Ello sucede cuando falta algún requisito en la queja. Lo cual ocurre, en las siguientes circunstancias:",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 22
+  },
+  {
+    "id": "39-2",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "* Cuando no es la persona que inició la queja o no es el abonado del servicio o no remitió el respectivo poder de representación. * Cuando la solicitud y los fundamentos que motivan la interposición de la queja no son claros. * Cuando, en las quejas por facturación, no indicaste la fecha o mes de emisión o vencimiento del recibo o el número de queja. * Cuando no se señala el código de reclamo relacionado a tu queja.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 79
+  },
+  {
+    "id": "39-3",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "En estos casos, se te otorga un plazo para enviar la documentación y/o información faltante, de no hacerlo se archivará el caso.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 22
+  },
+  {
+    "id": "39-4",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Cuando tu queja resulta improcedente** Significa que el Tribunal no puede analizar la queja, debido a las siguientes circunstancias:",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 19
+  },
+  {
+    "id": "39-5",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "* El Tribunal y el operador no tienen competencia para resolver la queja. * Cuando el operador aplicó el silencio administrativo positivo antes de la presentación de tu queja por falta de respuesta. * La queja ya fue resuelta en otro expediente o existe otro en trámite presentado previamente. * Presentaste una queja por falta de respuesta, pese a que el operador aún está en plazo para resolver y/o notificar su reclamo.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 72
+  },
+  {
+    "id": "39-6",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Otras definiciones de una segunda instancia**",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 6
+  },
+  {
+    "id": "39-7",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Aclaración** Es una resolución emitida con posterioridad a la resolución final cuya finalidad es explicar el sustento o interpretación de algún punto de la decisión.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 25
+  },
+  {
+    "id": "39-8",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Enmienda** Es una resolución emitida con la finalidad de corregir un error material en una resolución emitida previamente, sin alterar el sentido de la misma.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 25
+  },
+  {
+    "id": "39-9",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Nulidad** Significa que la resolución emitida no cuenta con un requisito de validez, y por tanto corresponde que se emita un nuevo pronunciamiento.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 23
+  },
+  {
+    "id": "39-10",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Ampliar** Significa que por la complejidad del caso se extiende el plazo que tiene el Tribunal para resolver.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 18
+  },
+  {
+    "id": "39-11",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Archivar** Significa que no has enviado la documentación y/o información faltante en el plazo otorgado por el Tribunal, y en consecuencia no se emite un pronunciamiento sobre tu reclamo, recurso o queja.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 32
+  },
+  {
+    "id": "39-12",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Solicitar** Significa que tú y/o el operador deben remitir la documentación solicitada por el Tribunal para poder resolver. Se le otorga un plazo para enviar la documentación faltante.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 28
+  },
+  {
+    "id": "39-13",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "En caso tú y/o el operador no lo hagan, se resolverá con la documentación que se encuentre en el expediente. Asimismo, con esta resolución se suspenden los plazos que tiene el Tribunal para emitir la resolución.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 36
+  },
+  {
+    "id": "39-14",
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "2. ¿Cómo hacer tu quejas?",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Dar por concluida** Significa que ha finalizado el procedimiento de quejas debido a que la empresa ha decidido otorgarte lo requerido a tu favor.",
+    "source": "0039_cuando_tu_queja_se_encuentra_inadmisible.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 24
+  },
+  {
+    "id": 40,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "3. Diccionario de términos",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Abonado**\nEs la persona natural o jurídica que tiene un contrato de servicios con alguna de las empresas de telecomunicaciones.\n\n**Código de reclamo**\nCódigo o número de identificación del reclamo generado por la empresa de telecomunicaciones al momento de su presentación.\n\n**Denuncias**\nLa denuncia es el mecanismo mediante el cual los abonados o usuarios comunican al OSIPTEL que la empresa no ha cumplido con ejecutar lo resuelto respecto de su reclamo, apelación o queja.\n\n**Días hábiles**\nUn día hábil es aquel que no es sábado, domingo o feriado. El concepto de día hábil es muy importante en los procedimientos de reclamos.\nEjemplo: Si tenemos 15 días hábiles para presentar un recurso de apelación en la empresa, tendríamos que hacerlo en días laborables de Lunes a Viernes.\n\n**Quejas**\nLa queja es el mecanismo mediante el cual el abonado o usuario manifiesta problemas en la tramitación del procedimiento de reclamo. Las quejas se presentan en tu misma empresa de telecomunicaciones por los siguientes supuestos:\n\n*   Si la empresa no responde tu reclamo, puedes solicitar la aplicación del silencio administrativo positivo.\n*   Si la empresa suspende o corta tu servicio durante el procedimiento de reclamo.\n*   Si la empresa requiere el pago de un monto que se encuentra dentro de un procedimiento de reclamo, o por la negativa a recibir el pago a cuenta del monto que no ha sido reclamado.\n*   Por la negativa a recibir el reclamo, recurso o queja; o por la negativa a otorgar el número o código de identificación del reclamo, recurso o queja.\n\n**Reclamos**\nEl reclamo es el mecanismo mediante el cual los abonados o usuarios de los servicios de telecomunicaciones manifiestan ante las empresas operadoras los inconvenientes derivados de la prestación de sus servicios contratados, buscando una solución definitiva.\n\nLos reclamos son presentados por vías telefónicas, de forma presencial, por escrito y por página web, éstas están obligadas a brindarte una respuesta dentro del plazo señalado en la normativa.",
+    "source": "0040_abonado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 323
+  },
+  {
+    "id": 41,
+    "nombre_doc": "Guía de reclamos y quejas en el servicio público de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "3. Diccionario de términos",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Recurso de apelación**\nEl recurso de apelación es el mecanismo que tiene el abonado o usuario para que el Tribunal del OSIPTEL (TRASU) revise su reclamo, en caso no se encuentre de acuerdo con la respuesta de la empresa.\n\nEste recurso se presenta en la misma empresa de telecomunicaciones dentro del plazo de quince (15) días hábiles contados al día hábil siguiente de haber recibido la respuesta de la empresa.\n\n**Reporte de avería**\nEl reporte por avería se presenta en la empresa ante problemas de calidad y avería de sus servicios.\n\nLa empresa debe atender el reporte por problemas de calidad y avería en un plazo máximo de un (1) día calendario.\n\nEn los casos de centros poblados rurales de servicios fijos tiene un plazo máximo de dos (2) días calendario.\n\n**SAR (Solución anticipada del reclamo)**\nLa Solución Anticipada de Reclamo (SAR) permite a la empresa operadora ofrecerte una solución (parcial o total) a tu problema con el servicio. Si estás de acuerdo, el procedimiento de reclamo no se inicia o concluye. La empresa debe brindarte el código SAR e informarte el plazo de ejecución de la solución acordada.\n\n**Silencio administrativo**\nEn los procedimientos de reclamo del OSIPTEL, el silencio administrativo positivo aplica cuando la empresa no brindó respuesta a tu reclamo, en el plazo establecido, o no se pronunció sobre algún extremo del reclamo.\n\n**Usuario**\nEs la persona natural o jurídica que tiene acceso a obtener un servicio de telecomunicaciones.",
+    "source": "0041_recurso_de_apelación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de reclamos y quejas en el servicio público de telecomunicaciones.json",
+    "num_palabras": 241
+  }
+]

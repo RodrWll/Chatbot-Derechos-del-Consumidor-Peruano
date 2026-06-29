@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 1.- Objeto\nLa presente norma establece el alcance, las condiciones, los roles y responsabilidades y las etapas del proceso de gestión de reclamos ante las entidades de la Administración Pública, estandarizando el registro, atención y respuesta, notificación y seguimiento de los reclamos interpuestos por las personas.",
+    "source": "0001_artículo_1_objeto.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 47
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 2.- Finalidad\nLa presente norma tiene por finalidad establecer disposiciones para la gestión de reclamos como parte del modelo para la gestión de la calidad de servicio en las entidades públicas, que les permita identificar e implementar acciones que contribuyan a mejorar la calidad de la prestación de los bienes y servicios, lo cual se encuentra dentro del marco de las acciones principales del proceso de Modernización de la Gestión Pública.",
+    "source": "0002_artículo_2_finalidad.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 72
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 3.- Ámbito de aplicación\n3.1 La presente norma es de aplicación obligatoria para las entidades públicas señaladas en el numeral 3.1 del artículo 3 de los Lineamientos de Organización del Estado, aprobados mediante Decreto Supremo Nº 054-2018-PCM; que prestan bienes y servicios de información, orientación, atención de trámites u otros a los ciudadanos, en el marco de sus atribuciones y competencias legalmente asignadas.\nPara efectos de la presente norma, las Fuerzas Armadas y la Policía Nacional del Perú tienen el mismo tratamiento que las entidades públicas citadas en el párrafo precedente.\n3.2 Se encuentran fuera del alcance de la presente norma los reclamos que se deriven de los servicios de salud que se sujetan a las disposiciones del Decreto Supremo Nº 002-2019-SA o norma que la sustituya.\n3.3 Las disposiciones de la presente norma son de aplicación para el Fondo Nacional de Financiamiento de la Actividad Empresarial del Estado - FONAFE y las empresas bajo su ámbito que no cuenten con normativa especial que regule un procedimiento específico de atención de los reclamos que le son presentados en el ámbito de su competencia.\nSe encuentran fuera del alcance de la presente norma las empresas en liquidación bajo el ámbito de FONAFE.\n3.4 Las entidades o empresas que cuentan con normativa especial en gestión de reclamos en el marco de las disposiciones de protección y defensa del consumidor, del sistema financiero y de seguros y de los servicios públicos regulados; pueden aplicar de manera supletoria el presente Decreto Supremo, en lo que resulte pertinente y en tanto no contravengan lo dispuesto por su propia normativa especial.\n3.5 Las entidades o empresas que se encuentran excluidas del ámbito de aplicación de la presente norma, les corresponde informar anualmente a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros, los reclamos que les hayan sido presentados para su atención bajo la normativa que les aplique, conforme a lo que establezca la Secretaría de Gestión Pública.",
+    "source": "0003_artículo_3_ámbito_de_aplicación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 326
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 4.- Reclamo\n4.1 El reclamo es el mecanismo de participación de la ciudadanía a través del cual las personas, expresan su insatisfacción o disconformidad ante la entidad de la Administración Pública que lo atendió o le prestó un bien o servicio.\n4.2 De manera enunciativa, el reclamo puede versar sobre los siguientes aspectos: (i) trato profesional durante la atención; (ii) información (iii) tiempo de atención, (iv) acceso a la prestación de los bienes y servicios (v) resultado de la gestión o atención, (vi) confianza de la entidad ante las personas; entre otros, los cuales pueden ser adaptados o modificados de manera periódica como consecuencia del análisis que realice la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros respecto de los reclamos interpuestos.",
+    "source": "0004_artículo_4_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 126
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 5.- Libro de Reclamaciones\n5.1 La plataforma digital que soporta la gestión de reclamos se denomina “Libro de Reclamaciones”, la cual permite realizar el registro del reclamo y su seguimiento por parte de los ciudadanos, así como a las entidades efectuar la gestión del reclamo, la supervisión de la atención, la obtención de información detallada y estadística para la toma de decisiones de la Alta Dirección que coadyuven a la mejora continua de los bienes y servicios que prestan las entidades.\nLas entidades deben contar como medio de respaldo con un Libro de Reclamaciones en versión física, en caso de suspensión temporal de la plataforma digital a fin de facilitar al ciudadano el registro del reclamo para su posterior incorporación en la plataforma digital para asegurar la gestión del reclamo.\n5.2 El acceso al Libro de Reclamaciones en su versión digital, se realiza a través de la Plataforma Digital Única del Estado para orientación al ciudadano, denominada Plataforma GOB.PE.\nEn el caso de aquellas entidades que aún no han migrado su página web institucional a la Plataforma GOB.PE, deben asegurar el acceso al Libro de Reclamaciones en su versión digital desde la referida página web institucional, en tanto dure el periodo de migración correspondiente, conforme a los plazos establecidos en el Decreto Supremo Nº 033-2018-PCM, que crea la Plataforma Digital Única del Estado Peruano y establece disposiciones adicionales para el desarrollo del Gobierno Digital.\n5.3 En el caso de las entidades de la Administración Pública que no cuenten con las condiciones tecnológicas, el Libro de Reclamaciones, por excepción, se constituye en versión física y permite el registro de los reclamos.\n5.4 El registro en el Libro de Reclamaciones en su versión física o digital se realiza en un formato al que se le asigna un código correlativo.\n5.5 Corresponde un único Libro de Reclamaciones por cada entidad, independientemente del número de sedes o el uso de su versión física o digital.\n5.6 En el caso de reclamos vinculados con bienes o servicios, según corresponda, prestados por diversas entidades públicas a través de la Plataforma de Mejor Atención al Ciudadano (MAC) y Ventanillas Únicas, los reclamos son registrados en el Libro de Reclamaciones de la entidad administradora a cargo de la Plataforma MAC y Ventanilla Única, según sea el caso, cuya atención se realiza conforme con lo establecido en el artículo 16.",
+    "source": "0005_artículo_5_libro_de_reclamaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 392
+  },
+  {
+    "id": "6-1",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 6.- Responsabilidades de la Presidencia del Consejo de Ministros 6.1 Corresponde a la Presidencia del Consejo de Ministros, a través de la Secretaría de Gestión Pública, lo siguiente: a) Proponer o aprobar, según corresponda, las disposiciones complementarias que resulten necesarias para el cumplimiento de lo dispuesto en el presente Decreto Supremo. b) Conducir, implementar y desplegar el proceso de gestión de reclamos, así como administrar la plataforma digital “Libro de Reclamaciones”. c) Monitorear y evaluar el proceso de gestión de reclamos en las entidades de la Administración Pública, así como su vinculación con la identificación e implementación de oportunidades de mejora de la prestación de los bienes y servicios, en el marco del modelo para la gestión de la calidad de servicios en el sector público. d) Evaluar el cumplimiento de las disposiciones de la presente norma por parte del Responsable del proceso de gestión de reclamos. e) Brindar asistencia técnica a las entidades de la Administración Pública y ciudadanos en la implementación y ejecución del proceso de gestión de reclamos, de acuerdo a las disposiciones del presente Decreto Supremo. f) Realizar talleres de capacitación y difusión al personal de las entidades públicas sobre el proceso de gestión de reclamos para su debida aplicación, de acuerdo con el cronograma que apruebe. g) Promover la articulación entre las entidades públicas frente a problemas sistémicos. h) Establecer los mecanismos que permitan resolver las contingencias, conflictos, controversias o problemas que surjan durante la ejecución del proceso de gestión de reclamos que afecten su continuidad; así como, interpretar las disposiciones del presente Decreto Supremo. 6.2 Corresponde a la Presidencia del Consejo de Ministros a través de la Secretaría de Gobierno Digital, lo siguiente: a) Liderar el diseño de la plataforma digital “Libro de Reclamaciones”, en base a los requerimientos funcionales que define la Secretaría de Gestión Pública. b) Implementar, desarrollar, desplegar y dar mantenimiento a la plataforma digital “Libro de Reclamaciones”. c) Capacitar a la Secretaría de Gestión Pública sobre la administración y funcionalidades de la plataforma digital. d) Brindar soporte técnico para resolver incidentes tecnológicos y contingencias que afecten o puedan afectar la disponibilidad y funcionamiento de la plataforma digital, así como también aspectos relacionados a los controles de acceso lógico. e) Brindar el respaldo tecnológico, la interoperabilidad, datos, arquitectura, seguridad e identidad digital necesarios para la implementación, escalabilidad, sostenibilidad y funcionamiento de la plataforma digital “Libro de Reclamaciones”, cuando corresponda. f)",
+    "source": "0006_artículo_6_responsabilidades_de_la_presidencia_del_consejo_d.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "6-2",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Garantizar la interoperabilidad de los sistemas informáticos a fin de asegurar el intercambio de información.",
+    "source": "0006_artículo_6_responsabilidades_de_la_presidencia_del_consejo_d.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 15
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 7.- Responsabilidades de la máxima autoridad administrativa de cada entidad\nLa máxima autoridad administrativa de las entidades de la Administración Pública o quien esta delegue, tiene las siguientes responsabilidades:\na) Garantizar el cumplimiento de las disposiciones del presente Decreto Supremo, asegurando los recursos humanos, la provisión de materiales y la optimización de los procesos internos para la gestión de los reclamos.\nb) Garantizar la infraestructura tecnológica y demás condiciones requeridas, cuando exista la obligación de utilizar la plataforma digital administrada por la Presidencia del Consejo de Ministros.\nc) Garantizar el acceso de las personas al Libro de Reclamaciones en su versión digital a través de la Plataforma GOB.PE de acuerdo a lo establecido en el numeral 5.2 del artículo 5 del presente Decreto Supremo; por lo menos, en un equipo informático en cada sede de la entidad; salvo que no cuenten con las condiciones tecnológicas requeridas.\nd) Designar formalmente a los funcionarios o servidores civiles como Responsable titular y alterno, encargados de asegurar el correcto cumplimiento del proceso de gestión de reclamos de la entidad, comunicando dicha designación a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros dentro de los tres (03) días hábiles de efectuada la designación, a través de comunicación escrita notificada en físico mediante oficio o al correo electrónico gestionreclamaciones@pcm.gob.pe; debiendo adjuntar el documento que acredite dicha designación. En el caso de las entidades obligadas a utilizar el Libro de Reclamaciones en su versión digital, el registro del responsable del proceso de gestión de reclamos, se efectúa en dicha plataforma digital.\ne) Evaluar los resultados del proceso de gestión de reclamos, procurando la implementación de acciones de mejora continua a los procesos de gestión interna o a la prestación de bienes y servicios que brinda la entidad pública, en el marco del modelo para la gestión de la calidad de servicios en el sector público.",
+    "source": "0007_artículo_7_responsabilidades_de_la_máxima_autoridad_administ.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 313
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 8.- Del Responsable del proceso de gestión de reclamos\n8.1 Corresponde al Responsable designado, gestionar de manera oportuna e idónea los reclamos correspondientes a la prestación de los bienes y servicios dentro de su ámbito de competencia, así como implementar y utilizar la plataforma digital Libro de Reclamaciones según corresponda, en la entidad y sus canales de atención; coordinar la atención oportuna y la idoneidad de la respuesta con las áreas involucradas de la entidad; y, mantener actualizada la información institucional sobre el proceso de gestión de reclamos de la entidad, de acuerdo a las disposiciones del artículo 13 y siguientes del presente Decreto Supremo.\n8.2 De considerarlo pertinente, el Responsable del proceso de gestión de reclamos puede delegar, total o parcialmente, en el o los encargados por sede, las acciones que le corresponden dentro del proceso de gestión de reclamos; debiendo brindarles la respectiva asistencia técnica respecto de dicho proceso.\n8.3 Corresponde al Responsable del proceso de gestión de reclamos, registrar en la plataforma digital de la Presidencia del Consejo de Ministros, la identificación de los encargados, titular y alterno, del Libro de Reclamaciones en cada sede.\nEn el caso de las entidades de la Administración Pública que cuenten únicamente con el Libro de Reclamaciones en su versión física o que utilicen un sistema informático propio o particular debidamente autorizado por la Presidencia del Consejo de Ministros de acuerdo con el numeral 3 de la Primera Disposición Complementaria Transitoria del presente Decreto Supremo, corresponde al Responsable del proceso de gestión de reclamos, informar a la Presidencia del Consejo de Ministros, la identificación de los encargados, titular y alterno, del Libro de Reclamaciones en cada sede.",
+    "source": "0008_artículo_8_del_responsable_del_proceso_de_gestión_de_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 277
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 9.- De los encargados de la entidad en cada una de sus sedes\nCorresponde a los encargados por sede, la atención de incidentes, asegurar la disponibilidad y acceso del Libro de Reclamaciones en su versión física o digital, según corresponda; así como brindar información y asistencia técnica a las personas que desean presentar su reclamo.",
+    "source": "0009_artículo_9_de_los_encargados_de_la_entidad_en_cada_una_de_su.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 56
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 10.- Deber de atención de reclamos\nTodos los funcionarios y servidores civiles de la entidad pública, de manera conjunta con el Responsable del proceso de gestión de reclamos, tienen el deber de atender los reclamos presentados para garantizar la oportunidad e idoneidad de las respuestas a los mismos.",
+    "source": "0010_artículo_10_deber_de_atención_de_reclamos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 49
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 11.- De la difusión del Libro de Reclamaciones\n11.1 Corresponde a cada entidad de la Administración Pública informar a las personas sobre la existencia del Libro de Reclamaciones y el proceso de atención de los reclamos.\n11.2 Se debe difundir en lugares accesibles y visibles la existencia del Libro de Reclamaciones de las entidades de la Administración Pública, el derecho que poseen las personas para solicitarlo cuando lo consideren conveniente, el horario y plazo de atención, conforme a la señalética aprobada de acuerdo a lo establecido en la Primera Disposición Complementaria Final del presente Decreto Supremo.",
+    "source": "0011_artículo_11_de_la_difusión_del_libro_de_reclamaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 97
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 12.- De la atención de incidentes\nCuando una persona comunica o informa la ocurrencia de un incidente que afecta la atención o prestación del bien o servicio recibido, corresponde a las entidades de la Administración Pública procurar su solución, de forma inmediata y de manera previa al registro del reclamo.",
+    "source": "0012_artículo_12_de_la_atención_de_incidentes.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 51
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 13.- De las etapas del proceso de gestión de reclamos\nEl proceso de gestión de reclamos tiene las siguientes etapas:\na) Del registro del reclamo\nb) De la atención y respuesta del reclamo\nc) De la notificación de la respuesta",
+    "source": "0013_artículo_13_de_las_etapas_del_proceso_de_gestión_de_reclamos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 41
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 14.- Del plazo de atención\nEl plazo máximo de atención y respuesta de los reclamos es de treinta (30) días hábiles, contados desde el día siguiente de su registro en el Libro de Reclamaciones en su versión física o digital.",
+    "source": "0014_artículo_14_del_plazo_de_atención.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 41
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 15.- Del registro del reclamo\n15.1 Las personas tienen derecho a registrar un reclamo en el Libro de Reclamaciones en su versión física o digital, independientemente de si el incidente fue o no solucionado por la entidad.\nEl reclamo presentado en lengua originaria no puede ser rechazado.\n15.2 El registro del reclamo, y en general todo el proceso de gestión del reclamo, es de carácter gratuito y no genera costo alguno a la persona que lo presente.\n15.3 La entidad debe brindar orientación y asistencia técnica durante el registro del reclamo. De identificar que no se trata de un reclamo bajo los alcances de la presente norma, las entidades comunican a la persona sobre las vías de tramitación que tienen a su disposición, según cada caso en particular.\n15.4 El reclamo debe contener información clara y suficiente sobre los datos personales de quién recibió la atención, bien o servicio, y en general de la situación que da lugar al reclamo, según el formato de registro en su versión física y digital aprobado conforme a lo establecido en la Primera Disposición Complementaria Final del presente Decreto Supremo.\n15.5 Las personas pueden complementar el registro de su reclamo presentando los medios o documentos que estimen pertinentes para facilitar la evaluación por parte de la entidad. El registro del reclamo no puede ser rechazado por no estar acompañado de medios o documentos que lo sustenten.\n15.6 Las entidades de la Administración Pública proporcionan de manera inmediata, una copia del registro del reclamo consignado en el Libro de Reclamaciones en su versión física o digital, a la persona que lo presenta.\n15.7 En el caso que una entidad pública obligada a utilizar el Libro de Reclamaciones en su versión digital haya recibido un reclamo registrado en un medio distinto a este, corresponde que el Responsable del Proceso de Gestión de Reclamos traslade de manera clara y precisa la información a través de los medios disponibles que permitan su inclusión en la plataforma digital, incluyéndose la referencia de la codificación del reclamo presentado inicialmente.\nEl traslado de la información debe realizarse en el plazo máximo de dos (2) días hábiles de recibido el reclamo.",
+    "source": "0015_artículo_15_del_registro_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 360
+  },
+  {
+    "id": "16-1",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 16.- De la atención y respuesta del reclamo 16.1 De la derivación del reclamo.- El Responsable del proceso de gestión de reclamos cuenta con un plazo no mayor a tres (3) días hábiles, contados a partir del día siguiente de presentado el reclamo, para efectuar las siguientes acciones: a) Determinar si el bien o servicio objeto de reclamo se encuentra bajo las disposiciones del presente Decreto Supremo y si la entidad es competente para atender el reclamo. En caso la evaluación efectuada determina que no corresponde su tramitación bajo los alcances del presente Decreto Supremo o la entidad no es competente, se efectúa la derivación interna o externa, según corresponda, y se notifica de dicha situación a la persona que presentó el reclamo. En este último caso, la entidad pública que recibe el reclamo continúa con su trámite, incorporando la referencia de la codificación del reclamo presentado inicialmente. En el caso de que se haya registrado quejas o denuncias en el Libro de reclamaciones en su versión física o digital, la unidad de organización competente de atender quejas o denuncias en la entidad pública, continúa con su trámite bajo el procedimiento legal establecido o que se establezca. El plazo de treinta (30) días hábiles para que la entidad competente atienda y resuelva el reclamo comienza a computarse desde el día siguiente de su recepción. b) En caso la evaluación efectuada determina que corresponde su tramitación en la entidad, debe verificar que la información consignada en el formato de registro sea la necesaria y cuente con los datos esenciales o campos obligatorios que permitan atender el reclamo. De determinar que se cuenta con la información necesaria, deriva el reclamo a la unidad de organización cuyo bien o servicio ha sido objeto de reclamo. De determinar que no se cuenta con la información necesaria para atender el reclamo, se otorga a la persona un único plazo de dos (2) días hábiles para que subsane la omisión detectada o aquella información que no sea legible, en cuyo caso se suspende el plazo de atención y respuesta. De incumplir con lo requerido en dicho plazo, el reclamo se archiva, pudiendo la persona interponer nuevamente el mismo reclamo con la información completa. c) En el caso de reclamos vinculados con bienes o servicios, según corresponda, prestados por diversas entidades públicas a través de la Plataforma de Mejor Atención al Ciudadano (MAC) y las Ventanillas",
+    "source": "0016_artículo_16_de_la_atención_y_respuesta_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "16-2",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Únicas, los reclamos son derivados por la entidad administradora a la entidad pública cuyo bien o servicio es objeto de reclamo. 16.2 De la respuesta del reclamo.- La unidad de organización de la entidad pública cuyo bien o servicio ha motivado el reclamo, es la responsable de dilucidar los hechos, analizar los medios aportados y proyectar la respuesta al reclamo. Dicho proyecto de respuesta es remitido al Responsable del proceso de gestión de reclamos, para su evaluación y posterior notificación a la persona. En el caso de reclamos vinculados con bienes o servicios, según corresponda, prestados por diversas entidades públicas a través de la Plataforma de Mejor Atención al Ciudadano (MAC) y las Ventanillas Únicas, dicha respuesta es proyectada por la entidad pública cuyo bien o servicio es objeto de reclamo, quien la deriva a la entidad administradora para que verifique que la respuesta atiende todos los aspectos del reclamo. La respuesta determina si el reclamo es aceptado o denegado: a) Aceptado: Para los casos en los cuales de manera sustentada se acoge el reclamo de la persona. En este caso, de corresponder, se señalan adicionalmente las medidas correctivas a adoptar. De manera excepcional, y conforme a la evaluación del reclamo presentado, se puede establecer medios de restitución del bien o servicio. b) Denegado: Para los casos en los que de manera sustentada se deniega el reclamo presentado por la persona. 16.3 Durante la atención y formulación de la respuesta, pueden suscitarse las siguientes situaciones: a) Acumulación de reclamos en trámite.- El Responsable del proceso de gestión de reclamos puede disponer la acumulación de reclamos para que sigan un mismo trámite y se emita una única respuesta cuando se trate de reclamos presentados por una misma persona que coincidan en la entidad pública y sede, fecha del evento, y descripción del evento; independientemente si los motivos del reclamo son distintos. Los reclamos se acumulan y referencian al reclamo de mayor antigüedad. b) De la duplicidad de reclamos resueltos.- Existe duplicidad cuando dos reclamos son presentados por una misma persona y coinciden en la entidad pública, sede, fecha del evento, descripción del evento y motivo del reclamo, y esta situación se dé siempre que el reclamo más antiguo ya haya sido notificado y el nuevo reclamo se encuentre en proceso de atención. En este caso, el Responsable del proceso de gestión procede a archivar el nuevo reclamo, comunicando dicha situación a",
+    "source": "0016_artículo_16_de_la_atención_y_respuesta_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "16-3",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "la persona en un plazo de cinco (5) días hábiles posterior al archivo. c) Del desistimiento del reclamo.- Hasta antes de la notificación de la respuesta, la persona puede desistirse de continuar con el reclamo, dejando constancia de dicha situación. Ante ello, el Responsable del proceso de gestión procede a archivar el reclamo.",
+    "source": "0016_artículo_16_de_la_atención_y_respuesta_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 53
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 17.- De la notificación de la respuesta\n17.1 El responsable del proceso de gestión de reclamos notifica la respuesta del reclamo a partir del día siguiente de expedida la misma, en el domicilio físico que la persona haya consignado en su reclamo o en la sede de la entidad, de haberse solicitado, con lo cual se agota el proceso de gestión de reclamos.\nEn caso la persona haya autorizado se le notifique mediante correo electrónico o a través del servicio de mensajes cortos (SMS), esta se dará de manera automática el mismo día de expedida la respuesta.\n17.2 La notificación en el domicilio indicado por la persona, se realiza por única vez. De haberse registrado un domicilio fuera del territorio nacional, la notificación se efectúa al correo electrónico consignado en el formato de registro del reclamo.\nEn el caso que la persona no haya completado su dirección o que ésta sea inexistente, la notificación se realiza en el domicilio señalado en el Documento Nacional de Identidad o Carné de Extranjería.\nLa notificación puede ser recibida por la persona que consignó el reclamo o por cualquier persona mayor de edad que se encuentre en el domicilio.\n17.3 En el caso de la notificación en la sede de la entidad, la persona tiene un plazo de treinta (30) días hábiles para recoger la respuesta, contados desde el día siguiente de vencido el plazo de atención señalado en el artículo 14 del presente Decreto Supremo.\n17.4 Las notificaciones distintas a la respuesta, se efectúan al número de teléfono celular indicado por la persona en el formato de registro.",
+    "source": "0017_artículo_17_de_la_notificación_de_la_respuesta.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 266
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 18.- Del archivo del reclamo\n18.1 Las entidades son responsables del archivo y custodia del Libro de Reclamaciones en su versión física, de acuerdo con las normas del Sistema Nacional de Archivos.\n18.2 En el caso del Libro de Reclamaciones en su versión digital, la plataforma digital mantiene la información de los reclamos tramitados por esta vía por el plazo de tres (3) años.",
+    "source": "0018_artículo_18_del_archivo_del_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 65
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 19.- Monitoreo y evaluación del proceso de gestión de reclamos en la entidad pública\n19.1 El Responsable del proceso de gestión de reclamos dirige y monitorea el cumplimiento de las condiciones, etapas y plazos de la gestión de reclamos en la entidad pública.\n19.2 En caso la entidad pública cuente únicamente con el Libro de Reclamaciones en su versión física o cuente con un sistema informático propio o particular autorizado por la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros de acuerdo con el numeral 3 de la Primera Disposición Complementaria Transitoria del presente Decreto Supremo, el Responsable del proceso de gestión de reclamos remite al Titular de la entidad, con copia a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros, los reportes sobre la gestión de los reclamos en forma anual a fin de que dicha información sirva para su evaluación así como para la adopción de mejoras de la prestación de bienes y servicios brindados en el marco del proceso de mejora continua.",
+    "source": "0019_artículo_19_monitoreo_y_evaluación_del_proceso_de_gestión_de.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 173
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 20.- Rol de la Contraloría General de la República\nLa Contraloría General de la República a través del Órgano de Control Institucional de cada entidad de la Administración Pública, es la competente para verificar que las entidades cumplan con garantizar la disponibilidad y acceso al Libro de Reclamaciones sea su versión digital o física, con el plazo máximo de atención y respuesta de los reclamos; así como, la gratuidad durante todo el proceso de gestión del reclamo.",
+    "source": "0020_artículo_20_rol_de_la_contraloría_general_de_la_república.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 78
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Artículo 21.- Refrendo\nEl presente Decreto Supremo es refrendado por el Presidente del Consejo de Ministros.",
+    "source": "0021_artículo_21_refrendo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 16
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Primera.- Normas complementarias\nLa Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros emite las normas complementarias que aprueban los formatos de registro en su versión física y digital; formato mínimo de Respuesta; tipología y aspectos objeto del reclamo; matriz para reportes de información por parte de las entidades que no utilizan el Libro de Reclamaciones en su versión digital así como para las entidades o empresas señaladas en el numeral 3.5 del artículo 3 del presente Decreto Supremo; flujogramas; señaléticas y demás que resulten necesarios para la aplicación del presente Decreto Supremo, en un plazo no mayor a sesenta (60) días hábiles, contados a partir de la publicación del presente Decreto Supremo.",
+    "source": "0022_primera_normas_complementarias.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 115
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Segunda.- Vigencia de la norma\nEl presente Decreto Supremo entra en vigencia al día siguiente de su publicación, no obstante sus disposiciones se aplican gradualmente a las distintas entidades de la Administración Pública, conforme a los plazos, cronograma y condiciones de adecuación que la Secretaría de Gestión Pública aprueba en un plazo no mayor a sesenta (60) días hábiles, contados a partir de la publicación del presente Decreto Supremo.",
+    "source": "0023_segunda_vigencia_de_la_norma.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 69
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Tercera.- Proceso de gestión interna\nLas entidades de la Administración Pública pueden establecer procesos internos para asegurar el cumplimiento de las disposiciones del proceso de gestión de reclamos en los plazos establecidos en el presente Decreto Supremo, siempre que no contravenga lo regulado en esta norma.",
+    "source": "0024_tercera_proceso_de_gestión_interna.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 46
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Cuarta.- Prohibición para diseñar, desarrollar o implementar un Libro de Reclamaciones en su versión digital\nLas entidades públicas que reciben reclamos que se encuentran dentro del ámbito de aplicación del presente Decreto Supremo quedan prohibidas de diseñar, desarrollar y/o implementar un Libro de Reclamaciones en su versión digital, propio o particular, como soporte al proceso de gestión de reclamos.",
+    "source": "0025_cuarta_prohibición_para_diseñar_desarrollar_o_implementar_un.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 59
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Quinta.- Derivación de reclamos\nEn el caso de aquellas entidades que no cuenten con las condiciones tecnológicas para recibir los reclamos presentados a través de la Plataforma GOB.PE, la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros deriva el reclamo a la entidad competente y supervisa su atención y respuesta correspondiente.",
+    "source": "0026_quinta_derivación_de_reclamos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 54
+  },
+  {
+    "id": "27-1",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Primera.- Del cumplimiento de las condiciones previas para la implementación del presente Decreto Supremo Dentro del plazo máximo de sesenta (60) días hábiles contados desde el día siguiente de publicada la Resolución de Secretaría de Gestión Pública referida en la Primera Disposición Complementaria Final del presente Decreto Supremo, las entidades deben realizar lo siguiente: 1. Designar por primera vez al responsable de la gestión de reclamos, titular y alterno, comunicando dicha designación a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros, a través de comunicación escrita notificada en físico mediante oficio o al correo electrónico gestionreclamaciones@pcm.gob.pe; debiendo adjuntar el documento que acredite dicha designación. 2. Una vez designado, el Responsable del proceso de gestión de reclamos debe: a) Identificar a las unidades de organización, sedes de la entidad y los encargados de las mismas, así como a las unidades de organización ante las cuales se deben encausar las quejas y denuncias que hubieran sido presentadas como reclamo. Dicha información es remitida a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros a través de comunicación escrita notificada en físico o al correo electrónico gestionreclamaciones@pcm.gob.pe. En el caso de las entidades obligadas a utilizar el Libro de Reclamaciones en su versión digital, el registro de unidades de organización y sus titulares, sedes de la entidad y los encargados de las mismas y los responsables del proceso de gestión de reclamos, se efectúa en dicha plataforma digital. Asimismo, deben mantener actualizada la información antes señalada y comunicarla a la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros a través de los medios previstos en el párrafo anterior. b) Coordinar al interior de la entidad, la definición de los bienes o servicios de la entidad que son objeto de reclamo, distinguiéndolos de aquellos que corresponden ser tramitados bajo los alcances de la normativa especial aplicable a cada caso. c) Coordinar la difusión de los bienes o servicios de la entidad que son objeto de reclamo en los medios o canales pertinentes, asegurando que dicha información se encuentre disponible al momento de la presentación de un reclamo. d) En el caso que las entidades públicas no cuenten con las condiciones tecnológicas requeridas para utilizar el Libro de Reclamaciones en su versión digital, les corresponde sustentar ante la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros, a través de un informe técnico,",
+    "source": "0027_primera_del_cumplimiento_de_las_condiciones_previas_para_la_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "27-2",
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "que no cuentan con equipos de cómputos con sistema operativo y navegador web instalado que se encuentre en funcionamiento; conexión y acceso al servicio de internet que asegure una conectividad óptima. La información remitida está sujeta a fiscalización posterior aleatoria por parte de la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros. 3. En el caso de las entidades públicas que cuenten con un sistema informático propio o particular, deben sustentar ante la Secretaría de Gestión Pública de la Presidencia del Consejo de Ministros su uso a fin que ésta, evalúe y emita opinión favorable previa que les permita continuar utilizándolo como soporte al proceso de gestión de reclamos. Para dicha evaluación, se requiere que las entidades públicas proporcionen a la Secretaría de Gobierno Digital, el acceso al referido sistema informático y documentación, a fin de realizar la evaluación técnica correspondiente que respalde la opinión favorable del uso. Las entidades públicas que cuenten con un sistema informático propio o particular autorizado por la Presidencia del Consejo de Ministros deben habilitar un servicio de información, a través de la Plataforma de Interoperabilidad del Estado, para su integración con la plataforma digital Libro de Reclamaciones, conforme a los lineamientos establecidos por la Secretaría de Gobierno Digital. De no contarse con la opinión favorable previa, deben utilizar el Libro de Reclamaciones en su versión digital en los plazos previstos en la presente norma.",
+    "source": "0027_primera_del_cumplimiento_de_las_condiciones_previas_para_la_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 233
+  },
+  {
+    "id": 28,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Segunda.- Reclamos presentados con anterioridad al inicio de implementación del Libro de Reclamaciones en su versión digital\nLos reclamos presentados con anterioridad a la entrada en vigencia del presente Decreto Supremo, continúan su tramitación de conformidad con las disposiciones de la normativa vigente al momento de su registro hasta su culminación.",
+    "source": "0028_segunda_reclamos_presentados_con_anterioridad_al_inicio_de_i.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 51
+  },
+  {
+    "id": 29,
+    "nombre_doc": "Decreto Supremo N° 007-2020-PCM",
+    "tipo_doc": "norma reglamentaria",
+    "capitulo_seccion": "DISPOSICIÓN COMPLEMENTARIA DEROGATORIA",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "Única.- Derogación\nDerógase el Decreto Supremo Nº 042-2011-PCM, Obligación de las Entidades del Sector Público de contar con un Libro de Reclamaciones, una vez implementadas las disposiciones del presente decreto supremo conforme a los plazos, cronograma y condiciones establecidos por Resolución de Secretaría de Gestión Pública de acuerdo a la Segunda Disposición Complementaria Final del presente Decreto Supremo.",
+    "source": "0029_única_derogación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/normas reglamentarias/Decreto Supremo N° 007-2020-PCM.json",
+    "num_palabras": 58
+  }
+]

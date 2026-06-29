@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "El arbitraje de consumo es una alternativa para solucionar las controversias que puedan surgir entre proveedores y consumidores donde se designa a un profesional, denominado árbitro, para que tome una decisión definitiva sobre el caso.\nBusca que tanto el proveedor como el consumidor lleguen a un acuerdo. Si ello no sucede, el árbitro está facultado a emitir una resolución final llamada ‘laudo’ que finaliza la controversia. Si la demanda es fundada el árbitro ordena al proveedor que cumpla con la medida solicitada por el consumidor y eventualmente realiza una indemnización para compensar daños económicos, pero no impone multas ni ordena indemnizaciones por daños morales.",
+    "source": "0001_revisa_este_interesante_video_en_la_página_web_wwwyalosabesp.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla Ya lo Sabes - Arbitraje de Consumo.json",
+    "num_palabras": 104
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "En caso que el árbitro le dé la razón al consumidor, entonces ordena al proveedor que cumpla con reemplazar un producto o servicio vendido, reparar el bien o devolver el dinero pagado, según sea el caso.\nEl árbitro no impone multas al proveedor, pero puede ordenarle que indemnice al consumidor por los daños económicos que le haya generado. Si el consumidor, además, quiere solicitar una indemnización por presuntos daños morales tendrá que acudir al poder judicial.",
+    "source": "0002_en_caso_que_el_árbitro_le_dé_la_razón_al_consumidor_entonces.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla Ya lo Sabes - Arbitraje de Consumo.json",
+    "num_palabras": 76
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Esta alternativa para solucionar controversias de consumo contempla diferentes ventajas, entre las más importantes son: es gratuito, es decir que no hay cobro de tasas ni de honorarios del árbitro; se ahorra tiempo, porque se puede llevar el proceso de forma electrónica, obteniendo la decisión final en un máximo de 45 días hábiles.",
+    "source": "0003_esta_alternativa_para_solucionar_controversias_de_consumo_co.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla Ya lo Sabes - Arbitraje de Consumo.json",
+    "num_palabras": 53
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Para acceder a este servicio, los interesados pueden acercarte a cualquier oficina del Indecopi para llenar el formulario del arbitraje. También puede acceder a él mediante la web y enviarlo al correo electrónico: arbitrajedeconsumo@indecopi.gob.pe",
+    "source": "0004_para_acceder_a_este_servicio_los_interesados_pueden_acercart.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla Ya lo Sabes - Arbitraje de Consumo.json",
+    "num_palabras": 34
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla ¡Ya lo sabes! - Arbitraje de Consumo",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Cabe resaltar que no puede obligarse a nadie a someterse a un arbitraje, tanto el consumidor como el proveedor deben hacerlo voluntariamente. Para saber si una empresa está adherida al sistema de arbitraje de consumo visita el portal del consumidor.",
+    "source": "0005_cabe_resaltar_que_no_puede_obligarse_a_nadie_a_someterse_a_u.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla Ya lo Sabes - Arbitraje de Consumo.json",
+    "num_palabras": 40
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO PRIMERO DISPOSICIONES GENERALES",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 1.- Objeto de la ley\nLa presente Ley tiene por objeto regular el suministro de información de riesgos en el mercado, garantizando el respeto a los derechos de los titulares de la misma, reconocidos por la Constitución Política del Perú y la legislación vigente, promoviendo la veracidad, confidencialidad y uso apropiado de dicha información.",
+    "source": "0001_artículo_1_objeto_de_la_ley.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 55
+  },
+  {
+    "id": "2-1",
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO PRIMERO DISPOSICIONES GENERALES",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 2.- Definiciones Para los efectos de esta Ley, se entiende por: a) Centrales privadas de información de riesgos (CEPIRS).- Las empresas que en locales abiertos al público y en forma habitual recolecten y traten información de riesgos relacionada con personas naturales o jurídicas, con el propósito de difundir por cualquier medio mecánico o electrónico, de manera gratuita u onerosa, reportes de crédito acerca de éstas. No se consideran CEPIRS, para efectos de la presente Ley, a las entidades de la administración pública que tengan a su cargo registros o bancos de datos que almacenen información con el propósito de darle publicidad con carácter general, sin importar la forma como se haga pública dicha información. b) Información de riesgos.- Información relacionada a obligaciones o antecedentes financieros, comerciales, tributarios, laborales, de seguros de una persona natural o jurídica que permita evaluar su solvencia económica vinculada principalmente a su capacidad y trayectoria de endeudamiento y pago. c) Información sensible.- Información referida a las características físicas, morales o emocionales de una persona natural, o a hechos o circunstancias de su vida afectiva o familiar, tales como los hábitos personales, las ideologías y opiniones políticas, las creencias o convicciones religiosas, los estados de salud físicos o psíquicos y la vida sexual u otras análogas que afecten su intimidad y todo lo referido en la Constitución Política del Perú en su Artículo 2, inciso 6). d) Titular de la información.- La persona natural o jurídica a la que se refiere la información de riesgos. e) Reporte de crédito.- Toda comunicación escrita o contenida en algún medio proporcionada por una CEPIR con información de riesgos referida a una persona natural o jurídica, identificada. Dicha comunicación no puede contener juicios de valor, dictámenes u opiniones que sean de naturaleza subjetiva referidos a la persona natural o persona jurídica. f) Banco de datos.- Conjunto de información de riesgos administrados por las CEPIRS, cualquiera sea la forma o modalidad de su creación, organización, almacenamiento, sistematización y acceso, que permita relacionar la información entre sí, así como procesarla con el propósito de transmitirla a terceros. g) Recolección de información.- Toda operación o conjunto de operaciones o procedimiento técnico que permitan a las CEPIRS obtener información. h) Fuentes de acceso público.- Información que se encuentra a disposición del público en general o de acceso no restringido, no impedida por cualquier norma limitativa, que está recogida en medios tales como censos, anuarios,",
+    "source": "0002_artículo_2_definiciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "2-2",
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO PRIMERO DISPOSICIONES GENERALES",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "bases de datos o registros públicos, repertorios de jurisprudencia, archivos de prensa, guías telefónicas u otros medios análogos; así como las listas de personas pertenecientes a grupos profesionales que contengan únicamente los nombres, títulos, profesión, actividad, grados académicos, dirección e indicación de su pertenencia al grupo. i) Tratamiento de información.- Toda operación o conjunto de operaciones o procedimiento técnico, de carácter automatizado o no, que permitan a las CEPIRS acopiar, almacenar, actualizar, grabar, organizar, sistematizar, elaborar, seleccionar, confrontar, interconectar, disociar, cancelar y, en general, utilizar información de riesgos para ser difundida en un reporte de crédito. j) Difusión de información.- Toda operación o conjunto de operaciones o procedimientos técnicos, de carácter automatizado o no, que permitan a las CEPIRS comunicar, ceder, transmitir, dar acceso o poner en conocimiento de terceros la información de riesgos contenida en sus bancos de datos. La información de fuente Registros Públicos deberá indicar obligatoriamente la fecha y hora de la obtención de la información y si ésta es sólo informativa.",
+    "source": "0002_artículo_2_definiciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 165
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO PRIMERO DISPOSICIONES GENERALES",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 3.- Ámbito de aplicación\nEstán sujetas a la presente Ley todas las CEPIRS que realicen actividades o presten servicios en el territorio nacional.",
+    "source": "0003_artículo_3_ámbito_de_aplicación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 24
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO SEGUNDO DE LAS CENTRALES PRIVADAS DE INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 4.- Organización\nLas CEPIRS pueden constituirse bajo cualquiera de las formas permitidas por la ley.",
+    "source": "0004_artículo_4_organización.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 16
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO SEGUNDO DE LAS CENTRALES PRIVADAS DE INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 5.- Características\nLas CEPIRS deberán contar, como mínimo, con las siguientes características de organización y funcionamiento:\na) Infraestructura informática adecuada para el debido tratamiento de la información recolectada;\nb) Procedimientos internos para una eficiente, efectiva y oportuna atención de consultas, quejas y reclamos, cuando sea el caso; y,\nc) Controles internos que proporcionen seguridad en el desarrollo de sus actividades, así como procedimientos de validez de la información procesada.",
+    "source": "0005_artículo_5_características.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 70
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO SEGUNDO DE LAS CENTRALES PRIVADAS DE INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 6.- Impedimentos\nEstán impedidos de ser directores, gerentes o funcionarios que tengan capacidad de decisión dentro de las CEPIRS:\na) Los impedidos para ser directores y gerentes de conformidad con la Ley General de Sociedades;\nb) Los condenados por delitos dolosos;\nc) Los declarados en proceso de insolvencia, mientras dure éste;\nd) Los que registren protestos de documentos en los últimos cinco años;\ne) Los que, directa o indirectamente, tengan créditos vencidos por más de 120 (ciento veinte) días, o que hayan ingresado a cobranza judicial; y,\nf) Los que sean titulares, socios o accionistas de empresas vinculadas, a las que se refiere el literal b) del Artículo 54 de la Ley del Impuesto General a las Ventas e Impuesto Selectivo al Consumo, que tengan créditos vencidos por más de 120 (ciento veinte) días, o que hayan ingresado a cobranza judicial.",
+    "source": "0006_artículo_6_impedimentos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 142
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 7.- Fuentes de información\n7.1.- Derogado.\n7.2 Las CEPIRS podrán adquirir información de las fuentes mencionadas en el párrafo precedente mediante la celebración de contratos privados directamente con la persona natural o jurídica que tenga o haya tenido relaciones civiles, comerciales, administrativas, bancarias, laborales o de índole análoga con el titular de la información, siempre y cuando ésta se refiera a los actos, situaciones, hechos, derechos y obligaciones materia de tales relaciones o derivadas de éstas y que no constituyan violación del secreto profesional.\n7.3 Igualmente podrán celebrar contratos privados directamente con las entidades de la administración pública que recolecten o utilicen información de riesgos en el ejercicio de sus funciones y competencias legalmente establecidas, salvo que tal información haya sido declarada o constituya un secreto comercial o industrial.",
+    "source": "0007_artículo_7_fuentes_de_información.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 130
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 8.- Información suministrada por los titulares\nLas CEPIRS podrán recolectar información de riesgos directamente de los titulares, debiendo previamente informarles a éstos de modo expreso, preciso e inequívoco lo siguiente:\na) La existencia del banco de datos, la finalidad de la recolección de la información y los potenciales destinatarios de ésta;\nb) La identidad y dirección de la CEPIR que recolecta la información;\nc) El carácter facultativo de sus respuestas a las preguntas que le sean planteadas;\nd) Las posibles consecuencias de la obtención de la información; y,\ne) El alcance de los derechos desarrollados en el Título Cuarto de la presente Ley, así como de los procedimientos para hacerlos valer.\nCuando en la recolección de información se utilicen cuestionarios o cualquier otro medio impreso, se deberá entregar al titular de la información una copia de éstos en la que deberá figurar en forma claramente legible las indicaciones señaladas en los incisos precedentes. La carga probatoria de haber brindado la información antes detallada corresponde a las CEPIRS.",
+    "source": "0008_artículo_8_información_suministrada_por_los_titulares.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 168
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 9.- Lineamientos generales de recolección y tratamiento de información\nPara la recolección y tratamiento de la información de riesgos a su cargo las CEPIRS deberán observar los siguientes lineamientos generales:\na) La recolección de información no podrá efectuarse por medios fraudulentos o ilícitos;\nb) La información recolectada sólo podrá ser utilizada para los fines señalados en la presente Ley;\nc) La información que deberá constar en los reportes informativos será lícita, exacta y veraz, de forma tal que responda a la situación real del titular de la información en determinado momento. Si la información resulta ser ilícita, inexacta o errónea, en todo o en parte, deberán adoptarse las medidas correctivas, según sea el caso, por parte de las CEPIRS, sin perjuicio de los derechos que corresponden a los titulares de dicha información. A efectos de determinar el momento se deberá, en cada reporte, señalar la fecha del informe. Cuando las CEPIRS reciban de sus fuentes información conteniendo la fecha de extinción de la obligación, la naturaleza de la misma, la tasa de interés efectiva, los otros conceptos cobrados y la entidad acreedora, deberán incluir expresamente dicha información en sus reportes; y,\nd) La información será conservada durante el plazo legal establecido en la presente Ley o en su defecto, hasta que se produzca su cancelación conforme a lo prescrito en el inciso b) del artículo 13 de la presente Ley.",
+    "source": "0009_artículo_9_lineamientos_generales_de_recolección_y_tratamien.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 231
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 10.- Información excluida\nLas CEPIRS no podrán contener en sus bancos de datos ni difundir en sus reportes de crédito la siguiente información:\na) Información sensible;\nb) Información que viole el secreto bancario o la reserva tributaria;\nc) Información ilegal, inexacta o errónea;\nd) Información referida al incumplimiento de obligaciones de naturaleza civil, comercial o tributaria, cuando (i) la obligación se haya extinguido y hayan transcurrido 2 (dos) años desde su extinción; o (ii) 5 (cinco) años desde el vencimiento de la obligación. Estos plazos no rigen si el titular ejerce el derecho de cancelación de acuerdo a lo establecido en el inciso b) del artículo 13 de la presente Ley. El caso de los protestos se regirá por la Ley de Títulos Valores.\ne) Información referida a sanciones exigibles de naturaleza tributaria, administrativa u otras análogas de contenido económico, cuando (i) hayan transcurrido 2 (dos) años desde que se ejecutó la sanción impuesta al infractor o se extinguió por cualquier otro medio legal, y (ii) 5 (cinco) años desde que se impuso la sanción.\nf) Informaciones referidas al incumplimiento de otras obligaciones que no sean comerciales, civiles, tributarias, laborales o de seguros. Excepcionalmente, las CEPIRS sólo podrán contener en su banco de datos obligaciones referidas a servicios públicos cuando se haya dejado de pagar dichos servicios por el titular de la información durante 6 (seis) meses continuos.\ng) Información referida a la insolvencia o quiebra del titular de la información, cuando hayan transcurrido 2 (dos) años desde que se levantó el estado de insolvencia o 5 (cinco) años desde que se declaró la quiebra; o,\nh) Cualquier otra información excluida por ley.",
+    "source": "0010_artículo_10_información_excluida.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 274
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 11.- Difusión de información de riesgos\nLas CEPIRS podrán difundir a terceras personas, de manera onerosa o a título gratuito, la información de riesgos que contengan en sus bancos de datos. Para tales efectos, las CEPIRS podrán implementar en la forma que estimen conveniente procedimientos automatizados para la transmisión, comunicación o acceso de datos a terceros, así como el registro obligatorio de éstos bajo responsabilidad, debiendo cautelar los derechos de los titulares de la información.\nLas CEPIRS difunden la información de riesgo, luego de identificar con medios apropiados al solicitante de la información.",
+    "source": "0011_artículo_11_difusión_de_información_de_riesgos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 94
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO TERCERO DE LA RECOLECCIÓN, TRATAMIENTO, DIFUSIÓN Y SEGURIDAD DE LA INFORMACIÓN DE RIESGOS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 12.- Deber de seguridad\nLas CEPIRS deberán adoptar las medidas de índole técnica y administrativa destinadas a garantizar la seguridad de la información que manejen, a fin de evitar su alteración, pérdida, tratamiento o acceso autorizado.",
+    "source": "0012_artículo_12_deber_de_seguridad.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 37
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 13.- Derechos de los titulares\nDe manera enunciativa, mas no limitativa, los titulares de la información registrada en los bancos de datos administrados por las CEPIRS tienen los siguientes derechos:\na) El derecho de acceso a la información referida a uno mismo registrada en tales bancos;\nb) El derecho de modificación y el derecho de cancelación de la información referida a uno mismo, registrada en tales bancos y que fuese ilegal, inexacta, errónea o caduca;\nc) El derecho de rectificación de la información referida a uno mismo que haya sido difundida por las CEPIRS y que resulte ser ilegal, inexacta, errónea o caduca;\nd) El derecho de actualización de la información referida a uno mismo, registrada en los bancos de datos, que no haya incluido pagos parciales o totales, siempre que hubiesen vencido los plazos establecidos en los incisos 15.7 y 15.8 del artículo 15 de la presente Ley.",
+    "source": "0013_artículo_13_derechos_de_los_titulares.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 150
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 14.- Derogado.",
+    "source": "0014_artículo_14_derogado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 3
+  },
+  {
+    "id": "15-1",
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 15.- Derecho de modificación y derecho de cancelación 15.1 En caso de considerar que la información contenida en los bancos de datos es ilegal, inexacta, errónea o caduca, el titular de dicha información podrá solicitar que ésta sea revisada por cuenta y costo de las CEPIRS y, de ser el caso, que se proceda a su modificación o cancelación. 15.2 La solicitud para la revisión de la información deberá ser interpuesta por escrito, acompañando los medios probatorios que acrediten que el solicitante es el titular de la información. En dicha solicitud se precisarán los datos concretos que se desea revisar, acompañando la documentación que justifique el pedido. 15.3 Las CEPIRS establecerán los procedimientos internos necesarios para brindar una eficiente, efectiva y oportuna atención a las solicitudes de revisión presentadas, así como los mecanismos de comunicación y coordinación adecuados con las fuentes de las que recolecta la información. 15.4 Dentro del plazo de 7 (siete) días naturales desde la presentación de la solicitud, las CEPIRS obligatoriamente informarán por escrito al titular de la información si su pedido es procedente o si ha sido denegado. Alternativamente, dentro del mismo plazo, las CEPIRS podrán prorrogar, hasta por 5 (cinco) días naturales adicionales, el plazo para emitir una decisión definitiva, debiendo para ello, hasta que finalice el plazo, difundir que dicha información es materia de revisión. 15.5 Vencidos los plazos mencionados en el párrafo precedente, el titular de la información deberá recibir la comunicación por escrito que responda de manera definitiva su solicitud. 15.6 Cuando la información se encuentre desactualizada, producto de la no inclusión de datos sobre pagos parciales o totales, la fuente que generó dicha información, una vez detectado el error o la inexactitud, deberá actualizarla en un plazo de 2 (dos) días hábiles, sin necesidad de solicitud del titular. 15.7 El plazo para remitir la información a las CEPIRS referidos a pagos parciales o totales, por parte de las fuentes de información, no deberá ser mayor al plazo utilizado por éstas para remitir información referida a obligaciones vencidas. 15.8 El plazo para actualizar los reportes de crédito, emitidos por las CEPIRS referidos a pagos parciales o totales por parte de las fuentes de información, no deberá ser mayor a 2 (dos) días hábiles, contados a partir del día siguiente de la recepción de la información proveniente de las fuentes. Lo dispuesto en los literales 15.7 y 15.8 no será de",
+    "source": "0015_artículo_15_derecho_de_modificación_y_derecho_de_cancelación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "15-2",
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "aplicación a los casos de protestos, los que se rigen por la Ley de Títulos Valores.",
+    "source": "0015_artículo_15_derecho_de_modificación_y_derecho_de_cancelación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 16
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 16.- Derecho de rectificación\nEn caso que se verifique que la información contenida en los bancos de datos es ilegal, inexacta, errónea o caduca, la CEPIR, a su cuenta y costo, enviará comunicaciones rectificatorias, a quienes les hubiera proporcionado dicha información en los doce meses anteriores a la fecha en que se verifique el problema.",
+    "source": "0016_artículo_16_derecho_de_rectificación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 56
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO PRIMERO DE LOS DERECHOS DE LOS TITULARES DE LA INFORMACIÓN",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 17.- Tutela jurisdiccional\n17.1 Los titulares de la información que no sean considerados consumidores para efectos del Decreto Legislativo Nº 716, Ley de Protección al Consumidor, podrán solicitar judicialmente la tutela de los derechos enunciados en este Subtítulo en la vía del proceso sumarísimo.\n17.2 Para poder interponer una demanda con el fin de que se modifique, cancele o rectifique una información de riesgos que se considere ilegal, inexacta, errónea o caduca, el titular de dicha información deberá previamente obtener un pronunciamiento, expreso o tácito, denegando una solicitud de revisión o de rectificación, tramitada conforme a lo dispuesto en los Artículos 15 y 16 de la presente Ley.",
+    "source": "0017_artículo_17_tutela_jurisdiccional.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 109
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "TÍTULO CUARTO DE LA DEFENSA DE LOS TITULARES DE LA INFORMACIÓN EN GENERAL SUBTÍTULO SEGUNDO DE LA RESPONSABILIDAD CIVIL Y PENAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 18.- Responsabilidad civil y penal\n18.1 La responsabilidad civil de las CEPIRS por los daños ocasionados al titular por efecto del tratamiento o difusión de información será objetiva. Las CEPIRS podrán repetir contra las fuentes proveedoras de información cuando el daño sea ocasionado como consecuencia del tratamiento de información realizada por éstas.\n18.2 Igualmente existe responsabilidad por parte de los usuarios o receptores de información de riesgos proporcionada por las CEPIRS, en caso de utilización indebida, fraudulenta o de modo que cause daños al titular de la información, la misma que se determinará conforme a las normas de responsabilidad civil y penal a que hubiese lugar. Sin perjuicio de lo anterior, las CEPIRS podrán repetir contra los usuarios o receptores de información en caso de haber asumido responsabilidad frente al titular de la información o terceros, en los supuestos antes indicados en que esté involucrada la responsabilidad de los usuarios o receptores de información.",
+    "source": "0018_artículo_18_responsabilidad_civil_y_penal.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 155
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DE LA DEFENSA DE LOS CONSUMIDORES EN ESPECIAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 19.- Defensa de los consumidores\nLas disposiciones contenidas en el presente Título son de aplicación a las disputas que surjan entre las CEPIRS y los titulares de la información, que son considerados consumidores por mandato de la presente Ley, para efectos de la aplicación de lo dispuesto por el Decreto Legislativo Nº 716, Ley de Protección al Consumidor.",
+    "source": "0019_artículo_19_defensa_de_los_consumidores.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 59
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DE LA DEFENSA DE LOS CONSUMIDORES EN ESPECIAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 20.- Infracciones\nSe consideran infracciones administrativas a la presente Ley:\na) Negarse a facilitar el acceso de un consumidor a la información de riesgos de la que es titular;\nb) Denegar una solicitud de revisión o una solicitud de rectificación de la información de riesgos de la que es titular un consumidor;\nc) Negarse a modificar o a cancelar la información de un titular luego de que éste haya tenido un pronunciamiento favorable en un procedimiento seguido de conformidad con lo establecido en el artículo 15 de la presente Ley; o,\nd) No actualizar la información por la no inclusión de registros de pagos totales o parciales a que se refiere el numeral 15.6 del artículo 15; no haberse remitido la información a las CEPIRS en el plazo estipulado en el numeral 15.7 del artículo 15; y, no actualizar los reportes de crédito en el plazo señalado en el numeral 15.8 del artículo 15.\nLas CEPIRS son objetivamente responsables por incurrir en las infracciones antes tipificadas, sin perjuicio de la responsabilidad que pudiera corresponder a las fuentes de las que hubieran recolectado información, conforme a las disposiciones contenidas en el Decreto Legislativo Nº 716, Ley de Protección al Consumidor.\nLas CEPIRS no responderán por el incumplimiento del plazo que corresponda a la fuente de información.",
+    "source": "0020_artículo_20_infracciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 216
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DE LA DEFENSA DE LOS CONSUMIDORES EN ESPECIAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 21.- Competencia de la Comisión de Protección al Consumidor\n21.1 La Comisión de Protección al Consumidor del Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual (INDECOPI) es el órgano administrativo competente para conocer de las infracciones tipificadas en el artículo precedente e imponer las sanciones administrativas y las medidas correctivas a las que hubiere lugar. Para tales efectos, la Comisión aplicará el procedimiento único contemplado en el Título V del Decreto Legislativo Nº 807, Facultades, Normas y Organización del INDECOPI.\n21.2 Para presentar una denuncia administrativa por infracción al Artículo 20 inciso b), el consumidor titular de la información deberá previamente obtener un pronunciamiento expreso o tácito, denegando una solicitud de revisión o rectificación, tramitada conforme a lo dispuesto en los Artículos 15 y 16 de la presente Ley.",
+    "source": "0021_artículo_21_competencia_de_la_comisión_de_protección_al_cons.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 137
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DE LA DEFENSA DE LOS CONSUMIDORES EN ESPECIAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 22.- Medidas correctivas\nSin perjuicio de las sanciones administrativas a que hubiera lugar, la Comisión de Protección al Consumidor impondrá a las CEPIRS que incurran en alguna infracción a la presente Ley, las siguientes medidas correctivas:\na) La modificación o cancelación de la información de riesgos registrada en sus bancos de datos; y,\nb) La rectificación de la información comercial de riesgos difundida en el mercado, por cuenta y costo del infractor, en la forma que determine la Comisión.\nAdicionalmente a las sanciones administrativas a que hubiera lugar respecto de las CEPIRS, la Comisión de Protección al Consumidor impondrá sanciones a las fuentes proveedoras de la información que incurran en alguna infracción a la presente Ley y en general a terceras personas que han proporcionado información de riesgos a las CEPIRS que resulte ilegal, inexacta, errónea o caduca.\nLa modificación, actualización, rectificación o cancelación de la información de riesgos antes indicada que se encuentre registrada en sus bases de datos se actualizará dentro del día siguiente de notificada la medida.",
+    "source": "0022_artículo_22_medidas_correctivas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 171
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DE LA DEFENSA DE LOS CONSUMIDORES EN ESPECIAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 23.- Ejecución de medidas correctivas a favor de los consumidores\n23.1 Las resoluciones finales que ordenen medidas correctivas constituyen Títulos de Ejecución conforme a lo dispuesto en el Artículo 713 inciso 3) del Código Procesal Civil, una vez que queden consentidas o causen estado en la vía administrativa.\n23.2 En caso de resoluciones finales que ordenen medidas correctivas a favor de consumidores afectados por la infracción administrativa, la legitimidad para obrar en los procesos civiles de ejecución corresponde a tales consumidores. En los casos restantes, la legitimidad corresponde al INDECOPI.",
+    "source": "0023_artículo_23_ejecución_de_medidas_correctivas_a_favor_de_los_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 91
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Ley N° 27489",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DISPOSICIÓN COMPLEMENTARIA Y FINAL",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Única.- Entrada en vigencia\nLa presente Ley entrará en vigencia a los 30 (treinta) días de su publicación.",
+    "source": "0024_única_entrada_en_vigencia.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27489.json",
+    "num_palabras": 18
+  }
+]

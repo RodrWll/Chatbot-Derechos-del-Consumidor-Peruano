@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 1.- Objeto de la Ley\nLa presente Ley complementa las disposiciones de la Ley de Protección al Consumidor con relación a los servicios prestados a los usuarios por las empresas de operaciones múltiples del sistema financiero sujetas a la regulación específica de la Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones.",
+    "source": "0001_artículo_1_objeto_de_la_ley.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 56
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 2.- Transparencia en la información\nLas empresas sujetas a los alcances de la presente Ley están obligadas a brindar a los usuarios toda la información que estos demanden de manera previa a la celebración de cualquier contrato propio de los productos o servicios que brindan, sin perjuicio de lo dispuesto en normas legales de carácter especial. Dicha información debe considerar aquellos aspectos relevantes relacionados principalmente a los beneficios, riesgos y condiciones del producto o servicio financiero que se ofrece en el mercado, conforme la regulación emitida por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones. La mencionada obligación se satisface con la puesta a disposición de los usuarios de dicha información en todos los medios utilizados para informar respecto a sus productos o servicios. Las empresas deben designar personal especializado para brindar asesoría a sus clientes sobre los alcances de los mismos.",
+    "source": "0002_artículo_2_transparencia_en_la_información.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 147
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 2-A. Informes en denegatoria de créditos\nLas empresas del sistema financiero, luego de la evaluación de una solicitud crediticia que deviene en desaprobatoria y solo a pedido del solicitante, están obligadas a informar, de manera expresa, a través de cualquiera de los canales que previamente han puesto en conocimiento del solicitante y que fueron establecidos para comunicarse con él, los aspectos que no permitieron una calificación positiva de la referida solicitud. La excepción a la obligación de brindar dicha información aplica cuando la denegatoria se debe a consideraciones del perfil del solicitante, sustentadas en la aplicación de normas prudenciales emitidas por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, en concordancia con el artículo 85 de la Ley 29571, Código de Protección y Defensa del Consumidor.",
+    "source": "0003_artículo_2_a_informes_en_denegatoria_de_créditos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 131
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 3.- Presentación de la información\nLas empresas sujetas a los alcances de la presente Ley están obligadas a presentar sus formularios contractuales en caracteres que sean adecuadamente legibles para los usuarios, los cuales no deben ser inferiores a tres (3) milímetros. La redacción y términos utilizados debe asimismo facilitar su comprensión por los clientes.",
+    "source": "0004_artículo_3_presentación_de_la_información.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 55
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 4.- Cláusulas generales de contratación\nLa Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones identificará en el universo de los contratos que las empresas sujetas a los alcances de la presente Ley celebran con los usuarios, aquellas estipulaciones que deban ser necesariamente sometidas a aprobación administrativa previa y obligatoria.\nLa aprobación administrativa tendrá por finalidad establecer el equilibrio contractual necesario entre las empresas y los usuarios, garantizar la operatividad del servicio financiero y el respeto de los derechos de los usuarios.",
+    "source": "0005_artículo_4_cláusulas_generales_de_contratación.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 86
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 5.- Modificación de estipulaciones contractuales\nLos contratos que celebren las empresas sujetas a los alcances de la presente Ley y los usuarios pueden sufrir, en el transcurso del tiempo, modificaciones en sus términos y condiciones con arreglo a los mecanismos previstos en los respectivos contratos, y de acuerdo con lo señalado en la presente Ley y con lo regulado por el Código de Protección y Defensa del Consumidor, Ley 29571.\nNo obstante lo anterior, cuando la modificación contractual sea originada en decisiones unilaterales de las empresas, dicha variación no es oponible a los usuarios de manera inmediata. En estos casos, la nueva estipulación solo vincula a los usuarios luego de transcurrido el plazo de cuarenta y cinco (45) días calendario desde el anuncio de la modificación. Las modificaciones a que se refiere el presente párrafo deben ser adecuadamente comunicadas al usuario.\nLa modificación de las tasas de interés, comisiones o gastos en las operaciones de crédito se sujetan a lo dispuesto en el artículo siguiente.\nEn aquellos casos en los que se establezcan condiciones promocionales que incentiven la contratación, las empresas quedan obligadas a garantizar el respeto de dichas condiciones durante el período ofrecido y, de no mediar este, por un plazo no inferior a seis (6) meses del aviso público en el cual se comunique a los usuarios su descontinuación. Esta disposición no afecta las condiciones más favorables establecidas a favor de los usuarios como consecuencia del efecto vinculante de la publicidad.\nLa comunicación de la existencia de una modificación en las condiciones contractuales debe asegurar que el usuario tome conocimiento de la misma de manera fehaciente. Las empresas deben emplear medios directos para la comunicación de modificaciones contractuales relevantes y de tasas de interés, comisiones y gastos, pudiendo consistir en avisos escritos al domicilio de los clientes, mensajes por medios electrónicos, entre otros. Para la comunicación de otros aspectos contractuales, deben tomarse en consideración los medios que para tal efecto señala la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones. En las comunicaciones se señalará la fecha en que la modificación entra a regir.",
+    "source": "0006_artículo_5_modificación_de_estipulaciones_contractuales.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 350
+  },
+  {
+    "id": "7-1",
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 6.- Cobro de intereses, comisiones y gastos Las tasas de interés que cobran las empresas del sistema financiero se señalan libremente, dentro del límite establecido por el Banco Central de Reserva en aplicación del artículo 52 del Decreto Ley 26123, Ley Orgánica del Banco Central de Reserva del Perú. El interés moratorio tiene por finalidad indemnizar la mora en el pago del crédito y se computa y cobra a partir de la fecha en que el deudor incurre en mora, sin perjuicio del cobro del interés convencional compensatorio pactado, según lo establecido en el artículo 1242 del Código Civil. Está prohibida la capitalización de intereses y el cobro de penalidad u otra comisión o gasto en caso de incumplimiento o atraso en el pago del crédito. Las tasas de interés moratorio serán las mismas que el Banco Central de Reserva establece para las operaciones ajenas al sistema financiero, conforme lo establece el artículo 51 del Decreto Ley 26123, Ley Orgánica del Banco Central de Reserva del Perú. Las comisiones o gastos que las empresas del sistema financiero cobran a los usuarios deben implicar la prestación de un servicio adicional o complementario a las operaciones contratadas por los usuarios, efectivamente prestado y que justifiquen el traslado de dicho costo al usuario, cuyo valor se basa en un costo real y demostrable a través de un informe técnico, económico y legal que las empresas deben presentar a la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, siendo aprobadas y publicadas mediante resolución de esta entidad. Las comisiones deben presentarse conforme con las categorías o denominaciones que esta reglamente. La disposición contenida en el primer párrafo del artículo 1243 del Código Civil, aprobado por el Decreto Legislativo 295, y el artículo 214 del Código Penal, aprobado por el Decreto Legislativo 635, también se aplica a la actividad de intermediación financiera. Los contratos, hojas resumen, comisiones, tarifas, cargos y gastos que cobren las empresas del sistema financiero, así como las condiciones generales y específicas de las pólizas de las empresas del sistema de seguros, deberán ser aprobadas por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, mediante resolución y puestas en conocimiento del público en su portal web, de acuerdo con las normas establecidas en la Ley 29571, Código de Protección y Defensa del Consumidor, y la Ley 28587, Ley Complementaria a la Ley de Protección",
+    "source": "0007_artículo_6_cobro_de_intereses_comisiones_y_gastos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "7-2",
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "al Consumidor en Materia de Servicios Financieros. Las tasas de interés, comisiones y gastos que las empresas cobran a los usuarios deben especificarse claramente en los propios contratos que se celebren, así como la periodicidad del cobro de los mismos. En los contratos de crédito y depósitos en los que se prevea la posibilidad de variar comisiones, tasas de interés y gastos, las modificaciones a estos conceptos entran en vigencia a los cuarenta y cinco (45) días de comunicadas al usuario mediante cualesquiera de las formas previstas en el último párrafo del artículo anterior, salvo que estas variaciones sean favorables al usuario, en cuyo caso pueden hacerse efectivas de inmediato y sin necesidad de aviso previo. En el caso de contratos de crédito a plazo fijo o de depósitos a plazo fijo sujetos a una tasa de interés fija, las empresas no pueden modificar la tasa de interés pactada durante la vigencia del contrato, salvo que estas variaciones sean favorables al usuario, en cuyo caso pueden hacerse efectivas de inmediato y sin necesidad de aviso previo. Asimismo, se exceptúan los supuestos de novación de la obligación en el caso de los créditos o de renovación en el caso de los depósitos; y aquellos supuestos en los que exista efectiva negociación o cuando la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, previo informe favorable del Banco Central de Reserva del Perú, lo autorice al sistema financiero en general por circunstancias extraordinarias e imprevisibles que pongan en riesgo al propio sistema y conforme a los parámetros que establezca para dicho efecto. Estas disposiciones no se aplican a los contratos donde se haya convenido ajustar periódicamente las tasas de interés con un factor variable. Las tasas de interés sujetas a un factor variable son aquellas tasas que tienen como referencia un indicador que varía en el tiempo, el que no es susceptible de modificación unilateral por la propia empresa o en virtud de acuerdos o prácticas con otras entidades. En todo contrato de crédito que implique el pago de cuotas, las empresas están obligadas a presentar a los usuarios un cronograma detallado de los pagos que deban efectuarse, incluyendo comisiones y gastos. Asimismo, en estos contratos se presenta un resumen del monto del crédito, de los intereses, de las comisiones y los gastos que deben ser asumidos por los usuarios. En aquellos casos en que existan modificaciones por parte",
+    "source": "0007_artículo_6_cobro_de_intereses_comisiones_y_gastos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 400
+  },
+  {
+    "id": "7-3",
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "de las empresas a estos conceptos, debe rehacerse el cronograma y comunicarse el mismo al usuario. Para el caso de contratos de ahorro o depósito se debe presentar un resumen conteniendo el monto de los intereses, así como el monto de las comisiones y gastos que deben ser asumidos por los usuarios.",
+    "source": "0007_artículo_6_cobro_de_intereses_comisiones_y_gastos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 52
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 7.- Liquidación de intereses\nLa fórmula utilizada para el cálculo de intereses en las operaciones financieras será supervisada por la Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones. En este proceso, la intervención de la entidad administrativa garantizará que el proceso de cálculo sea transparente, uniforme y de fácil difusión a los usuarios.\nEl programa de liquidación de intereses con la fórmula correspondiente, será puesto a disposición de los usuarios por la Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones en su página web, a los efectos de que éstos puedan verificar el cálculo efectuado por las empresas.",
+    "source": "0008_artículo_7_liquidación_de_intereses.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 107
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 8.- Difusión de las tasas de interés, comisiones y gastos\nLas empresas sujetas a los alcances de la presente Ley están obligadas a difundir constantemente las tasas de interés, comisiones y gastos que cobren a los usuarios en las operaciones financieras que ofrezcan en el mercado. La difusión deberá garantizar el acceso de los usuarios a dicha información pudiendo emplearse para ello diversos medios, sean éstos a través de comunicaciones directas, avisos a través de comunicados en televisión, radio y periódicos, en sus locales y páginas web. La Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones supervisará las condiciones en que se efectúe la difusión que la Ley dispone, garantizando que la misma facilite su comparación por el usuario.",
+    "source": "0009_artículo_8_difusión_de_las_tasas_de_interés_comisiones_y_gas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 124
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 9.- Difusión de información por entidades públicas\nLa Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones y el Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual están facultados a difundir toda la información que consideren pertinente a los efectos de contribuir a la transparencia del mercado de servicios financieros.",
+    "source": "0010_artículo_9_difusión_de_información_por_entidades_públicas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 61
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 10.- Infracción a la presente Ley\nCualquier omisión a las disposiciones contenidas en la presente Ley será sancionada por el Instituto Nacional de Defensa de la Competencia y de la Protección a la Propiedad Intelectual o la Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones conforme corresponda a su respectivo campo de responsabilidad.",
+    "source": "0011_artículo_10_infracción_a_la_presente_ley.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 58
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 11.- Cláusulas abusivas\nLa Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones identificará y sancionará las cláusulas abusivas en materia de tasas de interés, comisiones o gastos y emitirá normas de carácter general y específico que prohíban su realización e inclusión en los contratos, de acuerdo a la normatividad vigente sobre la materia.",
+    "source": "0012_artículo_11_cláusulas_abusivas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 57
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 12.- Mantenimiento de condiciones de pago\nLos contratos deben establecer las condiciones aplicables en caso de que el cliente decida resolverlos debido a modificaciones unilaterales que le resulten perjudiciales, de acuerdo con las causales que para tal efecto establezca la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, y que se realicen por supuestos distintos al cumplimiento de nuevas obligaciones establecidas por la normativa aplicable. Dichas condiciones no pueden significar la imposición de obstáculos onerosos o desproporcionados al ejercicio de los derechos de los consumidores ni establecer limitaciones injustificadas o no razonables al derecho a poner fin a los contratos, ello conforme a lo establecido por el literal b) del artículo 47, y el literal e) del numeral 56.1 del artículo 56 del Código de Protección y Defensa del Consumidor.\nAdicionalmente, se debe consignar la forma en que se procede al pago de la obligación en forma previa a la resolución del contrato de acuerdo con lo que señale la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones.",
+    "source": "0013_artículo_12_mantenimiento_de_condiciones_de_pago.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 175
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 13. Regularización de la información crediticia del cliente o usuario en la Central de Riesgos\n13.1 Cuando un deudor constituido en mora regulariza su situación a través del pago de la deuda pendiente, quedando al día en sus obligaciones, la entidad financiera, a solicitud del deudor y en un plazo de siete días hábiles, contados a partir de la fecha de solicitud, emite y pone a su disposición una constancia de la regularización de la deuda. Asimismo, en el mismo plazo informa de dicho pago a la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones (SBS), para que sea registrado en la Central de Riesgos en el siguiente reporte.\n13.2. No obstante, en tanto se actualiza la información en la Central de Riesgos, y a solicitud del cliente, la SBS, a través de un canal habilitado por esta y en el plazo de siete días hábiles, contados a partir de la fecha de la solicitud, debe informar sobre dicha regularización a las empresas del sistema financiero y a las centrales privadas de información de riesgos.\n13.3. La constancia de regularización emitida por la entidad financiera, junto con el informe que envíe la SBS a las empresas del sistema financiero, complementa y actualiza la información registrada en la Central de Riesgos a efectos de la evaluación crediticia del cliente o usuario.\nEl presente artículo entrará en vigor a los noventa días calendario contados a partir del día siguiente de su publicación en el diario oficial El Peruano, periodo en el que la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones (SBS) dictará las normas adicionales para su implementación. La falta de emisión de dichas normas adicionales no limitará la aplicación plena del presente artículo.",
+    "source": "0014_artículo_13_regularización_de_la_información_crediticia_del_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 290
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Artículo 14. Corrección de la información sobre consumos no reconocidos en la Central de Riesgos\n14.1. Cuando, tras una investigación por consumos no reconocidos, la entidad financiera compruebe la procedencia del reclamo por dichos consumos presentado por la persona afectada, debe informar dicha comprobación tanto a la referida persona como a la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones (SBS) en el plazo de siete días hábiles, contados a partir de la fecha de conclusión de la investigación, a efectos de que la información sea corregida en la Central de Riesgos en el siguiente reporte.\n14.2. No obstante, en tanto se corrige la información en la Central de Riesgos y a solicitud del cliente o usuario, la SBS, a través de un canal habilitado por esta y en el plazo de siete días hábiles, contados a partir de la fecha de la solicitud, debe informar de dicha corrección a las empresas del sistema financiero y a las centrales privadas de información de riesgos.\n14.3. El documento emitido por la entidad financiera, junto con el reporte enviado por la SBS a las empresas del sistema financiero, complementa y actualiza la información registrada en la Central de Riesgos a efectos de la adecuada evaluación crediticia del cliente.\nEl presente artículo entrará en vigor a los noventa días calendario contados a partir del día siguiente de su publicación en el diario oficial El Peruano, periodo en el que la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones (SBS) dictará las normas adicionales para su implementación. La falta de emisión de dichas normas adicionales no limitará la aplicación plena del presente artículo.",
+    "source": "0015_artículo_14_corrección_de_la_información_sobre_consumos_no_r.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 275
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DISPOSICIÓN TRANSITORIA",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "DISPOSICIÓN TRANSITORIA\nÚNICA.- Aprobación de normas complementarias\nEn un plazo no mayor de ciento veinte (120) días calendario computado desde su publicación, la Superintendencia de Banca y Seguros y Administradoras Privadas de Fondos de Pensiones dictará las normas de carácter reglamentario que sean necesarias para garantizar el cumplimiento de las disposiciones de la presente Ley.",
+    "source": "0016_disposición_transitoria.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 55
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Ley N° 28587",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "DISPOSICIÓN FINAL",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "DISPOSICIÓN FINAL\nÚNICA.- Vigencia de la Ley\nLa presente Ley entrará en vigencia a los treinta (30) días calendario de su publicación en el Diario Oficial El Peruano.",
+    "source": "0017_disposición_final.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 28587.json",
+    "num_palabras": 28
+  }
+]

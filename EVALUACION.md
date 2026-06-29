@@ -550,4 +550,151 @@ Nueva regla en el bloque anti-alucinación de `src/rag_chain.py`:
 | Vector store | chroma_db_bgem3_exp5/ (1356 docs) |
 | k | 3 (sin umbral de similitud) |
 | Pre-filtrado | Por categoría con CATEGORIA_MAP (fallback sin filtro) |
+
+---
+
+## Experimento 8 — Corpus chunked (pendiente)
+
+**Hipótesis:** el corpus `final_json_chunked/` (chunks con tope de 400 palabras) puede mejorar la precisión del retrieval al evitar embeddings diluidos en artículos largos.
+
+**Diferencias del corpus chunked:**
+
+| Aspecto | `final_json` (Exp7) | `final_json_chunked` |
+|---|---|---|
+| Total chunks | 1.409 | ~1.376 (tras filtrar <30 palabras) |
+| Chunk máximo | 995 palabras | 400 palabras |
+| Chunks >500 palabras | 40 | 0 |
+| Doc faltante | — | "Guía INDECOPI - Reclamos y Denuncias" (ignorado conscientemente) |
+| `categoria_consumo` | string | lista anidada `[["valor"]]` → normalizado en ingesta |
+
+**Pares a evaluar** (top-3 de experimentos anteriores):
+
+| Par | Score previo (mejor condición) |
+|---|---|
+| `qwen2.5:14b` + `bge-m3` | 24/24 (Exp7, baseline perfecto) |
+| `llama3.1:8b` + `bge-m3` | 19/24 (Exp4, sin pre-filtrado) |
+| `mistral:7b-instruct` + `e5-large` | 19/24 (Exp6, con pre-filtrado) |
+
+**Comandos para reproducir:**
+
+```bash
+# 1. Indexar corpus chunked (bge-m3 + e5-large)
+python src/ingest_embeddings_chunked.py --embeddings bge-m3 e5-large
+
+# 2. Evaluar top pares con pre-filtrado
+python src/evaluacion_embeddings.py \
+    --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" \
+    --suffix _chunked \
+    --prefiltrar \
+    --salida evaluacion_exp8
+
+# 3. Juez Gemini
+python src/evaluar_llm_judge.py \
+    --entrada evaluacion_exp8.json \
+    --salida scores_gemini_exp8
+
+# 4. Reporte comparativo vs Exp7
+python src/generar_reporte.py \
+    --entrada scores_gemini_exp8.json \
+    --baseline scores_gemini_exp7.json \
+    --salida reporte_exp8.html \
+    --baseline-label "Exp7 (24/24 baseline)" \
+    --current-label "Exp8 (corpus chunked)"
+```
+
+---
+
+## Fase 4 — Plan de Deploy (pendiente de implementación)
+
+> **Nota para el agente de IA que implemente este deploy:** antes de comenzar,
+> debes hacer las siguientes preguntas al usuario y esperar sus respuestas.
+> No asumas valores por defecto para estas decisiones.
+
+### Preguntas que el agente DEBE hacer al usuario antes de implementar
+
+**[P1] Proveedor LLM cloud**
+¿Qué API usarás para el LLM en el deploy? Opciones evaluadas:
+- **Groq API** — llama3.1:8b gratis (6.000 tokens/min), muy rápido, sin costo
+- **Mistral API** — mistral:7b gratis (25 req/día en tier gratuito), muy limitado
+- **OpenAI / otro** — de pago
+¿Cuál prefieres, o tienes alguna otra en mente?
+
+**[P2] Modelo LLM a usar en cloud**
+Dado el proveedor elegido, ¿qué modelo específico se usará?
+(Ej: para Groq → `llama-3.1-8b-instant`, `llama-3.1-70b-versatile`; para Mistral → `mistral-7b-instruct`)
+
+**[P3] Corpus a usar en producción cloud**
+¿El deploy usará el corpus original (`final_json` → `chroma_db_bgem3_exp5`) o el chunked (`final_json_chunked` → `chroma_db_bgem3_chunked`)?
+Depende del resultado del Exp8. Si el chunked mejora, usar chunked; si regresiona, mantener el original.
+
+**[P4] Memoria conversacional**
+¿Se activa la memoria conversacional en el deploy?
+- **Con toggle** — el usuario puede activar/desactivar desde la UI (checkbox en sidebar)
+- **Siempre activa** — más simple de implementar
+- **Desactivada** — stateless como el actual
+
+**[P5] Nombre / título de la app en Hugging Face**
+¿Cómo se llamará el Space en HF? Ej: `chatbot-consumidor-peru`, `derechos-consumidor-pe`
+Esto define la URL pública: `huggingface.co/spaces/<tu-usuario>/<nombre>`
+
+**[P6] Visibilidad del Space**
+¿El Space será público o privado? (Privado requiere HF Pro o plan de pago)
+
+**[P7] Variables de entorno / secretos**
+¿Tienes ya creada la API key del proveedor elegido (Groq, etc.)?
+El agente necesitará que la configures como Secret en HF Spaces (`Settings > Secrets`).
+Confirma que tienes: `GROQ_API_KEY` (u otra según proveedor).
+
+### Contexto técnico para el agente
+
+**Stack actual (local):**
+
+```python
+# src/rag_chain.py — lo que debe cambiar para cloud
+from langchain_ollama import OllamaLLM          # REEMPLAZAR por langchain_groq.ChatGroq
+llm = OllamaLLM(model="qwen2.5:14b")           # REEMPLAZAR
+```
+
+**Cambio mínimo para Groq:**
+
+```python
+from langchain_groq import ChatGroq
+llm = ChatGroq(model="llama-3.1-8b-instant", api_key=os.getenv("GROQ_API_KEY"))
+```
+
+**ChromaDB en HF Spaces:** subir el directorio `chroma_db_bgem3_exp5/` (o `_chunked`) dentro del repo del Space. HF Spaces tiene 50 GB de storage. El directorio pesa ~200-400 MB.
+
+**bge-m3 en CPU:** el embedding solo se computa para la query (1 vez por consulta). El modelo se descarga de HF Hub al primer arranque (~570 MB, ~2 min). Tiempo por query en CPU Basic: ~3-8s solo para embedding.
+
+**Archivos clave a modificar:**
+- `src/rag_chain.py` — cambiar LLM (OllamaLLM → ChatGroq u otro)
+- `src/app.py` — agregar toggle de memoria si se decide en P4
+- `requirements.txt` / `environment.yml` — agregar dependencias cloud (`langchain-groq`, etc.)
+- `.env.example` — actualizar con nueva API key
+- Crear `app.py` en raíz del Space (HF Spaces busca `app.py` en la raíz, no en `src/`)
+
+**Implementación de memoria conversacional (si P4 = con toggle o siempre activa):**
+
+```python
+# En app.py — estructura base del toggle
+usar_memoria = st.sidebar.checkbox("Memoria conversacional", value=False)
+
+if usar_memoria:
+    # ConversationalRetrievalChain con st.session_state["chat_history"]
+    ...
+else:
+    # Cadena actual stateless (rag_chain.py sin cambios)
+    ...
+```
+
+**Pre-filtrado por categoría:** el `CATEGORIA_MAP` en `evaluacion_embeddings.py` se debe replicar o importar en `rag_chain.py` para la app de producción. Actualmente la app NO usa pre-filtrado — evaluar si agregarlo mejora la UX (requiere detectar la categoría de la pregunta del usuario).
+
+**Nota sobre ChromaDB en HF Spaces:** HF Spaces con Streamlit soporta archivos estáticos. El directorio ChromaDB se puede incluir directamente en el repositorio del Space usando Git LFS para archivos grandes (>100 MB).
+
+### Resultado esperado del deploy
+
+- URL pública: `huggingface.co/spaces/<usuario>/<nombre-space>`
+- Tiempo de respuesta estimado: 8-15s por consulta (3-8s embedding CPU + 2-5s LLM Groq)
+- Costo: $0 (HF Spaces CPU Basic gratuito + Groq free tier)
+- Score esperado: ~19-21/24 con llama3.1:8b + prompt v3 (sin alcanzar los 24/24 de qwen local)
 | Prompt | Anti-alucinación v3 (incluye regla P8 de comisiones bancarias) |

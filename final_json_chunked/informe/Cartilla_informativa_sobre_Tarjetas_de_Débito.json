@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Cartilla informativa sobre Tarjetas de Débito",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué es una tarjeta de débito?\nEs una tarjeta de plástico que tiene una banda magnética y un chip, mediante la cual y con cargo a los montos depositados, el titular realiza pagos y retiros de dinero a través de los canales puestos a disposición por la empresa emisora.",
+    "source": "0001_qué_es_una_tarjeta_de_débito.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 49
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Cómo se puede usar la tarjeta de débito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Cómo se puede usar la tarjeta de débito?\nEs posible utilizar la tarjeta de débito para acceder a otros servicios dentro de los límites y condiciones pactados por la empresa emisora, como por ejemplo, adquirir bienes o servicios en determinados establecimientos afiliados a la misma.\nLos montos totales de las operaciones realizadas son debitados de las cuentas vinculadas que presenten saldo disponible y cubran el monto total de la operación.\nPara usar una tarjeta de débito se debe digitar una clave secreta o un número de identificación personal (PIN), es intransferible y tiene un plazo de vigencia no mayor de 5 años.",
+    "source": "0002_cómo_se_puede_usar_la_tarjeta_de_débito.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 102
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿A qué tipos de depósitos puede estar vinculada una tarjeta de débito?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿A qué tipos de depósitos puede estar vinculada una tarjeta de débito?\nLa tarjeta de débito puede estar vinculada a depósitos en moneda nacional o extranjera, ya se trate de ahorros o depósitos a plazo, depósitos en cuentas de CTS o cuentas corrientes, así como a otros productos financieros según se indique en el contrato correspondiente.",
+    "source": "0003_a_qué_tipos_de_depósitos_puede_estar_vinculada_una_tarjeta_d.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 56
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Mantener una tarjeta de débito genera un costo adicional?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Mantener una tarjeta de débito genera un costo adicional?\nEn los casos en que la tarjeta sea indispensable para operar la cuenta o para disponer de los fondos, esta no tendrá ningún costo; caso contrario, la opción de contar con una tarjeta de débito puede generar costos de mantenimiento, dependiendo del contrato suscrito.\nLa empresa emisora está obligada a informar a través de su Tarifario sobre los costos que generen la tarjeta y su uso. Así por ejemplo, es posible que las empresas emisoras cobren por los siguientes conceptos:\nReposición de tarjeta (emisión de duplicado, reposición o reimpresión).\nTarjeta de débito adicional (opcional, cuando a solicitud del cliente se emite en un nuevo plástico personalizado).\nMantenimiento de tarjeta de débito, en tanto esta no sea indispensable para disponer de los fondos o realizar operaciones.",
+    "source": "0004_mantener_una_tarjeta_de_débito_genera_un_costo_adicional.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 134
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué medidas de seguridad deben adoptar las empresas emisoras?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué medidas de seguridad deben adoptar las empresas emisoras?\nLas empresas emisoras deben adoptar diversas medidas de seguridad con respecto a los usuarios, entre ellas:\n1.  Entregar la tarjeta al titular, excepto cuando este haya solicitado expresamente que se entregue a una persona distinta, previa verificación de su identidad y dejando constancia de su recepción.\n2.  Entregar la clave o número secreto de la tarjeta generado por la empresa emisora únicamente a su titular, siendo obligatorio que el titular realice su cambio antes de realizar la primera operación que requiera el uso de dicha clave.\n3.  Otorgar la posibilidad al usuario de poder cambiar dicha clave o número secreto las veces que lo requiera.\n4.  Poner a disposición del titular, la posibilidad de comunicar que realizará operaciones con su tarjeta desde el extranjero, antes de la realización de estas operaciones.\n5.  Establecer el monto máximo por operación que podrá efectuarse como micropago, de ser el caso.\n6.  Para las operaciones de disposición o retiro de efectivo, compras y otras operaciones que la empresa identifique con riesgo de fraude en perjuicio de los titulares, deberá otorgar la opción de contar con un servicio de notificaciones que informe de las operaciones inmediatamente después de ser registradas por la empresa, mediante mensajes a un correo electrónico y/o a un teléfono móvil. Otros mecanismos pueden ser pactados con los titulares.\n7.  Las tarjetas que se emitan a partir del año 2015, como medida de seguridad, deben contar además de la banda magnética con un chip que permita almacenar y procesar la información del usuario y sus operaciones, a fin de dar seguridad a los datos. Asimismo, el titular podrá solicitar el cambio de una tarjeta emitida en forma previa al 2015, a fin que se emita una nueva con chip.",
+    "source": "0005_qué_medidas_de_seguridad_deben_adoptar_las_empresas_emisoras.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 296
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Para usar una tarjeta de débito se debe digitar una clave secreta, ¿qué sucede si olvida la clave o la da a conocer a un tercero?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Para usar una tarjeta de débito se debe digitar una clave secreta, ¿qué sucede si olvida la clave o la da a conocer a un tercero?\nTodas las tarjetas de débito presentan como dispositivo de seguridad una clave secreta o número de identificación personal (PIN), que es otorgada de forma reservada al titular, quien es responsable de su confidencialidad.\nSi por descuido el titular da a conocer la clave a un tercero, será responsable de las operaciones que este realice. En este supuesto, debe contactar inmediatamente a la empresa emisora para realizar el cambio de clave, o solicitar a la empresa emisora el bloqueo de su tarjeta y la emisión de una nueva.\nEn caso el titular olvide su clave, debe contactar a la empresa emisora a fin de obtener una nueva.",
+    "source": "0006_para_usar_una_tarjeta_de_débito_se_debe_digitar_una_clave_se.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 132
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Es posible realizar operaciones sin digitar una clave secreta?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Es posible realizar operaciones sin digitar una clave secreta?\nEn el caso de micropagos, que son operaciones efectuadas por montos pequeños cuyo límite es determinado por la empresa emisora, no se requiere la clave secreta u otro medio de autenticación por parte de los usuarios al momento de efectuar el consumo u operación.\nEn estos casos, si se presentan operaciones no reconocidas, estas resultan de responsabilidad de la empresa emisora.",
+    "source": "0007_es_posible_realizar_operaciones_sin_digitar_una_clave_secret.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 70
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Qué se debe hacer en caso de extravío o sustracción de la tarjeta de débito por robo, sustracción, pérdida o deterioro?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué se debe hacer en caso de extravío o sustracción de la tarjeta de débito por robo, sustracción, pérdida o deterioro?\nSe debe llamar inmediatamente a la empresa emisora y solicitar el bloqueo de la tarjeta. Este servicio está habilitado las 24 horas del día. La empresa asignará un código a su solicitud, y posteriormente, debe enviarle por medios físicos o electrónicos, según su elección, una copia del registro de la solicitud. Efectuado el bloqueo de la tarjeta de débito, el titular podrá solicitar la emisión de una nueva tarjeta.",
+    "source": "0008_qué_se_debe_hacer_en_caso_de_extravío_o_sustracción_de_la_ta.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 90
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Quién asume el costo de las operaciones no reconocidas?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Quién asume el costo de las operaciones no reconocidas?\nSalvo que la empresa emisora demuestre la responsabilidad del cliente, este no es responsable de ninguna pérdida por las operaciones realizadas en los siguientes casos:\n*   Cuando estas hayan sido realizadas luego de que la empresa fuera notificada del extravío, sustracción, robo, hurto o uso no autorizado de la tarjeta, o de la información que contiene.\n*   Cuando la empresa emisora no cuente con infraestructura y sistemas de atención, que permitan a los usuarios comunicar el extravío o sustracción de la tarjeta o de su información, los cargos indebidos y las operaciones que no reconozcan, o cuando dicha infraestructura y sistemas funcionen de manera deficiente.\n*   Cuando las tarjetas hayan sido objeto de clonación.\n*   Por el funcionamiento defectuoso de los canales o sistemas puestos a disposición de los usuarios por las empresas para efectuar operaciones.\n*   Por la manipulación de los cajeros automáticos o de los ambientes en que estos operan.\n*   Cuando se haya producido la suplantación del usuario en las oficinas de la empresa emisora.\n*   En caso se trate de operaciones de micropago, pactadas con el titular.\n*   Operaciones realizadas luego de la cancelación de la tarjeta o cuando esta haya expirado.\nLas empresas emisoras serán responsables de demostrar que las operaciones fueron autenticadas y registradas.",
+    "source": "0009_quién_asume_el_costo_de_las_operaciones_no_reconocidas.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 219
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Cartilla informativa sobre Tarjetas de Débito",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Las empresas emisoras pueden cargar a los usuarios el costo de los seguros contratados para la protección contra el uso fraudulento de tarjetas?",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Las empresas emisoras pueden cargar a los usuarios el costo de los seguros contratados para la protección contra el uso fraudulento de tarjetas?\nLas empresas no pueden trasladar a los usuarios como gasto o comisión, el costo asociado a la contratación de pólizas de seguro y/o mecanismos de protección, que tengan por objeto cubrir las operaciones no reconocidas que sean de responsabilidad de las empresas financieras de acuerdo a lo señalado en la pregunta anterior.",
+    "source": "0010_las_empresas_emisoras_pueden_cargar_a_los_usuarios_el_costo_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre Tarjetas de Débito.json",
+    "num_palabras": 75
+  }
+]

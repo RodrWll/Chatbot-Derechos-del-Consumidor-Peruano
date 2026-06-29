@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "¿Quiénes somos?",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "El Organismo que regula, supervisa y fiscaliza la infraestructura de transporte de uso público, como aeropuertos, puertos, vías férreas, las líneas 1 y 2 del Metro de Lima y Callao, así como carreteras concesionadas de alcance nacional.\n\nPara el Ositrán, es importante que conozcas tus derechos, cumplas con tus obligaciones y contribuyas en la mejora del servicio brindado.\n\nPor ello, hemos elaborado esta guía didáctica con la finalidad de proporcionarte información relevante sobre el servicio de la Línea 1 del Metro de Lima y Callao, así como sobre tus derechos y deberes como usuario para un adecuado uso del mismo.",
+    "source": "0001_el_organismo_que_regula_supervisa_y_fiscaliza_la_infraestruc.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 100
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Derechos de los usuarios de la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "*   Recibir información veraz, clara, oportuna y detallada sobre cualquier aspecto vinculado al servicio de la Línea 1 del Metro de Lima y Callao.\n*   Recibir un servicio de calidad conforme a lo establecido en los niveles de prestación del servicio dispuestos en el Contrato de Concesión.\n*   Interponer reclamos ante la concesionaria frente a la existencia de inconvenientes presentados durante el servicio. El trámite es gratuito.\n*   Presentar denuncias ante el Ositrán por incumplimiento del Contrato de Concesión o a la normativa aplicable. La presentación de la denuncia es gratuita.\n*   Recibir atención adecuada con un trato correcto por parte del personal de las estaciones.\n*   Seguridad durante la utilización del servicio. Las estaciones deben estar correctamente señalizadas para un uso seguro de las mismas.",
+    "source": "0002_recibir_información_veraz_clara_oportuna_y_detallada_sobre_c.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 126
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Deberes de los usuarios de la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "*   **Pagar la tarifa establecida:** Los usuarios se encuentran obligados a abonar el monto correspondiente por concepto de tarifa.\n*   **Mantener una conducta debida:** Los usuarios deben respetar las normas establecidas para el uso de la Línea 1 del Metro de Lima y Callao.",
+    "source": "0003_pagar_la_tarifa_establecida_los_usuarios_se_encuentran_oblig.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 44
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Conductas prohibidas en la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "Están prohibidos los siguientes comportamientos:\n*   Ingresar a las estaciones bajo los efectos del alcohol y drogas.\n*   Realizar venta ambulatoria, así como revender pasajes.\n*   Ingresar con elementos inflamables, cortantes, vidrios u otros de riesgo.\n*   Ingresar o cruzar las vías férreas.\n*   Ingerir alimentos o bebidas en los coches de los trenes.\n\nTu acceso podrá ser restringido en caso se detecten dichas conductas.",
+    "source": "0004_están_prohibidos_los_siguientes_comportamientos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 65
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Recomendaciones para el uso de las máquinas de autoservicio ubicadas en las estaciones",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "Puedes adquirir y/o recargar tu tarjeta para ingresar a la Línea 1 del Metro de Lima y Callao en las máquinas de autoservicio (TVM’s) ubicadas en todas las estaciones. Para realizar de forma correcta tus transacciones, sigue los siguientes pasos:\n\n**Para realizar recargas**\n1.  Coloca la tarjeta en el lector de las máquinas de autoservicio.\n2.  Selecciona el monto a recargar.\n3.  Introduce las monedas o billetes en la ranura respectiva.\n4.  Recoge el comprobante o ticket de pago y la tarjeta recargada.\n    *Recuerda que si retiras tu tarjeta antes de recibir tu recarga, no se habrá completado correctamente la transacción efectuada.*",
+    "source": "0005_puedes_adquirir_yo_recargar_tu_tarjeta_para_ingresar_a_la_lí.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 102
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Recomendaciones para el uso de las máquinas de autoservicio ubicadas en las estaciones",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Para comprar una tarjeta nueva**\n1.  Selecciona la opción “comprar tarjeta” en las máquinas de autoservicio.\n2.  Ingresa el monto de S/ 5.\n3.  Recoge la tarjeta de la ranura respectiva.\n4.  Coloca la tarjeta en el validador para que sea activada.",
+    "source": "0006_para_comprar_una_tarjeta_nueva.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 42
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Asociación de la tarjeta al DNI",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "El Ositrán recomienda realizar el trámite de asociación de la tarjeta al número de su Documento Nacional de Identidad (DNI), para ingresar a la línea 1 del Metro de Lima y Callao.\n\n**¿Por qué es importante?**\nEn caso de pérdida o robo de la tarjeta, podrás recuperar el saldo, solo si la tarjeta se encuentra asociada al DNI.\nLas tarjetas extraviadas, que fueron halladas en alguna de las estaciones de la Línea 1 del Metro de Lima y Callao, podrán ser recuperadas en las Oficinas de Atención al Pasajero ubicadas en la estación Cabitos y Presbítero Maestro.\n\nLa solicitud de la asociación de la tarjeta adulto se realiza ante la concesionaria a cargo de la Línea 1 del Metro de Lima y Callao. El trámite podrás realizarlo a través de los siguientes medios:\n*   Completando el formulario contenido en la página web de la Línea 1 del Metro de Lima y Callao.\n*   Vía telefónica, comunicándote al siguiente número: 0800-111-21.",
+    "source": "0007_el_ositrán_recomienda_realizar_el_trámite_de_asociación_de_l.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 160
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Conoce las medidas permitidas para ingresar bultos a la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "Si deseas ingresar a la Línea 1 del Metro de Lima y Callao portando bultos, el Ositrán te recomienda verificar que no excedan el tamaño máximo permitido, utilizando para ello los medidores de bultos dispuestos en todas las estaciones, verificando también el horario en el cual se permite el ingreso de determinados objetos. Debes tener en cuenta que la concesionaria permite el ingreso de los siguientes bultos:\n\n**Bultos permitidos**\n*   **En horas de mayor afluencia (\\*)**\n    *   Sillas y coches portabebés\n*   **Resto del día**\n    *   Mochilas\n    *   Portalaptops y similares\n\n(\\*) Lunes a sábado de 6 a 10 a. m. y de 5 a 9 p. m.\n*Recuerda, un solo bulto por persona.*\n\nNo se puede ingresar artículos peligrosos a la Línea 1 del Metro de Lima y Callao, tales como juegos pirotécnicos, combustibles, pinturas, gas presurizado u otros elementos inflamables.",
+    "source": "0008_si_deseas_ingresar_a_la_línea_1_del_metro_de_lima_y_callao_p.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 142
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Tópicos en las estaciones de la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "Ante cualquier situación de emergencia y/o accidente en la Línea 1 del Metro de Lima y Callao, puedes recibir la atención de primeros auxilios en los tópicos habilitados en las estaciones de la referida infraestructura.\nEn dichas situaciones, puedes recurrir al personal asignado a las estaciones de la Línea 1 del Metro de Lima y Callao o a los miembros de la Policía Ferroviaria, para que te brinden la asistencia requerida.",
+    "source": "0009_ante_cualquier_situación_de_emergencia_yo_accidente_en_la_lí.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 71
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Devolución del pasaje en caso de interrupción del servicio",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "Ante una eventualidad de carácter técnico o de otra naturaleza que implique la suspensión del servicio, la concesionaria debe realizar la devolución de los pasajes a los usuarios que lo soliciten.\n\nEn estos casos, el personal de las estaciones informará acerca de la imposibilidad de continuar el viaje y podrás decidir:\na.  Esperar a que se reanude el servicio.\nb.  Optar por retirarte y utilizar otro medio de transporte.\n\n**¿Qué debo hacer?**\nDirigirse agente de estación y solicitar que los deriven a la boletería para la devolución del pasaje a través de una recarga en su tarjeta.",
+    "source": "0010_ante_una_eventualidad_de_carácter_técnico_o_de_otra_naturale.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 97
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Si no te encuentras conforme o tienes inconvenientes con el servicio brindado en la Línea 1 del Metro de Lima y Callao...",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "... tienes hasta 60 días hábiles para presentar tu reclamo ante la concesionaria, a través de los siguientes canales:\n*   Formulario web\n*   Correo electrónico: escribenos@lineauno.pe\n*   Vía telefónica, llamando al 0800-1112-1\n*   Oficina de Atención al Pasajero, ubicadas en las estaciones Cabitos y Presbítero Maestro.\n*   Libro de Reclamaciones, ubicados en todas las estaciones de la Línea 1 del Metro de Lima y Callao.\n\nPuedes recibir la respuesta al reclamo presentado por parte de la concesionaria vía correo electrónico, si así lo autorizas expresamente.",
+    "source": "0011_tienes_hasta_60_días_hábiles_para_presentar_tu_reclamo_ante_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 85
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Si no te encuentras conforme o tienes inconvenientes con el servicio brindado en la Línea 1 del Metro de Lima y Callao...",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Puedes reclamar por las siguientes materias:**\n*   Falta de atención oportuna y/o adecuada por parte del personal de las estaciones.\n*   Problemas con la calidad del servicio brindado.\n*   Inconvenientes relacionados con el cobro del servicio.\n*   Injustificada restricción al acceso y/o al servicio.\n*   Información incompleta, incorrecta y/o defectuosa brindada por el personal de las estaciones.\n\n*Recuerda: Los reclamos serán resueltos por la concesionaria en un plazo de quince (15) días hábiles, contados a partir de su presentación. No obstante, dicho plazo podrá extenderse hasta treinta (30) días hábiles, mediante decisión motivada en aquellos reclamos que sean considerados particularmente complejos.*",
+    "source": "0012_puedes_reclamar_por_las_siguientes_materias.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 101
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Si NO estás de acuerdo con lo resuelto por la concesionaria tienes DOS opciones:",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "1.  Presentar un Recurso de Reconsideración, adjuntando nuevas pruebas a fin de que la concesionaria revise nuevamente el reclamo.\n2.  Presentar un Recurso de Apelación. En este caso la concesionaria elevará el expediente al Tribunal del Ositrán a fin que resuelva la apelación, en segunda y última instancia administrativa.\n\n*Recuerda: El plazo para interponer cualquier recurso impugnativo es de hasta quince (15) días hábiles desde recibida la resolución de primera instancia emitida por la concesionaria.*",
+    "source": "0013_1_presentar_un_recurso_de_reconsideración_adjuntando_nuevas_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 75
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Procedimiento de reclamos",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "1.  Presentar tu reclamo ante la concesionaria.\n    *Recuerda: Cuentas con 60 días hábiles desde ocurridos o conocidos los hechos que lo motivan, para presentar un reclamo.*\n2.  La concesionaria debe atender tu reclamo en un plazo de 15 días hábiles, pudiéndose ampliar como máximo hasta 30 días hábiles, bajo decisión motivada.\n3.  Si NO te encuentras conforme con la respuesta al reclamo, tienes 15 días hábiles para presentar un Recurso de Reconsideración o un Recurso de Apelación.\n    *El Recurso de Apelación se presenta ante la concesionaria para su posterior traslado al Ositrán.*\n4.  La concesionaria resuelve el Recurso de Reconsideración y el Tribunal de Solución de Controversias y Reclamos del Ositrán resuelve el Recurso de Apelación, como segunda y última instancia administrativa.\n    *Si te encuentras conforme con la respuesta brindada al reclamo, culmina el procedimiento.*",
+    "source": "0014_1_presentar_tu_reclamo_ante_la_concesionaria.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 135
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Si consideras que la Concesionaria NO está cumpliendo con sus obligaciones contractuales o está infringiendo alguna norma, puedes presentar una denuncia ante el Ositrán.",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "La denuncia debe contener una descripción clara de los hechos, a fin de poder iniciar las respectivas investigaciones para determinar la responsabilidad de la empresa y, de ser el caso, imponer las sanciones correspondientes.",
+    "source": "0015_la_denuncia_debe_contener_una_descripción_clara_de_los_hecho.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 34
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Canales de presentación de denuncias ante el Ositrán",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Canales de presentación de denuncias ante el Ositrán**\n*   Mesa de Partes del Ositrán, mediante documento dirigido a la Gerencia de Atención al Usuario.\n*   Formulario Virtual de Denuncias, ubicado en el portal web del Ositrán.\n*   Correo electrónico: usuarios@ositran.gob.pe\n*   Línea gratuita: 0800-11004",
+    "source": "0016_canales_de_presentación_de_denuncias_ante_el_ositrán.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 44
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Requisitos para la presentación de una denuncia",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Requisitos para la presentación de una denuncia**\n*   Nombre y apellido del denunciante, así como el número de documento de identidad.\n*   Domicilio del denunciante.\n*   Correo electrónico del denunciante, según corresponda.\n*   Firma o huella digital del denunciante, según corresponda.\n*   Indicar si desea o no mantener en reserva su identidad.\n*   Referencias generales del lugar, fecha y circunstancias en las que tomó conocimiento de los hechos denunciados, así como una breve descripción de los mismos.\n*   Identificación de la Entidad Prestadora denunciada.\n\nNo olvides adjuntar a tu denuncia, todos los elementos probatorios con los que cuentes, como documentos, testimonios, fotos o videos, entre otros.",
+    "source": "0017_requisitos_para_la_presentación_de_una_denuncia.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 106
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Procedimiento de denuncias",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Procedimiento de denuncias**\n1.  Usuario remite denuncia a la Gerencia de Atención al Usuario (GAU).\n2.  GAU verifica requisitos del trámite de denuncia (3 días hábiles).\n3.  GAU traslada la denuncia a la Gerencia de Supervisión y Fiscalización (GSF).\n4.  La Jefatura de Contratos de la ITUP correspondiente de la GSF tramita la denuncia y decide acciones a adoptar.\n5.  **Si la Denuncia no constituye presunto incumplimiento por parte de la Entidad Prestadora:** La Jefatura de Contratos Ferroviarios y del Metro de Lima y Callao de la GSF recomienda a la Jefatura de Fiscalización de la GSF evaluar el inicio del procedimiento administrativo sancionador o aplicación de penalidad.\n    **Si la Denuncia constituye presunto incumplimiento por parte de la Entidad Prestadora:** GSF comunica a la GAU de manera motivada el rechazo de la denuncia. (30 días hábiles + 30 días hábiles prorrogables de forma excepcional).\n6.  GAU informa a usuario.\n\n*Recuerda: La denuncia no convierte al denunciante en parte del procedimiento de denuncia, ni del procedimiento administrativo sancionador o de determinación de aplicación de penalidades que eventualmente pueda iniciarse contra la concesionaria.*",
+    "source": "0018_procedimiento_de_denuncias.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 181
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Supuestos materia de denuncia contra la concesionaria de la Línea 1 del Metro de Lima y Callao",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Supuestos materia de denuncia contra la concesionaria de la Línea 1 del Metro de Lima y Callao**\n*   Negativa a facilitar a los usuarios el Libro de Reclamaciones en las estaciones, cuando sea requerido.\n*   Injustificada restricción al servicio de la Línea 1 del Metro de Lima y Callao.\n*   No permitir la presentación de reclamos a través de los canales establecidos.\n*   Falta de limpieza de los servicios higiénicos, andenes, estaciones y de los trenes.\n*   Inoperatividad de equipos de movilización de personas (escaleras eléctricas, ascensores, etc).\n*   Incumplimiento del número de viajes y la frecuencia de los trenes.\n*   Falta de mantenimiento de las estaciones, vías férreas y de los trenes.",
+    "source": "0019_supuestos_materia_de_denuncia_contra_la_concesionaria_de_la_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 113
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Recomendaciones para el uso adecuado del servicio",
+    "categoria_consumo": [
+      "transporte"
+    ],
+    "texto": "**Recomendaciones para el uso adecuado del servicio**\n*   Realiza con anticipación las recargas de tus tarjetas.\n*   Cede el asiento preferencial en los trenes y андenes.\n*   No ingieras alimentos y/o bebidas al interior de los trenes.\n*   No corras al interior de las estaciones.\n*   Evita el uso de ascensores y escaleras eléctricas, y cédelos a los pasajeros preferenciales.\n*   Utiliza de forma adecuada los objetos de higiene personal dispuestos en los SS. HH.\n*   Mantén limpias las estaciones y trenes.",
+    "source": "0020_recomendaciones_para_el_uso_adecuado_del_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 82
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Contáctate con el Ositrán",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "**Contáctate con el Ositrán**\nPara orientarte a través de los siguientes canales:\n*   **Formulario de orientación y atención de consultas**\n*   **Línea gratuita:** 0800-11004 (Atención de lunes a viernes de 9 a. m. a 6 p. m.)\n*   **Correo electrónico:** usuarios@ositran.gob.pe\n*   **Página web**",
+    "source": "0021_contáctate_con_el_ositrán.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 44
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Guía del usuario de la Línea 1 del Metro de Lima y Callao",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Centro de Orientación al Usuario del Ositrán",
+    "categoria_consumo": [
+      "entidades públicas"
+    ],
+    "texto": "**Centro de Orientación al Usuario del Ositrán**\nUbicado en la Línea 1 del Metro de Lima y Callao\nStand 14, estación La Cultura\nTeléfono: 957 315 411\nHorario de atención: Lunes a viernes de 9 a. m. a 6 p. m.",
+    "source": "0022_centro_de_orientación_al_usuario_del_ositrán.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía del usuario de la Línea 1 del Metro de Lima y Callao.json",
+    "num_palabras": 41
+  }
+]

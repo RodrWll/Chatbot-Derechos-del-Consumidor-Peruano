@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 1.- Objeto de la Ley\nDispónese que en los lugares de atención al público las mujeres embarazadas, las niñas, niños, las personas adultas mayores y con discapacidad, deben ser atendidas y atendidos preferentemente. Asimismo, los servicios y establecimientos de uso público de carácter estatal o privado deben implementar medidas para facilitar el uso y/o acceso adecuado para las mismas.",
+    "source": "0001_artículo_1_objeto_de_la_ley.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 60
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 2.- Obligaciones\nLas entidades públicas y privadas de uso público deben:\n1. Consignar en lugar visible de fácil acceso y con caracteres legibles el texto de la presente Ley.\n2. Emitir directivas para el adecuado cumplimiento de la Ley, las que deben ser publicadas en su portal electrónico.\n3. Adecuar su infraestructura arquitectónica cuando corresponda.\n4. Capacitar al personal de atención al público.\n5. Exonerar de turnos o cualquier otro mecanismo de espera a los beneficiarios de la presente Ley.\n6. Implementar un mecanismo de presentación de quejas contra funcionarios públicos, servidores o empleados, que incumplan su obligación de otorgar atención preferente. Así como llevar un registro de control de las sanciones que impongan, las cuales deben poner en conocimiento de la municipalidad correspondiente.\n7. Otras que establezca el reglamento.",
+    "source": "0002_artículo_2_obligaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 131
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 3.- Multa\nEstablécese la sanción de multa por incumplimiento a la Ley, la cual no excederá el 30% de la Unidad Impositiva Tributaria (UIT), y se aplica atendiendo a la magnitud de la infracción y con criterio de gradualidad. El dinero recaudado por este concepto se destina a financiar programas de promoción, educación y difusión de la presente Ley.",
+    "source": "0003_artículo_3_multa.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 60
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 4.- Infracciones\nInfracciones a la Ley:\n1. No brindar atención preferente a las mujeres embarazadas, niñas, niños, personas adultas mayores y con discapacidad, en los lugares de atención al público.\n2. Omitir consignar en lugar visible, de fácil acceso y con caracteres legibles el texto de la presente Ley.\n3. No emitir directivas para el adecuado cumplimiento de la Ley y/u omitir publicarlas en su portal electrónico.\n4. No adecuar su infraestructura arquitectónica cuando corresponda.\n5. No implementar un mecanismo de presentación de quejas contra funcionarios públicos, servidores o empleados, que incumplan su obligación de otorgar atención preferente.\n6. No llevar un registro de control de las sanciones que se impongan.\n7. No exonerar de turnos o cualquier otro mecanismo de espera a los beneficiarios de la presente Ley.\n8. Otras que establezca el reglamento.",
+    "source": "0004_artículo_4_infracciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 136
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 5.- Entidad competente\nLa municipalidad se encarga de aplicar las multas en el ámbito de su jurisdicción comunicando de su imposición y pago a la Defensoría Municipal del Niño y Adolescente (DEMUNA), Oficina Municipal de las Personas con Discapacidad (OMAPED) y oficinas de servicio social.",
+    "source": "0005_artículo_5_entidad_competente.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 46
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Ley N° 27408",
+    "tipo_doc": "ley",
+    "capitulo_seccion": "disposiciones generales",
+    "categoria_consumo": [
+      "consumo en general"
+    ],
+    "texto": "Artículo 6.- Licencias de funcionamiento\nLas municipalidades dictan las disposiciones necesarias para que previo al otorgamiento de Licencia de Funcionamiento de los establecimientos en los que se brinde atención al público se verifique el cumplimiento de la presente Ley.",
+    "source": "0006_artículo_6_licencias_de_funcionamiento.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/leyes/Ley N° 27408.json",
+    "num_palabras": 39
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Alcance y rol de la SBS",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿La SBS puede ordenar a la aseguradora o AFOCAT que proceda al pago?\nNo, la SBS no cuenta con facultades para resolver controversias particulares derivadas de temas contractuales, ni para ordenar la realización de obligación alguna. Ante la SBS se pueden presentar denuncias por infracción a las normas que regulan a las compañías de seguros y AFOCAT, lo cual puede ameritar el inicio de un procedimiento sancionador y la imposición de una sanción a la entidad supervisada.",
+    "source": "0001_la_sbs_puede_ordenar_a_la_aseguradora_o_afocat_que_proceda_a.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 77
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "El Fondo de Compensación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué es el Fondo de Compensación y para qué sirve?\nEs el fondo que tiene por objetivo cubrir los daños a las víctimas de accidentes de tránsito ocasionados por vehículos que no hayan sido identificados y se den a la fuga. El fondo cubre el pago de gastos médicos y gastos de sepelio, hasta por los importes de cobertura correspondientes al SOAT. No cubre indemnizaciones por incapacidad temporal, invalidez permanente o muerte.",
+    "source": "0002_qué_es_el_fondo_de_compensación_y_para_qué_sirve.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 72
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "El Fondo de Compensación",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Cómo puedo acceder a este fondo en caso de un accidente?\nDebe llamar a central SALUTIA (6191122) o al Fondo de Compensación (3157890), de lunes a viernes, 8:45 a.m. – 16:45 p.m. La Oficina de Atenciones del Fondo se ubica en Jr. Zorritos N°1203, Cercado de Lima (Ministerio de Transportes y Comunicaciones).",
+    "source": "0003_cómo_puedo_acceder_a_este_fondo_en_caso_de_un_accidente.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 52
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "En caso de un accidente de tránsito",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué debo hacer en caso de un accidente de tránsito?\nAvisar de inmediato la ocurrencia de un accidente de tránsito a la compañía de seguros o AFOCAT. Denunciar el accidente de tránsito en la delegación de la Policía Nacional del Perú más cercana.",
+    "source": "0004_qué_debo_hacer_en_caso_de_un_accidente_de_tránsito.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 43
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de gastos médicos y sepelio",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Cómo se efectúa el pago de los gastos médicos?\nPara el tratamiento médico, podrá optar por dos modalidades:\na) Por reembolso, a la víctima o a quien la represente, cuando se hayan pagado directamente al centro de salud los gastos médicos.\nb) Mediante la emisión de cartas garantía por parte de la aseguradora/AFOCAT.",
+    "source": "0005_cómo_se_efectúa_el_pago_de_los_gastos_médicos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 53
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de gastos médicos y sepelio",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué documentos debo presentar para solicitar el reembolso de los gastos médicos y de sepelio?\nCopia de DNI de la víctima y del solicitante.\nCopia del documento que acredite la representación o parentesco.\nCopia del atestado policial.\nCopia del informe médico o sustentatorio o partida de defunción, según el caso.\nOriginales de comprobantes de pago de los gastos médicos.",
+    "source": "0006_qué_documentos_debo_presentar_para_solicitar_el_reembolso_de.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 59
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de indemnizaciones",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Cómo se pagan las indemnizaciones?\nLa indemnización por muerte se paga por el íntegro de 4 UIT.\nLa indemnización de invalidez permanente se paga según la tabla del anexo del D.S N°024-2002-MTC.\nLa incapacidad temporal se paga en razón de 1/30 de la RMV (remuneración mínima vital) vigente al momento de otorgarse la prestación hasta el monto máximo de 1 UIT.\nEl pago de las indemnizaciones por invalidez o incapacidad no afecta el derecho a recibir el pago de los gastos médicos.",
+    "source": "0007_cómo_se_pagan_las_indemnizaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 82
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de indemnizaciones",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "En caso de muerte, ¿a quién corresponde la indemnización?\nCorresponde a las siguientes personas, en orden de prelación:\nEl cónyuge sobreviviente o integrante sobreviviente de la unión de hecho.\nLos hijos menores de 18 años o mayores incapacitados de manera total y permanente para el trabajo.\nLos hijos mayores de 18 años.\nLos padres.\nLos hermanos menores de 18 años, o mayores de 18 años incapacitados para el trabajo.\nDe no presentarse beneficiarios, al Fondo de Compensación de Seguros, una vez transcurrido el plazo de prescripción liberatoria de 2 años.\nPara el pago, el beneficiario debe acreditar que cuenta con mayor prioridad, para ello, bastará la presentación de una declaración jurada con firma legalizada ante Notario Público o, en el caso del SOAT, suscrita ante funcionarios acreditados de la compañía aseguradora.",
+    "source": "0008_en_caso_de_muerte_a_quién_corresponde_la_indemnización.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 131
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de indemnizaciones",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué debo presentar para el pago de la indemnización por muerte?\nCertificado de defunción de la víctima.",
+    "source": "0009_qué_debo_presentar_para_el_pago_de_la_indemnización_por_muer.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 17
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de indemnizaciones",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué debo presentar para el pago de la indemnización por invalidez o incapacidad?\nCopia del DNI del solicitante.\nCopia del atestado policial.\nCopia del documento que acredite la representación o parentesco.\nOriginal del certificado médico emitido por el médico tratante.",
+    "source": "0010_qué_debo_presentar_para_el_pago_de_la_indemnización_por_inva.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 40
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Pago de indemnizaciones",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿En qué plazo me deben pagar las indemnizaciones?\nDentro de los 10 días siguientes a la presentación de todos los documentos antes mencionados.",
+    "source": "0011_en_qué_plazo_me_deben_pagar_las_indemnizaciones.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 23
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Resolución de Discrepancias y Reclamos",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Qué debo hacer si no estoy de acuerdo con el dictamen del médico?\nLa naturaleza y grado de invalidez o incapacidad son determinados por el médico tratante. Si la aseguradora/AFOCAT, el tomador del seguro o la víctima no coincidieran en todo o en parte con el dictamen, la discrepancia será resuelta ante el Instituto Nacional de Rehabilitación (INR), entidad a la que se podrá recurrir dentro del plazo improrrogable de 10 días de conocido el dictamen.",
+    "source": "0012_qué_debo_hacer_si_no_estoy_de_acuerdo_con_el_dictamen_del_mé.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 76
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Resolución de Discrepancias y Reclamos",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "¿Ante quién debo acudir en caso se rechace mi solicitud de pago?\nPodrá acudir a la Defensoría del Asegurado (solo en el caso de SOAT), al INDECOPI, al Poder Judicial o a la instancia arbitral pertinente.",
+    "source": "0013_ante_quién_debo_acudir_en_caso_se_rechace_mi_solicitud_de_pa.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 36
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Información Adicional",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Línea de consulta\n0800-10840 (gratuita a nivel nacional)",
+    "source": "0014_línea_de_consulta.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 8
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Cartilla informativa sobre SOAT",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Información Adicional",
+    "categoria_consumo": [
+      "servicios financieros y seguros"
+    ],
+    "texto": "Marco Normativo\nLey N°27181, Ley General de Transporte y Tránsito Terrestre, modificada por el Decreto Legislativo N°1051.\nD.S. N°024-2002-MTC, Texto Único Ordenado del Reglamento Nacional de Responsabilidad Civil y Seguros Obligatorios por Accidentes de Tránsito.\nD.S. N° 040-2006-MTC, modificado por el D.S N° 039-2008-MTC, Reglamento de Supervisión de las Asociaciones de Fondos Regionales o Provinciales contra Accidentes de Tránsito (AFOCAT) y de Funcionamiento de la Central de Riesgos de Siniestralidad derivada de Accidentes de Tránsito.",
+    "source": "0015_marco_normativo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Cartilla informativa sobre SOAT.json",
+    "num_palabras": 75
+  }
+]

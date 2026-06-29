@@ -1,0 +1,600 @@
+[
+  {
+    "id": 1,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Te enseñaremos todo lo que debes saber en esta Guía sobre el antes, durante y después de contratar los servicios públicos de telecomunicaciones\n\nÍNDICE\n\nI. DERECHOS DE LOS USUARIOS\nII. ANTES DE CONTRATAR\nIII. DURANTE LA CONTRATACIÓN\n    A. INICIO DE LA CONTRATACIÓN\n    B. YA TIENES EL CONTRATO\nIV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN\nV. TERMINACIÓN DEL CONTRATO DEL SERVICIO\nVI. REPORTA EL BLOQUEO POR ROBO O PÉRDIDA DE TU EQUIPO CELULAR\nVII. HERRAMIENTAS DIGITALES DEL OSIPTEL",
+    "source": "0001_te_enseñaremos_todo_lo_que_debes_saber_en_esta_guía_sobre_el.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 83
+  },
+  {
+    "id": 2,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "I. DERECHOS DE LOS USUARIOS",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Es importante que conozcas cuáles son los principales derechos que te asisten como usuario de los servicios públicos de telecomunicaciones, para que puedas defenderlos y ejercerlos con la empresa operadora antes, durante y al término de la prestación de tu servicio de telecomunicaciones.\nA continuación, te listamos los principales derechos:\n\n1.  Eres libre de elegir el servicio, plan o promoción que más te conviene.\n2.  Tienes derecho a recibir el contrato de servicio.\n3.  Tienes derecho a contar con un servicio ininterrumpido y de calidad.\n4.  Tienes derecho a presentar un reclamo ante la empresa operadora.\n5.  Tienes derecho a recibir información clara, detallada y actualizada.\n6.  Tienes derecho a recibir un recibo de pago detallado.\n7.  Tienes derecho a mantener tu número telefónico, así cambies de empresa operadora.\n8.  Tienes derecho a dar de baja tu servicio sin condicionamiento ni explicaciones.\n9.  Tienes derecho a bloquear tu equipo celular y suspender tu servicio por pérdida o robo.\n10. Tienes derecho a suspender temporalmente tu servicio.\n\nPara mayor información, ingresa al \"Decálogo del Usuario\" disponible en idioma castellano y en lenguas originarias como el quechua, aimara, shipibo-konibo, ashaninka, kichwa y Awajun.",
+    "source": "0002_es_importante_que_conozcas_cuáles_son_los_principales_derech.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 191
+  },
+  {
+    "id": 3,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Todos podemos contratar libremente el servicio público móvil, telefonía fija, Internet fijo y televisión de paga, sea que sean ofrecidos de forma individual o empaquetada, a cambio de un precio fijado por la empresa operadora.\n\nLa empresa operadora está facultada a realizar una evaluación crediticia de considerarlo pertinente.\nRecuerda que no estás obligado a contratar servicios empaquetados, si tu elección es contratar un solo servicio.",
+    "source": "0003_todos_podemos_contratar_libremente_el_servicio_público_móvil.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 65
+  },
+  {
+    "id": 4,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2.1 ¿Qué debes conocer antes de contratar un servicio?\n\n**Internet fijo:**\n- La tarifa del servicio;\n- El plazo de instalación;\n- El costo de instalación, excepto para el Internet fijo inalámbrico;\n- El costo del equipo, de ser el caso;\n- Los servicios adicionales y complementarios;\n- Si la facturación es por servicio consumido o pago adelantado;\n- Las facilidades técnicas y la cobertura del servicio;\n- La tecnología y la velocidad de bajada y subida;\n- Las características de la promoción y beneficios de ser el caso;\n    Recuerda: asegúrate que la promoción u oferta se encuentre vigente en la página web de la empresa operadora.\n- La empresa operadora puede evaluar tu capacidad crediticia;\n- El plazo del contrato que puede ser:\n    (I) plazo forzoso: Máximo 6 meses y el contrato es solo por escrito.\n    (II) plazo indeterminado.",
+    "source": "0004_21_qué_debes_conocer_antes_de_contratar_un_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 140
+  },
+  {
+    "id": 5,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Telefonía fija:**\n- La tarifa del servicio;\n- La tarifa para llamadas de larga distancia.\n- El plazo de instalación;\n- Las facilidades técnicas;\n- El costo de instalación;\n- El plazo del contrato que puede ser:\n    (I) plazo forzoso: Máximo 6 meses y el contrato es solo por escrito.\n    (II) plazo indeterminado.\n\n**Televisión de paga:**\n- La tarifa del servicio;\n- El plazo de instalación;\n- El costo de instalación;\n- La tarifa del punto adicional, de ser el caso;\n- Las facilidades técnicas;\n- Los servicios adicionales y complementarios;\n- Si la facturación es por servicio consumido o pago adelantado, salvo sea en la modalidad prepago;\n- Las señales de programación incluidos;\n- La empresa operadora puede evaluar tu capacidad crediticia;\n- El plazo del contrato que puede ser:\n    (I) plazo forzoso: Máximo 6 meses y el contrato es solo por escrito.\n    (II) plazo indeterminado.",
+    "source": "0005_telefonía_fija.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 147
+  },
+  {
+    "id": 6,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "**Servicio público móvil:**\n- La tarifa del servicio;\n- La cobertura del servicio;\n- Los servicios adicionales y complementarios;\n- El contrato es solo a plazo indeterminado\n- La modalidad de contratación:\n    (I) Pospago:\n        - Si la facturación es por servicio consumido o pago adelantado;\n        - La tarifa por reconexión;\n        - La fecha de entrega de tus beneficios;\n        - La empresa operadora puede evaluar tu capacidad crediticia;\n        - Si decides adquirir un equipo celular en la misma empresa operadora, información del precio del equipo sin y con descuento, cantidad y monto de cuotas; plazo de duración del contrato del equipo; y, consecuencias por incumplir el plazo de este contrato.\n    (II) Prepago:\n        - El monto mínimo de recarga y plazo de duración;\n        - Las consecuencias ante la falta de recarga;\n    Recuerda que adquirir un equipo en la empresa operadora es opcional.",
+    "source": "0006_servicio_público_móvil.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 140
+  },
+  {
+    "id": 7,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2.2 ¿Quieres comprar un equipo celular?\n\nIngresa a Checa tu equipo móvil: donde encontrarás información de los precios, características y condiciones de los equipos que se ofrecen en el mercado.\n\n2.3 ¿Dónde puedo contratar el servicio?\n\n**Servicios fijos**\nLos servicios fijos tales como Internet fijo, televisión de paga y telefonía fija, los puedes contratar de manera presencial en las Oficinas de la empresa operadora o por teléfono con tu contraseña única o por canal digital (WhatsApp, correo electrónico, u otro).\nEn el caso que tu contrato sea a plazo forzoso (tiempo determinado) la contratación es de manera presencial en las Oficinas de la empresa operadora.\n\n**Servicio público móvil**\nEl servicio público móvil lo puedes contratar de manera presencial en las Oficinas de la empresa operadora o por sus canales de autogestión (Activa tu chip Movistar, Activa tu chip Entel, Activa tu Claro Perú, Activa Bitel, Mi Cuy, Activa tu Flash Perú). También puedes solicitar tu servicio por teléfono, por el aplicativo web o móvil que la empresa operadora ofrece.",
+    "source": "0007_22_quieres_comprar_un_equipo_celular.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 169
+  },
+  {
+    "id": 8,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2.4 ¿Qué requisitos debes cumplir para contratar un servicio?\n\n- Tener 18 años o más.\n- Contar con documento legal de identidad, tales como DNI, pasaporte, carnet de extranjería u otro documento de identidad registrado en Migraciones.\n- No contar con deuda exigible por la prestación del mismo servicio con ninguna empresa operadora.\n- No tener antecedentes de uso indebido del servicio u otro tipo de acto ilícito comprobado; y,\n- No encontrarte inhabilitado para contratar.\n\n2.5 ¿Quieres contratar un servicio a través de un representante?\nPara contratar a través de un representante, debes otorgar un poder con firma legalizada ante el notario público, salvo que la empresa operadora acepte que el poder sea otorgado mediante documento escrito, adjuntando copia simple de: (i) el documento legal de identificación del abonado (Documento Nacional de Identidad o Carné de Extranjería), y (ii) el último recibo del servicio de un servicio público como luz, agua, de ser el caso.\nPara el caso de representante de una persona jurídica, adicionalmente se requiere copia simple de: (i) la vigencia del poder del representante, y (ii) el documento legal de identificación del representante (Documento Nacional de Identidad o Carné de Extranjería).",
+    "source": "0008_24_qué_requisitos_debes_cumplir_para_contratar_un_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 195
+  },
+  {
+    "id": 9,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2.6 ¿Qué obligaciones tienes al contratar un servicio?\n\n- Realizar el pago de manera puntual, excepto para servicios en la modalidad prepago.\n- No usar el servicio de manera indebida.\n- Conocer el periodo de facturación de tu servicio pospago o control y recargar tu servicio prepago cada 2 meses para evitar la pérdida del número telefónico.\n\n2.7 ¿Qué obligaciones debe cumplir la empresa operadora por la contratación del servicio?\n- Entregarte tu contrato en idioma castellano, quechua, aimara, ashaninka o shipibo-konibo, independientemente si el contrato es a plazo indeterminado o forzoso.\n    (i) Canal presencial: entrega inmediata\n    (ii) Otros canales: dentro de los 2 días hábiles al correo electrónico que brindaste al momento de contratar. Si solicitas que te envíen tu contrato a tu domicilio, el plazo de entrega es de hasta 10 días hábiles.\n- Detallar en el contrato el nombre de la promoción u oferta que has contratado.\n- Prestar un servicio de calidad;\n- Remitir el recibo, con una anticipación mínima de 5 días calendario a la fecha de pago,\n- Recibir y brindar atención a las solicitudes de trámites de tu servicio y/o reclamos;\n- Recibir el pago de tus servicios en los centros de atención y oficinas destinadas para tal efecto;\n- Respetar tus derechos como usuario de los servicios públicos de telecomunicaciones;\n- No emitir facturaciones por el periodo que el servicio se encuentra suspendido;\n- Reactivar tu servicio dentro de las 24 horas de efectuado el pago del recibo.\n\nRecuerda que puedes acceder y descargar tu contrato en el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) de tu empresa operadora.",
+    "source": "0009_26_qué_obligaciones_tienes_al_contratar_un_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 273
+  },
+  {
+    "id": 10,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "II. ANTES DE CONTRATAR - ASPECTOS A CONSIDERAR ANTES DE CONTRATAR UN SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2.8 ¿Qué pasa si compras un equipo celular asociado a un plan de servicio móvil?\nEs importante que recuerdes que la contratación del servicio público móvil es diferente al contrato del equipo celular y puedes comprarlo en cualquier empresa operadora o establecimiento comercial.\n\nEl contrato del servicio público móvil cuenta con un plazo indeterminado; es decir, no te encuentras obligado a permanecer con la empresa operadora por un periodo específico. Sin embargo, la empresa operadora puede venderte un equipo celular y otorgarte un descuento y/o fraccionamiento siempre que permanezcas un determinado tiempo con el servicio. Revisa las condiciones de la compra del equipo celular, ya que en caso no cumplas con el periodo de permanencia, la empresa operadora puede cobrarte el monto pendiente de pago del equipo celular.\n\nTen en cuenta que el OSIPTEL no establece la forma ni condiciones del contrato del equipo celular.\n\n2.10 ¿Sabes que las empresas operadoras se encuentran impedidas de realizar estas conductas?\n- En la contratación de un servicio exigirte la compra o alquiler de un equipo y/o la contratación de otro servicio público de telecomunicaciones individual o empaquetado.\n- Incluir en el contrato de abonado del servicio, la contratación de servicios suplementarios o adicionales tales como roaming u otros.",
+    "source": "0010_28_qué_pasa_si_compras_un_equipo_celular_asociado_a_un_plan_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 206
+  },
+  {
+    "id": 11,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - A. INICIO DE LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.1 ¿Qué información debe brindarte tu empresa operadora?\n\n*   El detalle del plan tarifario;\n*   La fecha de pago;\n*   La fecha de entrega de los beneficios del plan;\n*   El costo de instalación;\n*   El costo y periodicidad de pago del equipo celular;\n*   La velocidad mínima garantizada para el servicio de acceso a Internet fijo o móvil;\n*   La cobertura del servicio;\n*   La cantidad de canales para el servicio de televisión de paga;\n*   El importe mínimo y duración de la recarga;\n*   Los lugares de pago.\n\n3.2 ¿Cómo debe validar tu identidad la empresa operadora en la contratación del servicio?\n*   La exhibición de tu documento de identidad (DNI, pasaporte, carné de extranjería u otro documento registrado en Migraciones);\n*   La verificación biométrica de tu huella dactilar, (opcional para servicios fijos);\n*   El ingreso de tu contraseña única para la contratación de líneas móviles adicionales;\n*   Asimismo, por tu seguridad la empresa operadora te enviará un SMS a cada una de las líneas móviles que tengas contratado, así como un correo electrónico que hayas registrado para informarte del nuevo servicio registrado a tu nombre. Recuerda que tienes derecho a presentar un reclamo si no reconoces la contratación.",
+    "source": "0011_31_qué_información_debe_brindarte_tu_empresa_operadora.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 201
+  },
+  {
+    "id": 12,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - A. INICIO DE LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.3 ¿Sabes cómo presentar un reclamo?\n*   Ingresa al ABC de los reclamos.\n\n3.4 ¿En qué casos la empresa operadora no puede exigir la verificación biométrica para la contratación del servicio móvil?\n\n*   Cuando adolezcas de alguna discapacidad física\n*   Cuando tu huella dactilar se encuentre desgastada\n*   Cuando se presenten fallas en la conectividad con la base de datos del RENIEC o MIGRACIONES.\nEn estos casos, la empresa operadora te requerirá la firma de una declaración jurada, en la cual se señale el motivo por el cual no ha realizado la verificación biométrica, así como información de tus datos personales.\n\n3.5 ¿Sabes que tienes derecho a solicitar copia del contrato del servicio?\n\nTienes derecho a que la empresa operadora te entregue copia de tu contrato cuando lo solicites, en el plazo máximo de 5 días hábiles.\n\nRecuerda que puedes acceder y descargar tu contrato en el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) de tu empresa operadora.",
+    "source": "0012_33_sabes_cómo_presentar_un_reclamo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 164
+  },
+  {
+    "id": 13,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - A. INICIO DE LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.6 ¿No te instalaron y/o activaron el servicio en el plazo acordado?\nSi la empresa operadora no instaló o activó tu servicio en el plazo acordado, tienes derecho a terminar el contrato sea este a plazo forzoso o indeterminado.\n\nSi realizaste el pago por adelantado para la instalación del servicio, puedes solicitar la devolución directamente a la empresa operadora mediante sus canales presenciales y telefónicos. En caso no tengas un resultado positivo dentro del plazo establecido en tu contrato, recuerda que este problema lo puedes reportar en Checa tu caso.",
+    "source": "0013_36_no_te_instalaron_yo_activaron_el_servicio_en_el_plazo_aco.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 90
+  },
+  {
+    "id": 14,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.7 ¿Qué información tiene tu recibo?\n\n*   La tarifa del servicio;\n*   El ciclo de facturación: fecha del inicio de facturación, fecha de pago, fecha de emisión del recibo;\n*   La tarifa de instalación,\n*   Las cuotas del financiamiento del equipo celular y el número de cuotas;\n*   Los servicios adicionales;\n*   El financiamiento de deuda;\n*   Los descuentos, devoluciones y/o compensaciones;\n*   Los intereses;\n*   El número del recibo.\n\n3.8 ¿Qué es el ciclo de facturación?\n\nEs el periodo de tiempo que la empresa operadora te cobra por el servicio en tu recibo. Es importante conocer el ciclo de facturación porque te permite saber en qué fecha te conviene solicitar la migración, portabilidad numérica e incluso la suspensión y terminación del contrato, a efectos de evitar la emisión de un nuevo recibo.\n\nPor ejemplo, si tu ciclo de facturación inicia el 10 de marzo y finaliza el 9 de abril, te convendría solicitar la migración de plan antes del 9 de abril. Recuerda que toda la información se encuentra en tu recibo y puedes descargarlo en el aplicativo web de la empresa operadora y aplicativo móvil Mi Claro, Mi Movistar, Mi Bitel o Mi Entel.",
+    "source": "0014_37_qué_información_tiene_tu_recibo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 196
+  },
+  {
+    "id": 15,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.9 ¿Sabes que puedes solicitar tu registro de llamadas entrantes?\nPuedes solicitar que la empresa operadora te entregue tu registro de las llamadas recibidas a tu servicio telefónico fijo o servicio público móvil, con una anterioridad no mayor a 2 meses de realizada la solicitud.\n\nEsta solicitud la presenta el abonado mediante el canal telefónico o presencial en las oficinas de la empresa operadora o mediante el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) u otro mecanismo digital. La empresa operadora te entregará un código de pedido por la solicitud de registro de llamadas entrantes, el cual debes conservarlo para seguimiento de tu trámite.\n\nLa empresa operadora debe entregarte el registro de llamadas entrantes en un plazo máximo de 15 días hábiles, posteriores a la presentación de la solicitud.\n\nLa empresa operadora puede aplicar una tarifa por la solicitud del registro de llamadas entrantes.\n\n3.10 ¿Qué es la migración?\nLa migración es el cambio de plan tarifario a un plan de menor o mayor tarifa o de modalidad de contratación (prepago o pospago) dentro de tu misma empresa operadora.\n\nEsta solicitud la presenta el abonado mediante el canal telefónico o presencial en las oficinas de la empresa operadora o mediante el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) u otro mecanismo digital. La empresa operadora te entregará un código de pedido por la solicitud de migración, el cual debes conservarlo para seguimiento de tu trámite.",
+    "source": "0015_39_sabes_que_puedes_solicitar_tu_registro_de_llamadas_entran.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 247
+  },
+  {
+    "id": 16,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.11 ¿Qué requisitos debes cumplir para poder migrar de plan?\n\n*   Debes ser el abonado (titular) del servicio;\n*   No debes tener deuda pendiente en el servicio o equipo celular, si deseas migrar de un pospago a un prepago;\n*   Tu servicio no puede estar suspendido por falta de pago o uso indebido;\n*   El plan tarifario a migrar debe estar vigente al momento de la solicitud;\n\nCuando solicitas la migración a la empresa operadora esta debe entregarte un código de pedido.\n\n3.12 ¿En qué plazo se ejecuta la solicitud de migración de plan?\nSe ejecuta la migración a partir del siguiente ciclo de facturación inmediato posterior de aceptada la solicitud.\nPor ejemplo, si solicitas la migración el 8 de abril y tienes un ciclo de facturación que inicia el 10 de marzo y finaliza el 9 de abril, la solicitud de migración debe atenderse el 10 de abril.\n\nRecuerda que, al solicitar la migración, la empresa operadora debe informarte si procede o no la migración de manera inmediata, o en el plazo máximo de 3 días hábiles, solo si requiere un plazo adicional para evaluar tu pedido.\nPara el caso de MOVISTAR, la migración del servicio de acceso a Internet fijo (individual o empaquetado que incluya este servicio), se ejecuta en un plazo máximo de 1 día hábil, pero si es necesario la visita técnica el plazo será de 5 días hábiles.",
+    "source": "0016_311_qué_requisitos_debes_cumplir_para_poder_migrar_de_plan.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 233
+  },
+  {
+    "id": 17,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.13 ¿Sabes cómo realizar el seguimiento a tu solicitud de migración de plan?\n\nHaz el seguimiento a tu solicitud de migración mediante la herramienta virtual denominada \"Sistema de bajas y migraciones\" (SICBAM) del Osiptel.\n\nMediante el SICBAM podrás visualizar, entre otros, el código de pedido, estado y la fecha de solicitud de migración presentada a la empresa operadora.\n\nEn caso la empresa operadora no reciba tu solicitud de migración, o no la ejecute dentro del plazo; o ejecute una migración sin ser solicitada puedes reportar el problema en Checa tu caso.\n\nRecuerda que por la negativa o falta de respuesta a la solicitud de migración o migración no ejecutada puedes presentar tu reclamo ante la empresa operadora.\n\n3.14 ¿Sabes que, dentro de los 40 días, puedes regresar a tu plan tarifario anterior?\nSi no estás conforme con el plan tarifario al que te migraste, puedes solicitar el retorno a tu plan anterior. Para ello, tienes hasta 40 días hábiles, contados a partir de la fecha que se efectuó la migración, para comunicarte con tu empresa operadora y solicitar el desistimiento.\n\nRecuerda que tu derecho al desistimiento aplica incluso para aquellos planes que la empresa operadora haya cesado la comercialización.",
+    "source": "0017_313_sabes_cómo_realizar_el_seguimiento_a_tu_solicitud_de_mig.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 199
+  },
+  {
+    "id": 18,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.15 ¿En qué casos podrían negarte la solicitud de migración?\nLa empresa operadora puede negar tu solicitud de migración en los siguientes casos:\n\n*   Si la tarifa al que deseas migrar es mayor y se incrementa el riesgo de que no cumplas con el pago de tu servicio\n*   Si tu servicio se encuentra suspendido o cortado por falta de pago o uso indebido\n*   Si incumpliste el pago, a pesar de las facilidades o financiamiento de la deuda\n*   Si la empresa operadora te otorgó facilidades de pago por el equipo celular y no cumpliste con el pago.\n\n3.16 ¿Sabes que puedes solicitar la suspensión temporal de tu servicio?\n\nPuedes solicitar la suspensión temporal de tu servicio en un periodo mínimo de 15 días calendario y hasta por 2 meses en un año. Debe ejecutarse dentro del plazo de 5 días hábiles, salvo que precises una fecha posterior.\n\nEsta solicitud la presenta el abonado mediante el canal telefónico o presencial en las oficinas de la empresa operadora o mediante el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) u otro mecanismo digital. La empresa operadora te entregará un código de pedido por la solicitud de suspensión, el cual debes conservarlo para seguimiento de tu trámite.\n\nRecuerda que la empresa operadora puede aplicar una tarifa por reconectar el servicio.\n\nSi la empresa operadora: (i) no acepta tu solicitud de suspensión, (ii) no la ejecuta dentro del plazo; o (iii) la ejecuta sin tu consentimiento, puedes reportar cualquiera de estos tres problemas en Checa tu caso.\n\nRecuerda que por la suspensión no solicitada y suspensión no ejecutada también puedes presentar tu reclamo ante la empresa operadora.",
+    "source": "0018_315_en_qué_casos_podrían_negarte_la_solicitud_de_migración.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 280
+  },
+  {
+    "id": 19,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.17 ¿Qué es la portabilidad numérica?\n\nLa portabilidad numérica es el cambio de empresa operadora, manteniendo tu número telefónico del servicio de telefonía fija o del servicio público móvil.\n\nEsta solicitud, que es gratuita y sencilla, la puedes presentar mediante el canal telefónico, presencial en las oficinas de la empresa operadora o aplicativo móvil. El plazo máximo para la ejecución de la portabilidad numérica es de 24 horas.\n\n3.18 ¿Qué requisitos debes cumplir para la portabilidad numérica?\nCuando solicitas la portabilidad numérica debes cumplir con los siguientes requisitos:\n\n*   Ser el abonado (titular) del servicio;\n*   El servicio no debe estar suspendido; salvo así lo hayas solicitado\n*   No tener deuda del último recibo; y,\n*   Tener el servicio habilitado al menos 30 días calendario con tu actual operador\n*   Si le has dado de baja a tu servicio que no hayan transcurrido más de 30 días calendario desde la terminación del contrato.",
+    "source": "0019_317_qué_es_la_portabilidad_numérica.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 153
+  },
+  {
+    "id": 20,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.19 ¿Qué debe informarte tu nueva empresa operadora al portar tu número en el trámite de portabilidad numérica?\n\n*   El plazo máximo de ejecución de la portabilidad numérica en el servicio público móvil es de 24 horas de presentada tu solicitud y en el servicio de telefonía fija de instalado el servicio.\n*   Tu anterior empresa operadora puede solicitar la suspensión del servicio hasta por 30 días calendario, si mantienes deudas exigibles con ella.\n*   Para los servicios empaquetados la portabilidad numérica en telefonía fija no implica la baja de los otros servicios contratados.\n*   El servicio puede verse interrumpido por un máximo de 3 horas durante la madrugada en que se realiza el cambio de operador.\n\n3.20 ¿Qué medidas de seguridad se aplica al contratar un servicio con portabilidad numérica?\n\n*   Exhibir tu documento de identidad (DNI, pasaporte, carné de extranjería, u otro documento registrado en Migraciones);\n*   Validar tu identidad mediante la verificación biométrica de huella dactilar, (opcional para la telefonía fija);\n*   Enviarte un SMS con un código de validación solo a tu número móvil que quieres portar.\n*   Si te portas a una empresa operadora a la cual ya eres cliente, usar tu contraseña única, (opcional para la telefonía fija).",
+    "source": "0020_319_qué_debe_informarte_tu_nueva_empresa_operadora_al_portar.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 204
+  },
+  {
+    "id": 21,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.21 ¿Sabes que puedes solicitar el traslado de tu servicio fijo?\nPuedes solicitar el cambio de ubicación del servicio de acceso de Internet fijo, televisión de paga y telefonía fija, dentro del área de cobertura de la empresa operadora, y siempre que las condiciones técnicas lo permitan.\n\nEsta solicitud la presenta el abonado mediante el canal telefónico o presencial en las oficinas de la empresa operadora o mediante el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) u otro mecanismo digital. La empresa operadora te entregará un código de pedido por la solicitud de traslado, el cual debes conservarlo para seguimiento de tu trámite.\n\nEn el plazo de 5 días hábiles de recibir la solicitud de traslado, la empresa operadora te comunicará la fecha en que esta se realizará. En caso no sea posible la atención, la empresa operadora debe comunicarte dentro del referido plazo el sustento que impide la atención a dicha solicitud.\n\nMientras el traslado no se realice, la empresa operadora no debe cobrarte por el servicio. Si la empresa operadora no realiza el traslado, por un periodo mayor a 3 meses puedes solicitar la terminación del contrato. En caso tuvieras un contrato a plazo forzoso la empresa operadora está impedida de imponer penalidades o algún otro cobro análogo.",
+    "source": "0021_321_sabes_que_puedes_solicitar_el_traslado_de_tu_servicio_fi.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 216
+  },
+  {
+    "id": 22,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.22 ¿Cómo se realiza la cesión de la titularidad del servicio público móvil?\n\nPuedes ceder tus derechos y obligaciones a una tercera persona respecto de tu servicio de telecomunicaciones, para lo cual debes presentar la solicitud de manera presencial, acompañado del nuevo abonado en los centros de atención de la empresa operadora.\nLa empresa operadora debe validar tu identidad y la del nuevo abonado a través de la verificación biométrica de huella dactilar, salvo en algunas excepciones como tener la huella desgastada, ser una persona con discapacidad o fallas en el sistema, los que deben presentar una declaración jurada.\nComo medida de seguridad adicional, la empresa operadora remitirá un mensaje de texto (SMS) al servicio público móvil que se va a ceder, con el siguiente mensaje:\n\nUsted ha solicitado ceder la titularidad de ésta línea móvil a favor de otra persona. El código de validación para el inicio de este procedimiento es ####\n\nEste código, tiene una vigencia es de 90 segundos y debe ser entregado al personal de la empresa operadora en señal de conformidad.\n\nEn caso tu servicio se encuentre en estado suspendido o cortado, dicho código será reemplazado por una declaración jurada en la cual se deje constancia de dicho estado y se manifiesta la voluntad de ceder.\n\nAsimismo, la persona que cede la titularidad del servicio debe ingresar su contraseña única.\nEl plazo de atención de la solicitud es de 15 días hábiles.",
+    "source": "0022_322_cómo_se_realiza_la_cesión_de_la_titularidad_del_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 237
+  },
+  {
+    "id": 23,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.23 ¿Cómo se realiza la cesión de la titularidad del servicio fijo?\n\nPuedes ceder tus derechos y obligaciones a una tercera persona, para lo cual debes presentar la solicitud de manera presencial, acompañado del nuevo abonado en los centros de atención de la empresa operadora, para que la validación de tu identidad y la del nuevo abonado.\nEl plazo de atención de la solicitud es de 15 días hábiles.\n\n3.24 ¿Cómo se realiza el cambio de titularidad del servicio por fallecimiento?\n\nEl cambio de titularidad por fallecimiento, solo puede ser solicitado por el cónyuge o los hijos del abonado, y a falta de estos, solo en el caso de servicios fijos, podrá solicitarlo otro familiar que habite en el domicilio de instalación del servicio y cuente con el consentimiento de los demás sucesores.\nEl plazo de atención de la solicitud es de 10 días hábiles.",
+    "source": "0023_323_cómo_se_realiza_la_cesión_de_la_titularidad_del_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 145
+  },
+  {
+    "id": 24,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.25 ¿Sabes que puedes cambiar tu número telefónico?\n\nPuedes solicitar a tu empresa operadora la solicitud de cambio de número de tu servicio de telefonía fija o del servicio público móvil, la cual debe ser atendida en un plazo máximo de 7 días hábiles, contados a partir de la fecha de dicha presentación.\nPuedes solicitar a la empresa operadora que informe sin costo adicional mediante una locución sobre el nuevo número, durante un plazo mínimo 30 días calendario a partir de la fecha del cambio de número.\n\nEsta solicitud la presenta el abonado mediante el canal telefónico o presencial en las oficinas de la empresa operadora o mediante el aplicativo web o móvil (Mi Claro, Mi Movistar, Mi Bitel o Mi Entel) u otro mecanismo digital. La empresa operadora te entregará un código de pedido por la solicitud de cambio de número telefónico, el cual debes conservarlo para seguimiento de tu trámite.\nLa empresa operadora puede aplicar una tarifa por la solicitud de cambio de número.",
+    "source": "0024_325_sabes_que_puedes_cambiar_tu_número_telefónico.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 166
+  },
+  {
+    "id": 25,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.26 ¿Sabes cuál es la diferencia entre uso prohibido y uso indebido del servicio?\n\nEl uso prohibido del servicio público móvil se configura cuando la empresa operadora detecta que las comunicaciones telefónicas (entrantes y salientes) provienen de un área donde se encuentra un penal.\nEl uso indebido del servicio se configura cuando se utiliza el servicio de manera fraudulenta, es decir para un uso para el cual no fue contratado.\n\nEn ambos casos, la empresa operadora procede a suspender y luego a dar de baja el servicio.\n\n3.27 ¿Te cortaron el servicio y bloquearon el equipo por uso prohibido?\n\nSi la empresa operadora te informa que tu servicio fue cortado y tu equipo bloqueado por uso prohibido, tienes derecho a solicitar la reactivación, dentro del plazo de 5 días hábiles luego de dicho corte.\n\nPara ello debes acercarte a una oficina de la empresa operadora junto con el equipo celular bloqueado y el SIM Card cortado.\n\nSi no pudiste acudir a la empresa operadora en ese plazo, puedes presentar un reclamo para que se evalúe tu caso.",
+    "source": "0025_326_sabes_cuál_es_la_diferencia_entre_uso_prohibido_y_uso_in.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 177
+  },
+  {
+    "id": 26,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.28 ¿No tuviste servicio por un periodo determinado?\n\nEn caso no cuentes con servicio por un plazo superior a sesenta (60) minutos consecutivos, la empresa operadora debe ajustar tu recibo por el monto correspondiente al periodo de tiempo en que el servicio estuvo interrumpido o devolver dicho monto.\nAdicionalmente, en el caso de Internet fijo, si la interrupción es por una causa atribuible a tu empresa operadora, esta deberá compensarte.\n\n3.29 ¿Cómo puedes hacer el cálculo para conocer el monto a compensar?\n\nPara determinar el monto de compensación, se empleará un factor multiplicativo diferenciado, de acuerdo con la duración de cada de evento de interrupción. Por ejemplo, para una interrupción en el rango de los 60 y 300 minutos, el monto de la compensación resultará de la multiplicación del monto de la devolución por el factor 2.5.\nEs decir, si en dicho lapso, la retribución al abonado por concepto de devolución es de S/ 1.00, el monto de la compensación resultará de la multiplicación de dicho monto por 2.5, es decir S/ 2.50.",
+    "source": "0026_328_no_tuviste_servicio_por_un_periodo_determinado.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 173
+  },
+  {
+    "id": 27,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.30 ¿Incrementaron tu plan tarifario?\nLas empresas operadoras pueden incrementar la tarifa, previa comunicación al abonado. Para ello, no requieren de la aprobación del Osiptel, solo están obligadas a informar, previamente, a sus usuarios sobre el incremento.\nPuedes consultar la oferta comercial accediendo al aplicativo informático desarrollado por el OSIPTEL, denominado Checa tu plan.\n\nObtén más información.\n\n3.31 ¿Sabes que Movistar tiene otras reglas para realizar un incremento en sus tarifas en Internet Fijo de manera individual o en paquete?\n\n*   Comunicar a los usuarios el aumento en su tarifa, darle opciones de planes a los que puede migrar y más información pertinente.\n*   Informar sobre el incremento 30 días antes de su aplicación y recordar esta información 10 días antes.\n*   Puedes acceder al aplicativo web y móvil para presentar tus solicitudes de migración, suspensión temporal y baja, según corresponda.",
+    "source": "0027_330_incrementaron_tu_plan_tarifario.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 141
+  },
+  {
+    "id": 28,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.32 ¿La empresa operadora puede decidir unilateralmente suspender tu servicio?\n\nSí, la empresa operadora puede suspender tu servicio en los siguientes casos:\n\n*   Por mandato judicial;\n*   Por deuda;\n*   Por declaración de insolvencia;\n*   Por uso indebido del servicio;\n*   Por la realización de llamadas malintencionadas a las centrales telefónicas de emergencias y urgencias;\n*   Por traslado del servicio realizado sin la autorización previa de la empresa operadora;\n*   Por utilizar equipos terminales móviles con IMEI adulterados;\n*   Por reportar el robo o pérdida de tu celular, salvo el Renteseg disponga lo contrario;\n*   Cuando el abonado desconoce o cuestiona la contratación del servicio, portabilidad numérica o la reposición de SIM Card.\n\n3.33 ¿Qué pasa si no pagas tu recibo del servicio?\n\nSi no realizas el pago de tu recibo hasta la fecha de vencimiento esta puede suspender el servicio por falta de pago.\n\nLuego de 20 días de suspendido el servicio, la empresa operadora puede cortar el mismo y luego transcurrido 30 días de efectuado el corte, la empresa operadora puede dar de baja.\n\nPasado 3 meses de vencido el recibo impago, la empresa operadora debe suspender el servicio y aplicar el procedimiento de corte y baja anteriormente señalado.",
+    "source": "0028_332_la_empresa_operadora_puede_decidir_unilateralmente_suspe.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 201
+  },
+  {
+    "id": 29,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "III. DURANTE LA CONTRATACIÓN - B. YA TIENES EL CONTRATO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "3.34 ¿Qué pasa si no recargas tu servicio?\n\nEn el plazo que figura en tu contrato la empresa operadora procederá a ejecutar la baja del servicio. En caso cuentes con un saldo de tu recarga no utilizada, tu servicio podrá estar activo hasta por 210 días calendario.\n\nLa empresa operadora te comunicará sobre la baja del servicio, con una anticipación de 15 días calendario.\n\n3.35 ¿No reconoces la contratación de un servicio, portabilidad numérica y/o reposición del SIM Card?\n\n1.  Comunícate con tu operador a fin de presentar el reclamo por contratación no solicitada y/o portabilidad numérica sin consentimiento o falta de servicio por reposición de SIM Card sin consentimiento. La empresa operadora debe suspender el servicio de manera inmediata.\n\n2.  Solicita el detalle del trámite realizado. La empresa operadora debe informarte la fecha y hora de la solicitud o contratación y el lugar de presentación de la solicitud o contratación. La entrega de esta información es en el mismo momento de la atención.\n\n3.  Solicita copia del mecanismo de contratación y/o solicitud correspondiente al trámite cuestionado. La entrega de esta información se realiza en el plazo máximo de 5 días hábiles. Los documentos proporcionados deben contar con sello, distintivo y/o firma de tu operadora, según corresponda.",
+    "source": "0029_334_qué_pasa_si_no_recargas_tu_servicio.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 207
+  },
+  {
+    "id": 30,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "4.1 ¿Qué hacer si tienes líneas del servicio público móvil registradas a tu nombre que no contrataste?\n\nSi tomas conocimiento de la existencia de una línea móvil que se encuentre a tu nombre pese a no haberla contratado debes presentar un reclamo por contratación no solicitada. Ante ello, la empresa operadora debe emitir una respuesta al reclamo en primera instancia dentro de los 20 días hábiles y 5 días hábiles de notificación.\n\nAdicionalmente, en caso sea una línea móvil prepago, puedes presentar un cuestionamiento de titularidad en la oficina o el centro de atención de la empresa operadora. La empresa operadora deberá retirar la información de tus datos personales del registro de abonados correspondiente, en un plazo máximo de 2 días hábiles.\n\nEn caso realizaron la portabilidad numérica sin tu consentimiento debes presentar un reclamo ante la empresa operadora a la que te portaron. El plazo máximo para la resolución de este reclamo es de 3 días hábiles y 5 días hábiles para notificar.\n\nCon la presentación del reclamo por contratación no solicitada y portabilidad numérica sin tu consentimiento, la empresa operadora está obligada a:\n\n(i) Suspender el servicio, salvo solicitud expresa del abonado, y,\n(ii) En simultáneo, de ser el caso realizar el bloqueo del equipo celular.",
+    "source": "0030_41_qué_hacer_si_tienes_líneas_del_servicio_público_móvil_reg.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 208
+  },
+  {
+    "id": 31,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "4.2 ¿Sabes cuáles son las medidas de seguridad para reducir los fraudes en las contrataciones o reposiciones de chip sin consentimiento?\n\n1.  En la contratación y reposición de chip debes exhibir tu documento de identidad, pasar biometría de tu huella dactilar para lo cual tienes la opción de 5 intentos.\n2.  En la contratación del servicio, el vendedor también debe validar su identidad mediante verificación biométrica de huella dactilar, previamente al trámite. También aplica para el personal que realiza la entrega del SIM card a domicilio (delivery).\n3.  Como medida complementaria para la contratación de líneas adicionales, reposición de chip y cambio de titularidad debes ingresar adicionalmente tu contraseña única.\n4.  Recibirás 2 alertas de tu operador, un mensaje de texto (SMS) a todas las líneas que tengas como abonado del servicio y un correo electrónico, esto es por cada vez que se inicie un trámite de contratación y reposición del chip móvil.\n5.  La solicitud de reposición de chip debe ser presentada en forma personal por el abonado, en cualquiera de las oficinas o centros de atención de la empresa operadora y los puntos de venta que estén habilitados para trámites de los usuarios.\n6.  En el caso de reposición de SIM card la reactivación del servicio se realiza en 4 horas.",
+    "source": "0031_42_sabes_cuáles_son_las_medidas_de_seguridad_para_reducir_lo.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 213
+  },
+  {
+    "id": 32,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "4.3 ¿Sabes qué es la contraseña única?\n\nEs una clave personalizada que debe ser requerida por las operadoras obligatoriamente, como un mecanismo de seguridad adicional a la verificación biométrica de huella dactilar, a fin de brindar mayor seguridad al realizar trámites con el servicio móvil, para evitar casos de suplantación de identidad y contrataciones no solicitadas, entre otros.\n\nEste trámite principalmente se realiza en los centros de atención de la empresa operadora y los puntos de venta habilitados para trámites de los usuarios.\nLa empresa operadora debe informar al usuario sobre el uso de la contraseña única, los trámites en los cuales es obligatorio su uso y la forma de recuperación de la misma.\n\n4.4 ¿Sabes que para usar tu servicio móvil en el extranjero, puedes solicitar el Roaming?\nPara utilizar tu servicio fuera del territorio peruano, debes solicitar a la empresa operadora la activación del servicio de roaming internacional, el cual se efectúa en un plazo no mayor a 24 horas siguientes a la realización de dicha solicitud.\nSolicitado el servicio la empresa operadora debe informarte sobre las tarifas y los medios a través de los cuales puedes solicitar información cuando estés en el extranjero. En cualquier momento puedes solicitar la activación y desactivación del roaming.",
+    "source": "0032_43_sabes_qué_es_la_contraseña_única.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 207
+  },
+  {
+    "id": 33,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "4.5 ¿Sabes cuáles son los canales de atención de las empresas operadoras?\n\nPuedes presentar reclamos ante tu empresa operadora, la cual tiene que informarte el plazo de atención de tu reclamo. A tu disposición cuentas con los siguientes canales:\n\nAplicativo web y móvil: estos canales están habilitados las 24 horas de los 7 días de la semana, por las principales empresas operadoras: Mi Claro, Mi Movistar, Mi Bitel o Mi Entel.\n\nOficinas de atención de las empresa operadoras: ubica la dirección y horario de atención a nivel nacional en el Portal de Información de Usuarios.",
+    "source": "0033_45_sabes_cuáles_son_los_canales_de_atención_de_las_empresas_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 95
+  },
+  {
+    "id": 34,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "IV. CONOCE EL PROCEDIMIENTO QUE DEBE SEGUIR LA EMPRESA CUANDO DESCONOCES LA CONTRATACIÓN",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Teléfono: comunícate con cada empresa operadora a los siguientes números telefónicos:\n\nMOVISTAR: 104 si eres usuario o 080011800 si no eres usuario\nCLARO: 123 si eres usuario o 080000123 (desde una línea fija o móvil) si no eres usuario\nENTEL: 123 si eres usuario o 080009000 si no eres usuario\nBITEL: 123 si eres usuario o 080079123 si no eres usuario\nWIN: 017073000\nDIRECTV: usuarios pospago: (01) 2004-606 ó al 0800-10-606 o al (01) 2004-601 ó al 0800-10-601 si eres usuario prepago\nWOW: 0800-71969\n\nEl Osiptel pensando en ti, ha elaborado y publicado en su página web \"El ABC de los Reclamos en Telecomunicaciones\" que es una guía interactiva, en la que encontrarás todo lo que necesitas saber y conocer sobre el Procedimiento de Reclamos, de una forma fácil, rápida y sencilla.\n\n*   Ingresa al ABC de los reclamos.",
+    "source": "0034_teléfono_comunícate_con_cada_empresa_operadora_a_los_siguien.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 139
+  },
+  {
+    "id": 35,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "La solicitud de baja o terminación del contrato significa que ya no deseas continuar con el servicio en la empresa operadora. Por tanto, esta solicitud es presentada únicamente por el abonado (titular) que firmó el contrato.\n\nPara la presentación de la solicitud de baja no es necesario expresar el motivo, o que el servicio se encuentre activo o sin deuda. Lo que sí es necesario es que esta solicitud la comuniques directamente a la empresa operadora, quien, de manera obligatoria, registrará tu pedido y te brindará un código o constancia de ello.\n\nLa empresa operadora ejecuta la baja del servicio hasta en 5 días hábiles. Puedes indicar la fecha de la baja del servicio, con una anticipación no menor de 5 días hábiles ni mayor de 30 días calendario.\n\nPara el caso de MOVISTAR, la baja del servicio de acceso a Internet fijo (individual o empaquetado que incluya este servicio), se ejecuta en un plazo máximo de 1 día hábil.",
+    "source": "0035_la_solicitud_de_baja_o_terminación_del_contrato_significa_qu.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 160
+  },
+  {
+    "id": 36,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "La solicitud de baja se realiza en los centros y puntos de atención, canal telefónico y mediante el aplicativo web y móvil (Mi Movistar, Mi Entel, Mi Claro o Mi Bitel) u otro mecanismo digital.\n\nRecuerda que puedes hacer seguimiento a tu solicitud de baja en el Sistema de bajas y migraciones (SICBAM).\n\nSi la empresa operadora: (i) no acepta tu solicitud de baja, (ii) no la ejecuta dentro del plazo; o (iii) sin tu consentimiento da de baja tu servicio, puedes reportar cualquiera de estos tres problemas en Checa tu caso.\n\nRecuerda que por la baja no solicitada y baja no ejecutada puedes presentar tu reclamo ante la empresa operadora.",
+    "source": "0036_la_solicitud_de_baja_se_realiza_en_los_centros_y_puntos_de_a.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 111
+  },
+  {
+    "id": 37,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "5.1 ¿Sabes cuáles son las causas para terminar tu contrato?\n\n● Por tu decisión como abonado\n● Por decisión de la empresa operadora, en caso de falta de pago del servicio\n● Por fallecimiento del abonado en caso de ser persona natural\n● Por declaración de insolvencia o por extinción en caso de personas jurídicas, de acuerdo a la legislación en la materia;\n● Si la empresa operadora no cumple en la oportunidad debida con instalar y/o activar el servicio;\n● Si el traslado pendiente se mantiene por un período mayor a 3 meses;\n● Por uso indebido del servicio;\n● Por uso prohibido del servicio en establecimientos penitenciarios, luego de transcurridos 2 meses desde la fecha en que se efectuó el corte del servicio y siempre que no exista reclamo en trámite, o que éste haya quedado firme;\n● Por no reactivarse el servicio suspendido por más de 6 meses, por las causales previstas en las normas relacionadas al Registro Nacional de Equipos Terminales Móviles para la Seguridad - RENTESEG.\n\nLa empresa operadora no puede activar y/o asignar el correspondiente número telefónico o de abonado por un plazo no menor a 90 días calendario a partir de la fecha de terminación del contrato.",
+    "source": "0037_51_sabes_cuáles_son_las_causas_para_terminar_tu_contrato.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 204
+  },
+  {
+    "id": 38,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "5.2 ¿Sabes cómo hacer para terminar un contrato a plazo forzoso?\nComo abonado del servicio puedes resolver anticipada y unilateralmente el contrato a plazo forzoso en los siguientes casos:\n\n● Por problemas de calidad que afecten directamente al abonado, siempre que dichos problemas puedan ser individualizados y hayan sido documentalmente declarados por las instancias competentes de la propia empresa operadora o por el OSIPTEL;\n● Cuando la empresa operadora incremente la tarifa y/o reduzca los atributos vigentes al momento de la contratación del servicio;\n● Si la empresa operadora no cumple en la oportunidad debida con instalar y/o activar el servicio; o,\n● Si el traslado pendiente se mantiene por un período mayor a 3 meses.",
+    "source": "0038_52_sabes_cómo_hacer_para_terminar_un_contrato_a_plazo_forzos.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 116
+  },
+  {
+    "id": 39,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "En caso decidas resolver el contrato por alguna de las causales antes señaladas, debes cursar comunicación escrita a la empresa operadora, dentro de los 30 días calendario siguientes de producida la causal o desde que tomaste conocimiento de ella, adjuntar copia de la documentación probatoria correspondiente.\n\nEl contrato queda resuelto automáticamente luego de transcurridos 5 días hábiles, desde la fecha en que se efectuó la comunicación respectiva.\nLa empresa operadora no puede imponer penalidades o cobros similares por la terminación del contrato, cuando esta se produzca por tu decisión como abonado, la cual debe estar sustentada en las causales enumeradas anteriormente.\n\nSi firmaste un contrato adicional (por ejemplo: un celular) vinculado al servicio de telecomunicaciones en la misma empresa operadora, recuerda que durante el plazo de este contrato la empresa no podrá aplicar un incremento de tarifa.",
+    "source": "0039_en_caso_decidas_resolver_el_contrato_por_alguna_de_las_causa.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 137
+  },
+  {
+    "id": 40,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "V. TERMINACIÓN DEL CONTRATO DEL SERVICIO",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "5.3 ¿Sabes cuáles son tus obligaciones al término del contrato?\n\nLa terminación de tu contrato de servicio no te libera de las obligaciones que tienes con la empresa operadora, tales como:\n\n● El pago de los importes adeudados y los servicios prestados hasta la fecha de terminación del contrato.\n● Devolver los equipos de propiedad de la operadora, sin más desgaste que el uso normal, de lo contrario deberás pagar a la empresa operadora el precio de aquellos.\n\nTen presente que la empresa operadora no puede cobrarte por desinstalación, desconexión, restitución de equipos o cualquier otro concepto de naturaleza semejante.",
+    "source": "0040_53_sabes_cuáles_son_tus_obligaciones_al_término_del_contrato.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 100
+  },
+  {
+    "id": 41,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VI. REPORTA EL BLOQUEO POR ROBO O PÉRDIDA DE TU EQUIPO CELULAR",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "6.1 ¿Qué hacer si te roban o pierdes tu equipo celular?\n\n1. Primero debes comunicarte con tu entidad financiera o bancaria para bloquear tus tarjetas y usuarios digitales. De igual manera, confirma tus operaciones a través de tus movimientos de cuentas.\n2. Segundo debes reportar la pérdida o robo ante tu empresa operadora, a través de su canal telefónico o presencial.\n3. Tercero debes presentar tu denuncia a la Policía Nacional del Perú a través de los canales digitales o presenciales.\n4. Cuarto debes verificar el estado de tu reporte a través de \"Checa tu IMEI\".",
+    "source": "0041_61_qué_hacer_si_te_roban_o_pierdes_tu_equipo_celular.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 96
+  },
+  {
+    "id": 42,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VI. REPORTA EL BLOQUEO POR ROBO O PÉRDIDA DE TU EQUIPO CELULAR",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "6.2 ¿Cuál es el procedimiento que aplica la empresa operadora cuando reportas el robo o pérdida de tu equipo celular?\n\n1. Se valida que la persona que reporta sea el abonado o usuario del servicio público móvil vinculado al equipo robado. Para lo cual te solicitará:\n● Nombre y apellidos del abonado o razón social de persona jurídica, así como su número del documento legal de identificación.\n● Información que valide los datos del abonado del servicio.\n● El número telefónico asociado al equipo celular materia del reporte.\n● Número telefónico desde el cual se reporta el robo o pérdida del equipo celular.\n● Si eres el usuario del servicio móvil, debes indicar los datos antes señalados, además de informar tu nombre y apellidos completos y número de tu documento legal de identificación.",
+    "source": "0042_62_cuál_es_el_procedimiento_que_aplica_la_empresa_operadora_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 133
+  },
+  {
+    "id": 43,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VI. REPORTA EL BLOQUEO POR ROBO O PÉRDIDA DE TU EQUIPO CELULAR",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "2. Luego de ello, la empresa operadora te brinda el código del reporte (como constancia) y el código IMEI del equipo celular (serie de 15 dígitos que identifica al equipo) que procederá a bloquear, omitiendo el último dígito.\n\n3. La empresa operadora está obligada a suspender la línea móvil y bloquear el equipo celular de forma simultánea e inmediata.\n\n4. Cuando se bloquea el equipo celular, su IMEI ingresa a la lista de equipos de celulares robados y perdidos. Esta lista es compartida con todos los operadores que brindan servicio en el mercado móvil para que procedan al bloqueo respectivo y de esta manera se evita su uso.",
+    "source": "0043_2_luego_de_ello_la_empresa_operadora_te_brinda_el_código_del.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 108
+  },
+  {
+    "id": 44,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VII. HERRAMIENTAS DIGITALES DEL OSIPTEL",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "El Osiptel ha puesto a disposición de los usuarios sus herramientas digitales, las cuales están diseñadas para empoderar a los usuarios ofreciéndoles, gratuitamente, información oportuna, confiable y en tiempo real, permitiendo, además, que puedan tomar decisiones acertadas en la contratación de sus servicios.\n\nHerramienta digital que te permite descubrir cuántas líneas telefónicas móviles existen a tu nombre en las diferentes empresas operadoras, con solo colocar tu carnet de extranjería, DNI, pasaporte o RUC.\nEs importante que sepas que el aplicativo también te explica qué hacer en caso no reconozcas alguna línea móvil o encuentres inconsistencias con el resultado de tu búsqueda.\n\nHerramienta digital que te permite comparar los planes, tarifas y condiciones vigentes de los servicios de telecomunicaciones que brindan las empresas operadoras, incluso te facilita calcular la velocidad de descarga del servicio de internet. De esta manera, tendrás la información necesaria para elegir el plan más adecuado según tus necesidades y presupuesto.",
+    "source": "0044_el_osiptel_ha_puesto_a_disposición_de_los_usuarios_sus_herra.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 153
+  },
+  {
+    "id": 45,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VII. HERRAMIENTAS DIGITALES DEL OSIPTEL",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Herramienta digital que te permite conocer la cobertura del servicio móvil en cada una de las localidades que las empresas operadoras declaran, así como el tipo de tecnología de este servicio, a nivel de distrito, provincia y departamento.\nDe no corresponder la información brindada por las empresas operadoras sobre la cobertura móvil o detectar problemas de calidad en alguna localidad, puedes ingresar un reporte, así nos ayudas a fiscalizar la información proporcionada por las empresas operadoras.\n\nHerramienta digital que te permite conocer el desempeño de la calidad de internet móvil que ofrecen las operadoras por zonas geográficas en el país, por tipo de tecnología, basada en 4 indicadores:\n\n● Velocidad de subida y bajada: mide la rapidez con la que se carga y descarga una información a la red.\n● Tiempo de cobertura: mide el tiempo que el servicio se encuentra dentro de la cobertura de una tecnología. Si hay un mayor porcentaje de cobertura, en especial en 4G, representa un mejor desempeño respecto a otras tecnologías.\n● Latencia: mide el retardo para acceder a un contenido alojado en internet.\n● Pérdida de paquetes: mide la intermitencia, lentitud del servicio o pérdidas de conexión.",
+    "source": "0045_herramienta_digital_que_te_permite_conocer_la_cobertura_del_.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 194
+  },
+  {
+    "id": 46,
+    "nombre_doc": "Guía de las condiciones de uso de los servicios públicos de telecomunicaciones",
+    "tipo_doc": "informe",
+    "capitulo_seccion": "VII. HERRAMIENTAS DIGITALES DEL OSIPTEL",
+    "categoria_consumo": [
+      "telecomunicaciones"
+    ],
+    "texto": "Herramienta digital en versión web y App móvil que te permite registrar directamente o con el apoyo del personal de orientación del OSIPTEL los problemas que presentes con tu servicio de público de telecomunicaciones, los que serán comunicados a la empresa operadora para su pronta respuesta y solución.\nSolo tienes que registrarte, crear un usuario, llenar el formulario con tus datos y te llegará un correo para que confirmes tu registro. Una vez dentro del panel de usuarios, debes marcar \"Registra el problema de Servicio\" y seguir los 4 pasos que te indica el sistema. Una vez completada la información, haz clic en \"Envía el problema al operador\" y recibirás por correo o te llegará una alerta a tu equipo celular. En Checa tu caso, también podrás acceder al historial de tus problemas, hacer el seguimiento a tu caso e incluso deberás calificar la respuesta de tu Operador.",
+    "source": "0046_herramienta_digital_en_versión_web_y_app_móvil_que_te_permit.txt",
+    "archivo": "/content/drive/MyDrive/PLN/Chatbot_legal/final_json/informes/Guía de las condiciones de uso de los servicios públicos de telecomunicaciones.json",
+    "num_palabras": 148
+  }
+]
