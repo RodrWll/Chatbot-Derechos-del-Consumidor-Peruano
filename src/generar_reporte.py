@@ -84,7 +84,12 @@ def grafico_embedding(df: pd.DataFrame) -> str:
     return _b64(fig)
 
 
-def grafico_comparativa_baseline(df_emb: pd.DataFrame, df_base: pd.DataFrame) -> str:
+def grafico_comparativa_baseline(
+    df_emb: pd.DataFrame,
+    df_base: pd.DataFrame,
+    baseline_label: str = "Baseline (MiniLM-L12)",
+    current_label: str = "Embeddings (promedio)",
+) -> str:
     modelos = sorted(set(df_emb["modelo"].unique()) | set(df_base["modelo"].unique()))
     base_scores = df_base.groupby("modelo")["score_gemini"].mean()
     emb_scores  = df_emb.groupby("modelo")["score_gemini"].mean()
@@ -94,9 +99,9 @@ def grafico_comparativa_baseline(df_emb: pd.DataFrame, df_base: pd.DataFrame) ->
 
     fig, ax = plt.subplots(figsize=(10, max(4, len(modelos) * 0.8)))
     bars1 = ax.bar(x - ancho/2, [base_scores.get(m, 0) for m in modelos],
-                   ancho, label="Baseline (MiniLM-L12)", color="#7fb3d3")
+                   ancho, label=baseline_label, color="#7fb3d3")
     bars2 = ax.bar(x + ancho/2, [emb_scores.get(m, 0) for m in modelos],
-                   ancho, label="Embeddings (promedio)", color="#27ae60")
+                   ancho, label=current_label, color="#27ae60")
 
     for bar in bars1:
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.03,
@@ -458,7 +463,13 @@ footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.82rem; }
 """
 
 
-def generar_html(df: pd.DataFrame, fecha: str, df_base: pd.DataFrame | None = None) -> str:
+def generar_html(
+    df: pd.DataFrame,
+    fecha: str,
+    df_base: pd.DataFrame | None = None,
+    baseline_label: str = "Baseline (MiniLM-L12)",
+    current_label: str = "Embeddings (promedio)",
+) -> str:
     n_total   = len(df)
     n_emb     = df["embedding"].nunique()
     n_modelos = df["modelo"].nunique()
@@ -480,14 +491,14 @@ def generar_html(df: pd.DataFrame, fecha: str, df_base: pd.DataFrame | None = No
     ejemplos     = obtener_ejemplos(df)
 
     if df_base is not None:
-        img_base    = grafico_comparativa_baseline(df, df_base)
+        img_base    = grafico_comparativa_baseline(df, df_base, baseline_label, current_label)
         tabla_base  = tabla_comparativa_baseline(df, df_base)
         seccion_baseline = f"""
   <section id="baseline">
-    <h2>Comparativa con Baseline</h2>
+    <h2>Comparativa con experimento anterior</h2>
     <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
-      Baseline: embedding MiniLM-L12 original · Embeddings: promedio sobre los 5 embeddings evaluados.
-      Δ positivo significa mejora respecto al baseline.
+      Comparativa: <strong>{baseline_label}</strong> vs <strong>{current_label}</strong>.
+      Δ positivo significa mejora respecto al experimento anterior.
     </p>
     {tabla_base}
     <img class="chart" src="data:image/png;base64,{img_base}" alt="Comparativa baseline">
@@ -588,6 +599,10 @@ def parsear_args() -> argparse.Namespace:
                    help="JSON de scores baseline para comparativa (default: scores_gemini_baseline.json)")
     p.add_argument("--salida", default="reporte.html",
                    help="Archivo HTML de salida (default: reporte.html)")
+    p.add_argument("--baseline-label", default="Baseline (MiniLM-L12)",
+                   help="Etiqueta del baseline en gráficos comparativos")
+    p.add_argument("--current-label", default="Embeddings (promedio)",
+                   help="Etiqueta del experimento actual en gráficos comparativos")
     return p.parse_args()
 
 
@@ -626,7 +641,11 @@ def main() -> None:
         print("[ERROR] No hay entradas con score aún.")
         return
 
-    html = generar_html(df, date.today().isoformat(), df_base)
+    html = generar_html(
+        df, date.today().isoformat(), df_base,
+        baseline_label=args.baseline_label,
+        current_label=args.current_label,
+    )
     Path(args.salida).write_text(html, encoding="utf-8")
     print(f"Reporte generado: {args.salida}")
 

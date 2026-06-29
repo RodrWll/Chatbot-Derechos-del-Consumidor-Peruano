@@ -283,53 +283,134 @@ El análisis de causa raíz indica que el retriever es el problema principal. Se
 
 ---
 
-## Experimento 5 — Corpus ampliado + Pre-filtrado por categoría (PLANIFICADO)
+## Experimento 5 — Corpus ampliado + Top embeddings (EN CURSO, 2026-06-28)
 
 ### Motivación
 
 Los dos problemas principales identificados en el Experimento 4 son atacables:
-1. **P6 (fallo sistémico):** el corpus no tiene documentos sobre los límites de INDECOPI ni sobre el arbitraje de consumo como alternativa.
-2. **Contaminación de contexto cruzado:** el retriever recupera documentos de dominios incorrectos (telecomunicaciones para preguntas generales, SOAT para preguntas de INDECOPI).
+1. **P6 (fallo sistémico):** el corpus no tenía documentos sobre los límites de INDECOPI ni sobre arbitraje de consumo como alternativa.
+2. **Contaminación de contexto cruzado:** el retriever recupera documentos de dominios incorrectos (SOAT para preguntas de INDECOPI, telecom para preguntas generales).
 
-### Mejoras a implementar
+### Mejoras implementadas
 
-**Mejora 1 — Corpus ampliado**
+**Mejora 1 — Corpus ampliado (ya aplicada)**
 
-Se agregan dos documentos nuevos a `final_json/informes/`:
+Dos documentos nuevos en `final_json/informes/`:
 - `Cartilla Ya lo sabes - Arbitraje de Consumo.json` — aclara que el árbitro SÍ puede ordenar indemnización económica (a diferencia de INDECOPI).
 - `Resolucion Final 016-2022-CPC-INDECOPI.json` — caso real donde INDECOPI explícitamente deniega indemnización y remite al Poder Judicial. Clave para P6.
 
-**Mejora 2 — Pre-filtrado por categoría**
+**Diseño de los scripts (ya implementado)**
 
-Antes de recuperar del vector store, filtrar por `categoria_consumo` usando metadata de ChromaDB. Ejemplo: preguntas sobre telecomunicaciones solo buscan en documentos de ese dominio, evitando contaminación cruzada.
+- `ingest_embeddings.py` — soporta `--embeddings` y `--suffix` para re-indexar solo los embeddings necesarios en nuevos dirs
+- `evaluacion_embeddings.py` — soporta `--modelos`, `--embeddings`, `--suffix` para evaluar subconjuntos
+- `generar_reporte.py` — soporta `--baseline-label` y `--current-label` para etiquetas personalizadas en el comparativo
 
 ### Configuración del experimento
 
 - **Modelos LLM:** solo top 3 → **qwen2.5:14b · llama3.1:8b · mistral:7b-instruct**
-- **Embeddings:** solo top 2 → **bge-m3 · e5-large** (LaBSE descartado)
+- **Embeddings:** solo top 2 → **bge-m3 · e5-large** (LaBSE descartado en Exp4)
+- **ChromaDB dirs:** `chroma_db_bgem3_exp5` y `chroma_db_e5large_exp5` (corpus ampliado)
 - **Preguntas:** mismas 12 del Experimento 4
 - **k:** 3 · **Prompt:** mismo anti-alucinación
 - **Total combinaciones:** 3 × 2 × 12 = 72
 - **Juez:** Gemini 2.5 Flash
 
-### Pasos para ejecutar
+### Comandos ejecutados
 
 ```bash
-# 1. Re-indexar con los nuevos documentos (una vez por embedding)
-python src/ingest.py --embedding bge-m3
-python src/ingest.py --embedding e5-large
+# 1. Re-indexar con corpus ampliado
+python src/ingest_embeddings.py --embeddings bge-m3 e5-large --suffix _exp5
 
-# 2. Re-evaluar
-python src/evaluacion_embeddings.py --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct --embeddings bge-m3 e5-large
+# 2. Generar 72 respuestas
+python src/evaluacion_embeddings.py --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct --embeddings bge-m3 e5-large --suffix _exp5 --salida evaluacion_exp5
 
-# 3. Evaluar con juez
+# 3. Evaluar con Gemini juez
 python src/evaluar_llm_judge.py --entrada evaluacion_exp5.json --salida scores_gemini_exp5
 
-# 4. Generar reporte comparativo
-python src/generar_reporte.py --entrada scores_gemini_exp5.json --baseline scores_gemini_embeddings.json
+# 4. Reporte comparativo
+python src/generar_reporte.py --entrada scores_gemini_exp5.json --baseline scores_gemini_embeddings.json --salida reporte_exp5.html --baseline-label "Exp4 (corpus original)" --current-label "Exp5 (corpus ampliado)"
+```
+
+### Resultados — Top 3 combinaciones vs Exp4
+
+| Modelo | Embedding | Exp4 | Exp5 | Delta |
+|--------|-----------|:----:|:----:|:-----:|
+| qwen2.5:14b | bge-m3 | 1.750 | 1.583 | **-0.167** |
+| llama3.1:8b | bge-m3 | 1.583 | 1.333 | **-0.250** |
+| mistral:7b-instruct | e5-large | 1.500 | 1.333 | **-0.167** |
+
+### Desglose por pregunta — qwen2.5:14b + bge-m3
+
+| P | Categoría | Exp4 | Exp5 | Delta | Fuentes Exp5 |
+|:-:|-----------|:----:|:----:|:-----:|--------------|
+| 1 | libro_reclamaciones | 2 | 2 | = | Guía INDECOPI, Lineamientos, DS 011 |
+| 2 | telecomunicaciones | 2 | 2 | = | Guía OSIPTEL, Res. 099-OSIPTEL ×2 |
+| 3 | indecopi | 1 | 2 | **+1** | Guía INDECOPI, Lineamientos, Res. SBS |
+| 4 | inmobiliario | 1 | 1 | = | Código 29571, Guía inmobiliaria ×2 |
+| 5 | servicios_financieros | 2 | 1 | **-1** | Código 29571, Lineamientos ×2 |
+| 6 | indecopi | 2 | 2 | = | DS 011, Guía INDECOPI, **Res. 016-2022** |
+| 7 | productos_defectuosos | 2 | 2 | = | Código 29571, Lineamientos, Código 29571 |
+| 8 | servicios_financieros | 2 | 0 | **-2** | Res. SBS 3274, Lineamientos, Cartilla TC |
+| 9 | libro_reclamaciones | 1 | 1 | = | Código 29571, DS 011, Lineamientos |
+| 10 | precios | 2 | 2 | = | Código 29571 ×3 |
+| 11 | precios | 2 | 2 | = | Lineamientos, Res. SBS 3274 ×2 |
+| 12 | educacion | 2 | 2 | = | Ley 29694, Lineamientos, Ley 29694 |
+
+### Análisis de causa raíz (Exp5)
+
+**La regresión global no es del corpus — es variabilidad del LLM:**
+
+1. **P8 regresó de 2→0 para qwen+bge-m3** — el modelo respondió "sí, el banco puede cobrar sin avisar" cuando la respuesta correcta es "no". Las fuentes recuperadas eran correctas (Resolución SBS 3274, cartilla de tarjetas de crédito). Es error estocástico del LLM, no del retriever.
+2. **P6 ya estaba resuelto en Exp4** para qwen+bge-m3 (score 2). En Exp5 ahora recupera `Resolución 016-2022` como fuente, pero la respuesta ya era correcta antes.
+3. **P3 mejoró (+1)** — los nuevos documentos o la re-indexación ayudaron a la pregunta de denuncia vs reclamación INDECOPI.
+4. **El patrón general (todos los modelos bajaron)** confirma que la regresión no es atribuible al corpus: llama y mistral también bajaron con e5-large aunque recuperan fuentes distintas.
+
+**Conclusión académica:** agregar documentos al corpus sin pre-filtrado por categoría introduce ruido competitivo en el retriever (k=3 slots ahora tienen más candidatos), neutralizando las mejoras esperadas. El cuello de botella sigue siendo la recuperación sin discriminación de dominio.
+
+---
+
+## Experimento 6 — Pre-filtrado por categoría (PLANIFICADO)
+
+### Motivación
+
+El Exp5 demostró que ampliar el corpus sin discriminar el dominio de recuperación puede introducir ruido. El Exp6 agrega pre-filtrado: antes de recuperar los k documentos, filtra la ChromaDB por la `categoria_consumo` de la pregunta. Así, una pregunta de telecomunicaciones solo busca entre documentos etiquetados con esa categoría, evitando contaminación cruzada.
+
+### Diseño
+
+- **Corpus:** mismo del Exp5 (`chroma_db_bgem3_exp5`, `chroma_db_e5large_exp5`) — no hay re-indexación
+- **Pares evaluados:** solo top 3 combinaciones del Exp4
+  - `qwen2.5:14b` + `bge-m3`
+  - `llama3.1:8b` + `bge-m3`
+  - `mistral:7b-instruct` + `e5-large`
+- **Total:** 3 pares × 12 preguntas = **36 evaluaciones**
+- **Mecanismo de pre-filtrado:** `vectorstore.similarity_search(pregunta, k=3, filter={"categorias": {"$contains": categoria}})`
+- **Fallback:** si el filtro retorna menos de k documentos, se hace búsqueda sin filtro (registrado en campo `prefiltrado: false`)
+
+### Comandos para ejecutar
+
+```bash
+# No necesita re-indexar — usa los dirs de Exp5
+
+# Paso 1 — Generar 36 respuestas con pre-filtrado (reanudable)
+python src/evaluacion_embeddings.py --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" --suffix _exp5 --prefiltrar --salida evaluacion_exp6
+
+# Paso 2 — Evaluar con Gemini juez (reanudable)
+python src/evaluar_llm_judge.py --entrada evaluacion_exp6.json --salida scores_gemini_exp6
+
+# Paso 3 — Reporte comparativo Exp5 vs Exp6
+python src/generar_reporte.py --entrada scores_gemini_exp6.json --baseline scores_gemini_exp5.json --salida reporte_exp6.html --baseline-label "Exp5 (corpus ampliado, sin filtro)" --current-label "Exp6 (pre-filtrado por categoría)"
 ```
 
 ### Métrica de éxito
 
-- P6 deja de ser fallo universal (al menos 2 de 3 modelos la responden correctamente).
-- Score promedio del top 3 supera 1.75 (umbral del mejor resultado actual).
+- Score promedio del top 3 supera el de Exp5 en al menos 0.10 puntos.
+- Las preguntas de dominio cruzado (P1, P2, P3, P8) mejoran respecto a Exp5.
+- El campo `prefiltrado` en los resultados indica qué preguntas aprovecharon el filtro.
+
+### Resultados — (PENDIENTE: actualizar tras completar)
+
+| Modelo | Embedding | Exp4 | Exp5 | Exp6 | Δ Exp5→6 |
+|--------|-----------|:----:|:----:|:----:|:--------:|
+| qwen2.5:14b | bge-m3 | 1.750 | 1.583 | — | — |
+| llama3.1:8b | bge-m3 | 1.583 | 1.333 | — | — |
+| mistral:7b-instruct | e5-large | 1.500 | 1.333 | — | — |

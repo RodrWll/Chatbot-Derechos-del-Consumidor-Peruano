@@ -1,11 +1,16 @@
 """
-Indexa el corpus con 5 modelos de embedding, cada uno en su propia ChromaDB.
+Indexa el corpus con modelos de embedding, cada uno en su propia ChromaDB.
 Ejecutar una sola vez antes de evaluacion_embeddings.py:
     python src/ingest_embeddings.py
 
 Si una ChromaDB ya existe y tiene datos, la saltea automaticamente.
+
+Opciones:
+    --embeddings bge-m3 e5-large   # indexar solo esos embeddings
+    --suffix _exp5                 # usa dirs chroma_db_bgem3_exp5, chroma_db_e5large_exp5, etc.
 """
 
+import argparse
 import json
 import glob
 import sys
@@ -110,21 +115,51 @@ def indexar(docs: list[Document], config: dict, device: str) -> None:
     print(f"[OK] Indexado en {chroma_dir}")
 
 
+def parsear_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Indexa corpus con modelos de embedding")
+    parser.add_argument(
+        "--embeddings", nargs="+",
+        help="Nombres de embeddings a indexar (default: todos). Ej: bge-m3 e5-large",
+    )
+    parser.add_argument(
+        "--suffix", default="",
+        help="Sufijo para los directorios ChromaDB. Ej: _exp5 crea chroma_db_bgem3_exp5",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parsear_args()
+
+    configs = list(EMBEDDINGS_CONFIG)
+    if args.embeddings:
+        nombres_filtro = {n.lower() for n in args.embeddings}
+        configs = [c for c in configs if c["nombre"].lower() in nombres_filtro]
+        if not configs:
+            nombres_disponibles = [c["nombre"] for c in EMBEDDINGS_CONFIG]
+            print(f"[ERROR] Ningun embedding coincide con: {args.embeddings}")
+            print(f"Disponibles: {nombres_disponibles}")
+            return
+
+    if args.suffix:
+        configs = [{**c, "chroma_dir": c["chroma_dir"] + args.suffix} for c in configs]
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Dispositivo: {device}")
-    print(f"Embeddings a indexar: {len(EMBEDDINGS_CONFIG)}")
+    print(f"Embeddings a indexar: {[c['nombre'] for c in configs]}")
+    if args.suffix:
+        print(f"Sufijo de dirs: {args.suffix}")
 
     print("\nCargando corpus...")
     docs = cargar_documentos()
     print(f"Documentos cargados: {len(docs)}")
 
-    for config in EMBEDDINGS_CONFIG:
+    for config in configs:
         indexar(docs, config, device)
 
     print("\n" + "=" * 60)
     print("Indexacion completada.")
-    for cfg in EMBEDDINGS_CONFIG:
+    for cfg in configs:
         status = "[OK]" if chroma_ya_indexada(cfg["chroma_dir"]) else "[FALTA]"
         print(f"  {status} {cfg['nombre']:15} -> {cfg['chroma_dir']}")
     print("=" * 60)

@@ -1,14 +1,27 @@
 """
-Evaluacion multi-embedding: 5 embeddings x 5 modelos LLM x 10 preguntas = 250 respuestas.
+Evaluacion multi-embedding: N embeddings x M modelos LLM x P preguntas.
 
-Uso:
+Uso basico (Exp4 — 5x5x12):
     python src/evaluacion_embeddings.py
-    python src/evaluacion_embeddings.py --k 3 --salida evaluacion_embeddings
+
+Uso filtrado (Exp5 — top 3 modelos x top 2 embeddings en corpus ampliado):
+    python src/evaluacion_embeddings.py \
+        --modelos qwen2.5:14b llama3.1:8b mistral:7b-instruct \
+        --embeddings bge-m3 e5-large \
+        --suffix _exp5 \
+        --salida evaluacion_exp5
+
+Uso con pares exactos + pre-filtrado por categoria (Exp6):
+    python src/evaluacion_embeddings.py \
+        --pares "qwen2.5:14b|bge-m3" "llama3.1:8b|bge-m3" "mistral:7b-instruct|e5-large" \
+        --suffix _exp5 \
+        --prefiltrar \
+        --salida evaluacion_exp6
 
 Reanudacion automatica: si el archivo de salida ya existe, saltea las combinaciones
 (embedding, modelo, id_pregunta) ya evaluadas y continua desde donde quedo.
 
-Requiere haber corrido primero: python src/ingest_embeddings.py
+Requiere haber corrido primero: python src/ingest_embeddings.py [--suffix _exp5]
 """
 
 import json
@@ -70,7 +83,7 @@ MODELOS_LLM = [
 CAMPOS_CSV = [
     "embedding", "embedding_modelo", "id_pregunta", "categoria",
     "modelo", "pregunta", "respuesta", "respuesta_referencia",
-    "fuentes", "tiempo_segundos", "num_docs_recuperados",
+    "fuentes", "tiempo_segundos", "num_docs_recuperados", "prefiltrado",
 ]
 
 
@@ -111,6 +124,26 @@ def parsear_args() -> argparse.Namespace:
     parser.add_argument("--preguntas", default="preguntas_evaluacion.json")
     parser.add_argument("--k", type=int, default=3, help="Documentos recuperados por consulta")
     parser.add_argument("--salida", default="evaluacion_embeddings")
+    parser.add_argument(
+        "--modelos", nargs="+",
+        help="Modelos LLM a evaluar (default: todos). Ej: qwen2.5:14b llama3.1:8b",
+    )
+    parser.add_argument(
+        "--embeddings", nargs="+",
+        help="Embeddings a evaluar por nombre (default: todos). Ej: bge-m3 e5-large",
+    )
+    parser.add_argument(
+        "--suffix", default="",
+        help="Sufijo de directorios ChromaDB (default: vacio). Ej: _exp5",
+    )
+    parser.add_argument(
+        "--pares", nargs="+",
+        help="Pares exactos modelo|embedding a evaluar. Ej: \"qwen2.5:14b|bge-m3\" \"llama3.1:8b|bge-m3\"",
+    )
+    parser.add_argument(
+        "--prefiltrar", action="store_true",
+        help="Pre-filtrar documentos por categoria de la pregunta antes del retrieval",
+    )
     return parser.parse_args()
 
 
@@ -123,8 +156,50 @@ def main() -> None:
 
     todos_resultados, ya_hechos = cargar_progreso(salida_json)
 
-    total = len(EMBEDDINGS_CONFIG) * len(MODELOS_LLM) * len(preguntas)
+    # Filtrar embeddings y modelos según args
+    emb_configs = list(EMBEDDINGS_CONFIG)
+    if args.embeddings:
+        nombres_filtro = {n.lower() for n in args.embeddings}
+        emb_configs = [c for c in emb_configs if c["nombre"].lower() in nombres_filtro]
+        if not emb_configs:
+            print(f"[ERROR] Ningun embedding coincide con: {args.embeddings}")
+            print(f"Disponibles: {[c['nombre'] for c in EMBEDDINGS_CONFIG]}")
+            return
+
+    if args.suffix:
+        emb_configs = [{**c, "chroma_dir": c["chroma_dir"] + args.suffix} for c in emb_configs]
+
+    modelos_llm = list(MODELOS_LLM)
+    if args.modelos:
+        modelos_llm = args.modelos
+
+    # --pares: construir dict {emb_nombre: [modelos]} para iterar solo esas combinaciones
+    # Formato de cada par: "modelo|embedding"  (| como separador para evitar conflicto con : del modelo)
+    pares_por_emb: dict[str, list[str]] = {}
+    if args.pares:
+        for par in args.pares:
+            if "|" not in par:
+                print(f"[ERROR] Formato invalido en --pares: '{par}'. Usa 'modelo|embedding'.")
+                return
+            modelo_par, emb_par = par.rsplit("|", 1)
+            pares_por_emb.setdefault(emb_par, []).append(modelo_par)
+        # Asegurar que los embeddings del par están en emb_configs
+        emb_nombres_disponibles = {c["nombre"] for c in emb_configs}
+        for emb_par in pares_por_emb:
+            if emb_par not in emb_nombres_disponibles:
+                print(f"[ERROR] Embedding '{emb_par}' de --pares no encontrado en configuracion.")
+                print(f"Disponibles: {sorted(emb_nombres_disponibles)}")
+                return
+        total_pares = sum(len(v) for v in pares_por_emb.values())
+        print(f"Pares especificos: {args.pares}")
+        total = total_pares * len(preguntas)
+    else:
+        total = len(emb_configs) * len(modelos_llm) * len(preguntas)
+        print(f"Embeddings: {[c['nombre'] for c in emb_configs]}")
+        print(f"Modelos LLM: {modelos_llm}")
+
     pendientes = total - len(ya_hechos)
+    print(f"Pre-filtrado por categoria: {'SI' if args.prefiltrar else 'NO'}")
     print(f"Total combinaciones: {total} | Completadas: {len(ya_hechos)} | Pendientes: {pendientes}")
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -135,9 +210,13 @@ def main() -> None:
         template=PROMPT_TEMPLATE,
     )
 
-    for emb_cfg in EMBEDDINGS_CONFIG:
+    for emb_cfg in emb_configs:
         emb_nombre = emb_cfg["nombre"]
         chroma_dir = emb_cfg["chroma_dir"]
+
+        # Si se especificaron pares, saltar embeddings sin modelos asignados
+        if pares_por_emb and emb_nombre not in pares_por_emb:
+            continue
 
         sqlite_path = Path(chroma_dir) / "chroma.sqlite3"
         if not sqlite_path.exists():
@@ -158,10 +237,12 @@ def main() -> None:
         vectorstore = Chroma(persist_directory=chroma_dir, embedding_function=embeddings)
         retriever = vectorstore.as_retriever(search_kwargs={"k": args.k})
 
-        for modelo_llm in MODELOS_LLM:
+        # Modelos a usar para este embedding
+        modelos_este_emb = pares_por_emb[emb_nombre] if pares_por_emb else modelos_llm
+
+        for modelo_llm in modelos_este_emb:
             print(f"\n  LLM: {modelo_llm}")
 
-            # Verificar si todas las preguntas de esta combinacion ya estan hechas
             pendientes_llm = [
                 item for item in preguntas
                 if (item["id"], modelo_llm, emb_nombre) not in ya_hechos
@@ -184,11 +265,26 @@ def main() -> None:
                     continue
 
                 pregunta = item["pregunta"]
+                categoria = item.get("categoria", "")
                 print(f"    [P{pid}] {pregunta[:65]}...", end=" ", flush=True)
 
                 t0 = time.time()
                 try:
-                    docs = retriever.invoke(pregunta)
+                    # Pre-filtrado por categoría: filtra la ChromaDB antes del retrieval
+                    # Si quedan menos de k docs con el filtro, cae a búsqueda sin filtro
+                    filtro_aplicado = False
+                    if args.prefiltrar and categoria:
+                        docs = vectorstore.similarity_search(
+                            pregunta, k=args.k,
+                            filter={"categorias": {"$contains": categoria}},
+                        )
+                        if len(docs) >= args.k:
+                            filtro_aplicado = True
+                        else:
+                            docs = retriever.invoke(pregunta)
+                    else:
+                        docs = retriever.invoke(pregunta)
+
                     context = "\n\n".join(doc.page_content for doc in docs)
                     respuesta = llm.invoke(prompt.format(context=context, question=pregunta))
                     elapsed = time.time() - t0
@@ -198,7 +294,7 @@ def main() -> None:
                         "embedding": emb_nombre,
                         "embedding_modelo": emb_cfg["modelo"],
                         "id_pregunta": pid,
-                        "categoria": item.get("categoria", ""),
+                        "categoria": categoria,
                         "modelo": modelo_llm,
                         "pregunta": pregunta,
                         "respuesta": respuesta,
@@ -206,10 +302,12 @@ def main() -> None:
                         "fuentes": fuentes,
                         "tiempo_segundos": round(elapsed, 2),
                         "num_docs_recuperados": len(fuentes),
+                        "prefiltrado": filtro_aplicado,
                     }
                     todos_resultados.append(resultado)
                     ya_hechos.add(key)
-                    print(f"[OK] {elapsed:.1f}s - {len(fuentes)} docs")
+                    filtro_tag = "[F]" if filtro_aplicado else "   "
+                    print(f"[OK]{filtro_tag} {elapsed:.1f}s - {len(fuentes)} docs")
 
                     guardar(todos_resultados, salida_json, salida_csv)
 
