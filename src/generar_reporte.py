@@ -84,6 +84,75 @@ def grafico_embedding(df: pd.DataFrame) -> str:
     return _b64(fig)
 
 
+def grafico_tres_experimentos(
+    df1: pd.DataFrame, df2: pd.DataFrame, df3: pd.DataFrame,
+    label1: str, label2: str, label3: str,
+) -> str:
+    """Gráfico de barras agrupadas: score promedio por modelo en 3 experimentos."""
+    modelos = sorted(set(df1["modelo"].unique()) | set(df2["modelo"].unique()) | set(df3["modelo"].unique()))
+    s1 = df1.groupby("modelo")["score_gemini"].mean()
+    s2 = df2.groupby("modelo")["score_gemini"].mean()
+    s3 = df3.groupby("modelo")["score_gemini"].mean()
+
+    x = np.arange(len(modelos))
+    w = 0.26
+    fig, ax = plt.subplots(figsize=(max(9, len(modelos) * 2.2), 5))
+    b1 = ax.bar(x - w, [s1.get(m, 0) for m in modelos], w, label=label1, color="#7fb3d3")
+    b2 = ax.bar(x,      [s2.get(m, 0) for m in modelos], w, label=label2, color="#f0a500")
+    b3 = ax.bar(x + w,  [s3.get(m, 0) for m in modelos], w, label=label3, color="#27ae60")
+    for bars in (b1, b2, b3):
+        for bar in bars:
+            h = bar.get_height()
+            if h > 0:
+                ax.text(bar.get_x() + bar.get_width()/2, h + 0.03,
+                        f"{h:.2f}", ha="center", va="bottom", fontsize=8, fontweight="bold")
+    ax.set_xticks(x)
+    ax.set_xticklabels(modelos, rotation=15, ha="right", fontsize=10)
+    ax.set_ylim(0, 2.4)
+    ax.set_ylabel("Score promedio (0–2)", fontsize=11)
+    ax.axhline(1, color="gray", linestyle="--", alpha=0.4)
+    ax.legend(fontsize=10)
+    ax.set_title("Evolución del score por modelo — 3 experimentos", fontsize=13, fontweight="bold", pad=14)
+    plt.tight_layout()
+    return _b64(fig)
+
+
+def tabla_tres_experimentos(
+    df1: pd.DataFrame, df2: pd.DataFrame, df3: pd.DataFrame,
+    label1: str, label2: str, label3: str,
+) -> str:
+    modelos = sorted(set(df1["modelo"].unique()) | set(df2["modelo"].unique()) | set(df3["modelo"].unique()),
+                     key=lambda m: df3.groupby("modelo")["score_gemini"].mean().get(m, 0), reverse=True)
+    s1 = df1.groupby("modelo")["score_gemini"].mean()
+    s2 = df2.groupby("modelo")["score_gemini"].mean()
+    s3 = df3.groupby("modelo")["score_gemini"].mean()
+
+    rows = ""
+    for m in modelos:
+        v1 = s1.get(m); v2 = s2.get(m); v3 = s3.get(m)
+        def fmt(v): return f"{v:.3f}" if v is not None else "—"
+        def delta_html(a, b):
+            if a is None or b is None: return "—"
+            d = b - a
+            color = COLOR_CORRECTO if d > 0.01 else (COLOR_INCORRECTO if d < -0.01 else "#888")
+            return f'<span style="color:{color};font-weight:700">{d:+.3f}</span>'
+        rows += f"""<tr>
+            <td><code>{m}</code></td>
+            <td>{fmt(v1)}</td>
+            <td>{fmt(v2)}</td>
+            <td>{fmt(v3)}</td>
+            <td>{delta_html(v1, v3)}</td>
+        </tr>"""
+    return f"""<table>
+        <thead><tr>
+            <th>Modelo</th>
+            <th>{label1}</th><th>{label2}</th><th>{label3}</th>
+            <th>Delta total</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+    </table>"""
+
+
 def grafico_comparativa_baseline(
     df_emb: pd.DataFrame,
     df_base: pd.DataFrame,
@@ -469,6 +538,8 @@ def generar_html(
     df_base: pd.DataFrame | None = None,
     baseline_label: str = "Baseline (MiniLM-L12)",
     current_label: str = "Embeddings (promedio)",
+    df_base2: pd.DataFrame | None = None,
+    baseline2_label: str = "Experimento 2",
 ) -> str:
     n_total   = len(df)
     n_emb     = df["embedding"].nunique()
@@ -490,7 +561,21 @@ def generar_html(
     img_heat     = heatmap_categoria(df)
     ejemplos     = obtener_ejemplos(df)
 
-    if df_base is not None:
+    if df_base is not None and df_base2 is not None:
+        # Comparativa de 3 experimentos
+        img_tres = grafico_tres_experimentos(df_base, df_base2, df, baseline_label, baseline2_label, current_label)
+        tabla_tres = tabla_tres_experimentos(df_base, df_base2, df, baseline_label, baseline2_label, current_label)
+        seccion_baseline = f"""
+  <section id="baseline">
+    <h2>Evolución por experimento</h2>
+    <p style="font-size:0.88rem;color:#666;margin-bottom:1rem">
+      Comparativa: <strong>{baseline_label}</strong> → <strong>{baseline2_label}</strong> → <strong>{current_label}</strong>.
+      Delta total = diferencia entre el primer y último experimento.
+    </p>
+    {tabla_tres}
+    <img class="chart" src="data:image/png;base64,{img_tres}" alt="Evolución 3 experimentos">
+  </section>"""
+    elif df_base is not None:
         img_base    = grafico_comparativa_baseline(df, df_base, baseline_label, current_label)
         tabla_base  = tabla_comparativa_baseline(df, df_base)
         seccion_baseline = f"""
@@ -603,6 +688,10 @@ def parsear_args() -> argparse.Namespace:
                    help="Etiqueta del baseline en gráficos comparativos")
     p.add_argument("--current-label", default="Embeddings (promedio)",
                    help="Etiqueta del experimento actual en gráficos comparativos")
+    p.add_argument("--baseline2", default=None,
+                   help="Segundo JSON de scores para comparativa de 3 experimentos")
+    p.add_argument("--baseline2-label", default="Experimento 2",
+                   help="Etiqueta del segundo baseline")
     return p.parse_args()
 
 
@@ -637,6 +726,12 @@ def main() -> None:
     else:
         print(f"  (baseline no encontrado: {args.baseline} — se omite sección comparativa)")
 
+    df_base2 = None
+    if args.baseline2 and Path(args.baseline2).exists():
+        print(f"Cargando baseline2: {args.baseline2}...")
+        df_base2 = _cargar_df(args.baseline2)
+        print(f"  Entradas baseline2: {len(df_base2)}")
+
     if df.empty:
         print("[ERROR] No hay entradas con score aún.")
         return
@@ -645,6 +740,8 @@ def main() -> None:
         df, date.today().isoformat(), df_base,
         baseline_label=args.baseline_label,
         current_label=args.current_label,
+        df_base2=df_base2,
+        baseline2_label=args.baseline2_label,
     )
     Path(args.salida).write_text(html, encoding="utf-8")
     print(f"Reporte generado: {args.salida}")

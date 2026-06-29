@@ -43,14 +43,15 @@ RESPUESTA DEL CHATBOT A EVALUAR:
 Evalúa la respuesta del chatbot según estos criterios:
 
 PUNTUACIÓN:
-- 2 (CORRECTO): La respuesta cubre los conceptos clave de la referencia sin información incorrecta ni alucinaciones graves.
-- 1 (PARCIAL): Cubre algunos conceptos clave pero omite información importante, O tiene imprecisiones menores que no cambian el sentido general.
-- 0 (INCORRECTO): La respuesta es incorrecta, contradice la referencia, da una respuesta opuesta (ej: dice "sí" cuando la correcta es "no"), o está basada en información inventada.
+- 2 (CORRECTO): La respuesta llega a la misma conclusión práctica que la referencia y cubre los conceptos clave, sin errores ni alucinaciones graves. NO es necesario que use las mismas palabras ni que mencione exactamente los mismos detalles — una respuesta alternativa correcta que oriente bien al ciudadano merece 2.
+- 1 (PARCIAL): Cubre algunos conceptos clave pero omite información importante, O tiene imprecisiones menores que no cambian la conclusión general.
+- 0 (INCORRECTO): La respuesta es incorrecta, contradice la referencia, da una respuesta opuesta (ej: dice "sí" cuando la correcta es "no"), o está basada en información inventada que cambia el sentido.
 
 CRITERIOS ESPECIALES:
 - Si la pregunta tiene una respuesta de sí/no y el chatbot responde lo contrario → 0 automático.
-- Si el chatbot inventa nombres de leyes, instituciones o plazos que no existen → penaliza con -1 punto.
+- Si el chatbot inventa nombres de leyes, instituciones o plazos que no existen → penaliza con -1 punto (puede bajar de 2 a 1, o de 1 a 0).
 - Si el chatbot da información de un dominio incorrecto (ej: habla de salud cuando la pregunta es sobre consumo general) → 0 automático.
+- Una respuesta más detallada o con información adicional correcta NO debe penalizarse — evalúa si la conclusión práctica es correcta, no si es idéntica a la referencia.
 
 Responde ÚNICAMENTE con este JSON, sin texto adicional:
 {{

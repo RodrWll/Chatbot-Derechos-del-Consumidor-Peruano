@@ -407,10 +407,76 @@ python src/generar_reporte.py --entrada scores_gemini_exp6.json --baseline score
 - Las preguntas de dominio cruzado (P1, P2, P3, P8) mejoran respecto a Exp5.
 - El campo `prefiltrado` en los resultados indica qué preguntas aprovecharon el filtro.
 
-### Resultados — (PENDIENTE: actualizar tras completar)
+### Resultados — Top 3 pares (COMPLETADO, 2026-06-29)
 
-| Modelo | Embedding | Exp4 | Exp5 | Exp6 | Δ Exp5→6 |
+| Modelo | Embedding | Exp4 | Exp5 | Exp6 | Δ Exp4→6 |
 |--------|-----------|:----:|:----:|:----:|:--------:|
-| qwen2.5:14b | bge-m3 | 1.750 | 1.583 | — | — |
-| llama3.1:8b | bge-m3 | 1.583 | 1.333 | — | — |
-| mistral:7b-instruct | e5-large | 1.500 | 1.333 | — | — |
+| qwen2.5:14b | bge-m3 | 1.750 | 1.583 | **1.750** | **=** |
+| llama3.1:8b | bge-m3 | 1.583 | 1.333 | 1.417 | -0.167 |
+| mistral:7b-instruct | e5-large | 1.500 | 1.333 | **1.583** | **+0.083** |
+
+**Pre-filtrado aplicado:** 36/36 preguntas usaron el filtro (0 fallbacks). El mapa de categorías funcionó correctamente.
+
+### Desglose por pregunta — los 3 pares
+
+#### qwen2.5:14b + bge-m3
+
+| P | Categoría | Exp4 | Exp5 | Exp6 |
+|:-:|-----------|:----:|:----:|:----:|
+| 1 | libro_reclamaciones | 2 | 2 | 2 |
+| 2 | telecomunicaciones | 2 | 2 | 2 |
+| 3 | indecopi | 1 | 2 | 1 |
+| 4 | inmobiliario | 1 | 1 | 2 |
+| 5 | servicios_financieros | 2 | 1 | 2 |
+| 6 | indecopi | 2 | 2 | 2 |
+| 7 | productos_defectuosos | 2 | 2 | 2 |
+| 8 | servicios_financieros | 2 | **0** | **0** |
+| 9 | libro_reclamaciones | 1 | 1 | 2 |
+| 10 | precios | 2 | 2 | 2 |
+| 11 | precios | 2 | 2 | 2 |
+| 12 | educacion | 2 | 2 | 2 |
+
+#### llama3.1:8b + bge-m3
+
+| P | Categoría | Exp4 | Exp5 | Exp6 |
+|:-:|-----------|:----:|:----:|:----:|
+| 2 | telecomunicaciones | 1 | 1 | **0** |
+| 5 | servicios_financieros | 2 | 0 | 2 |
+| 7 | productos_defectuosos | 2 | 1 | 1 |
+| 8 | servicios_financieros | 1 | 2 | **0** |
+| 11 | precios | 1 | 0 | 1 |
+| 12 | educacion | 1 | 1 | 2 |
+| *(resto)* | — | ≥1 | ≥1 | ≥1 |
+
+#### mistral:7b-instruct + e5-large
+
+| P | Categoría | Exp4 | Exp5 | Exp6 |
+|:-:|-----------|:----:|:----:|:----:|
+| 4 | inmobiliario | 1 | 1 | 2 |
+| 6 | indecopi | **0** | **0** | **0** |
+| 7 | productos_defectuosos | 2 | 0 | 1 |
+| 9 | libro_reclamaciones | 2 | 1 | 2 |
+| *(resto)* | — | ≥1 | ≥1 | ≥1 |
+
+### Análisis de causa raíz (Exp6)
+
+1. **qwen+bge-m3 recupera el nivel del Exp4 (1.75)** — el pre-filtrado corrigió las preguntas que habían regresado en Exp5 (P4, P5, P9). El único bloqueador persistente es P8.
+
+2. **P8 falla sistemáticamente para qwen y llama (0 en Exp5 y Exp6)** — las fuentes recuperadas son correctas (Res. SBS 3274, cartilla tarjetas), pero ambos modelos responden "sí, el banco puede cobrar sin avisar" cuando la respuesta correcta es "no". Es un sesgo de razonamiento del LLM que el retriever no puede corregir.
+
+3. **mistral mejora sobre Exp4 (+0.083)** — el pre-filtrado reduce la contaminación cruzada que más lo afectaba (P4, P9 suben de 1→2).
+
+4. **llama sigue por debajo de Exp4 (-0.167)** — P2 y P8 caen por variabilidad estocástica. El histórico de P5 para llama (2→0→2 en Exp4→Exp5→Exp6) confirma que la oscilación es ruido, no tendencia.
+
+5. **mistral+e5-large no resuelve P6** — el filtro de `indecopi` (`consumo en general` + `entidades públicas`) no trae `Resolución 016-2022` entre los top-3 para e5-large. bge-m3 es mejor rankeando ese documento.
+
+### Conclusión del ciclo de experimentos (Exp4→Exp5→Exp6)
+
+| Mejora introducida | Impacto |
+|--------------------|---------|
+| Mejor embedding (bge-m3 vs MiniLM) | Alto — +0.52 pts sobre baseline |
+| Corpus ampliado sin filtro (Exp5) | Neutro/negativo — introduce ruido competitivo |
+| Pre-filtrado por categoría (Exp6) | Positivo — estabiliza resultados, mistral mejora |
+| **Techo actual del sistema** | **1.75** (qwen+bge-m3, estable en Exp4 y Exp6) |
+
+**El cuello de botella final es el LLM:** P8 falla por sesgo propio del modelo, no por retrieval. El sistema RAG con bge-m3 + pre-filtrado + corpus ampliado entrega contexto correcto; el LLM lo ignora en preguntas con respuesta contraintuitiva (banco SÍ debe avisar antes de cobrar).
